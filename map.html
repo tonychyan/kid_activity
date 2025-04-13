@@ -1,0 +1,879 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Kids Activities Map</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+            #map { height: 500px; width: 100%; }
+            .controls { background: #fff; padding: 10px; border-bottom: 1px solid #ddd; }
+            .sidebar { padding: 20px; height: 500px; overflow-y: auto; }
+            .activity { margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+            .activity h3 { margin-top: 0; color: #333; cursor: pointer; }
+            .activity h3:hover { color: #0078d7; text-decoration: underline; }
+            .activity p { margin: 5px 0; }
+            .activity a { color: #0078d7; text-decoration: none; }
+            .activity a:hover { text-decoration: underline; }
+            .filter-group { margin-right: 20px; display: inline-block; }
+            .filter-title { font-weight: bold; margin-bottom: 5px; }
+            .time-indicator { display: inline-block; width: 15px; height: 15px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+            .morning { background-color: #4285F4; }   /* Blue */
+            .afternoon { background-color: #FBBC05; } /* Yellow */
+            .evening { background-color: #34A853; }   /* Green */
+            .unknown { background-color: #EA4335; }   /* Red */
+            .legend { margin-top: 10px; }
+            .legend-item { margin-right: 15px; display: inline-block; }
+            .source-link { color: #666; text-decoration: none; }
+            .source-link:hover { text-decoration: underline; }
+        </style>
+    </head>
+    <body>
+        <div class="controls">
+            <div class="filter-group">
+                <div class="filter-title">Filter by Date:</div>
+                <select id="date-filter" onchange="filterMarkers()">
+                    <option value="all">All Dates</option>
+                        <option value="2025-04-12">2025-04-12</option>
+                    <option value="2025-04-13">2025-04-13</option>
+                    <option value="2025-04-17">2025-04-17</option>
+                    <option value="2025-04-20">2025-04-20</option>
+
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <div class="filter-title">Filter by Time of Day:</div>
+                <label><input type="checkbox" value="morning" checked onchange="filterMarkers()"> <span class="time-indicator morning"></span>Morning</label>
+                <label><input type="checkbox" value="afternoon" checked onchange="filterMarkers()"> <span class="time-indicator afternoon"></span>Afternoon</label>
+                <label><input type="checkbox" value="evening" checked onchange="filterMarkers()"> <span class="time-indicator evening"></span>Evening</label>
+                <label><input type="checkbox" value="unknown" checked onchange="filterMarkers()"> <span class="time-indicator unknown"></span>Unknown Time</label>
+            </div>
+            
+            <div class="legend">
+                <span class="legend-title">Legend: </span>
+                <span class="legend-item"><span class="time-indicator morning"></span>Morning (12 AM - 11:59 AM)</span>
+                <span class="legend-item"><span class="time-indicator afternoon"></span>Afternoon (12 PM - 4:59 PM)</span>
+                <span class="legend-item"><span class="time-indicator evening"></span>Evening (5 PM - 11:59 PM)</span>
+                <span class="legend-item"><span class="time-indicator unknown"></span>Unknown Time</span>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+        
+        <div class="sidebar">
+            <h2>Kids Activities</h2>
+            <div id="activities-list">
+    
+        <div class="activity" data-date="2025-04-12" data-time-period="morning" id="activity-0">
+            <h3 onclick="showMarker(0)">Spring Fest</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
+            <p><strong>Location:</strong> Christian Life Austin, 4700 West Gate Blvd, Austin, TX 78745</p>
+        <p><strong>Description:</strong> Join Christian Life Austin for a family-friendly event featuring a glow-in-the-dark Easter Egg Hunt, face painting, carnival rides, and more.</p><p><strong>Additional Details:</strong> Includes activities such as meeting the Easter Bunny, inflatables, pony rides, and a petting zoo. RSVP is encouraged.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Christian%20Life%20Austin%2C%204700%20West%20Gate%20Blvd%2C%20Austin%2C%20TX%2078745" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/0cc2f560c00fc00d3032cb2c47a85255.JPG' target='_blank' class='source-link'>0cc2f560c00fc00d3032cb2c47a85255.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-17" data-time-period="evening" id="activity-1">
+            <h3 onclick="showMarker(1)">Flashlight Egg Hunt</h3>
+            <p><strong>Date:</strong> 2025-04-17</p>
+            <p><strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+            <p><strong>Location:</strong> Old Settlers Park, 3300 E. Palm Valley Blvd., Round Rock, TX</p>
+        <p><strong>Description:</strong> Nighttime hunt with flashlight, followed by a movie. Pre-registration required.</p><p><strong>Additional Details:</strong> Cost: $7-$10/hunter</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Old%20Settlers%20Park%2C%203300%20E.%20Palm%20Valley%20Blvd.%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/c86604342baa68f3edb1858fd904e4f6.JPG' target='_blank' class='source-link'>c86604342baa68f3edb1858fd904e4f6.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-12" data-time-period="morning" id="activity-2">
+            <h3 onclick="showMarker(2)">Eggstravaganza</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 10:00 AM</p>
+            <p><strong>Location:</strong> The Fellowship Church, 3379 Gattis School Rd, Round Rock, TX</p>
+        <p><strong>Description:</strong> FREE EVENT with epic egg hunt with prizes, yard games, crafts, bouncy houses, and Easter fun for all!</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=The%20Fellowship%20Church%2C%203379%20Gattis%20School%20Rd%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/c86604342baa68f3edb1858fd904e4f6.JPG' target='_blank' class='source-link'>c86604342baa68f3edb1858fd904e4f6.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="afternoon" id="activity-3">
+            <h3 onclick="showMarker(3)">Easter Fest</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 12:30 PM - 2:30 PM</p>
+            <p><strong>Location:</strong> St. Philip's UMC, 16321 Great Oaks Dr, Round Rock, TX 78681, United States</p>
+        <p><strong>Description:</strong> A community event featuring an egg hunt, bounce house, and food.</p><p><strong>Additional Details:</strong> Free event. Invite family, friends, and neighbors.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=St.%20Philip%27s%20UMC%2C%2016321%20Great%20Oaks%20Dr%2C%20Round%20Rock%2C%20TX%2078681%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/971adb7051aaf86a9101822c491d8d91.JPG' target='_blank' class='source-link'>971adb7051aaf86a9101822c491d8d91.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="morning" id="activity-4">
+            <h3 onclick="showMarker(4)">Easter EGGstravaganza!</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 11:30 AM - 1:30 PM</p>
+            <p><strong>Location:</strong> King of Kings Lutheran Church, 17000 Smyers Ln, Round Rock, TX 78681, United States</p>
+        <p><strong>Description:</strong> Free family Easter event for all ages with Easter egg hunts, games, crafts, prizes, photos with the Easter Bunny, live music, and more.</p><p><strong>Additional Details:</strong> Concessions available for purchase. Worship at 9:00 AM, Sunday school 10:30-11:30 AM. Email kbrown@kingofkingstx.org for questions.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=King%20of%20Kings%20Lutheran%20Church%2C%2017000%20Smyers%20Ln%2C%20Round%20Rock%2C%20TX%2078681%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/318184d21041fa09a01a8c08929414d1.JPG' target='_blank' class='source-link'>318184d21041fa09a01a8c08929414d1.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="afternoon" id="activity-5">
+            <h3 onclick="showMarker(5)">Palm Sunday Egg Hunt</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 1:00 PM - 2:30 PM</p>
+            <p><strong>Location:</strong> Hillcrest Church, 3838 Steck Avenue, Austin, TX 78717</p>
+        <p><strong>Description:</strong> Egg hunt for preschoolers and K-5th graders with bounce houses, popcorn, and live music.</p><p><strong>Additional Details:</strong> Sunday School program starts at 11:15 AM with scavenger hunt and treats. More info at www.hillcrest.church.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Hillcrest%20Church%2C%203838%20Steck%20Avenue%2C%20Austin%2C%20TX%2078717" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/3ffc036f742a50987a30369880706729.JPG' target='_blank' class='source-link'>3ffc036f742a50987a30369880706729.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-12" data-time-period="afternoon" id="activity-6">
+            <h3 onclick="showMarker(6)">2025 EGgstravaganza</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 12 PM - 3 PM</p>
+            <p><strong>Location:</strong> North Austin YMCA, 11006 W Rundberg Ln, Austin, TX</p>
+        <p><strong>Additional Details:</strong> Cost: Free</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=North%20Austin%20YMCA%2C%2011006%20W%20Rundberg%20Ln%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: Unknown</small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-12" data-time-period="morning" id="activity-7">
+            <h3 onclick="showMarker(7)">Brushy Creek Egg Hunt</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 10 AM - 12 PM</p>
+            <p><strong>Location:</strong> Cat Hallow Park, 8600 O'Connor Dr, Round Rock, TX</p>
+        <p><strong>Additional Details:</strong> Cost: Free</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Hallow%20Park%2C%208600%20O%27Connor%20Dr%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: Unknown</small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="afternoon" id="activity-8">
+            <h3 onclick="showMarker(8)">Egg Hunt & Easter Mini's</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 4 PM</p>
+            <p><strong>Location:</strong> Pikopye's Town, 1607 Ranch Rd 620 N #100, Lakeway, TX</p>
+        <p><strong>Additional Details:</strong> Cost: $45</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Pikopye%27s%20Town%2C%201607%20Ranch%20Rd%20620%20N%20%23100%2C%20Lakeway%2C%20TX" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: Unknown</small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-20" data-time-period="afternoon" id="activity-9">
+            <h3 onclick="showMarker(9)">Egg Hunt</h3>
+            <p><strong>Date:</strong> 2025-04-20</p>
+            <p><strong>Time:</strong> 2:00 PM - 3:00 PM</p>
+            <p><strong>Location:</strong> Adam Orgain Park, Brushy Creek Amphitheater, 1001 County Road 137, Hutto, TX 78634-2204, United States</p>
+        <p><strong>Description:</strong> Free kids' egg hunt for children 12 and under with 50,000 eggs to collect.</p><p><strong>Additional Details:</strong> Bring baskets and wear comfy shoes. Public event organized by Hutto Parks and Recreation and City of Hutto, TX.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Adam%20Orgain%20Park%2C%20Brushy%20Creek%20Amphitheater%2C%201001%20County%20Road%20137%2C%20Hutto%2C%20TX%2078634-2204%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/16c106aa0454f33733403abca2e808cd.JPG' target='_blank' class='source-link'>16c106aa0454f33733403abca2e808cd.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="morning" id="activity-10">
+            <h3 onclick="showMarker(10)">April Family Day: Heart of the Garden</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 11:00 AM - 4:00 PM</p>
+            <p><strong>Location:</strong> Umlauf Sculpture Garden & Museum, 605 Azie Morton RD Austin, TX 78704</p>
+        <p><strong>Description:</strong> A serene and joyful atmosphere with activities such as caricatures, community partners, crafts, storytime, sculpture searches, and garden tours.</p><p><strong>Additional Details:</strong> Free entry. RSVP at umlaufsculpture.org</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Umlauf%20Sculpture%20Garden%20%26%20Museum%2C%20605%20Azie%20Morton%20RD%20Austin" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/09c07f3a94e7862faae9ea35c96be276.JPG' target='_blank' class='source-link'>09c07f3a94e7862faae9ea35c96be276.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="afternoon" id="activity-11">
+            <h3 onclick="showMarker(11)">Free Egg Hunt at Reach Church</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 12:30 PM - 2:00 PM</p>
+            <p><strong>Location:</strong> Reach Church, 636 W Front St, Hutto, TX 78634, United States</p>
+        <p><strong>Description:</strong> Free Easter Egg Hunt for kids ages 1-11, divided into age groups 5 & under and 6-11 years old.</p><p><strong>Additional Details:</strong> Following the 11:30 AM service. Kona Ice and fresh burritos available. It's a fun event for the whole family.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Reach%20Church%2C%20636%20W%20Front%20St%2C%20Hutto%2C%20TX%2078634%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/e291d5c00782773d66cdc206d608b115.JPG' target='_blank' class='source-link'>e291d5c00782773d66cdc206d608b115.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="afternoon" id="activity-12">
+            <h3 onclick="showMarker(12)">Easter Jam!</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 3:00 PM - 4:00 PM</p>
+            <p><strong>Location:</strong> Life Church, 1393 E Woodview Dr, Leander, TX, United States, Texas 78641</p>
+        <p><strong>Description:</strong> Fun, free event geared toward kids birth through 5th grade. Includes Easter discussions, activities, and an egg hunt.</p><p><strong>Additional Details:</strong> All are welcome. Invite a friend.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Life%20Church%2C%201393%20E%20Woodview%20Dr%2C%20Leander%2C%20TX%2C%20United%20States%2C%20Texas%2078641" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/8c86ecc0037b7b55289396ec390abbab.JPG' target='_blank' class='source-link'>8c86ecc0037b7b55289396ec390abbab.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-12" data-time-period="morning" id="activity-13">
+            <h3 onclick="showMarker(13)">Healthy Kids Day and Business Fair</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 11:00 AM - 2:30 PM</p>
+            <p><strong>Location:</strong> Boles Family Sports Complex West, 1500 North Mays Street, Round Rock, TX 78664, United States</p>
+        <p><strong>Description:</strong> Annual CHASCO Family YMCA Healthy Kids Day and Esteam Academy Children's Business Fair with activities like face painting, bouncy houses, soccer shootouts, and over 100 Children's Business Booths.</p><p><strong>Additional Details:</strong> Free family event. Students from Esteam Academy will have booths to sell their products. Live music from Round Rock School of Rock from 11am-2pm. Parking available at Boles Sports Complex West.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Boles%20Family%20Sports%20Complex%20West%2C%201500%20North%20Mays%20Street%2C%20Round%20Rock%2C%20TX%2078664%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/f05575de057034995647860ebafd5603.JPG' target='_blank' class='source-link'>f05575de057034995647860ebafd5603.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="afternoon" id="activity-14">
+            <h3 onclick="showMarker(14)">OP Vets Easter Celebration</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 12:00 PM</p>
+            <p><strong>Location:</strong> The American Legion, George Johns Post 447, 1000 N Georgetown St, Round Rock, TX 78664-4462, United States</p>
+        <p><strong>Description:</strong> Crawfish! Easter Egg Hunt for the kids at 2:00 PM! Bouncy house! Live music!</p><p><strong>Additional Details:</strong> Public event. Anyone on or off Facebook can attend.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=The%20American%20Legion%2C%20George%20Johns%20Post%20447%2C%201000%20N%20Georgetown%20St%2C%20Round%20Rock%2C%20TX%2078664-4462%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/2ee09fcd84fcf13b69509d26e04a25ca.JPG' target='_blank' class='source-link'>2ee09fcd84fcf13b69509d26e04a25ca.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-12" data-time-period="morning" id="activity-15">
+            <h3 onclick="showMarker(15)">EGGSTRAVAGANZA - FREE Event</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 10:00 AM</p>
+            <p><strong>Location:</strong> The Fellowship Church, 3379 Gattis School Rd, Round Rock, TX 78664</p>
+        <p><strong>Description:</strong> Epic egg hunt for kids up to 12 years old with 50 amazing prizes, including Kalahari park passes, yard game area, crafts, and bouncy houses.</p><p><strong>Additional Details:</strong> Event is public and free. Learn more at https://www.FellowshipEaster.org.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=The%20Fellowship%20Church%2C%203379%20Gattis%20School%20Rd%2C%20Round%20Rock%2C%20TX%2078664" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/9b8895ff6609f2782a7fe5fe015ab06d.JPG' target='_blank' class='source-link'>9b8895ff6609f2782a7fe5fe015ab06d.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="morning" id="activity-16">
+            <h3 onclick="showMarker(16)">Spring Community Festival</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
+            <p><strong>Location:</strong> 600 W New Hope Dr, Cedar Park, TX, United States, Texas 78613</p>
+        <p><strong>Description:</strong> Join us for a day of fun, faith, and fellowship! Enjoy food, inflatables, games, crafts, and more!</p><p><strong>Additional Details:</strong> Free garage sale and grand opening of the new community garden. For more information, visit: www.hpf.org/community</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=600%20W%20New%20Hope%20Dr%2C%20Cedar%20Park%2C%20TX%2C%20United%20States%2C%20Texas%2078613" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/941c1a013f0d4960da07b083cea1d0fe.JPG' target='_blank' class='source-link'>941c1a013f0d4960da07b083cea1d0fe.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="morning" id="activity-17">
+            <h3 onclick="showMarker(17)">Hometown's 3rd Annual Easter Eggstravaganza</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 10:00 AM - 10:45 AM</p>
+            <p><strong>Location:</strong> 400 E Main St, Round Rock, TX 78664, United States</p>
+        <p><strong>Description:</strong> Celebrate with us at our 3rd Annual Hometown Eggstravaganza. Egg hunts at 10:00 AM for ages 3 and under, and 10:45 AM for ages 4 and up.</p><p><strong>Additional Details:</strong> Bring your baskets! Event marks the 3rd anniversary of our business.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=400%20E%20Main%20St%2C%20Round%20Rock%2C%20TX%2078664%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/c6bf2b49bb67cadb6f0cb473386f5d9e.JPG' target='_blank' class='source-link'>c6bf2b49bb67cadb6f0cb473386f5d9e.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="morning" id="activity-18">
+            <h3 onclick="showMarker(18)">Spring Fling and Artisan's Market</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+            <p><strong>Location:</strong> Rockbridge Church, 2001 West New Hope Drive, Cedar Park, TX, United States, Texas 78613</p>
+        <p><strong>Description:</strong> Spring Fling with Tiny Tails Petting Zoo, bounce house, carnival games, and Easter Egg Hunts. Age ranges for egg hunts: 3 and under, 4-7 years old, 8-12 years old. Easter Bunny available for photo ops.</p><p><strong>Additional Details:</strong> Artisan's Market from 10 AM to 2 PM. Event held in the Front Meadow at Rockbridge Church.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Rockbridge%20Church%2C%202001%20West%20New%20Hope%20Drive%2C%20Cedar%20Park%2C%20TX%2C%20United%20States%2C%20Texas%2078613" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/7221fbbf04560902163647547a7be386.JPG' target='_blank' class='source-link'>7221fbbf04560902163647547a7be386.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-20" data-time-period="afternoon" id="activity-19">
+            <h3 onclick="showMarker(19)">Bunny Hop Bash</h3>
+            <p><strong>Date:</strong> 2025-04-20</p>
+            <p><strong>Time:</strong> 3:00 PM - 5:00 PM</p>
+            <p><strong>Location:</strong> Chick-fil-A Great Oaks, 113 Deer Ridge Dr, Round Rock, TX</p>
+        <p><strong>Description:</strong> Easter celebration featuring the Easter Bunny, face painting, cookie decorating, spring arts & crafts, Chick-fil-A cow, and music.</p><p><strong>Additional Details:</strong> Chick-fil-A Easter Basket Raffle. You will have to buy a meal per person for access to the event.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Chick-fil-A%20Great%20Oaks%2C%20113%20Deer%20Ridge%20Dr%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/857b807248ecac5367e0c087abe7947d.JPG' target='_blank' class='source-link'>857b807248ecac5367e0c087abe7947d.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-13" data-time-period="afternoon" id="activity-20">
+            <h3 onclick="showMarker(20)">2025 EGGStravaganza at North Austin Y</h3>
+            <p><strong>Date:</strong> 2025-04-13</p>
+            <p><strong>Time:</strong> 12:00 PM - 3:00 PM</p>
+            <p><strong>Location:</strong> North Austin YMCA, 1006 W Rundberg Ln, Austin, TX 78758-6741, United States</p>
+        <p><strong>Description:</strong> Free spring fun for the whole family with egg hunts, games, activities, and local community vendors. Open to all.</p><p><strong>Additional Details:</strong> Hosted by Greater Austin YMCA and North Austin YMCA. Public event. Tickets available at operations.daxko.com.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=North%20Austin%20YMCA%2C%201006%20W%20Rundberg%20Ln%2C%20Austin%2C%20TX%2078758-6741%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/7c44df1f1d0fe54e6019cac77702ef62.JPG' target='_blank' class='source-link'>7c44df1f1d0fe54e6019cac77702ef62.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-12" data-time-period="morning" id="activity-21">
+            <h3 onclick="showMarker(21)">Spring Fling Festival 2025</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 11:00 AM - 3:00 PM</p>
+            <p><strong>Location:</strong> The Mason Homestead, 1101 S Bagdad Rd, Leander, TX 78641, United States</p>
+        <p><strong>Description:</strong> A magical day for all ages featuring bounce houses, soft play area, photo ops with the Easter Bunny, real unicorns, crafts, and bubbles.</p><p><strong>Additional Details:</strong> Entry is FREE. Unicorn rides and photo ops are FREE for the first hour. After 12:00 PM, unicorn rides and photo ops are $10 each.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=The%20Mason%20Homestead%2C%201101%20S%20Bagdad%20Rd%2C%20Leander%2C%20TX%2078641%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/1454a95f39dd67cf2e776b94a2664b40.JPG' target='_blank' class='source-link'>1454a95f39dd67cf2e776b94a2664b40.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-12" data-time-period="morning" id="activity-22">
+            <h3 onclick="showMarker(22)">Community Easter Egg Hunt</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 11:00 AM - 1:00 PM</p>
+            <p><strong>Location:</strong> Faith Lutheran Church, 6600 Woodrow Ave, Austin, TX, United States, 78757</p>
+        <p><strong>Description:</strong> Annual Community Easter egg hunt for all ages.</p><p><strong>Additional Details:</strong> Free, family-friendly event.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Faith%20Lutheran%20Church%2C%206600%20Woodrow%20Ave%2C%20Austin%2C%20TX%2C%20United%20States%2C%2078757" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/d9fa43ad368f0fae58e37a17995f3727.JPG' target='_blank' class='source-link'>d9fa43ad368f0fae58e37a17995f3727.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-12" data-time-period="afternoon" id="activity-23">
+            <h3 onclick="showMarker(23)">Squirrel Fest 2025</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 4:00 PM - 8:00 PM</p>
+            <p><strong>Location:</strong> Pease Park, 1178 Kingsbury St, Austin, TX 78703, United States</p>
+        <p><strong>Description:</strong> Family-friendly event with fun, food, and activities, followed by a movie on the lawn. This year's movie is The Wild Robot.</p><p><strong>Additional Details:</strong> Presented by H-E-B. Learn more at peasepark.org/squirrel-fest</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Pease%20Park%2C%201178%20Kingsbury%20St%2C%20Austin%2C%20TX%2078703%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/b012542435841ac16741d1c37b183398.JPG' target='_blank' class='source-link'>b012542435841ac16741d1c37b183398.JPG</a></small></p>
+        </div>
+        
+        <div class="activity" data-date="2025-04-12" data-time-period="afternoon" id="activity-24">
+            <h3 onclick="showMarker(24)">Books and Bees Festival</h3>
+            <p><strong>Date:</strong> 2025-04-12</p>
+            <p><strong>Time:</strong> 1:00 PM - 4:00 PM</p>
+            <p><strong>Location:</strong> 4000 Galleria Pkwy, Bee Cave, TX, United States, Texas 78738</p>
+        <p><strong>Description:</strong> Fourth annual award-winning book and nature celebration with sixteen authors for kids, teens, and adults, nature education, crafts, and live music.</p><p><strong>Additional Details:</strong> Books available for purchase from Barnes & Noble. Free parking. Event hosted by City of Bee Cave and Bee Cave Public Library. Headline sponsor is Keystone Bank. Live music from 4-5 PM.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=4000%20Galleria%20Pkwy%2C%20Bee%20Cave%2C%20TX%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+            <p><small>Source: <a href='../input/7d53d39d4b7b6242e833abe924b5567f.JPG' target='_blank' class='source-link'>7d53d39d4b7b6242e833abe924b5567f.JPG</a></small></p>
+        </div>
+        
+            </div>
+        </div>
+
+        <script>
+        // Global variables
+        let map;
+        let markers = [];
+        let activitiesData = [];
+        let infowindow;
+        
+        function initMap() {
+            // Create map
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: {lat: 0, lng: 0},  // Will be auto-centered based on markers
+                mapTypeControl: true,
+                streetViewControl: true,
+                fullscreenControl: true
+            });
+            
+            const bounds = new google.maps.LatLngBounds();
+            const geocoder = new google.maps.Geocoder();
+            infowindow = new google.maps.InfoWindow();
+            
+            // Define marker data
+            activitiesData = [
+    
+                {
+                    address: "Christian Life Austin, 4700 West Gate Blvd, Austin, TX 78745",
+                    name: "Spring Fest",
+                    date: "2025-04-12",
+                    time: "10:00 AM - 1:00 PM",
+                    description: "Join Christian Life Austin for a family-friendly event featuring a glow-in-the-dark Easter Egg Hunt, face painting, carnival rides, and more.",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-0",
+                    content: `<h3>Spring Fest</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
+                            <p><strong>Location:</strong> Christian Life Austin, 4700 West Gate Blvd, Austin, TX 78745</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Christian%20Life%20Austin%2C%204700%20West%20Gate%20Blvd%2C%20Austin%2C%20TX%2078745" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Old Settlers Park, 3300 E. Palm Valley Blvd., Round Rock, TX",
+                    name: "Flashlight Egg Hunt",
+                    date: "2025-04-17",
+                    time: "6:00 PM - 10:00 PM",
+                    description: "Nighttime hunt with flashlight, followed by a movie. Pre-registration required.",
+                    timePeriod: "evening",
+                    color: "#34A853",
+                    activityId: "activity-1",
+                    content: `<h3>Flashlight Egg Hunt</h3>
+                            <p><strong>Date:</strong> 2025-04-17</p>
+                            <p><strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+                            <p><strong>Location:</strong> Old Settlers Park, 3300 E. Palm Valley Blvd., Round Rock, TX</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Old%20Settlers%20Park%2C%203300%20E.%20Palm%20Valley%20Blvd.%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "The Fellowship Church, 3379 Gattis School Rd, Round Rock, TX",
+                    name: "Eggstravaganza",
+                    date: "2025-04-12",
+                    time: "10:00 AM",
+                    description: "FREE EVENT with epic egg hunt with prizes, yard games, crafts, bouncy houses, and Easter fun for all!",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-2",
+                    content: `<h3>Eggstravaganza</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 10:00 AM</p>
+                            <p><strong>Location:</strong> The Fellowship Church, 3379 Gattis School Rd, Round Rock, TX</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=The%20Fellowship%20Church%2C%203379%20Gattis%20School%20Rd%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "St. Philip's UMC, 16321 Great Oaks Dr, Round Rock, TX 78681, United States",
+                    name: "Easter Fest",
+                    date: "2025-04-13",
+                    time: "12:30 PM - 2:30 PM",
+                    description: "A community event featuring an egg hunt, bounce house, and food.",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-3",
+                    content: `<h3>Easter Fest</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 12:30 PM - 2:30 PM</p>
+                            <p><strong>Location:</strong> St. Philip's UMC, 16321 Great Oaks Dr, Round Rock, TX 78681, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=St.%20Philip%27s%20UMC%2C%2016321%20Great%20Oaks%20Dr%2C%20Round%20Rock%2C%20TX%2078681%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "King of Kings Lutheran Church, 17000 Smyers Ln, Round Rock, TX 78681, United States",
+                    name: "Easter EGGstravaganza!",
+                    date: "2025-04-13",
+                    time: "11:30 AM - 1:30 PM",
+                    description: "Free family Easter event for all ages with Easter egg hunts, games, crafts, prizes, photos with the Easter Bunny, live music, and more.",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-4",
+                    content: `<h3>Easter EGGstravaganza!</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 11:30 AM - 1:30 PM</p>
+                            <p><strong>Location:</strong> King of Kings Lutheran Church, 17000 Smyers Ln, Round Rock, TX 78681, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=King%20of%20Kings%20Lutheran%20Church%2C%2017000%20Smyers%20Ln%2C%20Round%20Rock%2C%20TX%2078681%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Hillcrest Church, 3838 Steck Avenue, Austin, TX 78717",
+                    name: "Palm Sunday Egg Hunt",
+                    date: "2025-04-13",
+                    time: "1:00 PM - 2:30 PM",
+                    description: "Egg hunt for preschoolers and K-5th graders with bounce houses, popcorn, and live music.",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-5",
+                    content: `<h3>Palm Sunday Egg Hunt</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 1:00 PM - 2:30 PM</p>
+                            <p><strong>Location:</strong> Hillcrest Church, 3838 Steck Avenue, Austin, TX 78717</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Hillcrest%20Church%2C%203838%20Steck%20Avenue%2C%20Austin%2C%20TX%2078717" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "North Austin YMCA, 11006 W Rundberg Ln, Austin, TX",
+                    name: "2025 EGgstravaganza",
+                    date: "2025-04-12",
+                    time: "12 PM - 3 PM",
+                    description: "None",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-6",
+                    content: `<h3>2025 EGgstravaganza</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 12 PM - 3 PM</p>
+                            <p><strong>Location:</strong> North Austin YMCA, 11006 W Rundberg Ln, Austin, TX</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=North%20Austin%20YMCA%2C%2011006%20W%20Rundberg%20Ln%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Hallow Park, 8600 O'Connor Dr, Round Rock, TX",
+                    name: "Brushy Creek Egg Hunt",
+                    date: "2025-04-12",
+                    time: "10 AM - 12 PM",
+                    description: "None",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-7",
+                    content: `<h3>Brushy Creek Egg Hunt</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 10 AM - 12 PM</p>
+                            <p><strong>Location:</strong> Cat Hallow Park, 8600 O'Connor Dr, Round Rock, TX</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Hallow%20Park%2C%208600%20O%27Connor%20Dr%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Pikopye's Town, 1607 Ranch Rd 620 N #100, Lakeway, TX",
+                    name: "Egg Hunt & Easter Mini's",
+                    date: "2025-04-13",
+                    time: "4 PM",
+                    description: "None",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-8",
+                    content: `<h3>Egg Hunt & Easter Mini's</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 4 PM</p>
+                            <p><strong>Location:</strong> Pikopye's Town, 1607 Ranch Rd 620 N #100, Lakeway, TX</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Pikopye%27s%20Town%2C%201607%20Ranch%20Rd%20620%20N%20%23100%2C%20Lakeway%2C%20TX" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Adam Orgain Park, Brushy Creek Amphitheater, 1001 County Road 137, Hutto, TX 78634-2204, United States",
+                    name: "Egg Hunt",
+                    date: "2025-04-20",
+                    time: "2:00 PM - 3:00 PM",
+                    description: "Free kids' egg hunt for children 12 and under with 50,000 eggs to collect.",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-9",
+                    content: `<h3>Egg Hunt</h3>
+                            <p><strong>Date:</strong> 2025-04-20</p>
+                            <p><strong>Time:</strong> 2:00 PM - 3:00 PM</p>
+                            <p><strong>Location:</strong> Adam Orgain Park, Brushy Creek Amphitheater, 1001 County Road 137, Hutto, TX 78634-2204, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Adam%20Orgain%20Park%2C%20Brushy%20Creek%20Amphitheater%2C%201001%20County%20Road%20137%2C%20Hutto%2C%20TX%2078634-2204%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Umlauf Sculpture Garden & Museum, 605 Azie Morton RD Austin",
+                    name: "April Family Day: Heart of the Garden",
+                    date: "2025-04-13",
+                    time: "11:00 AM - 4:00 PM",
+                    description: "A serene and joyful atmosphere with activities such as caricatures, community partners, crafts, storytime, sculpture searches, and garden tours.",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-10",
+                    content: `<h3>April Family Day: Heart of the Garden</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 11:00 AM - 4:00 PM</p>
+                            <p><strong>Location:</strong> Umlauf Sculpture Garden & Museum, 605 Azie Morton RD Austin, TX 78704</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Umlauf%20Sculpture%20Garden%20%26%20Museum%2C%20605%20Azie%20Morton%20RD%20Austin" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Reach Church, 636 W Front St, Hutto, TX 78634, United States",
+                    name: "Free Egg Hunt at Reach Church",
+                    date: "2025-04-13",
+                    time: "12:30 PM - 2:00 PM",
+                    description: "Free Easter Egg Hunt for kids ages 1-11, divided into age groups 5 & under and 6-11 years old.",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-11",
+                    content: `<h3>Free Egg Hunt at Reach Church</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 12:30 PM - 2:00 PM</p>
+                            <p><strong>Location:</strong> Reach Church, 636 W Front St, Hutto, TX 78634, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Reach%20Church%2C%20636%20W%20Front%20St%2C%20Hutto%2C%20TX%2078634%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Life Church, 1393 E Woodview Dr, Leander, TX, United States, Texas 78641",
+                    name: "Easter Jam!",
+                    date: "2025-04-13",
+                    time: "3:00 PM - 4:00 PM",
+                    description: "Fun, free event geared toward kids birth through 5th grade. Includes Easter discussions, activities, and an egg hunt.",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-12",
+                    content: `<h3>Easter Jam!</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 3:00 PM - 4:00 PM</p>
+                            <p><strong>Location:</strong> Life Church, 1393 E Woodview Dr, Leander, TX, United States, Texas 78641</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Life%20Church%2C%201393%20E%20Woodview%20Dr%2C%20Leander%2C%20TX%2C%20United%20States%2C%20Texas%2078641" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Boles Family Sports Complex West, 1500 North Mays Street, Round Rock, TX 78664, United States",
+                    name: "Healthy Kids Day and Business Fair",
+                    date: "2025-04-12",
+                    time: "11:00 AM - 2:30 PM",
+                    description: "Annual CHASCO Family YMCA Healthy Kids Day and Esteam Academy Children's Business Fair with activities like face painting, bouncy houses, soccer shootouts, and over 100 Children's Business Booths.",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-13",
+                    content: `<h3>Healthy Kids Day and Business Fair</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 11:00 AM - 2:30 PM</p>
+                            <p><strong>Location:</strong> Boles Family Sports Complex West, 1500 North Mays Street, Round Rock, TX 78664, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Boles%20Family%20Sports%20Complex%20West%2C%201500%20North%20Mays%20Street%2C%20Round%20Rock%2C%20TX%2078664%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "The American Legion, George Johns Post 447, 1000 N Georgetown St, Round Rock, TX 78664-4462, United States",
+                    name: "OP Vets Easter Celebration",
+                    date: "2025-04-13",
+                    time: "12:00 PM",
+                    description: "Crawfish! Easter Egg Hunt for the kids at 2:00 PM! Bouncy house! Live music!",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-14",
+                    content: `<h3>OP Vets Easter Celebration</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 12:00 PM</p>
+                            <p><strong>Location:</strong> The American Legion, George Johns Post 447, 1000 N Georgetown St, Round Rock, TX 78664-4462, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=The%20American%20Legion%2C%20George%20Johns%20Post%20447%2C%201000%20N%20Georgetown%20St%2C%20Round%20Rock%2C%20TX%2078664-4462%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "The Fellowship Church, 3379 Gattis School Rd, Round Rock, TX 78664",
+                    name: "EGGSTRAVAGANZA - FREE Event",
+                    date: "2025-04-12",
+                    time: "10:00 AM",
+                    description: "Epic egg hunt for kids up to 12 years old with 50 amazing prizes, including Kalahari park passes, yard game area, crafts, and bouncy houses.",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-15",
+                    content: `<h3>EGGSTRAVAGANZA - FREE Event</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 10:00 AM</p>
+                            <p><strong>Location:</strong> The Fellowship Church, 3379 Gattis School Rd, Round Rock, TX 78664</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=The%20Fellowship%20Church%2C%203379%20Gattis%20School%20Rd%2C%20Round%20Rock%2C%20TX%2078664" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "600 W New Hope Dr, Cedar Park, TX, United States, Texas 78613",
+                    name: "Spring Community Festival",
+                    date: "2025-04-13",
+                    time: "10:00 AM - 1:00 PM",
+                    description: "Join us for a day of fun, faith, and fellowship! Enjoy food, inflatables, games, crafts, and more!",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-16",
+                    content: `<h3>Spring Community Festival</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
+                            <p><strong>Location:</strong> 600 W New Hope Dr, Cedar Park, TX, United States, Texas 78613</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=600%20W%20New%20Hope%20Dr%2C%20Cedar%20Park%2C%20TX%2C%20United%20States%2C%20Texas%2078613" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "400 E Main St, Round Rock, TX 78664, United States",
+                    name: "Hometown's 3rd Annual Easter Eggstravaganza",
+                    date: "2025-04-13",
+                    time: "10:00 AM - 10:45 AM",
+                    description: "Celebrate with us at our 3rd Annual Hometown Eggstravaganza. Egg hunts at 10:00 AM for ages 3 and under, and 10:45 AM for ages 4 and up.",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-17",
+                    content: `<h3>Hometown's 3rd Annual Easter Eggstravaganza</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 10:00 AM - 10:45 AM</p>
+                            <p><strong>Location:</strong> 400 E Main St, Round Rock, TX 78664, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=400%20E%20Main%20St%2C%20Round%20Rock%2C%20TX%2078664%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Rockbridge Church, 2001 West New Hope Drive, Cedar Park, TX, United States, Texas 78613",
+                    name: "Spring Fling and Artisan's Market",
+                    date: "2025-04-13",
+                    time: "10:00 AM - 2:00 PM",
+                    description: "Spring Fling with Tiny Tails Petting Zoo, bounce house, carnival games, and Easter Egg Hunts. Age ranges for egg hunts: 3 and under, 4-7 years old, 8-12 years old. Easter Bunny available for photo ops.",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-18",
+                    content: `<h3>Spring Fling and Artisan's Market</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+                            <p><strong>Location:</strong> Rockbridge Church, 2001 West New Hope Drive, Cedar Park, TX, United States, Texas 78613</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Rockbridge%20Church%2C%202001%20West%20New%20Hope%20Drive%2C%20Cedar%20Park%2C%20TX%2C%20United%20States%2C%20Texas%2078613" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Chick-fil-A Great Oaks, 113 Deer Ridge Dr, Round Rock, TX",
+                    name: "Bunny Hop Bash",
+                    date: "2025-04-20",
+                    time: "3:00 PM - 5:00 PM",
+                    description: "Easter celebration featuring the Easter Bunny, face painting, cookie decorating, spring arts & crafts, Chick-fil-A cow, and music.",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-19",
+                    content: `<h3>Bunny Hop Bash</h3>
+                            <p><strong>Date:</strong> 2025-04-20</p>
+                            <p><strong>Time:</strong> 3:00 PM - 5:00 PM</p>
+                            <p><strong>Location:</strong> Chick-fil-A Great Oaks, 113 Deer Ridge Dr, Round Rock, TX</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Chick-fil-A%20Great%20Oaks%2C%20113%20Deer%20Ridge%20Dr%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "North Austin YMCA, 1006 W Rundberg Ln, Austin, TX 78758-6741, United States",
+                    name: "2025 EGGStravaganza at North Austin Y",
+                    date: "2025-04-13",
+                    time: "12:00 PM - 3:00 PM",
+                    description: "Free spring fun for the whole family with egg hunts, games, activities, and local community vendors. Open to all.",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-20",
+                    content: `<h3>2025 EGGStravaganza at North Austin Y</h3>
+                            <p><strong>Date:</strong> 2025-04-13</p>
+                            <p><strong>Time:</strong> 12:00 PM - 3:00 PM</p>
+                            <p><strong>Location:</strong> North Austin YMCA, 1006 W Rundberg Ln, Austin, TX 78758-6741, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=North%20Austin%20YMCA%2C%201006%20W%20Rundberg%20Ln%2C%20Austin%2C%20TX%2078758-6741%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "The Mason Homestead, 1101 S Bagdad Rd, Leander, TX 78641, United States",
+                    name: "Spring Fling Festival 2025",
+                    date: "2025-04-12",
+                    time: "11:00 AM - 3:00 PM",
+                    description: "A magical day for all ages featuring bounce houses, soft play area, photo ops with the Easter Bunny, real unicorns, crafts, and bubbles.",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-21",
+                    content: `<h3>Spring Fling Festival 2025</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 11:00 AM - 3:00 PM</p>
+                            <p><strong>Location:</strong> The Mason Homestead, 1101 S Bagdad Rd, Leander, TX 78641, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=The%20Mason%20Homestead%2C%201101%20S%20Bagdad%20Rd%2C%20Leander%2C%20TX%2078641%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Faith Lutheran Church, 6600 Woodrow Ave, Austin, TX, United States, 78757",
+                    name: "Community Easter Egg Hunt",
+                    date: "2025-04-12",
+                    time: "11:00 AM - 1:00 PM",
+                    description: "Annual Community Easter egg hunt for all ages.",
+                    timePeriod: "morning",
+                    color: "#4285F4",
+                    activityId: "activity-22",
+                    content: `<h3>Community Easter Egg Hunt</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 11:00 AM - 1:00 PM</p>
+                            <p><strong>Location:</strong> Faith Lutheran Church, 6600 Woodrow Ave, Austin, TX, United States, 78757</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Faith%20Lutheran%20Church%2C%206600%20Woodrow%20Ave%2C%20Austin%2C%20TX%2C%20United%20States%2C%2078757" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "Pease Park, 1178 Kingsbury St, Austin, TX 78703, United States",
+                    name: "Squirrel Fest 2025",
+                    date: "2025-04-12",
+                    time: "4:00 PM - 8:00 PM",
+                    description: "Family-friendly event with fun, food, and activities, followed by a movie on the lawn. This year's movie is The Wild Robot.",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-23",
+                    content: `<h3>Squirrel Fest 2025</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 4:00 PM - 8:00 PM</p>
+                            <p><strong>Location:</strong> Pease Park, 1178 Kingsbury St, Austin, TX 78703, United States</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=Pease%20Park%2C%201178%20Kingsbury%20St%2C%20Austin%2C%20TX%2078703%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                },
+        
+                {
+                    address: "4000 Galleria Pkwy, Bee Cave, TX, United States",
+                    name: "Books and Bees Festival",
+                    date: "2025-04-12",
+                    time: "1:00 PM - 4:00 PM",
+                    description: "Fourth annual award-winning book and nature celebration with sixteen authors for kids, teens, and adults, nature education, crafts, and live music.",
+                    timePeriod: "afternoon",
+                    color: "#FBBC05",
+                    activityId: "activity-24",
+                    content: `<h3>Books and Bees Festival</h3>
+                            <p><strong>Date:</strong> 2025-04-12</p>
+                            <p><strong>Time:</strong> 1:00 PM - 4:00 PM</p>
+                            <p><strong>Location:</strong> 4000 Galleria Pkwy, Bee Cave, TX, United States, Texas 78738</p>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=4000%20Galleria%20Pkwy%2C%20Bee%20Cave%2C%20TX%2C%20United%20States" target="_blank">View on Google Maps</a></p>`
+                }
+        
+            ];
+            
+            // Geocode and add markers
+            activitiesData.forEach((markerData, index) => {
+                geocodeAndAddMarker(geocoder, map, bounds, infowindow, markerData, index);
+            });
+        }
+        
+        function geocodeAndAddMarker(geocoder, map, bounds, infowindow, markerData, index) {
+            geocoder.geocode({ 'address': markerData.address }, function(results, status) {
+                if (status === 'OK') {
+                    // Create custom marker with color from markerData
+                    const markerIcon = {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        fillColor: markerData.color,
+                        fillOpacity: 0.9,
+                        strokeWeight: 2,
+                        strokeColor: "#ffffff",
+                        scale: 10
+                    };
+                    
+                    const marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location,
+                        title: markerData.name,
+                        animation: google.maps.Animation.DROP,
+                        icon: markerIcon,
+                        label: {
+                            text: (index + 1).toString(),
+                            color: 'white',
+                            fontSize: '10px'
+                        }
+                    });
+                    
+                    // Store additional data with marker
+                    marker.date = markerData.date;
+                    marker.timePeriod = markerData.timePeriod;
+                    marker.activityId = markerData.activityId;
+                    
+                    markers.push(marker);
+                    bounds.extend(results[0].geometry.location);
+                    
+                    // Fit map to all markers
+                    map.fitBounds(bounds);
+                    
+                    // Add info window
+                    marker.addListener('click', function() {
+                        infowindow.setContent(markerData.content);
+                        infowindow.open(map, marker);
+                        
+                        // Scroll the activity into view in the sidebar
+                        const activityElement = document.getElementById(marker.activityId);
+                        if (activityElement) {
+                            activityElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            highlightActivity(marker.activityId);
+                        }
+                    });
+                    
+                    // Adjust zoom if necessary
+                    if (markers.length === activitiesData.length) {
+                        google.maps.event.addListenerOnce(map, 'bounds_changed', function() {
+                            if (map.getZoom() > 15) {
+                                map.setZoom(15);
+                            }
+                        });
+                    }
+                } else {
+                    console.error('Geocode was not successful for the following reason: ' + status);
+                }
+            });
+        }
+        
+        // Function to show marker when title is clicked
+        function showMarker(index) {
+            if (markers[index]) {
+                // Center the map on the marker
+                map.setCenter(markers[index].getPosition());
+                map.setZoom(14);
+                
+                // Open the info window
+                infowindow.setContent(activitiesData[index].content);
+                infowindow.open(map, markers[index]);
+                
+                // Highlight the activity
+                highlightActivity(markers[index].activityId);
+            }
+        }
+        
+        // Highlight the clicked activity
+        function highlightActivity(activityId) {
+            // Remove highlight from all activities
+            document.querySelectorAll('.activity').forEach(el => {
+                el.style.backgroundColor = '';
+                el.style.borderColor = '#ddd';
+            });
+            
+            // Add highlight to selected activity
+            const activityElement = document.getElementById(activityId);
+            if (activityElement) {
+                activityElement.style.backgroundColor = '#f7f7f7';
+                activityElement.style.borderColor = '#0078d7';
+            }
+        }
+        
+        function filterMarkers() {
+            const dateFilter = document.getElementById('date-filter').value;
+            const timeFilters = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+            
+            // Filter markers on map
+            markers.forEach(marker => {
+                const dateMatches = dateFilter === 'all' || marker.date === dateFilter;
+                const timeMatches = timeFilters.includes(marker.timePeriod);
+                marker.setVisible(dateMatches && timeMatches);
+            });
+            
+            // Filter activities in sidebar
+            const activityElements = document.querySelectorAll('.activity');
+            activityElements.forEach(el => {
+                const activityDate = el.getAttribute('data-date');
+                const activityTime = el.getAttribute('data-time-period');
+                
+                const dateMatches = dateFilter === 'all' || activityDate === dateFilter;
+                const timeMatches = timeFilters.includes(activityTime);
+                
+                el.style.display = (dateMatches && timeMatches) ? 'block' : 'none';
+            });
+        }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiQ7gjfd811DlAPZKQ9dKaW9zkQ3_QQdA&callback=initMap">
+        </script>
+    </body>
+    </html>
+    
