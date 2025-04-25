@@ -71,13 +71,14 @@
   },
   {
     "activity_name": "Leander Egg Hunt",
-    "location": "Glad Tidings Church - Leander",
+    "location": "Glad Tidings Church - Leander, Austin, TX 78701",
     "date": "2025-04-19",
     "time": "10:00 AM - 2:00 PM",
     "description": "Egg hunt event with 30,000 eggs, games, prizes, inflatables, and face painting.",
     "additional_details": "Free admission. Multiple food trucks available. Register at gladtidings.org/leanderegghunt.",
     "raw_datetime": "Saturday, April 19th from 10am-2pm",
-    "source_file": "979962944a4e1de435ecb9d300097a1a.JPG"
+    "source_file": "979962944a4e1de435ecb9d300097a1a.JPG",
+    "location_uncertain": true
   },
   {
     "activity_name": "Easter Eggstravaganza",
@@ -151,13 +152,14 @@
   },
   {
     "activity_name": "Live at Lakeline",
-    "location": "Lakeline Park, 1510 Alexis Drive, Cedar Park, TX 7861",
+    "location": "Lakeline Park, 1510 Alexis Drive, Cedar Park, TX 7861 78701",
     "date": "2025-04-18",
     "time": "7:00 PM",
     "description": null,
     "additional_details": null,
     "raw_datetime": "4/18 7pm",
-    "source_file": "07ca6f8fa7c0aa1b93b05c733f200e31.JPG"
+    "source_file": "07ca6f8fa7c0aa1b93b05c733f200e31.JPG",
+    "location_uncertain": true
   },
   {
     "activity_name": "Easter Festival",
@@ -208,5 +210,296 @@
     "additional_details": "Arrive before 10:20 AM. The Epic Hunt is from 10:30-11:30 AM. Registration link: http://bit.ly/42fvo3K",
     "raw_datetime": "Saturday at 10 AM \u2013 1 PM",
     "source_file": "15729028ce5905bf4651325ebf55070a.JPG"
+  },
+  {
+    "activity_name": "19th Annual Smithville Fly-In 2025",
+    "location": "Hwy 71 at Hwy 95, Smithville, TX 78957",
+    "date": "2025-05-10",
+    "time": "10:00 AM - 2:00 PM",
+    "description": "Family fun with static displays, food, free admission and parking, helicopter rides, and candy drop for kids.",
+    "additional_details": "Hosted by Friends of 84R. Tickets for helicopter rides available at fly-in. For more information, contact 979-224-6304 or sandy.airport84r@gmail.com.",
+    "raw_datetime": "May 10, 2025, 10AM - 2PM",
+    "source_file": "9c82ea7dca6ee4754e8d5f8cdfe0e5a0.JPG"
+  },
+  {
+    "activity_name": "Pioneer Festival",
+    "location": "Katherine Fleischer Park, Wells Branch, Texas, 78728",
+    "date": "2025-04-26",
+    "time": "12:00 PM - 5:00 PM",
+    "description": "Take a trip to the past and experience real frontier life at the beloved Pioneer Festival. Suitable for all ages.",
+    "additional_details": "Event will be canceled in case of inclement weather. Contact for volunteering or demonstration participation.",
+    "raw_datetime": "04/26/2025 12:00 pm - 5:00 pm",
+    "source_file": "00c2242089ee8f840de1503868f4d5aa.JPG"
+  },
+  {
+    "activity_name": "ABC Kite Festival",
+    "location": "Austin Nature & Science Center, 301 Nature Center Drive, Austin, TX 78746",
+    "date": "2025-04-05",
+    "time": "10:00 AM - 5:00 PM",
+    "description": "Find us at ABC Kite Festival and see what tiny creatures make their home inside a Big Dead Log.",
+    "additional_details": null,
+    "raw_datetime": "4/5, 10:00 a.m. - 5:00 p.m.",
+    "source_file": "65b44b8868bd46a87798222498255602.JPG"
+  },
+  {
+    "activity_name": "Creek Creatures at ANSC",
+    "location": "Austin Nature & Science Center, 301 Nature Center Drive, Austin, TX 78746",
+    "date": "2025-04-12",
+    "time": "10:00 AM - 2:30 PM",
+    "description": "Learn about some of our smallest pond residents as you get a closer look.",
+    "additional_details": null,
+    "raw_datetime": "4/12, 10:00 a.m. - 2:30 p.m.",
+    "source_file": "65b44b8868bd46a87798222498255602.JPG"
+  },
+  {
+    "activity_name": "Austin Nature Day at ANSC",
+    "location": "Austin Nature & Science Center, 301 Nature Center Drive, Austin, TX 78746",
+    "date": "2025-04-19",
+    "time": "10:00 AM - 2:00 PM",
+    "description": "Join us for this special event celebrating Austin nature with activities from Park Rangers, Capital Area Master Naturalists, American Chemical Society, and more!",
+    "additional_details": null,
+    "raw_datetime": "4/19, 10:00 a.m. - 2:00 p.m.",
+    "source_file": "65b44b8868bd46a87798222498255602.JPG"
+  },
+  {
+    "activity_name": "Meet the Animals at ANSC",
+    "location": "Austin Nature & Science Center, 301 Nature Center Drive, Austin, TX 78746",
+    "date": "2025-04-26",
+    "time": "10:00 AM - 2:30 PM",
+    "description": "Meet some of ANSC\u2019s resident animals up close and personal.",
+    "additional_details": null,
+    "raw_datetime": "4/26, 10:00 a.m. - 2:30 p.m.",
+    "source_file": "65b44b8868bd46a87798222498255602.JPG"
+  },
+  {
+    "activity_name": "Earth Day Jubilee",
+    "location": "International Shores, 1915 S Lakeshore Blvd, Austin, TX, 78741",
+    "date": "2025-04-26",
+    "time": "10:00 AM - 1:00 PM",
+    "description": "Event featuring live music, food trucks, Austin flea market, nature activities, and goats.",
+    "additional_details": "On the Butler Hike-and-Bike Trail.",
+    "raw_datetime": "April 26, 2025, 10AM to 1PM",
+    "source_file": "1f05df80fbcb6a8aab56acadd004e5b3.JPG"
+  },
+  {
+    "activity_name": "LAGO FEST",
+    "location": "Bar K Park, 6608 Bar K Clubhouse Ct, Leander, TX 78645, United States",
+    "date": "2025-04-26",
+    "time": "1:00 PM - 8:00 PM",
+    "description": "Various activities including Train Rides, Face Painting, Petting Zoo, and more.",
+    "additional_details": "Band Lineup: 1:30 - 2:30 American Gypsy Band, 3:30 - 4:30 Departure ATX, 6:00 - 7:30 Roger Creager",
+    "raw_datetime": "Saturday at 1 PM \u2013 8 PM",
+    "source_file": "3668ba94b01bf3cfe4e5b1e0047410f1.JPG"
+  },
+  {
+    "activity_name": "The Spin Doctors",
+    "location": "Pflugerville, TX, ZIP 78701",
+    "date": null,
+    "time": "4:15 PM - 5:45 PM",
+    "description": "Grammy Award-nominated band Spin Doctors will headline this year\u2019s Slice of Pflugerville.",
+    "additional_details": "Visit our website for more information! pflugervilletx.gov/563",
+    "raw_datetime": "4:15 - 5:45 pm | The Spin Doctors",
+    "source_file": "b2e8fc7e01768a7692db458f5f0a994d.JPG",
+    "location_uncertain": true
+  },
+  {
+    "activity_name": "Honey Made",
+    "location": "Pflugerville, TX, ZIP 78701",
+    "date": null,
+    "time": "1:30 PM - 3:30 PM",
+    "description": null,
+    "additional_details": null,
+    "raw_datetime": "1:30 - 3:30 pm | Honey Made",
+    "source_file": "b2e8fc7e01768a7692db458f5f0a994d.JPG"
+  },
+  {
+    "activity_name": "Spicy Loops",
+    "location": "Pflugerville, TX, ZIP 78701",
+    "date": null,
+    "time": "11:00 AM - 12:30 PM",
+    "description": null,
+    "additional_details": null,
+    "raw_datetime": "11 am - 12:30 pm | Spicy Loops",
+    "source_file": "b2e8fc7e01768a7692db458f5f0a994d.JPG"
+  },
+  {
+    "activity_name": "African Dance Experience",
+    "location": "Pflugerville, TX, ZIP 78701",
+    "date": null,
+    "time": "12:00 PM - 12:30 PM",
+    "description": null,
+    "additional_details": null,
+    "raw_datetime": "12 - 12:30 pm | African Dance Experience",
+    "source_file": "b2e8fc7e01768a7692db458f5f0a994d.JPG"
+  },
+  {
+    "activity_name": "Round Rock Ballet Folklorico & Copperfield Ballet Folklorico",
+    "location": "Pflugerville, TX, ZIP 78701",
+    "date": null,
+    "time": "1:00 PM - 1:30 PM",
+    "description": null,
+    "additional_details": null,
+    "raw_datetime": "1 - 1:30 pm | Round Rock Ballet Folklorico & Copperfield Ballet Folklorico",
+    "source_file": "b2e8fc7e01768a7692db458f5f0a994d.JPG"
+  },
+  {
+    "activity_name": "Texas Dragon/Lion Dance Team",
+    "location": "Pflugerville, TX, ZIP 78701",
+    "date": null,
+    "time": "2:00 PM - 2:30 PM",
+    "description": null,
+    "additional_details": null,
+    "raw_datetime": "2 - 2:30 pm | Texas Dragon/Lion Dance Team",
+    "source_file": "b2e8fc7e01768a7692db458f5f0a994d.JPG"
+  },
+  {
+    "activity_name": "Austin Powwow",
+    "location": "Pflugerville, TX, ZIP 78701",
+    "date": null,
+    "time": "3:00 PM - 3:30 PM",
+    "description": null,
+    "additional_details": null,
+    "raw_datetime": "3 - 3:30 pm | Austin Powwow",
+    "source_file": "b2e8fc7e01768a7692db458f5f0a994d.JPG"
+  },
+  {
+    "activity_name": "Slice of Pflugerville featuring The Spin Doctors",
+    "location": "Downtown Pflugerville, 304 1st St S, Pflugerville, TX 78660-3969, United States",
+    "date": "2025-04-26",
+    "time": "11:00 AM - 6:00 PM",
+    "description": "Festival with live music performances by local artists, food from a variety of cuisines, and craft vendors. Headlined by the Grammy Award-nominated band Spin Doctors.",
+    "additional_details": "Tickets available at pflugervilletx.gov. Public event.",
+    "raw_datetime": "Saturday at 11 AM \u2013 6 PM",
+    "source_file": "37ae1b40e26227e7016d907d3089e389.JPG"
+  },
+  {
+    "activity_name": "Petting Zoo Tea Party",
+    "location": "1908 Main Street, Liberty Hill, TX 78642",
+    "date": "2025-04-26",
+    "time": "10:00 AM - 12:00 PM",
+    "description": "Annual Petting Zoo event for families and friends to celebrate the Spring Season.",
+    "additional_details": "Visit michellespatisserie.com to reserve your spot.",
+    "raw_datetime": "Sat. April 26th, 10AM-12PM",
+    "source_file": "395af529398c700ea09d036ec6f4797f.JPG"
+  },
+  {
+    "activity_name": "Pioneer Festival",
+    "location": "Wells Branch Homestead, 2104 Klattenhoff Dr, Austin, TX 78728, United States",
+    "date": "2025-04-26",
+    "time": "12:00 PM - 5:00 PM",
+    "description": "Experience real frontier life and Texas culture with demonstrations, crafts, and activities. Suitable for all ages.",
+    "additional_details": "Event will be canceled in case of inclement weather. Volunteer opportunities available.",
+    "raw_datetime": "Saturday at 12 PM \u2013 5 PM",
+    "source_file": "819973d49f22bce113976846d02b2e9f.JPG"
+  },
+  {
+    "activity_name": "Hartman Foundation Concerts in the Park - Free",
+    "location": "Austin Symphony At The Long Center, 701 W Riverside Dr, Austin, TX 78704",
+    "date": "2025-04-27",
+    "time": "7:30 PM - 8:30 PM",
+    "description": "Annual Hartman Foundation Concerts in the Park. All ages, including pets, enjoy relaxing Sunday evenings with different musical ensembles.",
+    "additional_details": "Public event by Austin Symphony Orchestra. Free ensemble concerts on Sunday evenings.",
+    "raw_datetime": "Sunday, Apr 27 at 7:30 PM",
+    "source_file": "5ed03beddacd5293809b0ffc18c8d87e.JPG"
+  },
+  {
+    "activity_name": "Hartman Foundation Concerts in the Park - Free",
+    "location": "Austin Symphony At The Long Center, 701 W Riverside Dr, Austin, TX 78704",
+    "date": "2025-05-04",
+    "time": "7:30 PM - 8:30 PM",
+    "description": "Annual Hartman Foundation Concerts in the Park. All ages, including pets, enjoy relaxing Sunday evenings with different musical ensembles.",
+    "additional_details": "Public event by Austin Symphony Orchestra. Free ensemble concerts on Sunday evenings.",
+    "raw_datetime": "Sunday, May 4 at 7:30 PM",
+    "source_file": "5ed03beddacd5293809b0ffc18c8d87e.JPG"
+  },
+  {
+    "activity_name": "Hartman Foundation Concerts in the Park - Free",
+    "location": "Austin Symphony At The Long Center, 701 W Riverside Dr, Austin, TX 78704",
+    "date": "2025-05-11",
+    "time": "7:30 PM - 8:30 PM",
+    "description": "Annual Hartman Foundation Concerts in the Park. All ages, including pets, enjoy relaxing Sunday evenings with different musical ensembles.",
+    "additional_details": "Public event by Austin Symphony Orchestra. Free ensemble concerts on Sunday evenings.",
+    "raw_datetime": "Sunday, May 11 at 7:30 PM",
+    "source_file": "5ed03beddacd5293809b0ffc18c8d87e.JPG"
+  },
+  {
+    "activity_name": "Kids Day at Fire House",
+    "location": "Sam Bass Fire Department Station #2, 16248 Great Oaks Dr, Round Rock, TX, 78681",
+    "date": "2025-04-26",
+    "time": "10:00 AM - 1:00 PM",
+    "description": "Water Safety, Bouncy House, Food Trucks, Station Tours, Truck Tours, Vendors",
+    "additional_details": null,
+    "raw_datetime": "Sat. Apr 26th 2025, 10:00 AM \u2013 1:00 PM",
+    "source_file": "3037b5cb9d6dec4fde78fd3a29892d0f.JPG"
+  },
+  {
+    "activity_name": "Children's Day",
+    "location": "Adam Orgain Park, 1001 County Road 137, Hutto, TX 78634-2204, United States",
+    "date": "2025-04-26",
+    "time": "5:30 PM - 7:30 PM",
+    "description": "Free Children's Day Celebration / D\u00eda del Ni\u00f1o with storytime, a bouncy house, free games, prizes, a demonstration by the Hutto PD K9 Rocket, a petting zoo, face painting, crafts, music, food, and more.",
+    "additional_details": "Open to the public. In light of Child Abuse Prevention & Awareness Month.",
+    "raw_datetime": "April 26 from 5:30p to 7:30p",
+    "source_file": "5ab1e1482263e217abef1ec47135f806.JPG"
+  },
+  {
+    "activity_name": "Friends & Family Spring Festival",
+    "location": "Austin Public Library, Twin Oaks Branch, 1800 S. 5th Street, Austin, TX, 78704",
+    "date": "2025-04-26",
+    "time": "2:00 PM - 4:00 PM",
+    "description": "Live music, games, prizes, and food. Free event.",
+    "additional_details": "Visit LWVAustin.org for more information.",
+    "raw_datetime": "Saturday, April 26, 2pm - 4pm",
+    "source_file": "9b39b0a1c5d1dcf0daa6c8ef135b01e8.JPG"
+  },
+  {
+    "activity_name": "Cedar Park Earth Day Celebration",
+    "location": "1510 Alexis Dr, Cedar Park, TX 78613, United States",
+    "date": "2025-04-27",
+    "time": "1:00 PM - 4:00 PM",
+    "description": "Second annual Earth Day Celebration with Soul Shine Rhythm Experience Drum Circle, Earth Day Market, and local food vendors.",
+    "additional_details": "Hosted by Parks and Trails Foundation of Cedar Park (PTFCP). Public event. Enjoy sustainable and nature-related products.",
+    "raw_datetime": "Sunday at 1 PM \u2013 4 PM",
+    "source_file": "e5ae517cb4ef91483b38fabfe5bb42a4.JPG"
+  },
+  {
+    "activity_name": "Community Art Sunday",
+    "location": "1023 Springdale Rd Bldg 3, Austin, TX 78721",
+    "date": "2025-04-27",
+    "time": "2:00 PM - 5:00 PM",
+    "description": "10th anniversary of a free family fun event with live music, theater & dance performances, hands-on art activities, interactive nature & sustainability activities, scavenger hunt, puppet parade & storytime, all-abilities indoor playground, free food & drinks.",
+    "additional_details": null,
+    "raw_datetime": "Sunday, April 27th 2\u20135 PM",
+    "source_file": "adf25a92e3c44110dd2ba423dc56682f.JPG"
+  },
+  {
+    "activity_name": "Make a Bird Feeder",
+    "location": "Lakeline Park, Cedar Park, TX, 78613",
+    "date": "2025-04-27",
+    "time": "1:00 PM - 4:00 PM",
+    "description": "Join Girl Scouts of Central Texas Troop 2228 to make a bird feeder to take home.",
+    "additional_details": "Free event.",
+    "raw_datetime": "April 27, 1 - 4 PM",
+    "source_file": "b44de6e2dce3a4c3823f6e0430bdb4d4.JPG"
+  },
+  {
+    "activity_name": "Earth Day Celebration",
+    "location": "Lakeline Park, Cedar Park, TX, 78613",
+    "date": "2025-04-27",
+    "time": "1:00 PM - 4:00 PM",
+    "description": "2025 Earth Day Celebration, a free, family-friendly event filled with interactive booths, hands-on activities, food, music, and more.",
+    "additional_details": "Free event.",
+    "raw_datetime": "April 27, 1 - 4 PM",
+    "source_file": "b44de6e2dce3a4c3823f6e0430bdb4d4.JPG"
+  },
+  {
+    "activity_name": "Sunset Valley Artfest",
+    "location": "Toney Burger Center, North East Corner Lot, Sunset Valley, TX, 78745",
+    "date": "2025-04-26",
+    "time": "10:00 AM - 5:00 PM",
+    "description": "Art festival featuring over 100 local artisans, live music stages, and activities for all ages.",
+    "additional_details": "Free admission and parking. Includes food trucks and bike zoo.",
+    "raw_datetime": "Saturday, April 26, 10 AM - 5 PM",
+    "source_file": "c22abad65e8157cd669ed77a2c20edf1.JPG"
   }
 ]
