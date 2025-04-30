@@ -536,6 +536,54 @@
 
 ---
 
+## Eeyore’s Birthday Party@ Pease Park
+
+**Date:** 2025-04-26
+
+**Time:** 11:00 - 15:00
+
+**Location:** Pease Park, Austin, TX 78701
+
+**Description:** Eeyore’s Birthday Party at Pease Park is an annual celebration featuring kids' activities from 11 am to 3 pm. It's a taste of Austin’s keep-it-weird vibe.
+
+**Additional Details:** Age: Kids. Cost: FREE. Registration: No registration required
+
+**Source:** Unknown
+
+---
+
+## Earth Day Jubilee@ Ann and Roy Butler Hike and Bike Trail
+
+**Date:** 2025-04-26
+
+**Time:** 10:00 AM - 1:00 PM
+
+**Location:** Ann and Roy Butler Hike and Bike Trail, Austin, TX 78704
+
+**Description:** Celebrate Earth Day with a family-friendly event featuring live music, interactive eco-friendly activities, a maker’s market, baby goats, and more. Enjoy compostable giveaways, activities for kids, and a pizza truck from Carter Brothers Pizza.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided
+
+**Source:** Unknown
+
+---
+
+## Earth Day Jubilee@ Ann and Roy Butler Hike and Bike Trail
+
+**Date:** 2025-04-26
+
+**Time:** 10:00 AM - 1:00 PM
+
+**Location:** Ann and Roy Butler Hike and Bike Trail, Austin, TX 78704
+
+**Description:** Celebrate Earth Day with a free, family-friendly event that includes live music, interactive eco-friendly activities, a maker’s market, baby goats, compostable giveaways, and more.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided.
+
+**Source:** Unknown
+
+---
+
 ## Hartman Foundation Concerts in the Park - Free
 
 **Date:** 2025-04-27
@@ -614,6 +662,22 @@
 
 ---
 
+## H-E-B Free Fourth Sunday@ Texas Science and Natural History Museum
+
+**Date:** 2025-04-27
+
+**Time:** 13:00 - 17:00
+
+**Location:** Texas Science and Natural History Museum, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Explore the Texas Natural History Museum with free admission on the fourth Sunday of each month, featuring exhibits from Earth's birth to dinosaurs and today's wild Texas critters.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration required. Last admission is at 4:30 pm.
+
+**Source:** Unknown
+
+---
+
 ## Hartman Foundation Concerts in the Park - Free
 
 **Date:** 2025-05-04
@@ -662,77 +726,36 @@
 
 ---
 
-## The Spin Doctors
+## KUTX Parking Lot Movie Night@ Lou’s
 
-**Time:** 4:15 PM - 5:45 PM
+**Date:** 2025-06-23
 
-**Location:** Pflugerville, TX, ZIP 78701 *(ZIP code estimated)*
+**Time:** DJs begin at 7 pm, movie starts at sundown
 
-**Description:** Grammy Award-nominated band Spin Doctors will headline this year’s Slice of Pflugerville.
+**Location:** Lou's, Austin, TX 78701 *(ZIP code estimated)*
 
-**Additional Details:** Visit our website for more information! pflugervilletx.gov/563
+**Description:** It's a family-friendly movie night at Lou’s this Friday night featuring The Parent Trap (1998 version) on a 25′ screen, with KUTX DJing with vinyl spins, surprise pop-ups, a parking lot bar, and plenty of Lou’s food and drink.
 
-**Source:** b2e8fc7e01768a7692db458f5f0a994d.JPG
+**Additional Details:** Age: Family-friendly. Cost: FREE. Registration: Check out the upcoming lineup and get all the info here.
 
----
-
-## Honey Made
-
-**Time:** 1:30 PM - 3:30 PM
-
-**Location:** Pflugerville, TX, ZIP 78701
-
-**Source:** b2e8fc7e01768a7692db458f5f0a994d.JPG
+**Source:** Unknown
 
 ---
 
-## Spicy Loops
+## KUTX Parking Lot Movie Night@ Lou’s
 
-**Time:** 11:00 AM - 12:30 PM
+**Date:** 2025-06-23
 
-**Location:** Pflugerville, TX, ZIP 78701
+**Time:** DJ: 7:00 PM, Movie: Sundown
 
-**Source:** b2e8fc7e01768a7692db458f5f0a994d.JPG
+**Location:** Lou's, Austin, TX 78701
 
----
+**Description:** Join for a family-friendly movie night at Lou's with The Parent Trap (1998 version) on a 25' screen. Enjoy KUTX DJing with vinyl spins, surprise pop-ups, a parking lot bar, and Lou’s food and drink.
 
-## African Dance Experience
+**Additional Details:** Age: Family-friendly. Cost: Free. Registration: Check out the upcoming lineup and get all the info on the event website.
 
-**Time:** 12:00 PM - 12:30 PM
-
-**Location:** Pflugerville, TX, ZIP 78701
-
-**Source:** b2e8fc7e01768a7692db458f5f0a994d.JPG
+**Source:** Unknown
 
 ---
 
-## Round Rock Ballet Folklorico & Copperfield Ballet Folklorico
-
-**Time:** 1:00 PM - 1:30 PM
-
-**Location:** Pflugerville, TX, ZIP 78701
-
-**Source:** b2e8fc7e01768a7692db458f5f0a994d.JPG
-
----
-
-## Texas Dragon/Lion Dance Team
-
-**Time:** 2:00 PM - 2:30 PM
-
-**Location:** Pflugerville, TX, ZIP 78701
-
-**Source:** b2e8fc7e01768a7692db458f5f0a994d.JPG
-
----
-
-## Austin Powwow
-
-**Time:** 3:00 PM - 3:30 PM
-
-**Location:** Pflugerville, TX, ZIP 78701
-
-**Source:** b2e8fc7e01768a7692db458f5f0a994d.JPG
-
----
 

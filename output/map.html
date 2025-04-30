@@ -1,0 +1,291 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Kids Activities Map</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5831K3EZ32"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5831K3EZ32');
+        </script>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+            #map { height: 500px; width: 100%; }
+            .controls { background: #fff; padding: 10px; border-bottom: 1px solid #ddd; }
+            .sidebar { padding: 20px; height: 500px; overflow-y: auto; }
+            .activity { margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+            .activity h3 { margin-top: 0; color: #333; cursor: pointer; }
+            .activity h3:hover { color: #0078d7; text-decoration: underline; }
+            .activity p { margin: 5px 0; }
+            .activity a { color: #0078d7; text-decoration: none; }
+            .activity a:hover { text-decoration: underline; }
+            .filter-group { margin-right: 20px; display: inline-block; }
+            .filter-title { font-weight: bold; margin-bottom: 5px; }
+            .time-indicator { display: inline-block; width: 15px; height: 15px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+            .morning { background-color: #4285F4; }   /* Blue */
+            .afternoon { background-color: #FBBC05; } /* Yellow */
+            .evening { background-color: #34A853; }   /* Green */
+            .unknown { background-color: #EA4335; }   /* Red */
+            .legend { margin-top: 10px; }
+            .legend-item { margin-right: 15px; display: inline-block; }
+            .source-link { color: #666; text-decoration: none; }
+            .source-link:hover { text-decoration: underline; }
+            .activity-number {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: #666;
+                color: white;
+                font-weight: bold;
+                margin-right: 10px;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="controls">
+            <div class="filter-group">
+                <div class="filter-title">Filter by Date:</div>
+                <select id="date-filter" onchange="filterMarkers()">
+                    <option value="all">All Dates</option>
+                        <option value="2025-05-04">2025-05-04</option>
+                    <option value="2025-05-10">2025-05-10</option>
+                    <option value="2025-05-11">2025-05-11</option>
+                    <option value="2025-06-23">2025-06-23</option>
+
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <div class="filter-title">Filter by Time of Day:</div>
+                <label><input type="checkbox" value="morning" checked onchange="filterMarkers()"> <span class="time-indicator morning"></span>Morning</label>
+                <label><input type="checkbox" value="afternoon" checked onchange="filterMarkers()"> <span class="time-indicator afternoon"></span>Afternoon</label>
+                <label><input type="checkbox" value="evening" checked onchange="filterMarkers()"> <span class="time-indicator evening"></span>Evening</label>
+                <label><input type="checkbox" value="unknown" checked onchange="filterMarkers()"> <span class="time-indicator unknown"></span>Unknown Time</label>
+            </div>
+            
+            <div class="legend">
+                <span class="legend-title">Legend: </span>
+                <span class="legend-item"><span class="time-indicator morning"></span>Morning (12 AM - 11:59 AM)</span>
+                <span class="legend-item"><span class="time-indicator afternoon"></span>Afternoon (12 PM - 4:59 PM)</span>
+                <span class="legend-item"><span class="time-indicator evening"></span>Evening (5 PM - 11:59 PM)</span>
+                <span class="legend-item"><span class="time-indicator unknown"></span>Unknown Time</span>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+        
+        <div class="sidebar">
+            <h2>Kids Activities</h2>
+            <div id="activities-list">
+    
+        <div class="activity" data-date="2025-05-10" data-time-period="morning" id="activity-0">
+            <h3 onclick="showMarker(0)"><span class="activity-number" style="background-color: #4285F4;">1</span>19th Annual Smithville Fly-In 2025</h3>
+            <p><strong>Date:</strong> 2025-05-10</p>
+            <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+            <p><strong>Location:</strong> Hwy 71 at Hwy 95, Smithville, TX 78957</p>
+                    <p><strong>Description:</strong> Family fun with static displays, food, free admission and parking, helicopter rides, and candy drop for kids.</p>
+            <p><strong>Additional Details:</strong> Hosted by Friends of 84R. Tickets for helicopter rides available at fly-in. For more information, contact 979-224-6304 or sandy.airport84r@gmail.com.</p>
+            <p><strong>Source:</strong> 9c82ea7dca6ee4754e8d5f8cdfe0e5a0.JPG</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Hwy%2095%2C%20Smithville%2C%20TX%2078957" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity" data-date="2025-05-04" data-time-period="evening" id="activity-1">
+            <h3 onclick="showMarker(1)"><span class="activity-number" style="background-color: #34A853;">2</span>Hartman Foundation Concerts in the Park - Free</h3>
+            <p><strong>Date:</strong> 2025-05-04</p>
+            <p><strong>Time:</strong> 7:30 PM - 8:30 PM</p>
+            <p><strong>Location:</strong> Austin Symphony At The Long Center, 701 W Riverside Dr, Austin, TX 78704</p>
+                    <p><strong>Description:</strong> Annual Hartman Foundation Concerts in the Park. All ages, including pets, enjoy relaxing Sunday evenings with different musical ensembles.</p>
+            <p><strong>Additional Details:</strong> Public event by Austin Symphony Orchestra. Free ensemble concerts on Sunday evenings.</p>
+            <p><strong>Source:</strong> 5ed03beddacd5293809b0ffc18c8d87e.JPG</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Austin%20Symphony%20At%20The%20Long%20Center%2C%20701%20W%20Riverside%20Dr%2C%20Austin%2C%20TX%2078704" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity" data-date="2025-05-11" data-time-period="evening" id="activity-2">
+            <h3 onclick="showMarker(2)"><span class="activity-number" style="background-color: #34A853;">3</span>Hartman Foundation Concerts in the Park - Free</h3>
+            <p><strong>Date:</strong> 2025-05-11</p>
+            <p><strong>Time:</strong> 7:30 PM - 8:30 PM</p>
+            <p><strong>Location:</strong> Austin Symphony At The Long Center, 701 W Riverside Dr, Austin, TX 78704</p>
+                    <p><strong>Description:</strong> Annual Hartman Foundation Concerts in the Park. All ages, including pets, enjoy relaxing Sunday evenings with different musical ensembles.</p>
+            <p><strong>Additional Details:</strong> Public event by Austin Symphony Orchestra. Free ensemble concerts on Sunday evenings.</p>
+            <p><strong>Source:</strong> 5ed03beddacd5293809b0ffc18c8d87e.JPG</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Austin%20Symphony%20At%20The%20Long%20Center%2C%20701%20W%20Riverside%20Dr%2C%20Austin%2C%20TX%2078704" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity" data-date="2025-06-23" data-time-period="evening" id="activity-3">
+            <h3 onclick="showMarker(3)"><span class="activity-number" style="background-color: #34A853;">4</span>KUTX Parking Lot Movie Night@ Lou’s</h3>
+            <p><strong>Date:</strong> 2025-06-23</p>
+            <p><strong>Time:</strong> DJs begin at 7 pm, movie starts at sundown</p>
+            <p><strong>Location:</strong> Lou's, Austin, TX 78701</p>
+                    <p><strong>Description:</strong> It's a family-friendly movie night at Lou’s this Friday night featuring The Parent Trap (1998 version) on a 25′ screen, with KUTX DJing with vinyl spins, surprise pop-ups, a parking lot bar, and plenty of Lou’s food and drink.</p>
+            <p><strong>Additional Details:</strong> Age: Family-friendly. Cost: FREE. Registration: Check out the upcoming lineup and get all the info here.</p>
+            <p><strong>Source:</strong> <a href='https://family.do512.com/events/2025/4/25/parking-lot-movie-night-feat-dj-taylor-wallace-the-parent-trap-1998-tickets' target='_blank' class='source-link'>https://family.do512.com/events/2025/4/25/parking-lot-movie-night-feat-dj-taylor-wallace-the-parent-trap-1998-tickets</a></p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Lou%27s%2C%20Austin" target="_blank">View on Google Maps</a></p>
+        </div>
+
+            </div>
+        </div>
+        
+        <script>
+            // Store markers globally for reference
+            let markers = [];
+            let map;
+            
+            function initMap() {
+                // Initialize map
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 10,
+                    center: {lat: 30.2672, lng: -97.7431}, // Austin, TX coordinates
+                    mapTypeId: 'roadmap'
+                });
+                
+                // Add markers to the map
+                const bounds = new google.maps.LatLngBounds();
+                const geocoder = new google.maps.Geocoder();
+                
+                // Loop through marker data and create map markers
+                const markerData = [
+    
+                    {
+                        name: "19th Annual Smithville Fly-In 2025",
+                        address: "Hwy 95, Smithville, TX 78957",
+                        date: "2025-05-10",
+                        timePeriod: "morning",
+                        color: "#4285F4"
+                    },
+        
+                    {
+                        name: "Hartman Foundation Concerts in the Park - Free",
+                        address: "Austin Symphony At The Long Center, 701 W Riverside Dr, Austin, TX 78704",
+                        date: "2025-05-04",
+                        timePeriod: "evening",
+                        color: "#34A853"
+                    },
+        
+                    {
+                        name: "Hartman Foundation Concerts in the Park - Free",
+                        address: "Austin Symphony At The Long Center, 701 W Riverside Dr, Austin, TX 78704",
+                        date: "2025-05-11",
+                        timePeriod: "evening",
+                        color: "#34A853"
+                    },
+        
+                    {
+                        name: "KUTX Parking Lot Movie Night@ Lou’s",
+                        address: "Lou's, Austin",
+                        date: "2025-06-23",
+                        timePeriod: "evening",
+                        color: "#34A853"
+                    }
+        
+                ];
+                
+                // Geocode addresses and add markers
+                markerData.forEach((data, index) => {
+                    geocoder.geocode({ 'address': data.address }, function(results, status) {
+                        if (status === 'OK') {
+                            // Create a custom marker with a number label inside a colored circle
+                            const markerNumber = index + 1;
+                            const marker = new google.maps.Marker({
+                                map: map,
+                                position: results[0].geometry.location,
+                                title: data.name,
+                                label: {
+                                    text: markerNumber.toString(),
+                                    color: 'white',
+                                    fontSize: '12px',
+                                    fontWeight: 'bold'
+                                },
+                                icon: {
+                                    path: google.maps.SymbolPath.CIRCLE,
+                                    fillColor: data.color,
+                                    fillOpacity: 0.8,
+                                    strokeWeight: 1,
+                                    strokeColor: '#333',
+                                    scale: 14
+                                },
+                                optimized: true
+                            });
+                            
+                            // Store additional data with the marker
+                            marker.date = data.date;
+                            marker.timePeriod = data.timePeriod;
+                            
+                            // Add click event to marker
+                            marker.addListener('click', function() {
+                                document.getElementById('activity-' + index).scrollIntoView({behavior: 'smooth', block: 'center'});
+                                // Highlight the activity in the sidebar
+                                const activities = document.querySelectorAll('.activity');
+                                activities.forEach(activity => activity.style.backgroundColor = '');
+                                document.getElementById('activity-' + index).style.backgroundColor = '#f0f0f0';
+                            });
+                            
+                            // Add marker to the global array
+                            markers.push(marker);
+                            
+                            // Extend bounds to include this marker
+                            bounds.extend(results[0].geometry.location);
+                            
+                            // Fit map to bounds if this is the last marker
+                            if (index === markerData.length - 1) {
+                                map.fitBounds(bounds);
+                            }
+                        } else {
+                            console.error('Geocode failed for address:', data.address, status);
+                        }
+                    });
+                });
+                
+                // Initial filtering
+                filterMarkers();
+            }
+            
+            function showMarker(index) {
+                // Make sure markers array is populated
+                if (markers.length > index) {
+                    // Center map on marker
+                    map.setCenter(markers[index].getPosition());
+                    map.setZoom(15); // Zoom in a bit
+                    
+                    // Highlight the activity in the sidebar
+                    const activities = document.querySelectorAll('.activity');
+                    activities.forEach(activity => activity.style.backgroundColor = '');
+                    document.getElementById('activity-' + index).style.backgroundColor = '#f0f0f0';
+                }
+            }
+            
+            function filterMarkers() {
+                const dateFilter = document.getElementById('date-filter').value;
+                const timeFilters = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+                    .map(input => input.value)
+                    .filter(value => ['morning', 'afternoon', 'evening', 'unknown'].includes(value));
+                
+                // Filter markers based on selected criteria
+                markers.forEach((marker, index) => {
+                    const dateMatch = dateFilter === 'all' || marker.date === dateFilter;
+                    const timeMatch = timeFilters.includes(marker.timePeriod);
+                    
+                    // Show/hide based on filter criteria
+                    marker.setVisible(dateMatch && timeMatch);
+                    
+                    // Update sidebar activity visibility
+                    const activityElement = document.getElementById('activity-' + index);
+                    if (activityElement) {
+                        activityElement.style.display = dateMatch && timeMatch ? 'block' : 'none';
+                    }
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiQ7gjfd811DlAPZKQ9dKaW9zkQ3_QQdA&callback=initMap"></script>
+    </body>
+    </html>
+    

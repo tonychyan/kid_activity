@@ -1,6 +1,7 @@
 # Web scraping
 playwright>=1.41.0
 html5lib>=1.1
+beautifulsoup4>=4.9.3
 
 # Search engine
 duckduckgo-search>=7.2.1

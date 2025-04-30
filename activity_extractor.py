@@ -3,7 +3,7 @@
 Kids Activity Locator - Image Extractor
 
 This script extracts kids' activity information (location, date, time) from screenshots
-and organizes it in a markdown file ordered by time.
+and organizes it in a markdown file ordered by time. It can also scrape activities from do512family.com.
 """
 
 import os
@@ -17,10 +17,14 @@ import sys
 from typing import Dict, List, Tuple, Optional
 import json
 import calendar
+import asyncio
 
 # Add the current directory to the path to ensure we can import from tools
 sys.path.append('.')
 from tools.llm_api import query_llm
+
+# Import do512_scraper functionality
+import do512_scraper
 
 # Define constants
 INPUT_DIR = "input"
@@ -696,14 +700,78 @@ def sanitize_dates(activities: List[Dict]) -> List[Dict]:
                     continue
     return activities
 
+def mark_archived_activities(activities: List[Dict]) -> List[Dict]:
+    """
+    Mark activities as archived based on date criteria.
+    Activities with dates that have already passed will be marked as archived.
+    
+    Args:
+        activities (List[Dict]): List of activity dictionaries
+        
+    Returns:
+        List[Dict]: Updated list with archive flags
+    """
+    print("Marking archived activities...")
+    today = datetime.now().date()
+    marked_count = 0
+    
+    for activity in activities:
+        # Skip invalid activities
+        if not isinstance(activity, dict):
+            continue
+            
+        # Initialize is_archived flag if it doesn't exist
+        if 'is_archived' not in activity:
+            activity['is_archived'] = False
+            
+        date_str = activity.get('date')
+        if date_str:
+            try:
+                # Parse the date string to a date object
+                activity_date = datetime.strptime(date_str, "%Y-%m-%d").date()
+                
+                # Mark as archived if the date has passed
+                if activity_date < today:
+                    activity['is_archived'] = True
+                    marked_count += 1
+                    
+            except (ValueError, TypeError) as e:
+                print(f"Error parsing date {date_str} for archiving: {e}")
+                # In case of error, don't change archive status
+    
+    print(f"Marked {marked_count} activities as archived (past date)")
+    return activities
+
+async def fetch_web_activities() -> List[Dict]:
+    """
+    Fetch activities from web sources (do512family.com).
+    
+    Returns:
+        List[Dict]: List of activities fetched from web sources
+    """
+    print("\nFetching activities from web sources...")
+    
+    try:
+        # Call the do512 scraper to get activities
+        web_activities = await do512_scraper.fetch_weekend_activities()
+        print(f"Fetched {len(web_activities)} activities from web sources")
+        return web_activities
+    except Exception as e:
+        print(f"Error fetching web activities: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+
 def main():
     # Set up command line arguments
-    parser = argparse.ArgumentParser(description='Extract activity information from images')
+    parser = argparse.ArgumentParser(description='Extract activity information from images and web sources')
     parser.add_argument('--new-only', action='store_true', help='Process only new images from input/new directory')
     parser.add_argument('--sanitize-only', action='store_true', help='Only sanitize dates in existing activities without processing images')
     parser.add_argument('--validate-locations', action='store_true', help='Only validate and enhance locations in existing activities without processing images')
     parser.add_argument('--save-raw', action='store_true', help='Save raw LLM responses to files for later reprocessing')
     parser.add_argument('--from-raw', action='store_true', help='Process activities from saved raw responses instead of calling the LLM')
+    parser.add_argument('--skip-web', action='store_true', help='Skip fetching activities from web sources')
+    parser.add_argument('--archive-past', action='store_true', help='Mark past activities as archived')
     args = parser.parse_args()
     
     # Load existing activities if available
@@ -719,12 +787,14 @@ def main():
             print(f"Error loading existing activities from {json_output_path}. Starting with empty list.")
     
     # If sanitize-only mode or validate-locations mode, skip image processing
-    if args.sanitize_only or args.validate_locations:
+    if args.sanitize_only or args.validate_locations or args.archive_past:
         all_activities = existing_activities
         if args.sanitize_only:
             print(f"Sanitize-only mode: Sanitizing dates in {len(all_activities)} existing activities...")
         elif args.validate_locations:
             print(f"Validate-locations mode: Validating locations in {len(all_activities)} existing activities...")
+        elif args.archive_past:
+            print(f"Archive-past mode: Marking past activities as archived in {len(all_activities)} existing activities...")
     elif args.from_raw:
         # Process saved raw responses
         raw_dir = os.path.join(OUTPUT_DIR, "raw_responses")
@@ -824,8 +894,12 @@ def main():
         if not image_files:
             print(f"No image files found in {process_dir} directory.")
             if not existing_activities:
-                return
-            print("Will proceed with sanitizing existing activities only.")
+                if args.skip_web:
+                    print("No existing activities and skipping web sources. Nothing to do.")
+                    return
+                print("Will proceed with fetching web activities only.")
+            else:
+                print("Will proceed with existing activities only.")
             all_activities = existing_activities
         else:
             print(f"Found {len(image_files)} image files to process.")
@@ -849,6 +923,29 @@ def main():
             # Combine existing and new activities
             all_activities = existing_activities + new_activities
     
+    # Fetch activities from web sources if not skipped
+    if not args.skip_web and not args.sanitize_only and not args.validate_locations:
+        web_activities = asyncio.run(fetch_web_activities())
+        
+        # Add web activities to all activities
+        if web_activities:
+            # Create a set of existing activity signatures for deduplication
+            existing_signatures = {
+                f"{a.get('activity_name')}_{a.get('date')}_{a.get('location')}"
+                for a in all_activities
+            }
+            
+            # Add new web activities if they don't already exist
+            new_web_activities = []
+            for activity in web_activities:
+                signature = f"{activity.get('activity_name')}_{activity.get('date')}_{activity.get('location')}"
+                if signature not in existing_signatures:
+                    new_web_activities.append(activity)
+                    existing_signatures.add(signature)
+            
+            print(f"Adding {len(new_web_activities)} new web activities")
+            all_activities.extend(new_web_activities)
+    
     # Sanitize dates - make sure no dates are in the past and handle weekday mentions
     if not args.validate_locations:  # Skip date sanitization if only validating locations
         try:
@@ -864,6 +961,20 @@ def main():
                 json.dump(all_activities, f, indent=2)
             print(f"Saved current state to {error_file}")
             return
+    
+    # Mark past activities as archived
+    try:
+        all_activities = mark_archived_activities(all_activities)
+    except Exception as e:
+        print(f"Error during archiving: {e}")
+        import traceback
+        traceback.print_exc()
+        # Save the current state in case of error
+        error_file = os.path.join(OUTPUT_DIR, "archiving_error.json")
+        with open(error_file, "w") as f:
+            json.dump(all_activities, f, indent=2)
+        print(f"Saved current state to {error_file}")
+        # Continue with the process even if archiving fails
     
     # Validate and enhance location data
     try:
@@ -902,13 +1013,15 @@ def main():
         print(f"Date sanitization completed for {len(all_activities)} activities.")
     elif args.validate_locations:
         print(f"Location validation completed for {len(all_activities)} activities.")
+    elif args.archive_past:
+        print(f"Archive marking completed for {len(all_activities)} activities.")
     elif args.from_raw:
         print(f"Processed {len(all_activities)} total activities from raw responses.")
     elif args.new_only:
         print(f"Processed and moved {len(image_files)} new images.")
         print(f"Added {len(new_activities)} new activities to the existing {len(existing_activities)} activities.")
     else:
-        print(f"Extracted {len(all_activities)} total activities from {len(image_files)} images.")
+        print(f"Extracted {len(all_activities)} total activities from {len(image_files)} images and web sources.")
 
 if __name__ == "__main__":
     main() 

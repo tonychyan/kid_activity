@@ -129,6 +129,11 @@ def parse_time_period(time_str: Optional[str]) -> str:
     if not time_str:
         return "unknown"
     
+    # Handle case where time_str is not actually a string
+    if not isinstance(time_str, str):
+        print(f"Warning: Time value is not a string: {time_str}")
+        return "unknown"
+    
     # Try to extract start time
     am_pm_pattern = r'(\d{1,2})(?::(\d{2}))?\s*(am|pm|AM|PM)'
     hours_24_pattern = r'(\d{1,2})(?::(\d{2}))?(?:\s*h)?'
@@ -162,24 +167,39 @@ def parse_time_period(time_str: Optional[str]) -> str:
 def get_unique_dates(activities: List[Dict]) -> List[str]:
     """
     Get a sorted list of unique dates from activities.
+    For dates where all activities are archived, they will be excluded from the list.
     
     Args:
         activities (List[Dict]): List of activity dictionaries
     
     Returns:
-        List[str]: Sorted list of unique date strings
+        List[str]: Sorted list of unique date strings from active activities
     """
-    dates = []
+    # Group activities by date
+    date_groups = {}
     for activity in activities:
         date_str = activity.get('date')
-        if date_str and date_str not in dates:
-            dates.append(date_str)
+        is_archived = activity.get('is_archived', False)
+        
+        if date_str:
+            if date_str not in date_groups:
+                date_groups[date_str] = {'activities': 0, 'archived': 0}
+            
+            date_groups[date_str]['activities'] += 1
+            if is_archived:
+                date_groups[date_str]['archived'] += 1
+    
+    # Keep only dates that have at least one non-archived activity
+    active_dates = []
+    for date_str, stats in date_groups.items():
+        if stats['activities'] > stats['archived']:
+            active_dates.append(date_str)
     
     # Try to sort dates chronologically
     sorted_dates = []
     date_objects = []
     
-    for date_str in dates:
+    for date_str in active_dates:
         date_obj = parse_date(date_str)
         if date_obj:
             date_objects.append((date_str, date_obj))
@@ -189,7 +209,7 @@ def get_unique_dates(activities: List[Dict]) -> List[str]:
     sorted_dates = [date_tuple[0] for date_tuple in date_objects]
     
     # Add any dates that couldn't be parsed at the end
-    for date_str in dates:
+    for date_str in active_dates:
         if date_str not in sorted_dates:
             sorted_dates.append(date_str)
     
@@ -206,10 +226,11 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
     Returns:
         str: HTML content
     """
-    # Filter activities to only include those with locations
+    # Filter activities to only include those with locations and that are not archived
     activities_with_locations = [
         activity for activity in activities 
         if activity.get('location') and extract_address(activity.get('location'))
+        and not activity.get('is_archived', False)  # Only include non-archived activities
     ]
     
     if not activities_with_locations:
@@ -236,7 +257,7 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
         </head>
         <body>
             <h1>No Activities with Locations Found</h1>
-            <p>No activities with valid location information were found in the data.</p>
+            <p>No current activities with valid location information were found in the data.</p>
         </body>
         </html>
         """
@@ -254,6 +275,7 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
         description = activity.get('description', '')
         additional_details = activity.get('additional_details', '')
         source_file = activity.get('source_file', '')
+        source_url = activity.get('source_url', '')
         
         # Parse additional data for filtering
         time_period = parse_time_period(time_str)
@@ -270,6 +292,7 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
             "description": description,
             "additional_details": additional_details,
             "source_file": source_file,
+            "source_url": source_url,
             "time_period": time_period,
             "color": color
         })
@@ -378,6 +401,9 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
                 source_link = f"<a href='{base_url}/{APP_NAME}/{INPUT_DIR}/{marker['source_file']}' target='_blank' class='source-link'>{marker['source_file']}</a>"
             else:
                 source_link = marker['source_file']
+        elif marker['source_url']:
+            # Use source_url for web-scraped activities
+            source_link = f"<a href='{marker['source_url']}' target='_blank' class='source-link'>{marker['source_url']}</a>"
         else:
             source_link = "Unknown"
         
@@ -390,211 +416,155 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
         """
         
         if marker['description']:
-            html += f"<p><strong>Description:</strong> {marker['description']}</p>"
+            html += f"            <p><strong>Description:</strong> {marker['description']}</p>\n"
             
         if marker['additional_details']:
-            html += f"<p><strong>Additional Details:</strong> {marker['additional_details']}</p>"
-        
-        html += f"""
-            <p><a href="{generate_google_maps_url(marker['address'])}" target="_blank">View on Google Maps</a></p>
-            <p><small>Source: {source_link}</small></p>
-        </div>
-        """
+            html += f"            <p><strong>Additional Details:</strong> {marker['additional_details']}</p>\n"
+            
+        html += f"            <p><strong>Source:</strong> {source_link}</p>\n"
+        html += f'            <p><a href="https://www.google.com/maps/search/?api=1&query={quote(marker["address"])}" target="_blank">View on Google Maps</a></p>\n'
+        html += "        </div>\n"
     
-    # Close sidebar and add map script
     html += """
             </div>
         </div>
-
-        <script>
-        // Global variables
-        let map;
-        let markers = [];
-        let activitiesData = [];
-        let infowindow;
         
-        function initMap() {
-            // Create map
-            map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
-                center: {lat: 0, lng: 0},  // Will be auto-centered based on markers
-                mapTypeControl: true,
-                streetViewControl: true,
-                fullscreenControl: true
-            });
+        <script>
+            // Store markers globally for reference
+            let markers = [];
+            let map;
             
-            const bounds = new google.maps.LatLngBounds();
-            const geocoder = new google.maps.Geocoder();
-            infowindow = new google.maps.InfoWindow();
-            
-            // Define marker data
-            activitiesData = [
+            function initMap() {
+                // Initialize map
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 10,
+                    center: {lat: 30.2672, lng: -97.7431}, // Austin, TX coordinates
+                    mapTypeId: 'roadmap'
+                });
+                
+                // Add markers to the map
+                const bounds = new google.maps.LatLngBounds();
+                const geocoder = new google.maps.Geocoder();
+                
+                // Loop through marker data and create map markers
+                const markerData = [
     """
     
-    # Add marker data as JavaScript array
+    # Add marker data as JSON
     for i, marker in enumerate(markers_data):
         html += f"""
-                {{
-                    address: "{marker['address']}",
-                    name: "{marker['name']}",
-                    date: "{marker['date'] or ''}",
-                    time: "{marker['time']}",
-                    description: "{marker['description']}",
-                    timePeriod: "{marker['time_period']}",
-                    color: "{marker['color']}",
-                    activityId: "activity-{i}",
-                    content: `<h3><span style="display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 50%; background-color: {marker['color']}; color: white; font-weight: bold; margin-right: 10px; font-size: 14px;">{i + 1}</span>{marker['name']}</h3>
-                            <p><strong>Date:</strong> {marker['date'] or 'Not specified'}</p>
-                            <p><strong>Time:</strong> {marker['time']}</p>
-                            <p><strong>Location:</strong> {marker['full_location']}</p>
-                            <p><a href="{generate_google_maps_url(marker['address'])}" target="_blank">View on Google Maps</a></p>`
-                }}{"," if i < len(markers_data) - 1 else ""}
+                    {{
+                        name: "{marker['name'].replace('"', '\\"')}",
+                        address: "{marker['address'].replace('"', '\\"')}",
+                        date: "{marker['date'] or ''}",
+                        timePeriod: "{marker['time_period']}",
+                        color: "{marker['color']}"
+                    }}{'' if i == len(markers_data) - 1 else ','}
         """
     
     html += """
-            ];
-            
-            // Geocode and add markers
-            activitiesData.forEach((markerData, index) => {
-                geocodeAndAddMarker(geocoder, map, bounds, infowindow, markerData, index);
-            });
-        }
-        
-        function geocodeAndAddMarker(geocoder, map, bounds, infowindow, markerData, index) {
-            geocoder.geocode({ 'address': markerData.address }, function(results, status) {
-                if (status === 'OK') {
-                    // Create custom marker with color from markerData
-                    const markerIcon = {
-                        path: google.maps.SymbolPath.CIRCLE,
-                        fillColor: markerData.color,
-                        fillOpacity: 0.9,
-                        strokeWeight: 2,
-                        strokeColor: "#ffffff",
-                        scale: 10
-                    };
-                    
-                    const marker = new google.maps.Marker({
-                        map: map,
-                        position: results[0].geometry.location,
-                        title: markerData.name,
-                        animation: google.maps.Animation.DROP,
-                        icon: markerIcon,
-                        label: {
-                            text: (index + 1).toString(),
-                            color: 'white',
-                            fontSize: '10px'
-                        }
-                    });
-                    
-                    // Store additional data with marker
-                    marker.date = markerData.date;
-                    marker.timePeriod = markerData.timePeriod;
-                    marker.activityId = markerData.activityId;
-                    marker.dataIndex = index;  // Store the original index from activitiesData
-                    
-                    markers.push(marker);
-                    bounds.extend(results[0].geometry.location);
-                    
-                    // Fit map to all markers
-                    map.fitBounds(bounds);
-                    
-                    // Add info window
-                    marker.addListener('click', function() {
-                        infowindow.setContent(markerData.content);
-                        infowindow.open(map, marker);
-                        
-                        // Scroll the activity into view in the sidebar
-                        const activityElement = document.getElementById(marker.activityId);
-                        if (activityElement) {
-                            activityElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                            highlightActivity(marker.activityId);
-                        }
-                    });
-                    
-                    // Adjust zoom if necessary
-                    if (markers.length === activitiesData.length) {
-                        google.maps.event.addListenerOnce(map, 'bounds_changed', function() {
-                            if (map.getZoom() > 15) {
-                                map.setZoom(15);
+                ];
+                
+                // Geocode addresses and add markers
+                markerData.forEach((data, index) => {
+                    geocoder.geocode({ 'address': data.address }, function(results, status) {
+                        if (status === 'OK') {
+                            // Create a custom marker with a number label inside a colored circle
+                            const markerNumber = index + 1;
+                            const marker = new google.maps.Marker({
+                                map: map,
+                                position: results[0].geometry.location,
+                                title: data.name,
+                                label: {
+                                    text: markerNumber.toString(),
+                                    color: 'white',
+                                    fontSize: '12px',
+                                    fontWeight: 'bold'
+                                },
+                                icon: {
+                                    path: google.maps.SymbolPath.CIRCLE,
+                                    fillColor: data.color,
+                                    fillOpacity: 0.8,
+                                    strokeWeight: 1,
+                                    strokeColor: '#333',
+                                    scale: 14
+                                },
+                                optimized: true
+                            });
+                            
+                            // Store additional data with the marker
+                            marker.date = data.date;
+                            marker.timePeriod = data.timePeriod;
+                            
+                            // Add click event to marker
+                            marker.addListener('click', function() {
+                                document.getElementById('activity-' + index).scrollIntoView({behavior: 'smooth', block: 'center'});
+                                // Highlight the activity in the sidebar
+                                const activities = document.querySelectorAll('.activity');
+                                activities.forEach(activity => activity.style.backgroundColor = '');
+                                document.getElementById('activity-' + index).style.backgroundColor = '#f0f0f0';
+                            });
+                            
+                            // Add marker to the global array
+                            markers.push(marker);
+                            
+                            // Extend bounds to include this marker
+                            bounds.extend(results[0].geometry.location);
+                            
+                            // Fit map to bounds if this is the last marker
+                            if (index === markerData.length - 1) {
+                                map.fitBounds(bounds);
                             }
-                        });
-                    }
-                } else {
-                    console.error('Geocode was not successful for the following reason: ' + status);
+                        } else {
+                            console.error('Geocode failed for address:', data.address, status);
+                        }
+                    });
+                });
+                
+                // Initial filtering
+                filterMarkers();
+            }
+            
+            function showMarker(index) {
+                // Make sure markers array is populated
+                if (markers.length > index) {
+                    // Center map on marker
+                    map.setCenter(markers[index].getPosition());
+                    map.setZoom(15); // Zoom in a bit
+                    
+                    // Highlight the activity in the sidebar
+                    const activities = document.querySelectorAll('.activity');
+                    activities.forEach(activity => activity.style.backgroundColor = '');
+                    document.getElementById('activity-' + index).style.backgroundColor = '#f0f0f0';
                 }
-            });
-        }
-        
-        // Function to show marker when title is clicked
-        function showMarker(index) {
-            // Find the marker that corresponds to this activity index
-            const marker = markers.find(m => m.dataIndex === index);
-            
-            if (marker) {
-                // Center the map on the marker
-                map.setCenter(marker.getPosition());
-                map.setZoom(14);
-                
-                // Open the info window
-                infowindow.setContent(activitiesData[index].content);
-                infowindow.open(map, marker);
-                
-                // Highlight the activity
-                highlightActivity(marker.activityId);
-            } else {
-                console.error('Marker not found for index:', index);
             }
-        }
-        
-        // Highlight the clicked activity
-        function highlightActivity(activityId) {
-            // Remove highlight from all activities
-            document.querySelectorAll('.activity').forEach(el => {
-                el.style.backgroundColor = '';
-                el.style.borderColor = '#ddd';
-            });
             
-            // Add highlight to selected activity
-            const activityElement = document.getElementById(activityId);
-            if (activityElement) {
-                activityElement.style.backgroundColor = '#f7f7f7';
-                activityElement.style.borderColor = '#0078d7';
+            function filterMarkers() {
+                const dateFilter = document.getElementById('date-filter').value;
+                const timeFilters = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+                    .map(input => input.value)
+                    .filter(value => ['morning', 'afternoon', 'evening', 'unknown'].includes(value));
+                
+                // Filter markers based on selected criteria
+                markers.forEach((marker, index) => {
+                    const dateMatch = dateFilter === 'all' || marker.date === dateFilter;
+                    const timeMatch = timeFilters.includes(marker.timePeriod);
+                    
+                    // Show/hide based on filter criteria
+                    marker.setVisible(dateMatch && timeMatch);
+                    
+                    // Update sidebar activity visibility
+                    const activityElement = document.getElementById('activity-' + index);
+                    if (activityElement) {
+                        activityElement.style.display = dateMatch && timeMatch ? 'block' : 'none';
+                    }
+                });
             }
-        }
-        
-        function filterMarkers() {
-            const dateFilter = document.getElementById('date-filter').value;
-            const timeFilters = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
-            
-            // Filter markers on map
-            markers.forEach(marker => {
-                const dateMatches = dateFilter === 'all' || marker.date === dateFilter;
-                const timeMatches = timeFilters.includes(marker.timePeriod);
-                marker.setVisible(dateMatches && timeMatches);
-            });
-            
-            // Filter activities in sidebar
-            const activityElements = document.querySelectorAll('.activity');
-            activityElements.forEach(el => {
-                const activityDate = el.getAttribute('data-date');
-                const activityTime = el.getAttribute('data-time-period');
-                
-                const dateMatches = dateFilter === 'all' || activityDate === dateFilter;
-                const timeMatches = timeFilters.includes(activityTime);
-                
-                el.style.display = (dateMatches && timeMatches) ? 'block' : 'none';
-            });
-        }
         </script>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key={GOOGLE_API_KEY}&callback=initMap">
-        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY&callback=initMap"></script>
     </body>
     </html>
-    """
-    
-    # Replace the API key placeholder with the actual key
-    html = html.replace("{GOOGLE_API_KEY}", GOOGLE_API_KEY)
+    """.replace('GOOGLE_API_KEY', GOOGLE_API_KEY)
     
     return html
 

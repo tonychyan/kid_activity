@@ -1,0 +1,50 @@
+[
+  {
+    "activity_name": "KUTX Parking Lot Movie Night@ Lou\u2019s",
+    "location": "Lou's, Austin, TX",
+    "date": "2023-06-23",
+    "time": "DJs begin at 7 pm, movie starts at sundown",
+    "description": "It's a family-friendly movie night at Lou\u2019s this Friday night featuring The Parent Trap (1998 version) on a 25\u2032 screen, with KUTX DJing with vinyl spins, surprise pop-ups, a parking lot bar, and plenty of Lou\u2019s food and drink.",
+    "additional_details": "Age: Family-friendly. Cost: FREE. Registration: Check out the upcoming lineup and get all the info here.",
+    "raw_datetime": "Friday, June 25 | 7 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/4/25/parking-lot-movie-night-feat-dj-taylor-wallace-the-parent-trap-1998-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend"
+  },
+  {
+    "activity_name": "Earth Day Jubilee@ Ann and Roy Butler Hike and Bike Trail",
+    "location": "Ann and Roy Butler Hike and Bike Trail, Austin, TX 78704",
+    "date": "2025-04-26",
+    "time": "10:00 AM - 1:00 PM",
+    "description": "Celebrate Earth Day with a family-friendly event featuring live music, interactive eco-friendly activities, a maker\u2019s market, baby goats, and more. Enjoy compostable giveaways, activities for kids, and a pizza truck from Carter Brothers Pizza.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration details provided",
+    "raw_datetime": "Saturday, April 26 | 10 am \u2013 1 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/4/26/earth-day-jubilee-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend"
+  },
+  {
+    "activity_name": "Eeyore\u2019s Birthday Party@ Pease Park",
+    "location": "Pease Park, Austin, TX 78701",
+    "date": "2025-04-26",
+    "time": "11:00 - 15:00",
+    "description": "Eeyore\u2019s Birthday Party at Pease Park is an annual celebration featuring kids' activities from 11 am to 3 pm. It's a taste of Austin\u2019s keep-it-weird vibe.",
+    "additional_details": "Age: Kids. Cost: FREE. Registration: No registration required",
+    "raw_datetime": "Saturday, April 26 | Kids hours are 11 am \u2013 3 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/4/26/eeyores-birthday-party-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend"
+  },
+  {
+    "activity_name": "H-E-B Free Fourth Sunday@ Texas Science and Natural History Museum",
+    "location": "Texas Science and Natural History Museum, Austin, TX",
+    "date": "2025-04-27",
+    "time": "13:00 - 17:00",
+    "description": "Explore the Texas Natural History Museum with free admission. Discover the history from Earth's formation to dinosaurs and modern Texas wildlife. Touch real meteorites and see the massive pterosaur and T. Rex.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration required. Last admission at 4:30 pm.",
+    "raw_datetime": "Sunday, April 27 | 1 pm \u2013 5 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/4/27/h-e-b-free-fourth-sunday-1739901264",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend"
+  }
+]
