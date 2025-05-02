@@ -568,22 +568,6 @@
 
 ---
 
-## Earth Day Jubilee@ Ann and Roy Butler Hike and Bike Trail
-
-**Date:** 2025-04-26
-
-**Time:** 10:00 AM - 1:00 PM
-
-**Location:** Ann and Roy Butler Hike and Bike Trail, Austin, TX 78704
-
-**Description:** Celebrate Earth Day with a free, family-friendly event that includes live music, interactive eco-friendly activities, a maker’s market, baby goats, compostable giveaways, and more.
-
-**Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided.
-
-**Source:** Unknown
-
----
-
 ## Hartman Foundation Concerts in the Park - Free
 
 **Date:** 2025-04-27
@@ -678,6 +662,212 @@
 
 ---
 
+## Love Our City Fest
+
+**Date:** 2025-05-03
+
+**Time:** 12:00 PM
+
+**Location:** Mueller Lake Park, 1825 Simond Ave, Austin, TX 78723-4603, United States
+
+**Description:** A day of community, faith, and fun with games and activities for all ages, live music, and food options.
+
+**Additional Details:** Event by Austin Disaster Relief Network. Public event, tickets available at loveourcityfest.org.
+
+**Source:** 9282f5458ea0e1aee28210825e12be84.JPG
+
+---
+
+## Violet Crown Festival
+
+**Date:** 2025-05-03
+
+**Time:** 10:30 AM
+
+**Location:** Brentwood Neighborhood Park, Brentwood Park and Pool, Arroyo Seco, Austin, TX 78757, United States
+
+**Description:** The 2025 Violet Crown Festival features local artisans, community booths, kids' activities, live music, jugglers, and a diverse food court.
+
+**Additional Details:** This free, family-friendly event benefits the Brentwood Park Playground Improvement Project. New for 2025: BBQ Beef Brisket Cook-Off.
+
+**Source:** 399a7c23f2fa5c9824535ef702937212.JPG
+
+---
+
+## 19th Annual Pioneer Day
+
+**Date:** 2025-05-03
+
+**Time:** 10:00 AM - 3:00 PM
+
+**Location:** Old Settlers Association, 3300 E Palm Valley Blvd, Round Rock, TX 78665
+
+**Description:** Free admission. Activities include chuck wagons, crafts, games, living history, demonstrations, and live music.
+
+**Additional Details:** This project is funded in part by the City of Round Rock. Contact: 512-943-1670, www.williamsonmuseum.org
+
+**Source:** 1aab80aad1e6551cc910d85da9c8a717.JPG
+
+---
+
+## Art in the Park - Balcones District Park
+
+**Date:** 2025-05-03
+
+**Time:** 10:00 AM - 11:00 AM
+
+**Location:** Balcones District Park, 12017 Amherst Dr, Austin, TX 78727, United States
+
+**Description:** Inclusive event series designed to get your creative juices flowing. For kids and adults.
+
+**Additional Details:** Enjoy nature-inspired art projects with Painting Pandas. Free event.
+
+**Source:** 2a6bed39723193ed546b2a9f9e194f4f.JPG
+
+---
+
+## Kite Festival
+
+**Date:** 2025-05-03
+
+**Time:** 11:00 AM - 4:00 PM
+
+**Location:** Devine Lake Park, 1010 Maplecreek Dr, Leander, TX 78641, United States
+
+**Description:** A free community event for all ages including kite flying, food vendors, and more.
+
+**Additional Details:** Public admission for Kite Festival is free. Sponsored by Renewal by Andersen.
+
+**Source:** a215489c02613a267610ca21642f3cf0.JPG
+
+---
+
+## Flowerpot Painting
+
+**Date:** 2025-05-03
+
+**Time:** 10:00 AM - 2:00 PM
+
+**Location:** McCoy's Building Supply, ZIP code unknown, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Make a Mother's Day Craft. Family Fun & Treats.
+
+**Additional Details:** All supplies provided free of charge, no registration required. Sponsored by James Hardie.
+
+**Source:** b31b473e912fc4a2924167a24021fa4d.JPG
+
+---
+
+## Turkish Food & Craft Festival 2025
+
+**Date:** 2025-05-03
+
+**Time:** 11:00 AM - 6:00 PM
+
+**Location:** Raindrop Foundation Central Texas, 2650 Gattis School Rd. Suite 700, Round Rock, TX 78664
+
+**Description:** Festival featuring Turkish-Mediterranean cuisine, cultural exhibits, live music, children's area, arts & crafts.
+
+**Source:** 38db2584e47eac13aa083f38b991bb34.JPG
+
+---
+
+## Disney On Ice presents Let's Dance!
+
+**Date:** 2025-05-03
+
+**Time:** 2:30 PM
+
+**Location:** H-E-B Center at Cedar Park, 2100 Avenue of the Stars, Cedar Park, TX 78613
+
+**Description:** An exciting Disney On Ice event featuring favorite Disney tunes and characters.
+
+**Additional Details:** Tickets available at ticketmaster.evyy.net. Public event; anyone on or off Facebook can attend.
+
+**Source:** e62e216fec80bac7e50453d667429e5d.JPG
+
+---
+
+## WCRAS Kitten-Fest 2025
+
+**Date:** 2025-05-03
+
+**Time:** 12:00 PM - 4:00 PM
+
+**Location:** Williamson County Regional Animal Shelter, 1855 SE Inner Loop, Georgetown, TX 78626
+
+**Description:** A purr-fectly fun, family-friendly day filled with kitten cuddles, carnival games, and community spirit.
+
+**Additional Details:** Our goal? Raise over $1,000 for community cats and kittens!
+
+**Source:** a4cfe4de6e6c6dcc296bdef46f387e77.JPG
+
+---
+
+## CelebrASIA Austin 2025
+
+**Date:** 2025-05-03
+
+**Time:** 11:00 AM - 3:00 PM
+
+**Location:** Asian American Resource Center, 8401 Cameron Rd, Austin, TX, United States, 78754
+
+**Description:** Annual event featuring performances, art, culture, food. Family-friendly festival during Asian Pacific American Heritage Month.
+
+**Additional Details:** Free event. Main stage indoors with performances; classrooms transformed into cultural spaces.
+
+**Source:** e269d6c88abcbaeabcff76faa6cf7607.JPG
+
+---
+
+## Family pARTy at Kidoby The Affordable Art Fair@ Kido International Preschool & Daycare Bouldin Creek
+
+**Date:** 2025-05-03
+
+**Time:** 10:00 AM - 12:00 PM
+
+**Location:** Kido International Preschool & Daycare, Bouldin Creek, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** The Family pARTy invites attendees to explore creative art installations made by students from both Kido locations in Austin. It’s a fun and engaging way for families to connect, mingle, and enjoy local children’s artwork.
+
+**Additional Details:** Age: Not specified. Cost: FREE with RSVP. Registration: RSVP is required, and you can sign up here.
+
+**Source:** Unknown
+
+---
+
+## Acton Academy West’s Children’s Business Fair
+
+**Date:** 2025-05-03
+
+**Time:** {'start': '10:00', 'end': '13:00'}
+
+**Location:** Acton Academy West Austin, Austin, TX, 78746
+
+**Description:** The Acton Children’s Business Fair at Acton Academy West Austin is a one-of-a-kind event where young entrepreneurs showcase their creativity and business savvy in a festival-style setting. Families can browse a variety of goods and services, supporting the next generation of innovators.
+
+**Additional Details:** Age: elementary to high school. Cost: FREE. Registration: Get more info here.
+
+**Source:** Unknown
+
+---
+
+## Art in the Park@ Balcones District Park
+
+**Date:** 2025-05-03
+
+**Time:** 10:00 AM - 11:00 AM
+
+**Location:** Balcones District Park, Austin, TX 78759
+
+**Description:** Join us at Balcones District Park for a family-friendly event featuring hands-on, nature-inspired art projects facilitated by Painting Pandas.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided.
+
+**Source:** Unknown
+
+---
+
 ## Hartman Foundation Concerts in the Park - Free
 
 **Date:** 2025-05-04
@@ -691,6 +881,68 @@
 **Additional Details:** Public event by Austin Symphony Orchestra. Free ensemble concerts on Sunday evenings.
 
 **Source:** 5ed03beddacd5293809b0ffc18c8d87e.JPG
+
+---
+
+## May the Fourth Be With You
+
+**Date:** 2025-05-04
+
+**Time:** 2:00 PM - 4:00 PM
+
+**Location:** San Gabriel Park, 443 E Morrow St, Georgetown, TX 78626, United States
+
+**Description:** Park pop-up event in celebration of Star Wars Day. Includes Jedi training, light saber battles, and activities by Georgetown Public Library.
+
+**Additional Details:** Presented by Subaru of Georgetown. Special guest appearance and photo opportunities. Costumes encouraged.
+
+**Source:** 9efa1c5f07ecebb6360ca0fca5df4451.JPG
+
+---
+
+## Science & Culture Fair
+
+**Date:** 2025-05-04
+
+**Time:** 2:30 PM - 5:00 PM
+
+**Location:** Cafeteria, 601 E St Johns Ave, Austin, TX, 78752
+
+**Description:** Hosted by Austin Great Wall Chinese School with fun activities including Science Experiments, Circuit Electronics, 3D Printing, Lego Robotics, Scratch for Robotics, Zongzi Making (Dragon Boat Festival), Chinese Calligraphy, Fun Games, and more.
+
+**Source:** 74f6867032d17e809d9a908e42d64897.JPG
+
+---
+
+## H-E-B Free First Sunday@ The Bullock Museum
+
+**Date:** 2025-05-04
+
+**Time:** 10:00 AM - 5:00 PM, activities from 10:00 AM - 2:00 PM
+
+**Location:** The Bullock Museum, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Enjoy free admission to the Bullock Museum with special Star Wars activities.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration required
+
+**Source:** Unknown
+
+---
+
+## Music In The Park
+
+**Date:** 2025-05-09
+
+**Time:** 7:00 PM - 9:00 PM
+
+**Location:** Pfluger Park, 598 City Park Rd, Pflugerville, TX 78660, United States
+
+**Description:** Annual outdoor concert series with live bands on select Friday nights.
+
+**Additional Details:** No admission charge. Bring lawn chairs, blankets, picnic baskets. Free evening of music, entertainment, and relaxation.
+
+**Source:** 3c45260572df6f7fae6f71bf652c6850.JPG
 
 ---
 
@@ -741,21 +993,4 @@
 **Source:** Unknown
 
 ---
-
-## KUTX Parking Lot Movie Night@ Lou’s
-
-**Date:** 2025-06-23
-
-**Time:** DJ: 7:00 PM, Movie: Sundown
-
-**Location:** Lou's, Austin, TX 78701
-
-**Description:** Join for a family-friendly movie night at Lou's with The Parent Trap (1998 version) on a 25' screen. Enjoy KUTX DJing with vinyl spins, surprise pop-ups, a parking lot bar, and Lou’s food and drink.
-
-**Additional Details:** Age: Family-friendly. Cost: Free. Registration: Check out the upcoming lineup and get all the info on the event website.
-
-**Source:** Unknown
-
----
-
 

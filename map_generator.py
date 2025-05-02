@@ -121,7 +121,7 @@ def parse_time_period(time_str: Optional[str]) -> str:
     Determine if a time string is morning, afternoon, or evening.
     
     Args:
-        time_str (str): Time string (e.g., "3:00 PM - 5:00 PM")
+        time_str (str or dict): Time string (e.g., "3:00 PM - 5:00 PM") or dict with 'start' and 'end' keys
         
     Returns:
         str: "morning", "afternoon", "evening", or "unknown"
@@ -129,30 +129,46 @@ def parse_time_period(time_str: Optional[str]) -> str:
     if not time_str:
         return "unknown"
     
-    # Handle case where time_str is not actually a string
-    if not isinstance(time_str, str):
-        print(f"Warning: Time value is not a string: {time_str}")
-        return "unknown"
-    
-    # Try to extract start time
-    am_pm_pattern = r'(\d{1,2})(?::(\d{2}))?\s*(am|pm|AM|PM)'
-    hours_24_pattern = r'(\d{1,2})(?::(\d{2}))?(?:\s*h)?'
-    
-    # First try AM/PM format
-    match = re.search(am_pm_pattern, time_str)
-    if match:
-        hour = int(match.group(1))
-        if match.group(3).lower() == 'pm' and hour < 12:
-            hour += 12
-        elif match.group(3).lower() == 'am' and hour == 12:
-            hour = 0
-    else:
-        # Try 24-hour format
-        match = re.search(hours_24_pattern, time_str)
+    # Handle case where time_str is a dictionary with 'start' and 'end' keys
+    if isinstance(time_str, dict) and 'start' in time_str:
+        # Use the start time for classification
+        start_time = time_str.get('start', '')
+        if not start_time:
+            return "unknown"
+            
+        # Try to extract hour from the start time in format "HH:MM"
+        match = re.search(r'^(\d{1,2}):(\d{2})$', start_time)
         if match:
             hour = int(match.group(1))
         else:
             return "unknown"
+    
+    # Handle case where time_str is not actually a string
+    elif not isinstance(time_str, str):
+        print(f"Warning: Time value is not a string or a recognized format: {time_str}")
+        return "unknown"
+    
+    # Standard string processing for time ranges
+    else:
+        # Try to extract start time
+        am_pm_pattern = r'(\d{1,2})(?::(\d{2}))?\s*(am|pm|AM|PM)'
+        hours_24_pattern = r'(\d{1,2})(?::(\d{2}))?(?:\s*h)?'
+        
+        # First try AM/PM format
+        match = re.search(am_pm_pattern, time_str)
+        if match:
+            hour = int(match.group(1))
+            if match.group(3).lower() == 'pm' and hour < 12:
+                hour += 12
+            elif match.group(3).lower() == 'am' and hour == 12:
+                hour = 0
+        else:
+            # Try 24-hour format
+            match = re.search(hours_24_pattern, time_str)
+            if match:
+                hour = int(match.group(1))
+            else:
+                return "unknown"
     
     # Classify by time period
     if MORNING[0] <= hour < MORNING[1]:
@@ -262,8 +278,29 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
         </html>
         """
     
-    # Get unique dates for filtering
-    unique_dates = get_unique_dates(activities_with_locations)
+    # Extract dates directly from the filtered activities that will be displayed on the map
+    # This ensures the date filter only shows dates for activities that are actually visible
+    active_dates = []
+    for activity in activities_with_locations:
+        date_str = activity.get('date')
+        if date_str and date_str not in active_dates:
+            active_dates.append(date_str)
+    
+    # Sort dates chronologically
+    date_objects = []
+    for date_str in active_dates:
+        date_obj = parse_date(date_str)
+        if date_obj:
+            date_objects.append((date_str, date_obj))
+    
+    # Sort by the actual date objects
+    date_objects.sort(key=lambda x: x[1])
+    unique_dates = [date_tuple[0] for date_tuple in date_objects]
+    
+    # Add any dates that couldn't be parsed at the end
+    for date_str in active_dates:
+        if date_str not in unique_dates:
+            unique_dates.append(date_str)
     
     # Prepare marker data with additional attributes for filtering
     markers_data = []
@@ -348,6 +385,16 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
                 font-weight: bold;
                 margin-right: 10px;
                 font-size: 14px;
+            }
+            .marker-label {
+                position: relative !important;
+                top: 0px !important;
+                left: 0px !important;
+                z-index: 100;
+                text-align: center;
+                text-shadow: none;
+                font-weight: bold !important;
+                pointer-events: none;
             }
         </style>
     </head>
@@ -466,6 +513,7 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
                 ];
                 
                 // Geocode addresses and add markers
+                let completedMarkers = 0;
                 markerData.forEach((data, index) => {
                     geocoder.geocode({ 'address': data.address }, function(results, status) {
                         if (status === 'OK') {
@@ -479,22 +527,26 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
                                     text: markerNumber.toString(),
                                     color: 'white',
                                     fontSize: '12px',
-                                    fontWeight: 'bold'
+                                    fontWeight: 'bold',
+                                    fontFamily: 'Arial',
+                                    className: 'marker-label'
                                 },
                                 icon: {
-                                    path: google.maps.SymbolPath.CIRCLE,
+                                    path: 'M10,16 C10,15 10.8,14 11.6,14 L14,14 C14.8,13 16.4,13 17.2,9 C18.8,7 23.6,7 26.8,7 C30,7 34,9 35.6,13 L38.8,13 C38.8,13 40.4,14 40.4,16 L40.4,19 C40.4,19 38.8,19 38.8,21 L38.8,24 L34.8,24 L34.8,22 C34.8,22 30,23 24.8,23 C19.6,23 14.8,22 14.8,22 L14.8,24 L10.8,24 L10.8,21 C10.8,19 10,19 10,19 L10,16 Z M15.4,17 C15.4,15 13,15 13,17 C13,19 15.4,19 15.4,17 Z M35.4,17 C35.4,15 33,15 33,17 C33,19 35.4,19 35.4,17 Z',
                                     fillColor: data.color,
-                                    fillOpacity: 0.8,
-                                    strokeWeight: 1,
-                                    strokeColor: '#333',
-                                    scale: 14
+                                    fillOpacity: 1.0,
+                                    strokeWeight: 0,
+                                    scale: 1,
+                                    anchor: new google.maps.Point(24, 16),
+                                    labelOrigin: new google.maps.Point(24, 16)
                                 },
                                 optimized: true
                             });
                             
-                            // Store additional data with the marker
+                            // Store additional data with the marker, including the activity index for correlation
                             marker.date = data.date;
                             marker.timePeriod = data.timePeriod;
+                            marker.activityIndex = index; // Store the activity index for proper correlation
                             
                             // Add click event to marker
                             marker.addListener('click', function() {
@@ -511,25 +563,42 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
                             // Extend bounds to include this marker
                             bounds.extend(results[0].geometry.location);
                             
-                            // Fit map to bounds if this is the last marker
-                            if (index === markerData.length - 1) {
+                            // Count completed markers
+                            completedMarkers++;
+                            
+                            // Fit map to bounds if all markers are done
+                            if (completedMarkers === markerData.length) {
                                 map.fitBounds(bounds);
+                                // Initial filtering should only happen once all markers are created
+                                filterMarkers();
                             }
                         } else {
                             console.error('Geocode failed for address:', data.address, status);
+                            // Count failed markers too so we can still proceed
+                            completedMarkers++;
+                            
+                            // Check if all markers are done even with failures
+                            if (completedMarkers === markerData.length) {
+                                // Try to fit bounds if we have any successful markers
+                                if (markers.length > 0) {
+                                    map.fitBounds(bounds);
+                                }
+                                // Initial filtering
+                                filterMarkers();
+                            }
                         }
                     });
                 });
                 
-                // Initial filtering
-                filterMarkers();
+                // Don't call filterMarkers here - will be called when all markers are loaded
             }
             
             function showMarker(index) {
-                // Make sure markers array is populated
-                if (markers.length > index) {
+                // Find the marker that corresponds to this activity index
+                const marker = markers.find(m => m.activityIndex === index);
+                if (marker) {
                     // Center map on marker
-                    map.setCenter(markers[index].getPosition());
+                    map.setCenter(marker.getPosition());
                     map.setZoom(15); // Zoom in a bit
                     
                     // Highlight the activity in the sidebar
@@ -546,7 +615,12 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
                     .filter(value => ['morning', 'afternoon', 'evening', 'unknown'].includes(value));
                 
                 // Filter markers based on selected criteria
-                markers.forEach((marker, index) => {
+                markers.forEach(marker => {
+                    const activityIndex = marker.activityIndex;
+                    const activityElement = document.getElementById('activity-' + activityIndex);
+                    if (!activityElement) return;
+                    
+                    // Using only the marker date for filtering - matching what's in the dropdown
                     const dateMatch = dateFilter === 'all' || marker.date === dateFilter;
                     const timeMatch = timeFilters.includes(marker.timePeriod);
                     
@@ -554,10 +628,7 @@ def generate_html(activities: List[Dict], base_url: str = "") -> str:
                     marker.setVisible(dateMatch && timeMatch);
                     
                     // Update sidebar activity visibility
-                    const activityElement = document.getElementById('activity-' + index);
-                    if (activityElement) {
-                        activityElement.style.display = dateMatch && timeMatch ? 'block' : 'none';
-                    }
+                    activityElement.style.display = dateMatch && timeMatch ? 'block' : 'none';
                 });
             }
         </script>

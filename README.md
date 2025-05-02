@@ -27,7 +27,7 @@ This project contains scripts to extract information about kids' activities from
 3. Run the extraction script with one of the following options:
 ```bash
 # Activate the virtual environment
-source .venv/bin/activate  # On Windows: .\venv\Scripts\activate
+source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 
 # Run the activity extractor (processes all images in input/)
 python activity_extractor.py
@@ -98,7 +98,7 @@ This multi-layered approach ensures reliable date information even when images c
 1. After running the activity extractor, run the map generator:
 ```bash
 # Make sure the virtual environment is activated
-source .venv/bin/activate  # On Windows: .\venv\Scripts\activate
+source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 
 # Run the map generator
 python map_generator.py
