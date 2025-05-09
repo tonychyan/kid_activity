@@ -748,7 +748,7 @@
 
 **Time:** 10:00 AM - 2:00 PM
 
-**Location:** McCoy's Building Supply, ZIP code unknown, Austin, TX 78701 *(ZIP code estimated)*
+**Location:** McCoy's Building Supply, 2505 Hwy 1869, Liberty Hill, TX 78642 *(ZIP code estimated)*
 
 **Description:** Make a Mother's Day Craft. Family Fun & Treats.
 
@@ -826,7 +826,7 @@
 
 **Time:** 10:00 AM - 12:00 PM
 
-**Location:** Kido International Preschool & Daycare, Bouldin Creek, Austin, TX 78701 *(ZIP code estimated)*
+**Location:** Kido International Preschool & Daycare, 1924 S 1st St, Austin, TX 78704 *(ZIP code estimated)*
 
 **Description:** The Family pARTy invites attendees to explore creative art installations made by students from both Kido locations in Austin. It’s a fun and engaging way for families to connect, mingle, and enjoy local children’s artwork.
 
@@ -836,7 +836,7 @@
 
 ---
 
-## Acton Academy West’s Children’s Business Fair
+## Acton Academy West's Children's Business Fair
 
 **Date:** 2025-05-03
 
@@ -844,7 +844,7 @@
 
 **Location:** Acton Academy West Austin, Austin, TX, 78746
 
-**Description:** The Acton Children’s Business Fair at Acton Academy West Austin is a one-of-a-kind event where young entrepreneurs showcase their creativity and business savvy in a festival-style setting. Families can browse a variety of goods and services, supporting the next generation of innovators.
+**Description:** The Acton Children's's Business Fair at Acton Academy West Austin is a one-of-a-kind event where young entrepreneurs showcase their creativity and business savvy in a festival-style setting. Families can browse a variety of goods and services, supporting the next generation of innovators.
 
 **Additional Details:** Age: elementary to high school. Cost: FREE. Registration: Get more info here.
 
@@ -920,7 +920,7 @@
 
 **Time:** 10:00 AM - 5:00 PM, activities from 10:00 AM - 2:00 PM
 
-**Location:** The Bullock Museum, Austin, TX 78701 *(ZIP code estimated)*
+**Location:** The Bullock Museum, 1800 N Congress Ave, Austin, TX 78701 *(ZIP code estimated)*
 
 **Description:** Enjoy free admission to the Bullock Museum with special Star Wars activities.
 
@@ -962,6 +962,116 @@
 
 ---
 
+## Kiln Fest
+
+**Date:** 2025-05-10
+
+**Time:** 3:00 PM - 6:00 PM
+
+**Location:** Reed Park, [Address Unknown], [City Unknown], [State Unknown], ZIP, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Live music, free food by Tivity, snow cones, bounce houses, face painting, and fun!
+
+**Additional Details:** BYO - Blankets & Beverages. Hosted by Friends of Reed Park.
+
+**Source:** b5f655d2a1eca9c307b0ee14182f09b3.JPG
+
+---
+
+## Fairytale Tea Party
+
+**Date:** 2025-05-10
+
+**Time:** 9:30 AM - 12:30 PM
+
+**Location:** Leander Public Library, 1011 S Bagdad Rd, Leander, TX, United States, 78641
+
+**Description:** Enjoy music, decorate a dessert, and create a craft. Ages 3-11.
+
+**Additional Details:** Tickets required. Costumes and fancy attire encouraged. Tickets available for pick-up beginning Monday, May 5 at 9 AM.
+
+**Source:** c3347dac2d8eb2cb70656c3c9c522c94.JPG
+
+---
+
+## Health, Fitness & Coffee. A Wellness Event
+
+**Date:** 2025-05-10
+
+**Time:** 9:30 AM - 12:00 PM
+
+**Location:** 3570 Rockin J Road, #C, Round Rock, TX 78665, US
+
+**Description:** Wellness event with a free fitness class for all skill levels, followed by coffee, snacks, and expert-led health workshops.
+
+**Additional Details:** Public event. Free fitness class: 9:30-10:30. Coffee, snacks, and workshops after the fitness class.
+
+**Source:** 2789a5fe0d1c4be3ad9e22fafc5bdcf8.JPG
+
+---
+
+## Cedar Park Kite Festival
+
+**Date:** 2025-05-10
+
+**Time:** 3:00 PM - 7:00 PM
+
+**Location:** 1510 Alexis Dr, Cedar Park, TX 78613, United States
+
+**Description:** Fly your kite at the 8th Annual Cedar Park Kite Festival! Free, family-friendly, and pet-friendly event with local food trucks, music, and performances.
+
+**Additional Details:** This event is free and open to all. Brought to you by Angie ATX Realtor in partnership with the City of Cedar Park, Parks & Recreation.
+
+**Source:** 17da2c58eabedb31ba43b888cc728f15.JPG
+
+---
+
+## Cedar Park Kite Festival
+
+**Date:** 2025-05-10
+
+**Time:** 3:00 PM - 7:00 PM
+
+**Location:** Lakeline Park, 1510 Alexis Dr, Cedar Park, TX, 78613
+
+**Additional Details:** Join us!
+
+**Source:** 6a1d170755d66584eb2b689f2e3653f1.PNG
+
+---
+
+## Second Saturdays Are for Families: Seize the Clay@ Laguna Gloria
+
+**Date:** 2025-05-10
+
+**Time:** 11:00 AM - 3:00 PM
+
+**Location:** Laguna Gloria, Austin, TX 78703
+
+**Description:** Come get your hands dirty at Laguna Gloria as the museum welcomes a stunning new 12-foot sculpture by artist Raven Halfmoon. Guests will make their own mini coil pots and reflect on the women who’ve impacted their lives.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: Reserve your spot here.
+
+**Source:** Unknown
+
+---
+
+## AAPI Family Fun Day@ Brentwood Social House
+
+**Date:** 2025-05-10
+
+**Time:** 9:00 am - 12:00 pm
+
+**Location:** Brentwood Social House, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Celebrate AAPI Heritage Month with Asian-inspired ice cream, a scavenger hunt, and interactive storytimes by local authors at Brentwood Social House.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided.
+
+**Source:** Unknown
+
+---
+
 ## Hartman Foundation Concerts in the Park - Free
 
 **Date:** 2025-05-11
@@ -978,6 +1088,82 @@
 
 ---
 
+## Sunday Funday: Embroidery
+
+**Date:** 2025-05-11
+
+**Time:** 11:00 AM - 2:00 PM
+
+**Location:** Neill-Cochran House Museum, 2310 San Gabriel St, Austin, TX, 78705
+
+**Description:** Creative craft activity for kids of all ages to learn embroidery and needlepoint. Free for kids 12 and under with an adult's Museum admission.
+
+**Additional Details:** Free with Museum admission. NCHM members are always free. Reservations not required.
+
+**Source:** af229b451b454a1eb992a690724bc013.JPG
+
+---
+
+## UMLAUF Family Day: Wild About Nature!
+
+**Date:** 2025-05-11
+
+**Time:** 11:00 AM - 4:00 PM
+
+**Location:** UMLAUF Sculpture Garden & Museum, 605 Azie Morton Rd, Austin, TX 78704
+
+**Description:** Discover the magic of the animal kingdom at UMLAUF Family Day: Wild About Nature! Create wildlife-inspired crafts, meet incredible animals up close, and learn some fun facts. This family-friendly event offers a fun and interactive way to explore the wonders of wildlife through art, education, and hands-on activities.
+
+**Additional Details:** Tickets available at umlaufsculpture.app.neoncrm.com. Public event open to anyone on or off Facebook.
+
+**Source:** 67051be41a3ec5918803e1563d994850.JPG
+
+---
+
+## Blanton All Day: Bring Mom to the Museum
+
+**Date:** 2025-05-11
+
+**Time:** 10:00 AM - 5:00 PM
+
+**Location:** Blanton Museum of Art, 200 E Martin Luther King Jr Blvd, Austin, TX 78712
+
+**Description:** Make it a Sunday Funday for the Mom in your life with a picnic on the Moody Patio, live music, art talks & activities, and more!
+
+**Additional Details:** Get tickets/plan your visit at: blantonmuseum.org/programs/blanton-all-day/. Members get in FREE to all events in this series.
+
+**Source:** af57b88da52daa1d7fabf933e3989ade.JPG
+
+---
+
+## Happy Mother’s Day!
+
+**Date:** 2025-05-11
+
+**Location:** UMLAUF Sculpture Garden and Museum, Austin, TX 78704
+
+**Description:** Celebrate Mother's Day with a curated list of events happening around Austin to make your celebration extra special.
+
+**Source:** Unknown
+
+---
+
+## UMLAUF Family Day: Wild About Nature
+
+**Date:** 2025-05-11
+
+**Time:** 11:00 AM - 4:00 PM
+
+**Location:** UMLAUF Sculpture Garden & Museum, Austin, TX 78704
+
+**Description:** Family Day: Wild About Nature is a day of wildlife, creativity, and outdoor fun with activities like storytime, garden tours, sculpture scavenger hunts, and interactive animal encounters.
+
+**Additional Details:** Age: Kids and adults. Cost: Free with RSVP. Registration: RSVP required
+
+**Source:** Unknown
+
+---
+
 ## KUTX Parking Lot Movie Night@ Lou’s
 
 **Date:** 2025-06-23
@@ -991,6 +1177,20 @@
 **Additional Details:** Age: Family-friendly. Cost: FREE. Registration: Check out the upcoming lineup and get all the info here.
 
 **Source:** Unknown
+
+---
+
+## Mother Son GLOW Dance
+
+**Time:** 6:00 PM - 8:00 PM
+
+**Location:** Leander Activity Center, 11880 Hero Way West, Suite 600, Leander, TX 78641-7400, United States
+
+**Description:** An electrifying evening of fun and excitement celebrating the bond between mothers and sons in a vibrant, glow-in-the-dark atmosphere.
+
+**Additional Details:** Cost: $25 per duo, $10 per additional son. Tickets available online.
+
+**Source:** d6ecedf42abc7a27cf6d07fada346b0e.JPG
 
 ---
 

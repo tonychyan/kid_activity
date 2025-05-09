@@ -373,7 +373,7 @@
     "additional_details": "Public event by Austin Symphony Orchestra. Free ensemble concerts on Sunday evenings.",
     "raw_datetime": "Sunday, May 4 at 7:30 PM",
     "source_file": "5ed03beddacd5293809b0ffc18c8d87e.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Hartman Foundation Concerts in the Park - Free",
@@ -537,7 +537,7 @@
     "additional_details": "Event by Austin Disaster Relief Network. Public event, tickets available at loveourcityfest.org.",
     "raw_datetime": "Saturday at 12 PM",
     "source_file": "9282f5458ea0e1aee28210825e12be84.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Violet Crown Festival",
@@ -548,7 +548,7 @@
     "additional_details": "This free, family-friendly event benefits the Brentwood Park Playground Improvement Project. New for 2025: BBQ Beef Brisket Cook-Off.",
     "raw_datetime": "Saturday at 10:30 AM, May 3, 2025",
     "source_file": "399a7c23f2fa5c9824535ef702937212.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "19th Annual Pioneer Day",
@@ -559,7 +559,7 @@
     "additional_details": "This project is funded in part by the City of Round Rock. Contact: 512-943-1670, www.williamsonmuseum.org",
     "raw_datetime": "Saturday May 3, 2025, 10AM-3PM",
     "source_file": "1aab80aad1e6551cc910d85da9c8a717.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Art in the Park - Balcones District Park",
@@ -570,7 +570,7 @@
     "additional_details": "Enjoy nature-inspired art projects with Painting Pandas. Free event.",
     "raw_datetime": "Saturday, May 3rd, 10 a.m. to 11 a.m.",
     "source_file": "2a6bed39723193ed546b2a9f9e194f4f.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Kite Festival",
@@ -581,7 +581,7 @@
     "additional_details": "Public admission for Kite Festival is free. Sponsored by Renewal by Andersen.",
     "raw_datetime": "Saturday at 11 AM \u2013 4 PM",
     "source_file": "a215489c02613a267610ca21642f3cf0.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Flowerpot Painting",
@@ -592,7 +592,7 @@
     "additional_details": "All supplies provided free of charge, no registration required. Sponsored by James Hardie.",
     "raw_datetime": "Saturday, May 3, 2025, 10am-2pm",
     "source_file": "b31b473e912fc4a2924167a24021fa4d.JPG",
-    "is_archived": false,
+    "is_archived": true,
     "location_uncertain": true
   },
   {
@@ -604,7 +604,7 @@
     "additional_details": "Presented by Subaru of Georgetown. Special guest appearance and photo opportunities. Costumes encouraged.",
     "raw_datetime": "Sunday at 2 PM \u2013 4 PM",
     "source_file": "9efa1c5f07ecebb6360ca0fca5df4451.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Turkish Food & Craft Festival 2025",
@@ -615,7 +615,7 @@
     "additional_details": null,
     "raw_datetime": "Saturday, May 3rd | 11 AM \u2013 6 PM",
     "source_file": "38db2584e47eac13aa083f38b991bb34.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Disney On Ice presents Let's Dance!",
@@ -626,7 +626,7 @@
     "additional_details": "Tickets available at ticketmaster.evyy.net. Public event; anyone on or off Facebook can attend.",
     "raw_datetime": "Saturday at 2:30 PM",
     "source_file": "e62e216fec80bac7e50453d667429e5d.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "WCRAS Kitten-Fest 2025",
@@ -637,7 +637,7 @@
     "additional_details": "Our goal? Raise over $1,000 for community cats and kittens!",
     "raw_datetime": "Saturday, May 3, 2025, 12:00 PM \u2013 4:00 PM",
     "source_file": "a4cfe4de6e6c6dcc296bdef46f387e77.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "CelebrASIA Austin 2025",
@@ -648,7 +648,7 @@
     "additional_details": "Free event. Main stage indoors with performances; classrooms transformed into cultural spaces.",
     "raw_datetime": "Saturday, May 3, 2025 from 11am to 3pm",
     "source_file": "e269d6c88abcbaeabcff76faa6cf7607.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Music In The Park",
@@ -670,7 +670,7 @@
     "additional_details": null,
     "raw_datetime": "4 MAY | SUN 2:30 PM-5:00 PM",
     "source_file": "74f6867032d17e809d9a908e42d64897.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Family pARTy at Kidoby The Affordable Art Fair@ Kido International Preschool & Daycare Bouldin Creek",
@@ -683,7 +683,7 @@
     "source_url": "https://family.do512.com/events/2025/5/3/family-art-day-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false,
+    "is_archived": true,
     "location_uncertain": true
   },
   {
@@ -700,7 +700,7 @@
     "source_url": "https://family.do512.com/events/2025/5/3/acton-academy-west-childrens-business-fair-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Art in the Park@ Balcones District Park",
@@ -713,7 +713,7 @@
     "source_url": "https://family.do512.com/events/2025/5/3/art-in-the-park-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "H-E-B Free First Sunday@ The Bullock Museum",
@@ -726,7 +726,121 @@
     "source_url": "https://family.do512.com/events/2025/5/4/h-e-b-free-first-sunday-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false,
+    "is_archived": true,
     "location_uncertain": true
+  },
+  {
+    "activity_name": "Sunday Funday: Embroidery",
+    "location": "Neill-Cochran House Museum, 2310 San Gabriel St, Austin, TX, 78705",
+    "date": "2025-05-11",
+    "time": "11:00 AM - 2:00 PM",
+    "description": "Creative craft activity for kids of all ages to learn embroidery and needlepoint. Free for kids 12 and under with an adult's Museum admission.",
+    "additional_details": "Free with Museum admission. NCHM members are always free. Reservations not required.",
+    "raw_datetime": "Sunday, May 11 | 11:00am - 2:00pm",
+    "source_file": "af229b451b454a1eb992a690724bc013.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Kiln Fest",
+    "location": "Reed Park, 2614 Pecos St, Austin, TX 78703",
+    "date": "2025-05-10",
+    "time": "3:00 PM - 6:00 PM",
+    "description": "Live music, free food by Tivity, snow cones, bounce houses, face painting, and fun!",
+    "additional_details": "BYO - Blankets & Beverages. Hosted by Friends of Reed Park.",
+    "raw_datetime": "Saturday, May 10th from 3-6 PM",
+    "source_file": "b5f655d2a1eca9c307b0ee14182f09b3.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "UMLAUF Family Day: Wild About Nature!",
+    "location": "UMLAUF Sculpture Garden & Museum, 605 Azie Morton Rd, Austin, TX 78704",
+    "date": "2025-05-11",
+    "time": "11:00 AM - 4:00 PM",
+    "description": "Discover the magic of the animal kingdom at UMLAUF Family Day: Wild About Nature! Create wildlife-inspired crafts, meet incredible animals up close, and learn some fun facts. This family-friendly event offers a fun and interactive way to explore the wonders of wildlife through art, education, and hands-on activities.",
+    "additional_details": "Tickets available at umlaufsculpture.app.neoncrm.com. Public event open to anyone on or off Facebook.",
+    "raw_datetime": "Sunday, May 11 at 11 AM \u2013 4 PM",
+    "source_file": "67051be41a3ec5918803e1563d994850.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Mother Son GLOW Dance",
+    "location": "Leander Activity Center, 11880 Hero Way West, Suite 600, Leander, TX 78641-7400, United States",
+    "date": null,
+    "time": "6:00 PM - 8:00 PM",
+    "description": "An electrifying evening of fun and excitement celebrating the bond between mothers and sons in a vibrant, glow-in-the-dark atmosphere.",
+    "additional_details": "Cost: $25 per duo, $10 per additional son. Tickets available online.",
+    "raw_datetime": "Tomorrow at 6 PM \u2013 8 PM",
+    "source_file": "d6ecedf42abc7a27cf6d07fada346b0e.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Fairytale Tea Party",
+    "location": "Leander Public Library, 1011 S Bagdad Rd, Leander, TX, United States, 78641",
+    "date": "2025-05-10",
+    "time": "9:30 AM - 12:30 PM",
+    "description": "Enjoy music, decorate a dessert, and create a craft. Ages 3-11.",
+    "additional_details": "Tickets required. Costumes and fancy attire encouraged. Tickets available for pick-up beginning Monday, May 5 at 9 AM.",
+    "raw_datetime": "Saturday at 9:30 AM \u2013 12:30 PM, May 10th",
+    "source_file": "c3347dac2d8eb2cb70656c3c9c522c94.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Blanton All Day: Bring Mom to the Museum",
+    "location": "Blanton Museum of Art, 200 E Martin Luther King Jr Blvd, Austin, TX 78712",
+    "date": "2025-05-11",
+    "time": "10:00 AM - 5:00 PM",
+    "description": "Make it a Sunday Funday for the Mom in your life with a picnic on the Moody Patio, live music, art talks & activities, and more!",
+    "additional_details": "Get tickets/plan your visit at: blantonmuseum.org/programs/blanton-all-day/. Members get in FREE to all events in this series.",
+    "raw_datetime": "Sunday at 10 AM \u2013 5 PM",
+    "source_file": "af57b88da52daa1d7fabf933e3989ade.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Health, Fitness & Coffee. A Wellness Event",
+    "location": "3570 Rockin J Road, #C, Round Rock, TX 78665, US",
+    "date": "2025-05-10",
+    "time": "9:30 AM - 12:00 PM",
+    "description": "Wellness event with a free fitness class for all skill levels, followed by coffee, snacks, and expert-led health workshops.",
+    "additional_details": "Public event. Free fitness class: 9:30-10:30. Coffee, snacks, and workshops after the fitness class.",
+    "raw_datetime": "Saturday at 9:30 AM \u2013 12 PM",
+    "source_file": "2789a5fe0d1c4be3ad9e22fafc5bdcf8.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Cedar Park Kite Festival",
+    "location": "1510 Alexis Dr, Cedar Park, TX 78613, United States",
+    "date": "2025-05-10",
+    "time": "3:00 PM - 7:00 PM",
+    "description": "Fly your kite at the 8th Annual Cedar Park Kite Festival! Free, family-friendly, and pet-friendly event with local food trucks, music, and performances.",
+    "additional_details": "This event is free and open to all. Brought to you by Angie ATX Realtor in partnership with the City of Cedar Park, Parks & Recreation.",
+    "raw_datetime": "Saturday at 3 PM \u2013 7 PM",
+    "source_file": "17da2c58eabedb31ba43b888cc728f15.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Second Saturdays Are for Families: Seize the Clay@ Laguna Gloria",
+    "location": "Laguna Gloria, Austin, TX 78703",
+    "date": "2025-05-10",
+    "time": "11:00 AM - 3:00 PM",
+    "description": "Come get your hands dirty at Laguna Gloria as the museum welcomes a stunning new 12-foot sculpture by artist Raven Halfmoon. Guests will make their own mini coil pots and reflect on the women who\u2019ve impacted their lives.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: Reserve your spot here.",
+    "raw_datetime": "Saturday, May 10 | 11 am \u2013 3 pm | Reserve your spot(s)here",
+    "source_url": "https://family.do512.com/events/2025/5/10/second-saturdays-are-for-families-seize-the-clay-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "AAPI Family Fun Day@ Brentwood Social House",
+    "location": "Brentwood Social House, 1601 W Koenig Ln, Austin, TX 78756",
+    "date": "2025-05-10",
+    "time": "9:00 am - 12:00 pm",
+    "description": "Celebrate AAPI Heritage Month with Asian-inspired ice cream, a scavenger hunt, and interactive storytimes by local authors at Brentwood Social House.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration details provided.",
+    "raw_datetime": "Saturday, May 10 | 9 am \u2013 noon | FREE",
+    "source_url": "https://family.do512.com/events/2025/5/10/aapi-family-fun-day-storytimes-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
   }
 ]
