@@ -241,7 +241,7 @@
     "additional_details": "Hosted by Friends of 84R. Tickets for helicopter rides available at fly-in. For more information, contact 979-224-6304 or sandy.airport84r@gmail.com.",
     "raw_datetime": "May 10, 2025, 10AM - 2PM",
     "source_file": "9c82ea7dca6ee4754e8d5f8cdfe0e5a0.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Pioneer Festival",
@@ -384,7 +384,7 @@
     "additional_details": "Public event by Austin Symphony Orchestra. Free ensemble concerts on Sunday evenings.",
     "raw_datetime": "Sunday, May 11 at 7:30 PM",
     "source_file": "5ed03beddacd5293809b0ffc18c8d87e.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Kids Day at Fire House",
@@ -659,7 +659,7 @@
     "additional_details": "No admission charge. Bring lawn chairs, blankets, picnic baskets. Free evening of music, entertainment, and relaxation.",
     "raw_datetime": "Mar 7 \u2013 Jun 6, Friday nights from 7 to 9 pm",
     "source_file": "3c45260572df6f7fae6f71bf652c6850.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Science & Culture Fair",
@@ -738,7 +738,7 @@
     "additional_details": "Free with Museum admission. NCHM members are always free. Reservations not required.",
     "raw_datetime": "Sunday, May 11 | 11:00am - 2:00pm",
     "source_file": "af229b451b454a1eb992a690724bc013.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Kiln Fest",
@@ -749,7 +749,7 @@
     "additional_details": "BYO - Blankets & Beverages. Hosted by Friends of Reed Park.",
     "raw_datetime": "Saturday, May 10th from 3-6 PM",
     "source_file": "b5f655d2a1eca9c307b0ee14182f09b3.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "UMLAUF Family Day: Wild About Nature!",
@@ -760,7 +760,7 @@
     "additional_details": "Tickets available at umlaufsculpture.app.neoncrm.com. Public event open to anyone on or off Facebook.",
     "raw_datetime": "Sunday, May 11 at 11 AM \u2013 4 PM",
     "source_file": "67051be41a3ec5918803e1563d994850.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Mother Son GLOW Dance",
@@ -782,7 +782,7 @@
     "additional_details": "Tickets required. Costumes and fancy attire encouraged. Tickets available for pick-up beginning Monday, May 5 at 9 AM.",
     "raw_datetime": "Saturday at 9:30 AM \u2013 12:30 PM, May 10th",
     "source_file": "c3347dac2d8eb2cb70656c3c9c522c94.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Blanton All Day: Bring Mom to the Museum",
@@ -793,7 +793,7 @@
     "additional_details": "Get tickets/plan your visit at: blantonmuseum.org/programs/blanton-all-day/. Members get in FREE to all events in this series.",
     "raw_datetime": "Sunday at 10 AM \u2013 5 PM",
     "source_file": "af57b88da52daa1d7fabf933e3989ade.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Health, Fitness & Coffee. A Wellness Event",
@@ -804,7 +804,7 @@
     "additional_details": "Public event. Free fitness class: 9:30-10:30. Coffee, snacks, and workshops after the fitness class.",
     "raw_datetime": "Saturday at 9:30 AM \u2013 12 PM",
     "source_file": "2789a5fe0d1c4be3ad9e22fafc5bdcf8.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Cedar Park Kite Festival",
@@ -815,7 +815,7 @@
     "additional_details": "This event is free and open to all. Brought to you by Angie ATX Realtor in partnership with the City of Cedar Park, Parks & Recreation.",
     "raw_datetime": "Saturday at 3 PM \u2013 7 PM",
     "source_file": "17da2c58eabedb31ba43b888cc728f15.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Second Saturdays Are for Families: Seize the Clay@ Laguna Gloria",
@@ -828,7 +828,7 @@
     "source_url": "https://family.do512.com/events/2025/5/10/second-saturdays-are-for-families-seize-the-clay-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "AAPI Family Fun Day@ Brentwood Social House",
@@ -839,6 +839,144 @@
     "additional_details": "Age: All ages. Cost: Free. Registration: No registration details provided.",
     "raw_datetime": "Saturday, May 10 | 9 am \u2013 noon | FREE",
     "source_url": "https://family.do512.com/events/2025/5/10/aapi-family-fun-day-storytimes-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": true
+  },
+  {
+    "activity_name": "Whimsy & Wonder",
+    "location": "1000 Main St, Liberty Hill, TX 78642",
+    "date": "2025-05-24",
+    "time": "6:00 PM - 10:00 PM",
+    "description": "An eclectic fusion of whimsical and wonderful elements featuring live bands, art demonstrations, vendors, street performers, and a Children's Imagination Garden.",
+    "additional_details": "Headliner: Jomo & the Possum Posse. Admission: Free! Food and art available for purchase.",
+    "raw_datetime": "Saturday at 6 PM \u2013 10 PM",
+    "source_file": "f5bf00ac0c6f6ffcf7af6a0b6f24d515.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Playdates in the Park - St. John's Park",
+    "location": "St. John's Park, 889 Wilks Ave, Austin, TX 78752",
+    "date": "2025-05-24",
+    "time": "10:00 AM",
+    "description": "Inclusive community events designed to activate families with young children. Enjoy story time, crafts, and music & movement sessions.",
+    "additional_details": "Public event by Austin Parks Foundation. Designed to inspire creativity and support bonding for parents and children.",
+    "raw_datetime": "Saturday at 10 AM",
+    "source_file": "31e558e5c6e3fd91839fe8fd22a68700.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Safari In the City",
+    "location": "Hutto's City Hall lobby, 500 W Live Oak St, Hutto, TX 78634, United States",
+    "date": "2025-05-17",
+    "time": "4:00 PM - 6:00 PM",
+    "description": "A wild adventure with exotic animal encounters, creative crafts, and joyful moments for the whole family.",
+    "additional_details": "Cost is $5 for the family. Parking available in the parking garage and right outside City Hall.",
+    "raw_datetime": "Saturday, May 17 from 4-6 PM",
+    "source_file": "dd1a6c7bfea960a3743602e130979989.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Spring Festival",
+    "location": "Hope Lutheran Church, 6414 N. Hampton, Austin, TX, 78723",
+    "date": "2025-05-17",
+    "time": "11:00 AM - 2:00 PM",
+    "description": "Celebrate with free food, games, live music, train rides, petting zoo, and a bounce house.",
+    "additional_details": "For more info: 512-926-8574 or HopeLutheranAustin.org",
+    "raw_datetime": "Saturday May 17, 11-2",
+    "source_file": "2f5de4aa46914d249d7e64e2c1743370.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "ATX Eid Fest '25",
+    "location": "Adam Orgain Park, 1001 Co Rd 137, Hutto, TX 78634",
+    "date": "2025-05-17",
+    "time": "2:00 PM - 9:00 PM",
+    "description": "An Eid celebration open to all ages with thrilling activities, rides, halal food, face painting, games, shopping bazaar, and family-friendly fun.",
+    "additional_details": "Spots are limited. Ticket prices may change. RSVP recommended. Hosted by various organizations. Vendor & sponsorship opportunities available.",
+    "raw_datetime": "Saturday, May 17, 2025 Time: 2:00 PM \u2013 9:00 PM",
+    "source_file": "0514127e23a7157ab9c7476a87e0ea93.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "MAYPALOOZA",
+    "location": "The Hippo Escape, 209 Farley St, Historic Downtown Hutto, TX, 78634",
+    "date": "2025-05-18",
+    "time": "11:00 AM - 4:00 PM",
+    "description": "A day full of good vibes, tasty eats, and amazing small biz energy. Includes a lineup of food trucks.",
+    "additional_details": "Free Entry + Free Parking. Unique vendors, small biz brands, sweet treats, music, and family-friendly fun. Vendor spots still open. Apply at fashionoftravel@gmail.com.",
+    "raw_datetime": "Sunday, May 18th | 11AM \u2013 4PM",
+    "source_file": "7f28eb006aeb06ec36bbd687335f03e9.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Woodland Faerie Trail",
+    "location": "Zilker Botanical Garden, 2220 Barton Springs Rd, Austin, TX 78746",
+    "date": "2025-05-10",
+    "time": "10:00 AM - 2:00 PM",
+    "description": "Grand celebration for the opening of the Woodland Faerie Trail.",
+    "additional_details": "The trail will remain open for exploration through July 12th.",
+    "raw_datetime": "May 10th with a Grand Celebration from 10 AM \u2013 2 PM",
+    "source_file": "8254de2c9831ec318f04acb6bd8657fb.PNG",
+    "is_archived": true
+  },
+  {
+    "activity_name": "Dinos in the Wild",
+    "location": "Lady Bird Johnson Wildflower Center, Austin, TX, 78739",
+    "date": "2025-05-16",
+    "time": null,
+    "description": "A prehistoric adventure with life-sized animatronic dinosaurs. Suitable for families.",
+    "additional_details": "Created by Jurassic Park advisor 'Dino' Don Lessem. More details coming soon.",
+    "raw_datetime": "May 16 \u2013 August 17, 2025",
+    "source_file": "c29650c7fadbe1e5c46bd3855df08517.PNG",
+    "is_archived": true
+  },
+  {
+    "activity_name": "Hop into Health",
+    "location": "Frontier Park, 1804 Frontier Trail, Round Rock, TX, 78660",
+    "date": "2025-05-17",
+    "time": "9:00 AM - 11:00 AM",
+    "description": "Morning filled with FREE games, music, food, and tons of activities to get everyone moving.",
+    "additional_details": "First Pop Up Play Day of the season. More Pop Up Play Days will be popping up in parks all summer long.",
+    "raw_datetime": "May 17th from 9\u201311 AM",
+    "source_file": "1fd17b4933c7b5a1eb7157bd59d72709.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "8th Annual Mermaid Capital of Texas Fest in San Marcos",
+    "location": "Plaza Park, San Marcos, TX 78666",
+    "date": "2025-05-17",
+    "time": "10:00 AM - 7:00 PM",
+    "description": "Join the 10th Annual Mermaid Capital of Texas Fest in San Marcos for a family-friendly celebration featuring a Mermaid Promenade and the Aqua Blues Music & Arts Festival. Enjoy live music, food trucks, kids' activities, and over 100 local artisans.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration required.",
+    "raw_datetime": "Saturday, May 17 | Party at the downtown promenade: 10 am \u2013 noon, followed by the Aqua Blue & Art Fest from noon \u2013 7 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/5/17/8th-annual-mermaid-capital-of-texas-fest-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Mindpop\u2019s Family Art Fun@ George Washington Carver Museum and Cultural Art Center",
+    "location": "George Washington Carver Museum and Cultural Art Center, Austin, TX 78702",
+    "date": "2025-05-17",
+    "time": "12:30 pm - 2:00 pm",
+    "description": "This free, family-friendly event at the Carver Museum features hands-on art-making stations, collaborative art projects, guided poetry, and dance, led by MINDPOP\u2019s Emerging Teaching Artist Fellows.",
+    "additional_details": "Age: All ages. Cost: Free with RSVP. Registration: Complimentary tickets available with RSVP.",
+    "raw_datetime": "Saturday, May 17 | 12:30 pm \u2013 2 pm |FREE with RSVP",
+    "source_url": "https://family.do512.com/events/2025/5/17/mindpops-family-art-fun-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Hartman Foundation Concerts in the Park",
+    "location": "Hartman Concert Lawn, Long Center, 701 W Riverside Dr, Austin, TX 78704",
+    "date": "2025-05-18",
+    "time": "7:30 pm",
+    "description": "The Austin Symphony Orchestra's Hartman Foundation Concerts in the Park is a free concert series featuring ASO ensembles playing jazz, light classical, film scores, and pops favorites. Held on Sunday evenings, it's a laid-back way to enjoy live music with friends, family, and even your pup.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration or tickets needed.",
+    "raw_datetime": "Sunday, May 18 | 7:30 pm Concert | FREE",
+    "source_url": "https://family.do512.com/events/weekly/sun/hartman-foundation-concerts-in-the-park-tickets-kcjclmjd",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
     "is_archived": false

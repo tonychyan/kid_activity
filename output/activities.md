@@ -968,7 +968,7 @@
 
 **Time:** 3:00 PM - 6:00 PM
 
-**Location:** Reed Park, [Address Unknown], [City Unknown], [State Unknown], ZIP, Austin, TX 78701 *(ZIP code estimated)*
+**Location:** Reed Park, 2614 Pecos St, Austin, TX 78703
 
 **Description:** Live music, free food by Tivity, snow cones, bounce houses, face painting, and fun!
 
@@ -1026,20 +1026,6 @@
 
 ---
 
-## Cedar Park Kite Festival
-
-**Date:** 2025-05-10
-
-**Time:** 3:00 PM - 7:00 PM
-
-**Location:** Lakeline Park, 1510 Alexis Dr, Cedar Park, TX, 78613
-
-**Additional Details:** Join us!
-
-**Source:** 6a1d170755d66584eb2b689f2e3653f1.PNG
-
----
-
 ## Second Saturdays Are for Families: Seize the Clay@ Laguna Gloria
 
 **Date:** 2025-05-10
@@ -1062,13 +1048,29 @@
 
 **Time:** 9:00 am - 12:00 pm
 
-**Location:** Brentwood Social House, Austin, TX 78701 *(ZIP code estimated)*
+**Location:** Brentwood Social House, 1601 W Koenig Ln, Austin, TX 78756
 
 **Description:** Celebrate AAPI Heritage Month with Asian-inspired ice cream, a scavenger hunt, and interactive storytimes by local authors at Brentwood Social House.
 
 **Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided.
 
 **Source:** Unknown
+
+---
+
+## Woodland Faerie Trail
+
+**Date:** 2025-05-10
+
+**Time:** 10:00 AM - 2:00 PM
+
+**Location:** Zilker Botanical Garden, 2220 Barton Springs Rd, Austin, TX 78746
+
+**Description:** Grand celebration for the opening of the Woodland Faerie Trail.
+
+**Additional Details:** The trail will remain open for exploration through July 12th.
+
+**Source:** 8254de2c9831ec318f04acb6bd8657fb.PNG
 
 ---
 
@@ -1136,31 +1138,177 @@
 
 ---
 
-## Happy Mother’s Day!
+## Dinos in the Wild
 
-**Date:** 2025-05-11
+**Date:** 2025-05-16
 
-**Location:** UMLAUF Sculpture Garden and Museum, Austin, TX 78704
+**Location:** Lady Bird Johnson Wildflower Center, Austin, TX, 78739
 
-**Description:** Celebrate Mother's Day with a curated list of events happening around Austin to make your celebration extra special.
+**Description:** A prehistoric adventure with life-sized animatronic dinosaurs. Suitable for families.
+
+**Additional Details:** Created by Jurassic Park advisor 'Dino' Don Lessem. More details coming soon.
+
+**Source:** c29650c7fadbe1e5c46bd3855df08517.PNG
+
+---
+
+## Safari In the City
+
+**Date:** 2025-05-17
+
+**Time:** 4:00 PM - 6:00 PM
+
+**Location:** Hutto's City Hall lobby, 500 W Live Oak St, Hutto, TX 78634, United States
+
+**Description:** A wild adventure with exotic animal encounters, creative crafts, and joyful moments for the whole family.
+
+**Additional Details:** Cost is $5 for the family. Parking available in the parking garage and right outside City Hall.
+
+**Source:** dd1a6c7bfea960a3743602e130979989.JPG
+
+---
+
+## Spring Festival
+
+**Date:** 2025-05-17
+
+**Time:** 11:00 AM - 2:00 PM
+
+**Location:** Hope Lutheran Church, 6414 N. Hampton, Austin, TX, 78723
+
+**Description:** Celebrate with free food, games, live music, train rides, petting zoo, and a bounce house.
+
+**Additional Details:** For more info: 512-926-8574 or HopeLutheranAustin.org
+
+**Source:** 2f5de4aa46914d249d7e64e2c1743370.JPG
+
+---
+
+## ATX Eid Fest '25
+
+**Date:** 2025-05-17
+
+**Time:** 2:00 PM - 9:00 PM
+
+**Location:** Adam Orgain Park, 1001 Co Rd 137, Hutto, TX 78634
+
+**Description:** An Eid celebration open to all ages with thrilling activities, rides, halal food, face painting, games, shopping bazaar, and family-friendly fun.
+
+**Additional Details:** Spots are limited. Ticket prices may change. RSVP recommended. Hosted by various organizations. Vendor & sponsorship opportunities available.
+
+**Source:** 0514127e23a7157ab9c7476a87e0ea93.JPG
+
+---
+
+## Hop into Health
+
+**Date:** 2025-05-17
+
+**Time:** 9:00 AM - 11:00 AM
+
+**Location:** Frontier Park, 1804 Frontier Trail, Round Rock, TX, 78660
+
+**Description:** Morning filled with FREE games, music, food, and tons of activities to get everyone moving.
+
+**Additional Details:** First Pop Up Play Day of the season. More Pop Up Play Days will be popping up in parks all summer long.
+
+**Source:** 1fd17b4933c7b5a1eb7157bd59d72709.PNG
+
+---
+
+## 8th Annual Mermaid Capital of Texas Fest in San Marcos
+
+**Date:** 2025-05-17
+
+**Time:** 10:00 AM - 7:00 PM
+
+**Location:** Plaza Park, San Marcos, TX 78666
+
+**Description:** Join the 10th Annual Mermaid Capital of Texas Fest in San Marcos for a family-friendly celebration featuring a Mermaid Promenade and the Aqua Blues Music & Arts Festival. Enjoy live music, food trucks, kids' activities, and over 100 local artisans.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration required.
 
 **Source:** Unknown
 
 ---
 
-## UMLAUF Family Day: Wild About Nature
+## Mindpop’s Family Art Fun@ George Washington Carver Museum and Cultural Art Center
 
-**Date:** 2025-05-11
+**Date:** 2025-05-17
+
+**Time:** 12:30 pm - 2:00 pm
+
+**Location:** George Washington Carver Museum and Cultural Art Center, Austin, TX 78702
+
+**Description:** This free, family-friendly event at the Carver Museum features hands-on art-making stations, collaborative art projects, guided poetry, and dance, led by MINDPOP’s Emerging Teaching Artist Fellows.
+
+**Additional Details:** Age: All ages. Cost: Free with RSVP. Registration: Complimentary tickets available with RSVP.
+
+**Source:** Unknown
+
+---
+
+## MAYPALOOZA
+
+**Date:** 2025-05-18
 
 **Time:** 11:00 AM - 4:00 PM
 
-**Location:** UMLAUF Sculpture Garden & Museum, Austin, TX 78704
+**Location:** The Hippo Escape, 209 Farley St, Historic Downtown Hutto, TX, 78634
 
-**Description:** Family Day: Wild About Nature is a day of wildlife, creativity, and outdoor fun with activities like storytime, garden tours, sculpture scavenger hunts, and interactive animal encounters.
+**Description:** A day full of good vibes, tasty eats, and amazing small biz energy. Includes a lineup of food trucks.
 
-**Additional Details:** Age: Kids and adults. Cost: Free with RSVP. Registration: RSVP required
+**Additional Details:** Free Entry + Free Parking. Unique vendors, small biz brands, sweet treats, music, and family-friendly fun. Vendor spots still open. Apply at fashionoftravel@gmail.com.
+
+**Source:** 7f28eb006aeb06ec36bbd687335f03e9.PNG
+
+---
+
+## Hartman Foundation Concerts in the Park
+
+**Date:** 2025-05-18
+
+**Time:** 7:30 pm
+
+**Location:** Hartman Concert Lawn, Long Center, 701 W Riverside Dr, Austin, TX 78704
+
+**Description:** The Austin Symphony Orchestra's Hartman Foundation Concerts in the Park is a free concert series featuring ASO ensembles playing jazz, light classical, film scores, and pops favorites. Held on Sunday evenings, it's a laid-back way to enjoy live music with friends, family, and even your pup.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration or tickets needed.
 
 **Source:** Unknown
+
+---
+
+## Whimsy & Wonder
+
+**Date:** 2025-05-24
+
+**Time:** 6:00 PM - 10:00 PM
+
+**Location:** 1000 Main St, Liberty Hill, TX 78642
+
+**Description:** An eclectic fusion of whimsical and wonderful elements featuring live bands, art demonstrations, vendors, street performers, and a Children's Imagination Garden.
+
+**Additional Details:** Headliner: Jomo & the Possum Posse. Admission: Free! Food and art available for purchase.
+
+**Source:** f5bf00ac0c6f6ffcf7af6a0b6f24d515.JPG
+
+---
+
+## Playdates in the Park - St. John's Park
+
+**Date:** 2025-05-24
+
+**Time:** 10:00 AM
+
+**Location:** St. John's Park, 889 Wilks Ave, Austin, TX 78752
+
+**Description:** Inclusive community events designed to activate families with young children. Enjoy story time, crafts, and music & movement sessions.
+
+**Additional Details:** Public event by Austin Parks Foundation. Designed to inspire creativity and support bonding for parents and children.
+
+**Source:** 31e558e5c6e3fd91839fe8fd22a68700.JPG
 
 ---
 
