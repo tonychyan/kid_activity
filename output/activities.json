@@ -852,7 +852,7 @@
     "additional_details": "Headliner: Jomo & the Possum Posse. Admission: Free! Food and art available for purchase.",
     "raw_datetime": "Saturday at 6 PM \u2013 10 PM",
     "source_file": "f5bf00ac0c6f6ffcf7af6a0b6f24d515.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Playdates in the Park - St. John's Park",
@@ -863,7 +863,7 @@
     "additional_details": "Public event by Austin Parks Foundation. Designed to inspire creativity and support bonding for parents and children.",
     "raw_datetime": "Saturday at 10 AM",
     "source_file": "31e558e5c6e3fd91839fe8fd22a68700.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Safari In the City",
@@ -874,7 +874,7 @@
     "additional_details": "Cost is $5 for the family. Parking available in the parking garage and right outside City Hall.",
     "raw_datetime": "Saturday, May 17 from 4-6 PM",
     "source_file": "dd1a6c7bfea960a3743602e130979989.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Spring Festival",
@@ -885,7 +885,7 @@
     "additional_details": "For more info: 512-926-8574 or HopeLutheranAustin.org",
     "raw_datetime": "Saturday May 17, 11-2",
     "source_file": "2f5de4aa46914d249d7e64e2c1743370.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "ATX Eid Fest '25",
@@ -896,7 +896,7 @@
     "additional_details": "Spots are limited. Ticket prices may change. RSVP recommended. Hosted by various organizations. Vendor & sponsorship opportunities available.",
     "raw_datetime": "Saturday, May 17, 2025 Time: 2:00 PM \u2013 9:00 PM",
     "source_file": "0514127e23a7157ab9c7476a87e0ea93.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "MAYPALOOZA",
@@ -907,7 +907,7 @@
     "additional_details": "Free Entry + Free Parking. Unique vendors, small biz brands, sweet treats, music, and family-friendly fun. Vendor spots still open. Apply at fashionoftravel@gmail.com.",
     "raw_datetime": "Sunday, May 18th | 11AM \u2013 4PM",
     "source_file": "7f28eb006aeb06ec36bbd687335f03e9.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Woodland Faerie Trail",
@@ -923,13 +923,13 @@
   {
     "activity_name": "Dinos in the Wild",
     "location": "Lady Bird Johnson Wildflower Center, Austin, TX, 78739",
-    "date": "2025-05-16",
+    "date": "2025-05-24",
     "time": null,
     "description": "A prehistoric adventure with life-sized animatronic dinosaurs. Suitable for families.",
     "additional_details": "Created by Jurassic Park advisor 'Dino' Don Lessem. More details coming soon.",
     "raw_datetime": "May 16 \u2013 August 17, 2025",
     "source_file": "c29650c7fadbe1e5c46bd3855df08517.PNG",
-    "is_archived": true
+    "is_archived": false
   },
   {
     "activity_name": "Hop into Health",
@@ -940,7 +940,7 @@
     "additional_details": "First Pop Up Play Day of the season. More Pop Up Play Days will be popping up in parks all summer long.",
     "raw_datetime": "May 17th from 9\u201311 AM",
     "source_file": "1fd17b4933c7b5a1eb7157bd59d72709.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "8th Annual Mermaid Capital of Texas Fest in San Marcos",
@@ -953,7 +953,7 @@
     "source_url": "https://family.do512.com/events/2025/5/17/8th-annual-mermaid-capital-of-texas-fest-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Mindpop\u2019s Family Art Fun@ George Washington Carver Museum and Cultural Art Center",
@@ -966,7 +966,7 @@
     "source_url": "https://family.do512.com/events/2025/5/17/mindpops-family-art-fun-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Hartman Foundation Concerts in the Park",
@@ -977,6 +977,43 @@
     "additional_details": "Age: All ages. Cost: Free. Registration: No registration or tickets needed.",
     "raw_datetime": "Sunday, May 18 | 7:30 pm Concert | FREE",
     "source_url": "https://family.do512.com/events/weekly/sun/hartman-foundation-concerts-in-the-park-tickets-kcjclmjd",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": true
+  },
+  {
+    "activity_name": "2025 Austin Greek Festival",
+    "location": "414 St. Stephens School Rd, Austin, TX 78746, United States",
+    "date": "2025-05-24",
+    "time": "11:00 AM - 8:00 PM",
+    "description": "Annual Austin Greek Festival featuring Greek food, dance performances, and kid-friendly activities.",
+    "additional_details": "Event occurs on Memorial Day Weekend, May 23rd, 24th, and 25th, 2025.",
+    "raw_datetime": "May 23 at 9 AM \u2013 May 25 at 8 PM PDT",
+    "source_file": "e1c4e48840bd0023295809707ac4be89.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Groundwork Music Project@ The Hive",
+    "location": "The Hive, 10542 Menchaca Rd, Austin, TX 78748",
+    "date": "2025-05-24",
+    "time": "10:00 AM",
+    "description": "Catch a family-friendly concert where the music is just as fun for grown-ups as it is for kids! Groundwork Music Project brings top-notch musicianship and playful, engaging tunes to the stage.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration details provided.",
+    "raw_datetime": "Saturday, May 24 | 10 am | FREE",
+    "source_url": "https://family.do512.com/events/2025/5/24/groundwork-music-project-1742922317",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "H-E-B Free Fourth Sunday@ Texas Science and Natural History Museum",
+    "location": "Texas Science and Natural History Museum, 2400 Trinity St, Austin, TX 78712",
+    "date": "2025-05-25",
+    "time": "1 pm - 5 pm",
+    "description": "Enjoy free admission to the Texas Science & Natural History Museum courtesy of H-E-B, with exhibits featuring ancient fossils, meteorites, Texas wildlife, and a pterosaur with a 33-foot wingspan.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration details provided.",
+    "raw_datetime": "Sunday, May 25 | 1 pm- 5 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/5/25/h-e-b-free-fourth-sunday-1739901289",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
     "is_archived": false

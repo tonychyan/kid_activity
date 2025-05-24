@@ -1152,6 +1152,38 @@
 
 ---
 
+## Whimsy & Wonder
+
+**Date:** 2025-05-17
+
+**Time:** 6:00 PM - 10:00 PM
+
+**Location:** 1000 Main St, Liberty Hill, TX 78642
+
+**Description:** An eclectic fusion of whimsical and wonderful elements featuring live bands, art demonstrations, vendors, street performers, and a Children's Imagination Garden.
+
+**Additional Details:** Headliner: Jomo & the Possum Posse. Admission: Free! Food and art available for purchase.
+
+**Source:** f5bf00ac0c6f6ffcf7af6a0b6f24d515.JPG
+
+---
+
+## Playdates in the Park - St. John's Park
+
+**Date:** 2025-05-17
+
+**Time:** 10:00 AM
+
+**Location:** St. John's Park, 889 Wilks Ave, Austin, TX 78752
+
+**Description:** Inclusive community events designed to activate families with young children. Enjoy story time, crafts, and music & movement sessions.
+
+**Additional Details:** Public event by Austin Parks Foundation. Designed to inspire creativity and support bonding for parents and children.
+
+**Source:** 31e558e5c6e3fd91839fe8fd22a68700.JPG
+
+---
+
 ## Safari In the City
 
 **Date:** 2025-05-17
@@ -1280,35 +1312,51 @@
 
 ---
 
-## Whimsy & Wonder
+## 2025 Austin Greek Festival
 
-**Date:** 2025-05-24
+**Date:** 2025-05-23
 
-**Time:** 6:00 PM - 10:00 PM
+**Time:** 9:00 AM - 8:00 PM
 
-**Location:** 1000 Main St, Liberty Hill, TX 78642
+**Location:** 414 St. Stephens School Rd, Austin, TX 78746, United States
 
-**Description:** An eclectic fusion of whimsical and wonderful elements featuring live bands, art demonstrations, vendors, street performers, and a Children's Imagination Garden.
+**Description:** Annual Austin Greek Festival featuring Greek food, dance performances, and kid-friendly activities.
 
-**Additional Details:** Headliner: Jomo & the Possum Posse. Admission: Free! Food and art available for purchase.
+**Additional Details:** Event occurs on Memorial Day Weekend, May 23rd, 24th, and 25th, 2025.
 
-**Source:** f5bf00ac0c6f6ffcf7af6a0b6f24d515.JPG
+**Source:** e1c4e48840bd0023295809707ac4be89.JPG
 
 ---
 
-## Playdates in the Park - St. John's Park
+## Groundwork Music Project@ The Hive
 
 **Date:** 2025-05-24
 
 **Time:** 10:00 AM
 
-**Location:** St. John's Park, 889 Wilks Ave, Austin, TX 78752
+**Location:** The Hive, Assumed City, Assumed State, Assumed ZIP, Austin, TX 78701 *(ZIP code estimated)*
 
-**Description:** Inclusive community events designed to activate families with young children. Enjoy story time, crafts, and music & movement sessions.
+**Description:** Catch a family-friendly concert where the music is just as fun for grown-ups as it is for kids! Groundwork Music Project brings top-notch musicianship and playful, engaging tunes to the stage.
 
-**Additional Details:** Public event by Austin Parks Foundation. Designed to inspire creativity and support bonding for parents and children.
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided.
 
-**Source:** 31e558e5c6e3fd91839fe8fd22a68700.JPG
+**Source:** Unknown
+
+---
+
+## H-E-B Free Fourth Sunday@ Texas Science and Natural History Museum
+
+**Date:** 2025-05-25
+
+**Time:** 1 pm - 5 pm
+
+**Location:** Texas Science and Natural History Museum, Austin, TX 78701
+
+**Description:** Enjoy free admission to the Texas Science & Natural History Museum courtesy of H-E-B, with exhibits featuring ancient fossils, meteorites, Texas wildlife, and a pterosaur with a 33-foot wingspan.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided.
+
+**Source:** Unknown
 
 ---
 
