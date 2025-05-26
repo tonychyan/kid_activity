@@ -32,6 +32,7 @@
             .afternoon { background-color: #FBBC05; } /* Yellow */
             .evening { background-color: #34A853; }   /* Green */
             .unknown { background-color: #EA4335; }   /* Red */
+            .splash-pad { background-color: #8E44AD; } /* Purple */
             .legend { margin-top: 10px; }
             .legend-item { margin-right: 15px; display: inline-block; }
             .source-link { color: #666; text-decoration: none; }
@@ -48,6 +49,9 @@
                 font-weight: bold;
                 margin-right: 10px;
                 font-size: 14px;
+            }
+            .splash-pad-item {
+                display: none; /* Initially hide splash pad items */
             }
             .marker-label {
                 position: relative !important;
@@ -82,12 +86,18 @@
                 <label><input type="checkbox" value="unknown" checked onchange="filterMarkers()"> <span class="time-indicator unknown"></span>Unknown Time</label>
             </div>
             
+            <div class="filter-group">
+                <div class="filter-title">Splash Pads:</div>
+                <label><input type="checkbox" id="splash-pad-toggle" onchange="filterMarkers()"> <span class="time-indicator splash-pad"></span>Show Splash Pads</label>
+            </div>
+            
             <div class="legend">
                 <span class="legend-title">Legend: </span>
                 <span class="legend-item"><span class="time-indicator morning"></span>Morning (12 AM - 11:59 AM)</span>
                 <span class="legend-item"><span class="time-indicator afternoon"></span>Afternoon (12 PM - 4:59 PM)</span>
                 <span class="legend-item"><span class="time-indicator evening"></span>Evening (5 PM - 11:59 PM)</span>
                 <span class="legend-item"><span class="time-indicator unknown"></span>Unknown Time</span>
+                <span class="legend-item"><span class="time-indicator splash-pad"></span>Splash Pad</span>
             </div>
         </div>
         
@@ -99,68 +109,342 @@
     
         <div class="activity" data-date="2025-06-23" data-time-period="evening" id="activity-0">
             <h3 onclick="showMarker(0)"><span class="activity-number" style="background-color: #34A853;">1</span>KUTX Parking Lot Movie Night@ Lou’s</h3>
-            <p><strong>Date:</strong> 2025-06-23</p>
-            <p><strong>Time:</strong> DJs begin at 7 pm, movie starts at sundown</p>
-            <p><strong>Location:</strong> Lou's, Austin, TX 78701</p>
-                    <p><strong>Description:</strong> It's a family-friendly movie night at Lou’s this Friday night featuring The Parent Trap (1998 version) on a 25′ screen, with KUTX DJing with vinyl spins, surprise pop-ups, a parking lot bar, and plenty of Lou’s food and drink.</p>
-            <p><strong>Additional Details:</strong> Age: Family-friendly. Cost: FREE. Registration: Check out the upcoming lineup and get all the info here.</p>
-            <p><strong>Source:</strong> <a href='https://family.do512.com/events/2025/4/25/parking-lot-movie-night-feat-dj-taylor-wallace-the-parent-trap-1998-tickets' target='_blank' class='source-link'>https://family.do512.com/events/2025/4/25/parking-lot-movie-night-feat-dj-taylor-wallace-the-parent-trap-1998-tickets</a></p>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=Lou%27s%2C%20Austin" target="_blank">View on Google Maps</a></p>
+        <p><strong>Date:</strong> 2025-06-23</p>
+<p><strong>Time:</strong> DJs begin at 7 pm, movie starts at sundown</p>
+<p><strong>Location:</strong> Lou's, Austin, TX 78701</p>
+<p><strong>Description:</strong> It's a family-friendly movie night at Lou’s this Friday night featuring The Parent Trap (1998 version) on a 25′ screen, with KUTX DJing with vinyl spins, surprise pop-ups, a parking lot bar, and plenty of Lou’s food and drink.</p>
+<p><strong>Additional Details:</strong> Age: Family-friendly. Cost: FREE. Registration: Check out the upcoming lineup and get all the info here.</p>
+<p><strong>Source:</strong> <a href='https://family.do512.com/events/2025/4/25/parking-lot-movie-night-feat-dj-taylor-wallace-the-parent-trap-1998-tickets' target='_blank' class='source-link'>https://family.do512.com/events/2025/4/25/parking-lot-movie-night-feat-dj-taylor-wallace-the-parent-trap-1998-tickets</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=Lou%27s%2C%20Austin" target="_blank">View on Google Maps</a></p>
         </div>
 
         <div class="activity" data-date="" data-time-period="evening" id="activity-1">
             <h3 onclick="showMarker(1)"><span class="activity-number" style="background-color: #34A853;">2</span>Mother Son GLOW Dance</h3>
-            <p><strong>Date:</strong> Not specified</p>
-            <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
-            <p><strong>Location:</strong> Leander Activity Center, 11880 Hero Way West, Suite 600, Leander, TX 78641-7400, United States</p>
-                    <p><strong>Description:</strong> An electrifying evening of fun and excitement celebrating the bond between mothers and sons in a vibrant, glow-in-the-dark atmosphere.</p>
-            <p><strong>Additional Details:</strong> Cost: $25 per duo, $10 per additional son. Tickets available online.</p>
-            <p><strong>Source:</strong> d6ecedf42abc7a27cf6d07fada346b0e.JPG</p>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=Leander%20Activity%20Center%2C%2011880%20Hero%20Way%20West%2C%20Suite%20600%2C%20Leander%2C%20TX%2078641-7400%2C%20United%20States" target="_blank">View on Google Maps</a></p>
+        <p><strong>Date:</strong> Not specified</p>
+<p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+<p><strong>Location:</strong> Leander Activity Center, 11880 Hero Way West, Suite 600, Leander, TX 78641-7400, United States</p>
+<p><strong>Description:</strong> An electrifying evening of fun and excitement celebrating the bond between mothers and sons in a vibrant, glow-in-the-dark atmosphere.</p>
+<p><strong>Additional Details:</strong> Cost: $25 per duo, $10 per additional son. Tickets available online.</p>
+<p><strong>Source:</strong> d6ecedf42abc7a27cf6d07fada346b0e.JPG</p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=Leander%20Activity%20Center%2C%2011880%20Hero%20Way%20West%2C%20Suite%20600%2C%20Leander%2C%20TX%2078641-7400%2C%20United%20States" target="_blank">View on Google Maps</a></p>
         </div>
 
         <div class="activity" data-date="2025-05-24" data-time-period="unknown" id="activity-2">
             <h3 onclick="showMarker(2)"><span class="activity-number" style="background-color: #EA4335;">3</span>Dinos in the Wild</h3>
-            <p><strong>Date:</strong> 2025-05-24</p>
-            <p><strong>Time:</strong> None</p>
-            <p><strong>Location:</strong> Lady Bird Johnson Wildflower Center, Austin, TX, 78739</p>
-                    <p><strong>Description:</strong> A prehistoric adventure with life-sized animatronic dinosaurs. Suitable for families.</p>
-            <p><strong>Additional Details:</strong> Created by Jurassic Park advisor 'Dino' Don Lessem. More details coming soon.</p>
-            <p><strong>Source:</strong> c29650c7fadbe1e5c46bd3855df08517.PNG</p>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=Lady%20Bird%20Johnson%20Wildflower%20Center%2C%20Austin%2C%20TX%2C%2078739" target="_blank">View on Google Maps</a></p>
+        <p><strong>Date:</strong> 2025-05-24</p>
+<p><strong>Time:</strong> None</p>
+<p><strong>Location:</strong> Lady Bird Johnson Wildflower Center, Austin, TX, 78739</p>
+<p><strong>Description:</strong> A prehistoric adventure with life-sized animatronic dinosaurs. Suitable for families.</p>
+<p><strong>Additional Details:</strong> Created by Jurassic Park advisor 'Dino' Don Lessem. More details coming soon.</p>
+<p><strong>Source:</strong> c29650c7fadbe1e5c46bd3855df08517.PNG</p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=Lady%20Bird%20Johnson%20Wildflower%20Center%2C%20Austin%2C%20TX%2C%2078739" target="_blank">View on Google Maps</a></p>
         </div>
 
         <div class="activity" data-date="2025-05-24" data-time-period="morning" id="activity-3">
             <h3 onclick="showMarker(3)"><span class="activity-number" style="background-color: #4285F4;">4</span>2025 Austin Greek Festival</h3>
-            <p><strong>Date:</strong> 2025-05-24</p>
-            <p><strong>Time:</strong> 11:00 AM - 8:00 PM</p>
-            <p><strong>Location:</strong> 414 St. Stephens School Rd, Austin, TX 78746, United States</p>
-                    <p><strong>Description:</strong> Annual Austin Greek Festival featuring Greek food, dance performances, and kid-friendly activities.</p>
-            <p><strong>Additional Details:</strong> Event occurs on Memorial Day Weekend, May 23rd, 24th, and 25th, 2025.</p>
-            <p><strong>Source:</strong> <a href='/kid_activity/input/e1c4e48840bd0023295809707ac4be89.JPG' target='_blank' class='source-link'>e1c4e48840bd0023295809707ac4be89.JPG</a></p>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=414%20St.%20Stephens%20School%20Rd%2C%20Austin" target="_blank">View on Google Maps</a></p>
+        <p><strong>Date:</strong> 2025-05-24</p>
+<p><strong>Time:</strong> 11:00 AM - 8:00 PM</p>
+<p><strong>Location:</strong> 414 St. Stephens School Rd, Austin, TX 78746, United States</p>
+<p><strong>Description:</strong> Annual Austin Greek Festival featuring Greek food, dance performances, and kid-friendly activities.</p>
+<p><strong>Additional Details:</strong> Event occurs on Memorial Day Weekend, May 23rd, 24th, and 25th, 2025.</p>
+<p><strong>Source:</strong> <a href='/kid_activity/input/e1c4e48840bd0023295809707ac4be89.JPG' target='_blank' class='source-link'>e1c4e48840bd0023295809707ac4be89.JPG</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=414%20St.%20Stephens%20School%20Rd%2C%20Austin" target="_blank">View on Google Maps</a></p>
         </div>
 
         <div class="activity" data-date="2025-05-24" data-time-period="morning" id="activity-4">
             <h3 onclick="showMarker(4)"><span class="activity-number" style="background-color: #4285F4;">5</span>Groundwork Music Project@ The Hive</h3>
-            <p><strong>Date:</strong> 2025-05-24</p>
-            <p><strong>Time:</strong> 10:00 AM</p>
-            <p><strong>Location:</strong> The Hive, 10542 Menchaca Rd, Austin, TX 78748</p>
-                    <p><strong>Description:</strong> Catch a family-friendly concert where the music is just as fun for grown-ups as it is for kids! Groundwork Music Project brings top-notch musicianship and playful, engaging tunes to the stage.</p>
-            <p><strong>Additional Details:</strong> Age: All ages. Cost: Free. Registration: No registration details provided.</p>
-            <p><strong>Source:</strong> <a href='https://family.do512.com/events/2025/5/24/groundwork-music-project-1742922317' target='_blank' class='source-link'>https://family.do512.com/events/2025/5/24/groundwork-music-project-1742922317</a></p>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=The%20Hive%2C%2010542%20Menchaca%20Rd%2C%20Austin%2C%20TX%2078748" target="_blank">View on Google Maps</a></p>
+        <p><strong>Date:</strong> 2025-05-24</p>
+<p><strong>Time:</strong> 10:00 AM</p>
+<p><strong>Location:</strong> The Hive, 10542 Menchaca Rd, Austin, TX 78748</p>
+<p><strong>Description:</strong> Catch a family-friendly concert where the music is just as fun for grown-ups as it is for kids! Groundwork Music Project brings top-notch musicianship and playful, engaging tunes to the stage.</p>
+<p><strong>Additional Details:</strong> Age: All ages. Cost: Free. Registration: No registration details provided.</p>
+<p><strong>Source:</strong> <a href='https://family.do512.com/events/2025/5/24/groundwork-music-project-1742922317' target='_blank' class='source-link'>https://family.do512.com/events/2025/5/24/groundwork-music-project-1742922317</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=The%20Hive%2C%2010542%20Menchaca%20Rd%2C%20Austin%2C%20TX%2078748" target="_blank">View on Google Maps</a></p>
         </div>
 
         <div class="activity" data-date="2025-05-25" data-time-period="afternoon" id="activity-5">
             <h3 onclick="showMarker(5)"><span class="activity-number" style="background-color: #FBBC05;">6</span>H-E-B Free Fourth Sunday@ Texas Science and Natural History Museum</h3>
-            <p><strong>Date:</strong> 2025-05-25</p>
-            <p><strong>Time:</strong> 1 pm - 5 pm</p>
-            <p><strong>Location:</strong> Texas Science and Natural History Museum, 2400 Trinity St, Austin, TX 78712</p>
-                    <p><strong>Description:</strong> Enjoy free admission to the Texas Science & Natural History Museum courtesy of H-E-B, with exhibits featuring ancient fossils, meteorites, Texas wildlife, and a pterosaur with a 33-foot wingspan.</p>
-            <p><strong>Additional Details:</strong> Age: All ages. Cost: Free. Registration: No registration details provided.</p>
-            <p><strong>Source:</strong> <a href='https://family.do512.com/events/2025/5/25/h-e-b-free-fourth-sunday-1739901289' target='_blank' class='source-link'>https://family.do512.com/events/2025/5/25/h-e-b-free-fourth-sunday-1739901289</a></p>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=Texas%20Science%20and%20Natural%20History%20Museum%2C%202400%20Trinity%20St%2C%20Austin%2C%20TX%2078712" target="_blank">View on Google Maps</a></p>
+        <p><strong>Date:</strong> 2025-05-25</p>
+<p><strong>Time:</strong> 1 pm - 5 pm</p>
+<p><strong>Location:</strong> Texas Science and Natural History Museum, 2400 Trinity St, Austin, TX 78712</p>
+<p><strong>Description:</strong> Enjoy free admission to the Texas Science & Natural History Museum courtesy of H-E-B, with exhibits featuring ancient fossils, meteorites, Texas wildlife, and a pterosaur with a 33-foot wingspan.</p>
+<p><strong>Additional Details:</strong> Age: All ages. Cost: Free. Registration: No registration details provided.</p>
+<p><strong>Source:</strong> <a href='https://family.do512.com/events/2025/5/25/h-e-b-free-fourth-sunday-1739901289' target='_blank' class='source-link'>https://family.do512.com/events/2025/5/25/h-e-b-free-fourth-sunday-1739901289</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=Texas%20Science%20and%20Natural%20History%20Museum%2C%202400%20Trinity%20St%2C%20Austin%2C%20TX%2078712" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-6">
+            <h3 onclick="showMarker(6)"><span class="activity-number" style="background-color: #8E44AD;">1</span>Robin Bledsoe Splash Plop</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (beginning 5/15)</p>
+<p><strong>Location:</strong> 601 S Bagdad Rd, Leander, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Perfect for little ones. Completely fenced in with puddles forming in center for sitting and wading. Water cannons that don't swing far enough to soak spectators.</p>
+<p><strong>Additional Details:</strong> Bathrooms just outside fence. Ample parking. Pack sunscreen and brimmed hats.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=601%20S%20Bagdad%20Rd%2C%20Leander%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-7">
+            <h3 onclick="showMarker(7)"><span class="activity-number" style="background-color: #8E44AD;">2</span>The Quarry Splash City</h3>
+        <p><strong>Hours:</strong> Daily 10am-7pm (beginning 5/20)</p>
+<p><strong>Location:</strong> 3005 County Road 175, Leander, TX</p>
+<p><strong>Fees:</strong> Paid (couple bucks for everyone over 3)</p>
+<p><strong>Description:</strong> Incredible splash city with astroturf. Train depot nearby runs on :15 and :45 of every hour.</p>
+<p><strong>Additional Details:</strong> Cash only, honesty policy for payment. Very clean bathrooms. Large parking lot with backup lot. Early arrival recommended for shade.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=3005%20County%20Road%20175%2C%20Leander%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-8">
+            <h3 onclick="showMarker(8)"><span class="activity-number" style="background-color: #8E44AD;">3</span>Elizabeth Milburn Tot Time</h3>
+        <p><strong>Hours:</strong> M-F 10am-12pm (6/6-8/19)</p>
+<p><strong>Location:</strong> 1901 Sun Chase Blvd, Cedar Park, TX</p>
+<p><strong>Fees:</strong> Paid</p>
+<p><strong>Description:</strong> Shallow pool for ages 0-5 with waterslide and attentive lifeguards. Pool supplies lifejackets.</p>
+<p><strong>Additional Details:</strong> Large canopies over seating areas. Not far from swimming area bathrooms. Plenty of parking.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1901%20Sun%20Chase%20Blvd%2C%20Cedar%20Park%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-9">
+            <h3 onclick="showMarker(9)"><span class="activity-number" style="background-color: #8E44AD;">4</span>Prete Plaza Main Street Splash Pad</h3>
+        <p><strong>Hours:</strong> Daily 7:30am-10pm</p>
+<p><strong>Location:</strong> 221 E Main St, Round Rock, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Located across from Round Rock public library which offers story time a couple times a week.</p>
+<p><strong>Additional Details:</strong> Street-lined parking only, can get tricky. May need to walk a few blocks. Johnny on the Spots nearby, rumor of public restroom available.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=221%20E%20Main%20St%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-10">
+            <h3 onclick="showMarker(10)"><span class="activity-number" style="background-color: #8E44AD;">5</span>Falcon Pointe Slippery Splash</h3>
+        <p><strong>Hours:</strong> Daily 10am-9pm</p>
+<p><strong>Location:</strong> 1813 Tranquility Ln, Pflugerville, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Splash pad in residential neighborhood. Can be slick, splash with caution.</p>
+<p><strong>Additional Details:</strong> Very close and clean bathrooms. Street parking only. Be courteous of residents and their mailboxes/driveways.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1813%20Tranquility%20Ln%2C%20Pflugerville%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-11">
+            <h3 onclick="showMarker(11)"><span class="activity-number" style="background-color: #8E44AD;">6</span>NE Metro Hidden Splash Gem</h3>
+        <p><strong>Hours:</strong> Daily 10am-7pm</p>
+<p><strong>Location:</strong> 15500 Sun Light Near Way, Pflugerville, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Hidden gem often with no other people around. Located near skate park in southern part of park.</p>
+<p><strong>Additional Details:</strong> Large canopies cover playscape. Very clean bathrooms close to area. Easy parking. Hard to find - follow signs to skate park.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=15500%20Sun%20Light%20Near%20Way%2C%20Pflugerville%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-12">
+            <h3 onclick="showMarker(12)"><span class="activity-number" style="background-color: #8E44AD;">7</span>Bartholomew Soak Pad</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (beginning 5/15)</p>
+<p><strong>Location:</strong> 1800 E. 51st St, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Recently renovated playground and park with municipal pool nearby (costs a few bucks).</p>
+<p><strong>Additional Details:</strong> Lots of shade. Brand new parking lot. Clean bathrooms since renovation.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1800%20E.%2051st%20St%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-13">
+            <h3 onclick="showMarker(13)"><span class="activity-number" style="background-color: #8E44AD;">8</span>Bailey Park Drench Pad</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (beginning 5/15)</p>
+<p><strong>Location:</strong> North Central Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> You will get SOAKED here! Dump buckets, waterfalls, ground poppers - Bailey has it all!</p>
+<p><strong>Additional Details:</strong> Large trees surrounding area. Bathrooms often not the most delightful. Parking can be tricky with school and hospital nearby.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=North%20Central%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-14">
+            <h3 onclick="showMarker(14)"><span class="activity-number" style="background-color: #8E44AD;">9</span>Chestnut Splash Pad</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (starting 5/15)</p>
+<p><strong>Location:</strong> 1404 E 16th St, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Fairly unknown splash pad with lots of open space for flying kites or frolicking.</p>
+<p><strong>Additional Details:</strong> Large covered picnic area and tree-covered playground. Pad itself in sunshine. 1 portable toilet, quite clean. Street parking in residential area.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1404%20E%2016th%20St%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-15">
+            <h3 onclick="showMarker(15)"><span class="activity-number" style="background-color: #8E44AD;">10</span>Pease Park Splash Pad</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (starting 5/15)</p>
+<p><strong>Location:</strong> 1100 Kingsbury Street, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Multiple playgrounds and fields with stone picnic tables. Located along Shoal Creek Trail.</p>
+<p><strong>Additional Details:</strong> Exceptionally well maintained bathrooms. Parking at bottom of hill is lucky - prepare for San Francisco-style parking brake use.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1100%20Kingsbury%20Street%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-16">
+            <h3 onclick="showMarker(16)"><span class="activity-number" style="background-color: #8E44AD;">11</span>Rosewood Secret Splashery</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (starting 5/15)</p>
+<p><strong>Location:</strong> 1182 Pleasant Valley, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Perfect mix of sun and shade. Hardly ever anyone else here with spot-on amount of water features.</p>
+<p><strong>Additional Details:</strong> Two handicap port-a-potties close by or official toilets in community center up hill. Two parking lots available.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1182%20Pleasant%20Valley%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-17">
+            <h3 onclick="showMarker(17)"><span class="activity-number" style="background-color: #8E44AD;">12</span>Eastwoods Spankin' New Splash</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (starting 5/15)</p>
+<p><strong>Location:</strong> 3001 Harris Park Blvd, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Huge park with tons of space to play. City worked hard to revive this beautiful park.</p>
+<p><strong>Additional Details:</strong> Great trees throughout park. Must pay for parking and find spot not reserved for residents. Bathrooms across park in decent shape.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=3001%20Harris%20Park%20Blvd%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-18">
+            <h3 onclick="showMarker(18)"><span class="activity-number" style="background-color: #8E44AD;">13</span>Metz Splash Pad</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (starting 5/15)</p>
+<p><strong>Location:</strong> 2400 Canterbury St, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Located off Eastern tip of Ladybird Lake Hike and Bike Trail. FREE lunch on Fridays at community center.</p>
+<p><strong>Additional Details:</strong> Bathrooms in community center - dry off before entering. Public restrooms down the hill. One large parking lot.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=2400%20Canterbury%20St%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-19">
+            <h3 onclick="showMarker(19)"><span class="activity-number" style="background-color: #8E44AD;">14</span>Clarksville Shady Splashing</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (starting 5/15)</p>
+<p><strong>Location:</strong> 1811 W 11th St, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Often has resident kids but never feels overcrowded. Beware of south bench - you will get wet!</p>
+<p><strong>Additional Details:</strong> Bathrooms connected to splash area in decent shape. Street parking only, can get congested.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1811%20W%2011th%20St%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-20">
+            <h3 onclick="showMarker(20)"><span class="activity-number" style="background-color: #8E44AD;">15</span>Liz Carpenter Splashapalooza</h3>
+        <p><strong>Hours:</strong> Mon 12noon-9:45pm, T-Su 8am-9:45pm</p>
+<p><strong>Location:</strong> 1000 Barton Springs Rd, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Popular central location splash pad. Many fun places to grab food nearby including The Picnic Food Truck Park.</p>
+<p><strong>Additional Details:</strong> Not much shade. New and exceptionally clean bathrooms. Nearly impossible parking unless you pay fee at Parmer Events Center.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1000%20Barton%20Springs%20Rd%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-21">
+            <h3 onclick="showMarker(21)"><span class="activity-number" style="background-color: #8E44AD;">16</span>Ricky Guerrero Sopping Splashscape</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm (starting 5/15)</p>
+<p><strong>Location:</strong> 1100 Brodie St, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> In Southern heart of downtown and so FUN! Not a well kept secret, so be prepared for busy pad and to get drenched!</p>
+<p><strong>Additional Details:</strong> Shade appreciated in August. Bathrooms right next to splashing but need TLC. Small parking lot fills quickly, street parking available.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1100%20Brodie%20St%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-22">
+            <h3 onclick="showMarker(22)"><span class="activity-number" style="background-color: #8E44AD;">17</span>Dick Nichols Splash Fountain</h3>
+        <p><strong>Hours:</strong> Daily 9am-8pm</p>
+<p><strong>Location:</strong> 8011 Beckett Rd, Austin, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> More of an oversized whale/dolphin fountain. Won't leave you wringing out clothes. 1.2 mile loop great for scooters or beginning bikers.</p>
+<p><strong>Additional Details:</strong> Newly installed canopies and big Live Oaks provide shade. Bathrooms adjacent to playscape, well maintained. Plentiful parking.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=8011%20Beckett%20Rd%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-23">
+            <h3 onclick="showMarker(23)"><span class="activity-number" style="background-color: #8E44AD;">18</span>Bee Cave Galleria Splash Dance</h3>
+        <p><strong>Hours:</strong> Currently under repair (as of 2017)</p>
+<p><strong>Location:</strong> 12700 Hill Country Blvd, Bee Cave, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Right next to library. New jets added and moved location for more lawn space and seating.</p>
+<p><strong>Additional Details:</strong> Wooden arbor taken down so pad in direct sunlight. Several sets of bathrooms nearby. Mall parking available.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=12700%20Hill%20Country%20Blvd%2C%20Bee%20Cave%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-24">
+            <h3 onclick="showMarker(24)"><span class="activity-number" style="background-color: #8E44AD;">19</span>Brushy Creek Splash Pad</h3>
+        <p><strong>Hours:</strong> Daily 10am-8pm, noon on Tuesdays</p>
+<p><strong>Location:</strong> 3300 Brushy Creek Rd, Cedar Park, TX</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Once named by Austin Chronicle 'Best Place to Play in a Fountain.' Located at Brushy Creek Lake Park.</p>
+<p><strong>Additional Details:</strong> Temporarily closed for renovations - set to open late summer 2024. Free and open daily through Labor Day.</p>
+<p><strong>Source:</strong> <a href='https://do512family.com/awesome-pools-splash-pads-around-austin/' target='_blank' class='source-link'>Do512 Family</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=3300%20Brushy%20Creek%20Rd%2C%20Cedar%20Park%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-25">
+            <h3 onclick="showMarker(25)"><span class="activity-number" style="background-color: #8E44AD;">20</span>El Salido Pool</h3>
+        <p><strong>Hours:</strong> Open year round, water heated to 82 degrees</p>
+<p><strong>Location:</strong> 11500 El Salido Pkwy, Austin, TX</p>
+<p><strong>Fees:</strong> Paid</p>
+<p><strong>Description:</strong> Anderson Mill's pool has a fun toddler pool with sprinklers. It also has three diving boards in its bigger pool.</p>
+<p><strong>Additional Details:</strong> You don't need to be a resident of Anderson Mill to use the pool. Anderson Mill Pool is open in summer and has a slide and four lap lanes.</p>
+<p><strong>Source:</strong> <a href='https://do512family.com/awesome-pools-splash-pads-around-austin/' target='_blank' class='source-link'>Do512 Family</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=11500%20El%20Salido%20Pkwy%2C%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-26">
+            <h3 onclick="showMarker(26)"><span class="activity-number" style="background-color: #8E44AD;">21</span>Scott Mentzer Pool</h3>
+        <p><strong>Hours:</strong> Closed on Mondays</p>
+<p><strong>Location:</strong> 901 Old Austin Hutto Rd, Pflugerville, TX</p>
+<p><strong>Fees:</strong> Paid</p>
+<p><strong>Description:</strong> This pool has a small lazy river, a toddler slide, and water slides (kids must be 48 inches to use the slides on their own).</p>
+<p><strong>Additional Details:</strong> Please take note that this pool is closed on Mondays.</p>
+<p><strong>Source:</strong> <a href='https://do512family.com/awesome-pools-splash-pads-around-austin/' target='_blank' class='source-link'>Do512 Family</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=901%20Old%20Austin%20Hutto%20Rd%2C%20Pflugerville%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-27">
+            <h3 onclick="showMarker(27)"><span class="activity-number" style="background-color: #8E44AD;">22</span>Veterans Memorial Pool</h3>
+        <p><strong>Hours:</strong> Closed on Tuesdays</p>
+<p><strong>Location:</strong> 2525 W New Hope Dr, Cedar Park, TX</p>
+<p><strong>Fees:</strong> Paid</p>
+<p><strong>Description:</strong> This is an 8,300 sq. ft. activity pool with a drop slide, jumping platform, and water playground. Additional amenities include a family slide, cargo net log crossing, water basketball, and rentable poolside shade.</p>
+<p><strong>Additional Details:</strong> Veterans Memorial Pool is closed on Tuesdays.</p>
+<p><strong>Source:</strong> <a href='https://do512family.com/awesome-pools-splash-pads-around-austin/' target='_blank' class='source-link'>Do512 Family</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=2525%20W%20New%20Hope%20Dr%2C%20Cedar%20Park%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-28">
+            <h3 onclick="showMarker(28)"><span class="activity-number" style="background-color: #8E44AD;">23</span>Micki Krebsbach Pool</h3>
+        <p><strong>Hours:</strong> Seasonal</p>
+<p><strong>Location:</strong> 301 Deep Wood Dr, Round Rock, TX</p>
+<p><strong>Fees:</strong> Paid</p>
+<p><strong>Description:</strong> This pool has a pirate ship that is 26 feet long and 23 feet high water adventure for all ages! The ship includes wet and wild climbing angles, and water cannons for major family fun.</p>
+<p><strong>Additional Details:</strong> It also has water slides and a water crossing obstacle (kids must be 48 inches to ride the large slide and use the water crossing).</p>
+<p><strong>Source:</strong> <a href='https://do512family.com/awesome-pools-splash-pads-around-austin/' target='_blank' class='source-link'>Do512 Family</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=301%20Deep%20Wood%20Dr%2C%20Round%20Rock%2C%20TX" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-29">
+            <h3 onclick="showMarker(29)"><span class="activity-number" style="background-color: #8E44AD;">24</span>Lakewood Splash Pad</h3>
+        <p><strong>Hours:</strong> Open from the first weekend in April to the last weekend in October</p>
+<p><strong>Location:</strong> 10870 E Crystal Falls Pkwy, Leander, TX 78641</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Public splash pad in Leander area.</p>
+<p><strong>Source:</strong> <a href='https://do512family.com/awesome-pools-splash-pads-around-austin/' target='_blank' class='source-link'>Do512 Family</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=10870%20E%20Crystal%20Falls%20Pkwy%2C%20Leander%2C%20TX%2078641" target="_blank">View on Google Maps</a></p>
+        </div>
+
+        <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-30">
+            <h3 onclick="showMarker(30)"><span class="activity-number" style="background-color: #8E44AD;">25</span>Mary Elizabeth Branch Park</h3>
+        <p><strong>Hours:</strong> Seasonal operation</p>
+<p><strong>Location:</strong> 2006 Philomena St, Austin, TX 78723</p>
+<p><strong>Fees:</strong> Free</p>
+<p><strong>Description:</strong> Texas Farmers Market at Mueller location with fun splash pad. Caters more to older children or toddlers comfortable with big water jets.</p>
+<p><strong>Additional Details:</strong> Come on Sunday to enjoy local vendors then cool off in water. Few trees for shade. Nice restaurants walking distance, playground nearby, Thinkery around corner.</p>
+<p><strong>Source:</strong> <a href='https://austinmoms.com/2022/07/11/best-splash-pads-in-north-austin/' target='_blank' class='source-link'>Austin Moms 2022 North Austin</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=2006%20Philomena%20St%2C%20Austin%2C%20TX%2078723" target="_blank">View on Google Maps</a></p>
         </div>
 
             </div>
@@ -170,6 +454,9 @@
             // Store markers globally for reference
             let markers = [];
             let map;
+            // Add maps to store activity and splash pad indices to ensure consistent numbering
+            let activityIndices = {};
+            let splashPadIndices = {};
             
             function initMap() {
                 // Initialize map
@@ -191,7 +478,8 @@
                         address: "Lou's, Austin",
                         date: "2025-06-23",
                         timePeriod: "evening",
-                        color: "#34A853"
+                        color: "#34A853",
+                        type: "activity"
                     },
         
                     {
@@ -199,7 +487,8 @@
                         address: "Leander Activity Center, 11880 Hero Way West, Suite 600, Leander, TX 78641-7400, United States",
                         date: "",
                         timePeriod: "evening",
-                        color: "#34A853"
+                        color: "#34A853",
+                        type: "activity"
                     },
         
                     {
@@ -207,7 +496,8 @@
                         address: "Lady Bird Johnson Wildflower Center, Austin, TX, 78739",
                         date: "2025-05-24",
                         timePeriod: "unknown",
-                        color: "#EA4335"
+                        color: "#EA4335",
+                        type: "activity"
                     },
         
                     {
@@ -215,7 +505,8 @@
                         address: "414 St. Stephens School Rd, Austin",
                         date: "2025-05-24",
                         timePeriod: "morning",
-                        color: "#4285F4"
+                        color: "#4285F4",
+                        type: "activity"
                     },
         
                     {
@@ -223,7 +514,8 @@
                         address: "The Hive, 10542 Menchaca Rd, Austin, TX 78748",
                         date: "2025-05-24",
                         timePeriod: "morning",
-                        color: "#4285F4"
+                        color: "#4285F4",
+                        type: "activity"
                     },
         
                     {
@@ -231,18 +523,301 @@
                         address: "Texas Science and Natural History Museum, 2400 Trinity St, Austin, TX 78712",
                         date: "2025-05-25",
                         timePeriod: "afternoon",
-                        color: "#FBBC05"
+                        color: "#FBBC05",
+                        type: "activity"
+                    },
+        
+                    {
+                        name: "Robin Bledsoe Splash Plop",
+                        address: "601 S Bagdad Rd, Leander, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "The Quarry Splash City",
+                        address: "3005 County Road 175, Leander, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Elizabeth Milburn Tot Time",
+                        address: "1901 Sun Chase Blvd, Cedar Park, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Prete Plaza Main Street Splash Pad",
+                        address: "221 E Main St, Round Rock, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Falcon Pointe Slippery Splash",
+                        address: "1813 Tranquility Ln, Pflugerville, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "NE Metro Hidden Splash Gem",
+                        address: "15500 Sun Light Near Way, Pflugerville, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Bartholomew Soak Pad",
+                        address: "1800 E. 51st St, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Bailey Park Drench Pad",
+                        address: "North Central Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Chestnut Splash Pad",
+                        address: "1404 E 16th St, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Pease Park Splash Pad",
+                        address: "1100 Kingsbury Street, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Rosewood Secret Splashery",
+                        address: "1182 Pleasant Valley, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Eastwoods Spankin' New Splash",
+                        address: "3001 Harris Park Blvd, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Metz Splash Pad",
+                        address: "2400 Canterbury St, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Clarksville Shady Splashing",
+                        address: "1811 W 11th St, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Liz Carpenter Splashapalooza",
+                        address: "1000 Barton Springs Rd, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Ricky Guerrero Sopping Splashscape",
+                        address: "1100 Brodie St, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Dick Nichols Splash Fountain",
+                        address: "8011 Beckett Rd, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Bee Cave Galleria Splash Dance",
+                        address: "12700 Hill Country Blvd, Bee Cave, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Brushy Creek Splash Pad",
+                        address: "3300 Brushy Creek Rd, Cedar Park, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "El Salido Pool",
+                        address: "11500 El Salido Pkwy, Austin, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Scott Mentzer Pool",
+                        address: "901 Old Austin Hutto Rd, Pflugerville, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Veterans Memorial Pool",
+                        address: "2525 W New Hope Dr, Cedar Park, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Micki Krebsbach Pool",
+                        address: "301 Deep Wood Dr, Round Rock, TX",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Lakewood Splash Pad",
+                        address: "10870 E Crystal Falls Pkwy, Leander, TX 78641",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
+                    },
+        
+                    {
+                        name: "Mary Elizabeth Branch Park",
+                        address: "2006 Philomena St, Austin, TX 78723",
+                        date: "",
+                        timePeriod: "splash_pad",
+                        color: "#8E44AD",
+                        type: "splash_pad"
                     }
         
                 ];
                 
                 // Geocode addresses and add markers
                 let completedMarkers = 0;
+                
+                // Count regular activities and splash pads separately
+                let activityCount = 0;
+                let splashPadCount = 0;
+                
+                // First pass - assign consistent IDs
+                markerData.forEach((data, index) => {
+                    const isSplashPad = data.timePeriod === 'splash_pad';
+                    if (isSplashPad) {
+                        splashPadCount++;
+                        splashPadIndices[index] = splashPadCount;
+                    } else {
+                        activityCount++;
+                        activityIndices[index] = activityCount;
+                    }
+                });
+                
+                // Reset counters for visual mapping
+                activityCount = 0;
+                splashPadCount = 0;
+                
                 markerData.forEach((data, index) => {
                     geocoder.geocode({ 'address': data.address }, function(results, status) {
                         if (status === 'OK') {
                             // Create a custom marker with a number label inside a colored circle
-                            const markerNumber = index + 1;
+                            const isSplashPad = data.timePeriod === 'splash_pad';
+                            
+                            // Use separate numbering for activities and splash pads
+                            let markerNumber;
+                            if (isSplashPad) {
+                                markerNumber = splashPadIndices[index];
+                            } else {
+                                markerNumber = activityIndices[index];
+                            }
+                            
+                            // Different icon based on marker type
+                            let icon;
+                            if (isSplashPad) {
+                                // Water droplet icon for splash pads
+                                icon = {
+                                    path: 'M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z', // Water droplet shape
+                                    fillColor: data.color,
+                                    fillOpacity: 1.0,
+                                    strokeWeight: 1,
+                                    strokeColor: '#FFFFFF',
+                                    scale: 1.5,
+                                    anchor: new google.maps.Point(12, 16),
+                                    labelOrigin: new google.maps.Point(12, 12)  // Moved down by 2 pixels to better center
+                                };
+                            } else {
+                                // Regular activity icon
+                                icon = {
+                                    path: 'M10,16 C10,15 10.8,14 11.6,14 L14,14 C14.8,13 16.4,13 17.2,9 C18.8,7 23.6,7 26.8,7 C30,7 34,9 35.6,13 L38.8,13 C38.8,13 40.4,14 40.4,16 L40.4,19 C40.4,19 38.8,19 38.8,21 L38.8,24 L34.8,24 L34.8,22 C34.8,22 30,23 24.8,23 C19.6,23 14.8,22 14.8,22 L14.8,24 L10.8,24 L10.8,21 C10.8,19 10,19 10,19 L10,16 Z M15.4,17 C15.4,15 13,15 13,17 C13,19 15.4,19 15.4,17 Z M35.4,17 C35.4,15 33,15 33,17 C33,19 35.4,19 35.4,17 Z',
+                                    fillColor: data.color,
+                                    fillOpacity: 1.0,
+                                    strokeWeight: 0,
+                                    scale: 1,
+                                    anchor: new google.maps.Point(24, 16),
+                                    labelOrigin: new google.maps.Point(24, 16)
+                                };
+                            }
+                            
                             const marker = new google.maps.Marker({
                                 map: map,
                                 position: results[0].geometry.location,
@@ -255,22 +830,20 @@
                                     fontFamily: 'Arial',
                                     className: 'marker-label'
                                 },
-                                icon: {
-                                    path: 'M10,16 C10,15 10.8,14 11.6,14 L14,14 C14.8,13 16.4,13 17.2,9 C18.8,7 23.6,7 26.8,7 C30,7 34,9 35.6,13 L38.8,13 C38.8,13 40.4,14 40.4,16 L40.4,19 C40.4,19 38.8,19 38.8,21 L38.8,24 L34.8,24 L34.8,22 C34.8,22 30,23 24.8,23 C19.6,23 14.8,22 14.8,22 L14.8,24 L10.8,24 L10.8,21 C10.8,19 10,19 10,19 L10,16 Z M15.4,17 C15.4,15 13,15 13,17 C13,19 15.4,19 15.4,17 Z M35.4,17 C35.4,15 33,15 33,17 C33,19 35.4,19 35.4,17 Z',
-                                    fillColor: data.color,
-                                    fillOpacity: 1.0,
-                                    strokeWeight: 0,
-                                    scale: 1,
-                                    anchor: new google.maps.Point(24, 16),
-                                    labelOrigin: new google.maps.Point(24, 16)
-                                },
+                                icon: icon,
                                 optimized: true
                             });
+                            
+                            // Initially hide splash pad markers
+                            if (data.timePeriod === 'splash_pad') {
+                                marker.setVisible(false);
+                            }
                             
                             // Store additional data with the marker, including the activity index for correlation
                             marker.date = data.date;
                             marker.timePeriod = data.timePeriod;
                             marker.activityIndex = index; // Store the activity index for proper correlation
+                            marker.type = data.type; // Store the marker type (activity or splash_pad)
                             
                             // Add click event to marker
                             marker.addListener('click', function() {
@@ -333,26 +906,46 @@
             }
             
             function filterMarkers() {
+                // Get current filter values
                 const dateFilter = document.getElementById('date-filter').value;
-                const timeFilters = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
-                    .map(input => input.value)
-                    .filter(value => ['morning', 'afternoon', 'evening', 'unknown'].includes(value));
+                const timeFilters = Array.from(document.querySelectorAll('input[type="checkbox"][value]'))
+                    .filter(cb => cb.checked)
+                    .map(cb => cb.value);
                 
-                // Filter markers based on selected criteria
-                markers.forEach(marker => {
-                    const activityIndex = marker.activityIndex;
-                    const activityElement = document.getElementById('activity-' + activityIndex);
-                    if (!activityElement) return;
+                // Check if splash pads should be shown
+                const showSplashPads = document.getElementById('splash-pad-toggle').checked;
+                
+                // Filter markers and activities based on date and time
+                markers.forEach((marker, index) => {
+                    // Skip if there's no marker (in case of geocode failure)
+                    if (!marker) return;
                     
-                    // Using only the marker date for filtering - matching what's in the dropdown
+                    // Special handling for splash pads
+                    if (marker.timePeriod === 'splash_pad') {
+                        const isVisible = showSplashPads;
+                        marker.setVisible(isVisible);
+                        
+                        // Also update sidebar display
+                        const activityElement = document.getElementById('activity-' + index);
+                        if (activityElement) {
+                            activityElement.style.display = isVisible ? 'block' : 'none';
+                        }
+                        return;
+                    }
+                    
+                    // For normal activities, check date and time filters
                     const dateMatch = dateFilter === 'all' || marker.date === dateFilter;
                     const timeMatch = timeFilters.includes(marker.timePeriod);
+                    const isVisible = dateMatch && timeMatch;
                     
-                    // Show/hide based on filter criteria
-                    marker.setVisible(dateMatch && timeMatch);
+                    // Update marker visibility
+                    marker.setVisible(isVisible);
                     
-                    // Update sidebar activity visibility
-                    activityElement.style.display = dateMatch && timeMatch ? 'block' : 'none';
+                    // Also update sidebar display
+                    const activityElement = document.getElementById('activity-' + index);
+                    if (activityElement) {
+                        activityElement.style.display = isVisible ? 'block' : 'none';
+                    }
                 });
             }
         </script>
