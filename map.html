@@ -253,12 +253,12 @@
         <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-13">
             <h3 onclick="showMarker(13)"><span class="activity-number" style="background-color: #8E44AD;">8</span>Bailey Park Drench Pad</h3>
         <p><strong>Hours:</strong> Daily 9am-8pm (beginning 5/15)</p>
-<p><strong>Location:</strong> North Central Austin, TX</p>
+<p><strong>Location:</strong> 1101 W 33rd St, Austin, TX 78705</p>
 <p><strong>Fees:</strong> Free</p>
 <p><strong>Description:</strong> You will get SOAKED here! Dump buckets, waterfalls, ground poppers - Bailey has it all!</p>
 <p><strong>Additional Details:</strong> Large trees surrounding area. Bathrooms often not the most delightful. Parking can be tricky with school and hospital nearby.</p>
 <p><strong>Source:</strong> <a href='https://austinmoms.com/2017/05/15/best-splash-pads-in-and-around-austin/' target='_blank' class='source-link'>Austin Moms 2017</a></p>
-<p><a href="https://www.google.com/maps/search/?api=1&query=North%20Central%20Austin%2C%20TX" target="_blank">View on Google Maps</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=1101%20W%2033rd%20St%2C%20Austin%2C%20TX%2078705" target="_blank">View on Google Maps</a></p>
         </div>
 
         <div class="activity splash-pad-item" data-date="" data-time-period="splash_pad" id="activity-14">
@@ -592,7 +592,7 @@
         
                     {
                         name: "Bailey Park Drench Pad",
-                        address: "North Central Austin, TX",
+                        address: "1101 W 33rd St, Austin, TX 78705",
                         date: "",
                         timePeriod: "splash_pad",
                         color: "#8E44AD",
@@ -874,10 +874,22 @@
                             // Count failed markers too so we can still proceed
                             completedMarkers++;
                             
+                            // Store a placeholder marker that's invisible but lets us keep the indices consistent
+                            const dummyMarker = {
+                                activityIndex: index,
+                                date: data.date,
+                                timePeriod: data.timePeriod,
+                                type: data.type,
+                                setVisible: function() { /* dummy function */ },
+                                getPosition: function() { return null; },
+                                dummy: true
+                            };
+                            markers.push(dummyMarker);
+                            
                             // Check if all markers are done even with failures
                             if (completedMarkers === markerData.length) {
                                 // Try to fit bounds if we have any successful markers
-                                if (markers.length > 0) {
+                                if (markers.filter(m => !m.dummy).length > 0) {
                                     map.fitBounds(bounds);
                                 }
                                 // Initial filtering
@@ -894,6 +906,12 @@
                 // Find the marker that corresponds to this activity index
                 const marker = markers.find(m => m.activityIndex === index);
                 if (marker) {
+                    if (marker.dummy) {
+                        console.log('Cannot show marker for index ' + index + ' because geocoding failed');
+                        alert('Sorry, this location could not be found on the map.');
+                        return;
+                    }
+                    
                     // Center map on marker
                     map.setCenter(marker.getPosition());
                     map.setZoom(15); // Zoom in a bit
@@ -922,11 +940,11 @@
                     
                     // Special handling for splash pads
                     if (marker.timePeriod === 'splash_pad') {
-                        const isVisible = showSplashPads;
+                        const isVisible = showSplashPads && !marker.dummy;
                         marker.setVisible(isVisible);
                         
                         // Also update sidebar display
-                        const activityElement = document.getElementById('activity-' + index);
+                        const activityElement = document.getElementById('activity-' + marker.activityIndex);
                         if (activityElement) {
                             activityElement.style.display = isVisible ? 'block' : 'none';
                         }
@@ -936,13 +954,13 @@
                     // For normal activities, check date and time filters
                     const dateMatch = dateFilter === 'all' || marker.date === dateFilter;
                     const timeMatch = timeFilters.includes(marker.timePeriod);
-                    const isVisible = dateMatch && timeMatch;
+                    const isVisible = dateMatch && timeMatch && !marker.dummy;
                     
                     // Update marker visibility
                     marker.setVisible(isVisible);
                     
                     // Also update sidebar display
-                    const activityElement = document.getElementById('activity-' + index);
+                    const activityElement = document.getElementById('activity-' + marker.activityIndex);
                     if (activityElement) {
                         activityElement.style.display = isVisible ? 'block' : 'none';
                     }

@@ -258,6 +258,30 @@ def generate_html(activities: List[Dict], base_url: str = "", splash_pads: List[
         if pad.get('address')
     ]
     
+    # Improve addresses for geocoding
+    for pad in splash_pads_with_locations:
+        address = pad.get('address', '')
+        # Add ", TX" to addresses that don't have state information
+        if not re.search(r'TX|Texas', address):
+            if address.endswith(', Austin'):
+                pad['address'] = address + ', TX'
+            elif 'Austin' not in address and ',' not in address:
+                pad['address'] = address + ', Austin, TX'
+        
+        # Fix specific problematic addresses
+        if address == 'North Central Austin, TX':
+            # Bailey Park actual address
+            pad['address'] = '1101 W 33rd St, Austin, TX 78705'
+        elif 'Lake Park @ Brushy Creek' in pad.get('name', ''):
+            # Make sure the correct name format is used for Lake Park
+            pad['name'] = 'Lake Park @ Brushy Creek Splash Pad'
+        elif 'Lakeview Splash Pad' in pad.get('name', '') and 'Leander, TX' == address:
+            # Fix Lakeview address
+            pad['address'] = 'Lakeview Park, Leander, TX 78641'
+        elif 'Quarry Splash Pad' in pad.get('name', '') and 'Leander, TX' == address:
+            # Fix Quarry address - use the one from other source
+            pad['address'] = '3005 County Road 175, Leander, TX'
+    
     if not activities_with_locations and not splash_pads_with_locations:
         return """
         <!DOCTYPE html>
@@ -726,10 +750,22 @@ def generate_html(activities: List[Dict], base_url: str = "", splash_pads: List[
                             // Count failed markers too so we can still proceed
                             completedMarkers++;
                             
+                            // Store a placeholder marker that's invisible but lets us keep the indices consistent
+                            const dummyMarker = {
+                                activityIndex: index,
+                                date: data.date,
+                                timePeriod: data.timePeriod,
+                                type: data.type,
+                                setVisible: function() { /* dummy function */ },
+                                getPosition: function() { return null; },
+                                dummy: true
+                            };
+                            markers.push(dummyMarker);
+                            
                             // Check if all markers are done even with failures
                             if (completedMarkers === markerData.length) {
                                 // Try to fit bounds if we have any successful markers
-                                if (markers.length > 0) {
+                                if (markers.filter(m => !m.dummy).length > 0) {
                                     map.fitBounds(bounds);
                                 }
                                 // Initial filtering
@@ -746,6 +782,12 @@ def generate_html(activities: List[Dict], base_url: str = "", splash_pads: List[
                 // Find the marker that corresponds to this activity index
                 const marker = markers.find(m => m.activityIndex === index);
                 if (marker) {
+                    if (marker.dummy) {
+                        console.log('Cannot show marker for index ' + index + ' because geocoding failed');
+                        alert('Sorry, this location could not be found on the map.');
+                        return;
+                    }
+                    
                     // Center map on marker
                     map.setCenter(marker.getPosition());
                     map.setZoom(15); // Zoom in a bit
@@ -774,11 +816,11 @@ def generate_html(activities: List[Dict], base_url: str = "", splash_pads: List[
                     
                     // Special handling for splash pads
                     if (marker.timePeriod === 'splash_pad') {
-                        const isVisible = showSplashPads;
+                        const isVisible = showSplashPads && !marker.dummy;
                         marker.setVisible(isVisible);
                         
                         // Also update sidebar display
-                        const activityElement = document.getElementById('activity-' + index);
+                        const activityElement = document.getElementById('activity-' + marker.activityIndex);
                         if (activityElement) {
                             activityElement.style.display = isVisible ? 'block' : 'none';
                         }
@@ -788,13 +830,13 @@ def generate_html(activities: List[Dict], base_url: str = "", splash_pads: List[
                     // For normal activities, check date and time filters
                     const dateMatch = dateFilter === 'all' || marker.date === dateFilter;
                     const timeMatch = timeFilters.includes(marker.timePeriod);
-                    const isVisible = dateMatch && timeMatch;
+                    const isVisible = dateMatch && timeMatch && !marker.dummy;
                     
                     // Update marker visibility
                     marker.setVisible(isVisible);
                     
                     // Also update sidebar display
-                    const activityElement = document.getElementById('activity-' + index);
+                    const activityElement = document.getElementById('activity-' + marker.activityIndex);
                     if (activityElement) {
                         activityElement.style.display = isVisible ? 'block' : 'none';
                     }
@@ -818,6 +860,8 @@ def main():
     # We're keeping the analytics parameter for backward compatibility but it's no longer needed
     parser.add_argument('--analytics-id', type=str, default="", 
                         help="[DEPRECATED] Google Analytics tracking ID is now hardcoded")
+    parser.add_argument('--debug', action='store_true',
+                        help="Enable debug output")
     args = parser.parse_args()
     
     # Check if output directory exists, create if not
@@ -846,6 +890,12 @@ def main():
             with open(splash_pads_file, 'r', encoding='utf-8') as f:
                 splash_pads = json.load(f)
             print(f"Loaded {len(splash_pads)} splash pads from {splash_pads_file}")
+            
+            # Print debugging info for each splash pad
+            if args.debug:
+                print("\nSplash pad details:")
+                for i, pad in enumerate(splash_pads):
+                    print(f"{i+1}. {pad.get('name')} - Address: {pad.get('address')}")
         except json.JSONDecodeError:
             print(f"Error: Unable to parse {splash_pads_file}. The file may be corrupted.")
     else:
