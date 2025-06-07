@@ -1138,20 +1138,6 @@
 
 ---
 
-## Dinos in the Wild
-
-**Date:** 2025-05-16
-
-**Location:** Lady Bird Johnson Wildflower Center, Austin, TX, 78739
-
-**Description:** A prehistoric adventure with life-sized animatronic dinosaurs. Suitable for families.
-
-**Additional Details:** Created by Jurassic Park advisor 'Dino' Don Lessem. More details coming soon.
-
-**Source:** c29650c7fadbe1e5c46bd3855df08517.PNG
-
----
-
 ## Whimsy & Wonder
 
 **Date:** 2025-05-17
@@ -1312,11 +1298,25 @@
 
 ---
 
+## Dinos in the Wild
+
+**Date:** 2025-05-24
+
+**Location:** Lady Bird Johnson Wildflower Center, Austin, TX, 78739
+
+**Description:** A prehistoric adventure with life-sized animatronic dinosaurs. Suitable for families.
+
+**Additional Details:** Created by Jurassic Park advisor 'Dino' Don Lessem. More details coming soon.
+
+**Source:** c29650c7fadbe1e5c46bd3855df08517.PNG
+
+---
+
 ## 2025 Austin Greek Festival
 
-**Date:** 2025-05-23
+**Date:** 2025-05-24
 
-**Time:** 9:00 AM - 8:00 PM
+**Time:** 11:00 AM - 8:00 PM
 
 **Location:** 414 St. Stephens School Rd, Austin, TX 78746, United States
 
@@ -1334,7 +1334,7 @@
 
 **Time:** 10:00 AM
 
-**Location:** The Hive, Assumed City, Assumed State, Assumed ZIP, Austin, TX 78701 *(ZIP code estimated)*
+**Location:** The Hive, 10542 Menchaca Rd, Austin, TX 78748
 
 **Description:** Catch a family-friendly concert where the music is just as fun for grown-ups as it is for kids! Groundwork Music Project brings top-notch musicianship and playful, engaging tunes to the stage.
 
@@ -1350,13 +1350,157 @@
 
 **Time:** 1 pm - 5 pm
 
-**Location:** Texas Science and Natural History Museum, Austin, TX 78701
+**Location:** Texas Science and Natural History Museum, 2400 Trinity St, Austin, TX 78712
 
 **Description:** Enjoy free admission to the Texas Science & Natural History Museum courtesy of H-E-B, with exhibits featuring ancient fossils, meteorites, Texas wildlife, and a pterosaur with a 33-foot wingspan.
 
 **Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided.
 
 **Source:** Unknown
+
+---
+
+## Pop Up Play Day
+
+**Date:** 2025-06-07
+
+**Time:** 11:00 AM - 1:00 PM
+
+**Location:** Mesa Village Park, 800 Green Valley Rd, Watsonville, CA 95076, United States
+
+**Description:** Free family activities, music, games, and more with the Round Rock Parks and Recreation team.
+
+**Additional Details:** Pop Up Play Day is popping into your neighborhood park on select Saturdays from May through August.
+
+**Source:** 5b61d9473df86acdb4cb89a209b097da.JPG
+
+---
+
+## Catfish Derby
+
+**Date:** 2025-06-07
+
+**Time:** 8:00 AM - 11:00 AM
+
+**Location:** Adam Orgain Park, 1001 Co Rd 137, Hutto, TX 78634
+
+**Description:** We're stocking 2,000 catfish for a fun morning of fishing. All ages are welcome (kids with an adult); registration is recommended.
+
+**Additional Details:** Catch and release preferred. Follow Texas Parks and Wildlife limits if keeping catch.
+
+**Source:** c53078bb214c51855ce560f2ed1e809a.JPG
+
+---
+
+## RRS Circus
+
+**Date:** 2025-06-07
+
+**Time:** 8:00 PM - 2:00 AM
+
+**Location:** Main Street Bar 101, 101 East Main Street, Round Rock, TX 78664
+
+**Description:** The circus is coming to town. Step right up to the most fun around! Costumes are encouraged.
+
+**Additional Details:** Costumes are NOT required but encouraged. The bar serves mocktails and non-alcoholic drinks.
+
+**Source:** cd9dfee90da7292072cedbf925456f38.JPG
+
+---
+
+## Kids Block Party
+
+**Date:** 2025-06-07
+
+**Time:** 9:30 AM
+
+**Location:** Austin Central Library, Austin Public Library, 710 West Cesar Chavez Street, Austin, TX 78701
+
+**Description:** Yearly Kids Block Party for children 0-12 and their families. Enjoy a laser light show, puppet-making, science activities, live poetry, tree tours, book giveaways, and more.
+
+**Additional Details:** Free event celebrating children, literacy, and learning through play.
+
+**Source:** 644e311d5e04556959f463592d5ea525.JPG
+
+---
+
+## Amy's Fest
+
+**Date:** 2025-06-08
+
+**Time:** 11:00 AM - 3:00 PM
+
+**Location:** Bouldin Acres, South Lamar, Austin, TX, 78704
+
+**Description:** Helping Texas one scoop at a time. Includes a dog costume contest and a shot at an Ice Cream Throwing WORLD RECORD.
+
+**Additional Details:** Free family event. In support of Emancipet.
+
+**Source:** bf15d7a7dec344d4c6fce83f6631aa24.JPG
+
+---
+
+## Family Day: PRIDE!@ UMLAUF Sculpture Garden & Museum
+
+**Date:** 2025-06-08
+
+**Time:** 11:00 am - 4:00 pm
+
+**Location:** UMLAUF Sculpture Garden & Museum, Austin, Texas, 78704
+
+**Description:** Celebrate Pride Month with UMLAUF Family Day: PRIDE, a free event designed to uplift Austin’s LGBTQIA+ youth and bring the whole community together through art, creativity, and connection.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: Register for FREE here
+
+**Source:** Unknown
+
+---
+
+## Music In The Park
+
+**Date:** 2025-06-13
+
+**Time:** 7:00 PM - 9:00 PM
+
+**Location:** Pfluger Park, 598 City Park Rd, Pflugerville, TX 78660, United States
+
+**Description:** Annual outdoor concert series with live bands on select Friday nights.
+
+**Additional Details:** No admission charge. Bring lawn chairs, blankets, and picnic baskets. Alcohol allowed, no glass containers. More info at pflugervilletx.gov/554.
+
+**Source:** d8626784d392d58158813f6d3548c756.JPG
+
+---
+
+## Kaleidoscope of Culture
+
+**Date:** 2025-06-14
+
+**Time:** 11:00 AM - 1:00 PM
+
+**Location:** Faith Lutheran Church, 6600 Woodrow Ave, Austin, TX, United States, 78757
+
+**Description:** First-Ever Multicultural Festival. Join for a joyful celebration of unity in diversity with homemade dishes, art and crafts, uplifting music, and water games for kids.
+
+**Additional Details:** Hosted by FLC & CDC Families. Water games for kids of all ages, wearing swimsuits is encouraged.
+
+**Source:** 8f3213f763ae237fe1c968bb660f34c6.JPG
+
+---
+
+## 10th Annual Maker Pfest
+
+**Date:** 2025-06-14
+
+**Time:** 2:00 PM - 5:00 PM
+
+**Location:** Pflugerville Public Library, 1008 W Pfluger St, Pflugerville, TX 78660, United States
+
+**Description:** Join local makers and artisans for an afternoon of demos and hands-on learning activities. All ages are welcome to attend. No registration required.
+
+**Additional Details:** Check out staff demos of the laser cutter, 3D Printer, and more. Try activities with library staff like cyanotypes, friendship bracelets, solar critters, and more.
+
+**Source:** a49f38d9ea8e253f195674f7166d58a2.JPG
 
 ---
 

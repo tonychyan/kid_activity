@@ -929,7 +929,7 @@
     "additional_details": "Created by Jurassic Park advisor 'Dino' Don Lessem. More details coming soon.",
     "raw_datetime": "May 16 \u2013 August 17, 2025",
     "source_file": "c29650c7fadbe1e5c46bd3855df08517.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Hop into Health",
@@ -990,7 +990,7 @@
     "additional_details": "Event occurs on Memorial Day Weekend, May 23rd, 24th, and 25th, 2025.",
     "raw_datetime": "May 23 at 9 AM \u2013 May 25 at 8 PM PDT",
     "source_file": "e1c4e48840bd0023295809707ac4be89.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Groundwork Music Project@ The Hive",
@@ -1003,7 +1003,7 @@
     "source_url": "https://family.do512.com/events/2025/5/24/groundwork-music-project-1742922317",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "H-E-B Free Fourth Sunday@ Texas Science and Natural History Museum",
@@ -1014,6 +1014,107 @@
     "additional_details": "Age: All ages. Cost: Free. Registration: No registration details provided.",
     "raw_datetime": "Sunday, May 25 | 1 pm- 5 pm | FREE",
     "source_url": "https://family.do512.com/events/2025/5/25/h-e-b-free-fourth-sunday-1739901289",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": true
+  },
+  {
+    "activity_name": "Amy's Fest",
+    "location": "Bouldin Acres, 2027 S Lamar Blvd, Austin, TX 78704",
+    "date": "2025-06-08",
+    "time": "11:00 AM - 3:00 PM",
+    "description": "Helping Texas one scoop at a time. Includes a dog costume contest and a shot at an Ice Cream Throwing WORLD RECORD.",
+    "additional_details": "Free family event. In support of Emancipet.",
+    "raw_datetime": "Sunday, June 8th | 11am-3pm",
+    "source_file": "bf15d7a7dec344d4c6fce83f6631aa24.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Pop Up Play Day",
+    "location": "Mesa Village Park, 800 Green Valley Rd, Watsonville, CA 95076, United States",
+    "date": "2025-06-07",
+    "time": "11:00 AM - 1:00 PM",
+    "description": "Free family activities, music, games, and more with the Round Rock Parks and Recreation team.",
+    "additional_details": "Pop Up Play Day is popping into your neighborhood park on select Saturdays from May through August.",
+    "raw_datetime": "Saturday, June 7, 2025 at 11 AM \u2013 1 PM CDT",
+    "source_file": "5b61d9473df86acdb4cb89a209b097da.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Catfish Derby",
+    "location": "Adam Orgain Park, 1001 Co Rd 137, Hutto, TX 78634",
+    "date": "2025-06-07",
+    "time": "8:00 AM - 11:00 AM",
+    "description": "We're stocking 2,000 catfish for a fun morning of fishing. All ages are welcome (kids with an adult); registration is recommended.",
+    "additional_details": "Catch and release preferred. Follow Texas Parks and Wildlife limits if keeping catch.",
+    "raw_datetime": "Saturday, June 7, at 8 am",
+    "source_file": "c53078bb214c51855ce560f2ed1e809a.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "RRS Circus",
+    "location": "Main Street Bar 101, 101 East Main Street, Round Rock, TX 78664",
+    "date": "2025-06-07",
+    "time": "8:00 PM - 2:00 AM",
+    "description": "The circus is coming to town. Step right up to the most fun around! Costumes are encouraged.",
+    "additional_details": "Costumes are NOT required but encouraged. The bar serves mocktails and non-alcoholic drinks.",
+    "raw_datetime": "Saturday at 8 PM \u2013 2 AM, Saturday, June 7th",
+    "source_file": "cd9dfee90da7292072cedbf925456f38.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Kids Block Party",
+    "location": "Austin Central Library, Austin Public Library, 710 West Cesar Chavez Street, Austin, TX 78701",
+    "date": "2025-06-07",
+    "time": "9:30 AM",
+    "description": "Yearly Kids Block Party for children 0-12 and their families. Enjoy a laser light show, puppet-making, science activities, live poetry, tree tours, book giveaways, and more.",
+    "additional_details": "Free event celebrating children, literacy, and learning through play.",
+    "raw_datetime": "Saturday at 9:30 AM, June 7",
+    "source_file": "644e311d5e04556959f463592d5ea525.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Music In The Park",
+    "location": "Pfluger Park, 598 City Park Rd, Pflugerville, TX 78660, United States",
+    "date": "2025-06-13",
+    "time": "7:00 PM - 9:00 PM",
+    "description": "Annual outdoor concert series with live bands on select Friday nights.",
+    "additional_details": "No admission charge. Bring lawn chairs, blankets, and picnic baskets. Alcohol allowed, no glass containers. More info at pflugervilletx.gov/554.",
+    "raw_datetime": "Mar 7 \u2013 Jun 6, Friday nights from 7 to 9 pm",
+    "source_file": "d8626784d392d58158813f6d3548c756.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Kaleidoscope of Culture",
+    "location": "Faith Lutheran Church, 6600 Woodrow Ave, Austin, TX, United States, 78757",
+    "date": "2025-06-14",
+    "time": "11:00 AM - 1:00 PM",
+    "description": "First-Ever Multicultural Festival. Join for a joyful celebration of unity in diversity with homemade dishes, art and crafts, uplifting music, and water games for kids.",
+    "additional_details": "Hosted by FLC & CDC Families. Water games for kids of all ages, wearing swimsuits is encouraged.",
+    "raw_datetime": "Saturday, June 7th at 11 AM \u2013 1 PM",
+    "source_file": "8f3213f763ae237fe1c968bb660f34c6.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "10th Annual Maker Pfest",
+    "location": "Pflugerville Public Library, 1008 W Pfluger St, Pflugerville, TX 78660, United States",
+    "date": "2025-06-14",
+    "time": "2:00 PM - 5:00 PM",
+    "description": "Join local makers and artisans for an afternoon of demos and hands-on learning activities. All ages are welcome to attend. No registration required.",
+    "additional_details": "Check out staff demos of the laser cutter, 3D Printer, and more. Try activities with library staff like cyanotypes, friendship bracelets, solar critters, and more.",
+    "raw_datetime": "Saturday at 2 PM \u2013 5 PM",
+    "source_file": "a49f38d9ea8e253f195674f7166d58a2.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Family Day: PRIDE!@ UMLAUF Sculpture Garden & Museum",
+    "location": "UMLAUF Sculpture Garden & Museum, Austin, Texas, 78704",
+    "date": "2025-06-08",
+    "time": "11:00 am - 4:00 pm",
+    "description": "Celebrate Pride Month with UMLAUF Family Day: PRIDE, a free event designed to uplift Austin\u2019s LGBTQIA+ youth and bring the whole community together through art, creativity, and connection.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: Register for FREE here",
+    "raw_datetime": "Friday, June 6 | 8 pm | RSVP for FREEhere",
+    "source_url": "https://family.do512.com/events/2025/6/8/family-day-pride-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
     "is_archived": false
