@@ -1074,20 +1074,9 @@
     "is_archived": false
   },
   {
-    "activity_name": "Music In The Park",
-    "location": "Pfluger Park, 598 City Park Rd, Pflugerville, TX 78660, United States",
-    "date": "2025-06-13",
-    "time": "7:00 PM - 9:00 PM",
-    "description": "Annual outdoor concert series with live bands on select Friday nights.",
-    "additional_details": "No admission charge. Bring lawn chairs, blankets, and picnic baskets. Alcohol allowed, no glass containers. More info at pflugervilletx.gov/554.",
-    "raw_datetime": "Mar 7 \u2013 Jun 6, Friday nights from 7 to 9 pm",
-    "source_file": "d8626784d392d58158813f6d3548c756.JPG",
-    "is_archived": false
-  },
-  {
     "activity_name": "Kaleidoscope of Culture",
     "location": "Faith Lutheran Church, 6600 Woodrow Ave, Austin, TX, United States, 78757",
-    "date": "2025-06-14",
+    "date": "2025-06-07",
     "time": "11:00 AM - 1:00 PM",
     "description": "First-Ever Multicultural Festival. Join for a joyful celebration of unity in diversity with homemade dishes, art and crafts, uplifting music, and water games for kids.",
     "additional_details": "Hosted by FLC & CDC Families. Water games for kids of all ages, wearing swimsuits is encouraged.",
@@ -1098,7 +1087,7 @@
   {
     "activity_name": "10th Annual Maker Pfest",
     "location": "Pflugerville Public Library, 1008 W Pfluger St, Pflugerville, TX 78660, United States",
-    "date": "2025-06-14",
+    "date": "2025-06-07",
     "time": "2:00 PM - 5:00 PM",
     "description": "Join local makers and artisans for an afternoon of demos and hands-on learning activities. All ages are welcome to attend. No registration required.",
     "additional_details": "Check out staff demos of the laser cutter, 3D Printer, and more. Try activities with library staff like cyanotypes, friendship bracelets, solar critters, and more.",
