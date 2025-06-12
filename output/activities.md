@@ -1366,7 +1366,7 @@
 
 **Time:** 11:00 AM - 1:00 PM
 
-**Location:** Mesa Village Park, 800 Green Valley Rd, Watsonville, CA 95076, United States
+**Location:** Mesa Village Park, 1401 Georgetown St, Round Rock, TX 78681
 
 **Description:** Free family activities, music, games, and more with the Round Rock Parks and Recreation team.
 
@@ -1424,13 +1424,45 @@
 
 ---
 
+## Kaleidoscope of Culture
+
+**Date:** 2025-06-07
+
+**Time:** 11:00 AM - 1:00 PM
+
+**Location:** Faith Lutheran Church, 6600 Woodrow Ave, Austin, TX, United States, 78757
+
+**Description:** First-Ever Multicultural Festival. Join for a joyful celebration of unity in diversity with homemade dishes, art and crafts, uplifting music, and water games for kids.
+
+**Additional Details:** Hosted by FLC & CDC Families. Water games for kids of all ages, wearing swimsuits is encouraged.
+
+**Source:** 8f3213f763ae237fe1c968bb660f34c6.JPG
+
+---
+
+## 10th Annual Maker Pfest
+
+**Date:** 2025-06-07
+
+**Time:** 2:00 PM - 5:00 PM
+
+**Location:** Pflugerville Public Library, 1008 W Pfluger St, Pflugerville, TX 78660, United States
+
+**Description:** Join local makers and artisans for an afternoon of demos and hands-on learning activities. All ages are welcome to attend. No registration required.
+
+**Additional Details:** Check out staff demos of the laser cutter, 3D Printer, and more. Try activities with library staff like cyanotypes, friendship bracelets, solar critters, and more.
+
+**Source:** a49f38d9ea8e253f195674f7166d58a2.JPG
+
+---
+
 ## Amy's Fest
 
 **Date:** 2025-06-08
 
 **Time:** 11:00 AM - 3:00 PM
 
-**Location:** Bouldin Acres, South Lamar, Austin, TX, 78704
+**Location:** Bouldin Acres, 2027 S Lamar Blvd, Austin, TX 78704
 
 **Description:** Helping Texas one scoop at a time. Includes a dog costume contest and a shot at an Ice Cream Throwing WORLD RECORD.
 
@@ -1456,51 +1488,145 @@
 
 ---
 
-## Music In The Park
+## Music Under theStar@ Bullock Museum
 
 **Date:** 2025-06-13
 
-**Time:** 7:00 PM - 9:00 PM
+**Time:** 19:00-21:00
 
-**Location:** Pfluger Park, 598 City Park Rd, Pflugerville, TX 78660, United States
+**Location:** Bullock Museum, 1800 Congress Ave, Austin, TX 78701
 
-**Description:** Annual outdoor concert series with live bands on select Friday nights.
+**Description:** Kick off your Father’s Day weekend with a little retro flair at this free summer concert series featuring rising local talent Pedal Steel Noah and dream-pop artist San Gabriel.
 
-**Additional Details:** No admission charge. Bring lawn chairs, blankets, and picnic baskets. Alcohol allowed, no glass containers. More info at pflugervilletx.gov/554.
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration required; food and drinks available for purchase, and museum members get free parking.
 
-**Source:** d8626784d392d58158813f6d3548c756.JPG
+**Source:** Unknown
 
 ---
 
-## Kaleidoscope of Culture
+## Wicked(2024) @ Community First! Village
+
+**Date:** 2025-06-13
+
+**Time:** Tours at 18:30, movie at dusk
+
+**Location:** Community First! Village, Austin, TX 78724
+
+**Description:** Spend your Friday night in Oz at Community First! Village’s outdoor screening of Wicked, the hit musical-turned-movie, ideal for those who love magic and music.
+
+**Additional Details:** Age: Older kids and teens. Cost: FREE with RSVP. Registration: RSVP required
+
+**Source:** Unknown
+
+---
+
+## 200th Celebration Family Fun Day
 
 **Date:** 2025-06-14
 
 **Time:** 11:00 AM - 1:00 PM
 
-**Location:** Faith Lutheran Church, 6600 Woodrow Ave, Austin, TX, United States, 78757
+**Location:** 18725 FM 685, Pflugerville, TX 78660
 
-**Description:** First-Ever Multicultural Festival. Join for a joyful celebration of unity in diversity with homemade dishes, art and crafts, uplifting music, and water games for kids.
+**Description:** Join us to celebrate our 200th Frost location at our new Pflugerville Financial Center with a Family Fun Day. Complimentary sweet treat, face painting, a balloon artist, and a chance to win Frost prizes.
 
-**Additional Details:** Hosted by FLC & CDC Families. Water games for kids of all ages, wearing swimsuits is encouraged.
+**Additional Details:** The event is free and open to the public. KHFI -96.7 KISS FM will broadcast live from the event.
 
-**Source:** 8f3213f763ae237fe1c968bb660f34c6.JPG
+**Source:** c387c8335f28ea341d8f1c4a31ac4b1b.JPG
 
 ---
 
-## 10th Annual Maker Pfest
+## Summer Splash Party
 
 **Date:** 2025-06-14
 
-**Time:** 2:00 PM - 5:00 PM
+**Time:** 6:00 PM
 
-**Location:** Pflugerville Public Library, 1008 W Pfluger St, Pflugerville, TX 78660, United States
+**Location:** Journey Bible Fellowship, 3429 Journey Pkwy, Leander, TX 78641
 
-**Description:** Join local makers and artisans for an afternoon of demos and hands-on learning activities. All ages are welcome to attend. No registration required.
+**Description:** A fun summer event with water slide, dunk tank, kiddie pools, and more.
 
-**Additional Details:** Check out staff demos of the laser cutter, 3D Printer, and more. Try activities with library staff like cyanotypes, friendship bracelets, solar critters, and more.
+**Additional Details:** Don't forget your swimsuit, a towel, and sunscreen.
 
-**Source:** a49f38d9ea8e253f195674f7166d58a2.JPG
+**Source:** 27c7b353210df858d96aac16728c2c2a.JPG
+
+---
+
+## 6th Annual Midsommar
+
+**Date:** 2025-06-14
+
+**Time:** 10:00 AM - 2:00 PM
+
+**Location:** Williamson County Old Settlers Association, 3300 E Palm Valley Dr, Round Rock, TX 78665
+
+**Description:** Midsommar festival celebrating Swedish heritage with crafts and activities including a play, viking sword fighting, and Midsommar dancing. Free, family event.
+
+**Additional Details:** For more information, visit www.williamsonmuseum.org or call 512-943-1670.
+
+**Source:** 0983c5e1b09d04988152d3ddb271b446.JPG
+
+---
+
+## Big Time Bubbles Foam Party
+
+**Date:** 2025-06-14
+
+**Time:** 10:00 AM - 12:00 PM
+
+**Location:** 4000 Galleria Pkwy, Bee Cave, TX, United States, 78738
+
+**Description:** Foam fun with music, beach balls, and foam. Kids 6 and under from 10-11 AM; kids 7 and older from 11 AM-12 PM.
+
+**Additional Details:** Wear swimwear and pack a towel, goggles, and a change of clothes.
+
+**Source:** eec6b2c4a9801db74822a7d0e0094cfe.JPG
+
+---
+
+## Second Saturdays Are For Families@ Laguna Gloria
+
+**Date:** 2025-06-14
+
+**Time:** 11 am – 3 pm
+
+**Location:** The Contemporary Austin - Laguna Gloria, 3809 W 35th St, Austin, TX 78703
+
+**Description:** Join the Second Saturdays event at The Contemporary Austin—Laguna Gloria to create recycled robot creations and enjoy free frozen treats by GoGo YumYum. A fun, hands-on activity to spark imagination and learn about sustainability.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: Advanced registration is closed; limited walk-ups available on a first-come, first-served basis.
+
+**Source:** Unknown
+
+---
+
+## Stay Black & Live: Austin’s Citywide Juneteenth Festival@ The Carver Museum
+
+**Date:** 2025-06-14
+
+**Time:** 15:00 - 22:00
+
+**Location:** George Washington Carver Museum, 1165 Angelina St, Austin, TX 78702
+
+**Description:** Celebrate freedom, culture, and community at the George Washington Carver Museum’s annual Juneteenth Festival in East Austin featuring live music, food, and educational activities.
+
+**Additional Details:** Age: All ages. Cost: Free with RSVP. Registration: RSVP required
+
+**Source:** Unknown
+
+---
+
+## Happy Father’s Day!
+
+**Date:** 2025-06-15
+
+**Location:** First Presbyterian Church of Austin, 8001 Mesa Dr, Austin, TX, United States, Texas 78731
+
+**Description:** Celebrate Father's Day with a variety of family-friendly events in Austin, including brewery visits, outdoor adventures, and live music. Activities cater to all interests, from mini golf to hiking and brunch.
+
+**Additional Details:** Age: All ages. Cost: Varies by event. Registration: Check out the full Father’s Day guide for more ideas: How to Treat Dad to the Best Father’s Day Ever
+
+**Source:** Unknown
 
 ---
 
@@ -1531,6 +1657,24 @@
 **Additional Details:** Cost: $25 per duo, $10 per additional son. Tickets available online.
 
 **Source:** d6ecedf42abc7a27cf6d07fada346b0e.JPG
+
+---
+
+## Unnamed Activity
+
+**Source:** b34c68f403d2a56bd6fca1b65c5ca6e4.JPG
+
+---
+
+## Unnamed Activity
+
+**Source:** 1fa408f0953e26b833b7f6bce1a34c10.JPG
+
+---
+
+## Unnamed Activity
+
+**Source:** a35b9986836ae5aa70a4929e196030e5.JPG
 
 ---
 

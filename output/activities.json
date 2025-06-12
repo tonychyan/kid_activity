@@ -1027,7 +1027,7 @@
     "additional_details": "Free family event. In support of Emancipet.",
     "raw_datetime": "Sunday, June 8th | 11am-3pm",
     "source_file": "bf15d7a7dec344d4c6fce83f6631aa24.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Pop Up Play Day",
@@ -1038,7 +1038,7 @@
     "additional_details": "Pop Up Play Day is popping into your neighborhood park on select Saturdays from May through August.",
     "raw_datetime": "Saturday, June 7, 2025 at 11 AM \u2013 1 PM CDT",
     "source_file": "5b61d9473df86acdb4cb89a209b097da.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Catfish Derby",
@@ -1049,7 +1049,7 @@
     "additional_details": "Catch and release preferred. Follow Texas Parks and Wildlife limits if keeping catch.",
     "raw_datetime": "Saturday, June 7, at 8 am",
     "source_file": "c53078bb214c51855ce560f2ed1e809a.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "RRS Circus",
@@ -1060,7 +1060,7 @@
     "additional_details": "Costumes are NOT required but encouraged. The bar serves mocktails and non-alcoholic drinks.",
     "raw_datetime": "Saturday at 8 PM \u2013 2 AM, Saturday, June 7th",
     "source_file": "cd9dfee90da7292072cedbf925456f38.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Kids Block Party",
@@ -1071,7 +1071,7 @@
     "additional_details": "Free event celebrating children, literacy, and learning through play.",
     "raw_datetime": "Saturday at 9:30 AM, June 7",
     "source_file": "644e311d5e04556959f463592d5ea525.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Kaleidoscope of Culture",
@@ -1082,7 +1082,7 @@
     "additional_details": "Hosted by FLC & CDC Families. Water games for kids of all ages, wearing swimsuits is encouraged.",
     "raw_datetime": "Saturday, June 7th at 11 AM \u2013 1 PM",
     "source_file": "8f3213f763ae237fe1c968bb660f34c6.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "10th Annual Maker Pfest",
@@ -1093,7 +1093,7 @@
     "additional_details": "Check out staff demos of the laser cutter, 3D Printer, and more. Try activities with library staff like cyanotypes, friendship bracelets, solar critters, and more.",
     "raw_datetime": "Saturday at 2 PM \u2013 5 PM",
     "source_file": "a49f38d9ea8e253f195674f7166d58a2.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Family Day: PRIDE!@ UMLAUF Sculpture Garden & Museum",
@@ -1104,6 +1104,137 @@
     "additional_details": "Age: All ages. Cost: Free. Registration: Register for FREE here",
     "raw_datetime": "Friday, June 6 | 8 pm | RSVP for FREEhere",
     "source_url": "https://family.do512.com/events/2025/6/8/family-day-pride-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": true
+  },
+  {
+    "activity_name": "Doya-Palooza @ Hotel Vegas for Austin Farm Sanctuary",
+    "location": "Hotel Vegas, 1502 E 6th St, Austin, TX 78702-3306, United States",
+    "date": "2025-06-14",
+    "time": "12:00 PM - 6:00 PM",
+    "description": "Live music all day from TC Superstar, Cheetah Cheetah, Fehrenbacher, plus DJ sets by Strawberry Blondie...Custom cocktails, vegan eats, and good vibes. Silent Auction",
+    "additional_details": null,
+    "raw_datetime": null,
+    "source_file": "b34c68f403d2a56bd6fca1b65c5ca6e4.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "200th Celebration Family Fun Day",
+    "location": "18725 FM 685, Pflugerville, TX 78660",
+    "date": "2025-06-14",
+    "time": "11:00 AM - 1:00 PM",
+    "description": "Join us to celebrate our 200th Frost location at our new Pflugerville Financial Center with a Family Fun Day. Complimentary sweet treat, face painting, a balloon artist, and a chance to win Frost prizes.",
+    "additional_details": "The event is free and open to the public. KHFI -96.7 KISS FM will broadcast live from the event.",
+    "raw_datetime": "Saturday, June 14, 2025 at 11 AM \u2013 1 PM",
+    "source_file": "c387c8335f28ea341d8f1c4a31ac4b1b.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Summer Splash Party",
+    "location": "Journey Bible Fellowship, 3429 Journey Pkwy, Leander, TX 78641",
+    "date": "2025-06-14",
+    "time": "6:00 PM",
+    "description": "A fun summer event with water slide, dunk tank, kiddie pools, and more.",
+    "additional_details": "Don't forget your swimsuit, a towel, and sunscreen.",
+    "raw_datetime": "14 June 2025, 6:00PM",
+    "source_file": "27c7b353210df858d96aac16728c2c2a.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "6th Annual Midsommar",
+    "location": "Williamson County Old Settlers Association, 3300 E Palm Valley Dr, Round Rock, TX 78665",
+    "date": "2025-06-14",
+    "time": "10:00 AM - 2:00 PM",
+    "description": "Midsommar festival celebrating Swedish heritage with crafts and activities including a play, viking sword fighting, and Midsommar dancing. Free, family event.",
+    "additional_details": "For more information, visit www.williamsonmuseum.org or call 512-943-1670.",
+    "raw_datetime": "Saturday, June 14th 10am-2pm",
+    "source_file": "0983c5e1b09d04988152d3ddb271b446.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Big Time Bubbles Foam Party",
+    "location": "4000 Galleria Pkwy, Bee Cave, TX, United States, 78738",
+    "date": "2025-06-14",
+    "time": "10:00 AM - 12:00 PM",
+    "description": "Foam fun with music, beach balls, and foam. Kids 6 and under from 10-11 AM; kids 7 and older from 11 AM-12 PM.",
+    "additional_details": "Wear swimwear and pack a towel, goggles, and a change of clothes.",
+    "raw_datetime": "Saturday at 10 AM \u2013 12 PM",
+    "source_file": "eec6b2c4a9801db74822a7d0e0094cfe.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Hutto Sweetheart Dance",
+    "location": "100 Mager Ln, Hutto, TX 78634, USA",
+    "date": "2025-06-13",
+    "time": "06:30 PM - 08:30 PM",
+    "description": "Join us for a fantastic night of fun, music, and memory-making for only $5 per person! You'll enjoy a lively DJ, abundant photo ops, and a delicious spread of refreshments. We'll have easy-to-grab hand-held foods, assorted treats on a party tray, delightful cookies and sweets, and a variety of refreshing flavored drinks. ",
+    "additional_details": null,
+    "raw_datetime": null,
+    "source_file": "a35b9986836ae5aa70a4929e196030e5.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Music Under theStar@ Bullock Museum",
+    "location": "Bullock Museum, 1800 Congress Ave, Austin, TX 78701",
+    "date": "2025-06-13",
+    "time": "19:00-21:00",
+    "description": "Kick off your Father\u2019s Day weekend with a little retro flair at this free summer concert series featuring rising local talent Pedal Steel Noah and dream-pop artist San Gabriel.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration required; food and drinks available for purchase, and museum members get free parking.",
+    "raw_datetime": "Friday, June 13 | 7 pm \u2013 9 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/6/13/music-under-the-star-san-gabriel-with-pedal-steel-noah-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Wicked(2024) @ Community First! Village",
+    "location": "Community First! Village, Austin, TX 78724",
+    "date": "2025-06-13",
+    "time": "Tours at 18:30, movie at dusk",
+    "description": "Spend your Friday night in Oz at Community First! Village\u2019s outdoor screening of Wicked, the hit musical-turned-movie, ideal for those who love magic and music.",
+    "additional_details": "Age: Older kids and teens. Cost: FREE with RSVP. Registration: RSVP required",
+    "raw_datetime": "Friday, June 13 | Tours at 6:30 pm, movie at dusk | FREE with RSVPhere",
+    "source_url": "https://family.do512.com/events/2025/6/13/wicked-2024-community-cinema-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Second Saturdays Are For Families@ Laguna Gloria",
+    "location": "The Contemporary Austin - Laguna Gloria, 3809 W 35th St, Austin, TX 78703",
+    "date": "2025-06-14",
+    "time": "11 am \u2013 3 pm",
+    "description": "Join the Second Saturdays event at The Contemporary Austin\u2014Laguna Gloria to create recycled robot creations and enjoy free frozen treats by GoGo YumYum. A fun, hands-on activity to spark imagination and learn about sustainability.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: Advanced registration is closed; limited walk-ups available on a first-come, first-served basis.",
+    "raw_datetime": "Saturday, June 14 | 11 am \u2013 3 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/6/14/second-saturdays-are-for-families-recycled-robots-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Stay Black & Live: Austin\u2019s Citywide Juneteenth Festival@ The Carver Museum",
+    "location": "George Washington Carver Museum, 1165 Angelina St, Austin, TX 78702",
+    "date": "2025-06-14",
+    "time": "15:00 - 22:00",
+    "description": "Celebrate freedom, culture, and community at the George Washington Carver Museum\u2019s annual Juneteenth Festival in East Austin featuring live music, food, and educational activities.",
+    "additional_details": "Age: All ages. Cost: Free with RSVP. Registration: RSVP required",
+    "raw_datetime": "Saturday, June 14 | 3 pm \u2013 10 pm | FREE with RSVPhere",
+    "source_url": "https://family.do512.com/events/2025/6/14/stay-black-live-austin-s-citywide-juneteenth-festival-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Happy Father\u2019s Day!",
+    "location": "First Presbyterian Church of Austin, 8001 Mesa Dr, Austin, TX, United States, Texas 78731",
+    "date": "2025-06-15",
+    "time": null,
+    "description": "Celebrate Father's Day with a variety of family-friendly events in Austin, including brewery visits, outdoor adventures, and live music. Activities cater to all interests, from mini golf to hiking and brunch.",
+    "additional_details": "Age: All ages. Cost: Varies by event. Registration: Check out the full Father\u2019s Day guide for more ideas: How to Treat Dad to the Best Father\u2019s Day Ever",
+    "raw_datetime": "Sunday, June 15",
+    "source_url": "https://do512family.com/how-to-treat-dad-to-the-best-fathers-day-ever/",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
     "is_archived": false
