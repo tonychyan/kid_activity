@@ -1488,6 +1488,20 @@
 
 ---
 
+## Hutto Sweetheart Dance
+
+**Date:** 2025-06-13
+
+**Time:** 06:30 PM - 08:30 PM
+
+**Location:** 100 Mager Ln, Hutto, TX 78634, USA
+
+**Description:** Join us for a fantastic night of fun, music, and memory-making for only $5 per person! You'll enjoy a lively DJ, abundant photo ops, and a delicious spread of refreshments. We'll have easy-to-grab hand-held foods, assorted treats on a party tray, delightful cookies and sweets, and a variety of refreshing flavored drinks. 
+
+**Source:** a35b9986836ae5aa70a4929e196030e5.JPG
+
+---
+
 ## Music Under theStar@ Bullock Museum
 
 **Date:** 2025-06-13
@@ -1517,6 +1531,20 @@
 **Additional Details:** Age: Older kids and teens. Cost: FREE with RSVP. Registration: RSVP required
 
 **Source:** Unknown
+
+---
+
+## Doya-Palooza @ Hotel Vegas for Austin Farm Sanctuary
+
+**Date:** 2025-06-14
+
+**Time:** 12:00 PM - 6:00 PM
+
+**Location:** Hotel Vegas, 1502 E 6th St, Austin, TX 78702-3306, United States
+
+**Description:** Live music all day from TC Superstar, Cheetah Cheetah, Fehrenbacher, plus DJ sets by Strawberry Blondie...Custom cocktails, vegan eats, and good vibes. Silent Auction
+
+**Source:** b34c68f403d2a56bd6fca1b65c5ca6e4.JPG
 
 ---
 
@@ -1646,6 +1674,230 @@
 
 ---
 
+## Family Fun Swim Night
+
+**Date:** 2025-06-27
+
+**Time:** 6:00 PM - 8:30 PM
+
+**Location:** Buttercup Creek Pool, Cedar Park, TX, 78613
+
+**Description:** Cool off with the whole crew for a splashing good time! Music, games, free hotdog + chips (while supplies last).
+
+**Additional Details:** Ages 2 & under: FREE, Ages 3-17 & Seniors: $2, Ages 18+: $3. Bring your swimsuit and your best cannonball.
+
+**Source:** 19b339dd1812b8d74e259eb33ec87b67.JPG
+
+---
+
+## Summerfest
+
+**Date:** 2025-06-27
+
+**Time:** 6:30 PM - 9:00 PM
+
+**Location:** Parkway Bible Church, 303 E Pflugerville Pkwy, Pflugerville, TX, 78660
+
+**Description:** FREE community festival with family-focused carnival games, bounce houses, petting zoo with pony rides, climbing wall, face painting, giveaways, inexpensive food and more.
+
+**Additional Details:** An incredible event for friends and families to have fun, connect. Upon arrival, every family will...
+
+**Source:** 0514f3a72ee2b89a5e1189b5e2d69501.JPG
+
+---
+
+## Music Under theStar@ Bullock Museum
+
+**Date:** 2025-06-27
+
+**Time:** 19:00 - 21:00
+
+**Location:** Bullock Museum, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Enjoy a night of southern rock and blues at the Bullock Museum, featuring performances by Brodie Lane and Ian Moore.
+
+**Additional Details:** Age: family-friendly. Cost: Free, $15 parking (free for members). Registration: No registration details provided
+
+**Source:** Unknown
+
+---
+
+## Dinosaur Day
+
+**Date:** 2025-06-28
+
+**Time:** 10:00 AM - 3:00 PM
+
+**Location:** Texas Science & Natural History Museum, 2400 Trinity St, Austin, TX, United States, 78712
+
+**Description:** Celebrate all things dinosaur at Texas Science & Natural History Museum during the second annual Dinosaur Day. Enjoy special interactive activities, explore the museum’s new hands-on Discovery Center, and bring fossils for in-person identification by a paleontologist.
+
+**Additional Details:** Touch real fossil specimens, check out a 33-foot cast replica of a full tyrannosaur skeleton. Public event, anyone on or off Facebook can attend.
+
+**Source:** 371fc19f2e010b5f6d53ac42a933ace2.JPG
+
+---
+
+## Family Day at the Park
+
+**Date:** 2025-06-28
+
+**Time:** 12:00 PM - 4:00 PM
+
+**Location:** East Metropolitan Park, 18701 Blake Manor Rd., Manor, TX 78653
+
+**Description:** A day of family, fun, and fresh air with activities like arts & crafts, face painting, moonbounce, and more.
+
+**Additional Details:** Free event. BYOS (Bring Your Own Snacks). Seating available, bring lawn chairs or picnic blankets if desired.
+
+**Source:** 30c82efd2baedb2f312aa1698f747c58.JPG
+
+---
+
+## Children's Musical Storytime
+
+**Date:** 2025-06-28
+
+**Time:** 10:30 AM - 11:00 AM
+
+**Location:** BookPeople, 603 North Lamar Boulevard, Austin, TX 78703
+
+**Description:** A FREE fun-filled event where kids can enjoy interactive storytelling with live music.
+
+**Additional Details:** Event lasts 30 minutes. Free admission. Refunds up to 1 day before event.
+
+**Source:** 82074d5a031f59dcb290edec775c4f30 2.JPG
+
+---
+
+## Family Day At The Park
+
+**Date:** 2025-06-28
+
+**Time:** 12:00 PM - 4:00 PM
+
+**Location:** East Metropolitan Park, 18701 Blake Manor Rd., Manor, TX 78653, United States
+
+**Description:** A fun-filled day at the park for families. Includes a picnic-meets-cookout vibe, live DJ, arts & crafts, and face painting for kids.
+
+**Additional Details:** BYOS (Bring Your Own Snacks). Seating available, bring lawn chairs or picnic blankets. Enjoy an afternoon full of good energy and good company.
+
+**Source:** a5ef9c315ee38753b68a298f273c1fd7.JPG
+
+---
+
+## Block Party
+
+**Date:** 2025-06-28
+
+**Time:** 10:00 AM - 12:00 PM
+
+**Location:** 6014 Cameron Rd, Austin, TX 78723-1845, United States
+
+**Description:** A summer block party with activities like bounce houses, games, hot dogs, Kona ice, face painting, carnival games, and giveaways. Open for everyone to meet neighbors and make new friends.
+
+**Additional Details:** Hosted by Antioch Austin. Public event. 25 going, 158 interested.
+
+**Source:** ec97c94423a06ca4021b6101ab3ac59f.JPG
+
+---
+
+## Children's Musical Storytime
+
+**Date:** 2025-06-28
+
+**Time:** 10:30 AM - 11:00 AM
+
+**Location:** BookPeople, 603 North Lamar Boulevard, Austin, TX 78703
+
+**Description:** A free fun-filled event where kids can enjoy interactive storytelling with live music.
+
+**Additional Details:** Event lasts 30 minutes. Refunds up to 1 day before event. Free admission. Reserve a spot.
+
+**Source:** 82074d5a031f59dcb290edec775c4f30.JPG
+
+---
+
+## Dinosaur Day@ Texas Science & Natural History Museum
+
+**Date:** 2025-06-28
+
+**Time:** 10:00 AM - 3:00 PM
+
+**Location:** Texas Science & Natural History Museum, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** A dino-sized family adventure featuring hands-on paleontology activities, a scavenger hunt, story time, and a discount on dinosaur-themed items.
+
+**Additional Details:** Age: All ages (free for kids under 4). Cost: $10 for adults, $6 for students and seniors, free for kids under 4 and UT affiliates. Registration: General admission required. Tickets available for purchase.
+
+**Source:** Unknown
+
+---
+
+## Bastrop’s Annual Big Bang Celebration
+
+**Date:** 2025-06-28
+
+**Time:** 8:00 am - 9:30 pm
+
+**Location:** Bastrop, TX 78701 *(ZIP code estimated)*
+
+**Description:** Join the Bastrop’s Annual Big Bang Celebration with a Pet & Pal Parade, scavenger hunt, field games, live music, bounce houses, and a fireworks show.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration required
+
+**Source:** Unknown
+
+---
+
+## PRIDE Picnic@ Pease Park
+
+**Date:** 2025-06-28
+
+**Time:** 12:00 PM - 2:00 PM
+
+**Location:** Pease Park, Kingsbury Commons, Austin, TX, 78703
+
+**Description:** Celebrate Pride Month with sunshine and community vibes at Pease Park’s fourth-annual Pride Picnic featuring outdoor workshops, all-ages crafts, DJ sets, and more than 30 pop-up shops showcasing LGBTQ+ artists and makers.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration required
+
+**Source:** Unknown
+
+---
+
+## Community Pride Day@ Austin Creative ReuseSaturday, June 28 | Noon- 3 pm | FREE
+
+**Date:** 2025-06-28
+
+**Time:** {'start': '12:00', 'end': '15:00'}
+
+**Location:** Austin, TX, 78757
+
+**Description:** Get crafty and celebrate Pride at Austin Creative Reuse’s fourth-annual Community Pride Day with activities like keychain making, clay crafts, a mini-market featuring local LGBTQIA2S+ artists, and more.
+
+**Additional Details:** Age: all ages. Cost: FREE. Registration: Get more info here.
+
+**Source:** Unknown
+
+---
+
+## Hartman Foundation Concerts in the Park
+
+**Date:** 2025-06-29
+
+**Time:** 19:30 - 20:30
+
+**Location:** Long Center for the Performing Arts, 701 W Riverside Dr, Austin, TX 78704
+
+**Description:** Enjoy a laid-back summer evening with live music and skyline views at the Austin Symphony’s Hartman Foundation Concerts in the Park, featuring light classical, jazz, and pops performances.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No ticket necessary
+
+**Source:** Unknown
+
+---
+
 ## Mother Son GLOW Dance
 
 **Time:** 6:00 PM - 8:00 PM
@@ -1657,24 +1909,6 @@
 **Additional Details:** Cost: $25 per duo, $10 per additional son. Tickets available online.
 
 **Source:** d6ecedf42abc7a27cf6d07fada346b0e.JPG
-
----
-
-## Unnamed Activity
-
-**Source:** b34c68f403d2a56bd6fca1b65c5ca6e4.JPG
-
----
-
-## Unnamed Activity
-
-**Source:** 1fa408f0953e26b833b7f6bce1a34c10.JPG
-
----
-
-## Unnamed Activity
-
-**Source:** a35b9986836ae5aa70a4929e196030e5.JPG
 
 ---
 

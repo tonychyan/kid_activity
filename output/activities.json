@@ -500,7 +500,7 @@
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
     "location_uncertain": true,
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Eeyore\u2019s Birthday Party@ Pease Park",
@@ -1117,7 +1117,7 @@
     "additional_details": null,
     "raw_datetime": null,
     "source_file": "b34c68f403d2a56bd6fca1b65c5ca6e4.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "200th Celebration Family Fun Day",
@@ -1128,7 +1128,7 @@
     "additional_details": "The event is free and open to the public. KHFI -96.7 KISS FM will broadcast live from the event.",
     "raw_datetime": "Saturday, June 14, 2025 at 11 AM \u2013 1 PM",
     "source_file": "c387c8335f28ea341d8f1c4a31ac4b1b.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Summer Splash Party",
@@ -1139,7 +1139,7 @@
     "additional_details": "Don't forget your swimsuit, a towel, and sunscreen.",
     "raw_datetime": "14 June 2025, 6:00PM",
     "source_file": "27c7b353210df858d96aac16728c2c2a.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "6th Annual Midsommar",
@@ -1150,7 +1150,7 @@
     "additional_details": "For more information, visit www.williamsonmuseum.org or call 512-943-1670.",
     "raw_datetime": "Saturday, June 14th 10am-2pm",
     "source_file": "0983c5e1b09d04988152d3ddb271b446.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Big Time Bubbles Foam Party",
@@ -1161,7 +1161,7 @@
     "additional_details": "Wear swimwear and pack a towel, goggles, and a change of clothes.",
     "raw_datetime": "Saturday at 10 AM \u2013 12 PM",
     "source_file": "eec6b2c4a9801db74822a7d0e0094cfe.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Hutto Sweetheart Dance",
@@ -1172,7 +1172,7 @@
     "additional_details": null,
     "raw_datetime": null,
     "source_file": "a35b9986836ae5aa70a4929e196030e5.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Music Under theStar@ Bullock Museum",
@@ -1185,7 +1185,7 @@
     "source_url": "https://family.do512.com/events/2025/6/13/music-under-the-star-san-gabriel-with-pedal-steel-noah-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Wicked(2024) @ Community First! Village",
@@ -1198,7 +1198,7 @@
     "source_url": "https://family.do512.com/events/2025/6/13/wicked-2024-community-cinema-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Second Saturdays Are For Families@ Laguna Gloria",
@@ -1211,7 +1211,7 @@
     "source_url": "https://family.do512.com/events/2025/6/14/second-saturdays-are-for-families-recycled-robots-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Stay Black & Live: Austin\u2019s Citywide Juneteenth Festival@ The Carver Museum",
@@ -1224,7 +1224,7 @@
     "source_url": "https://family.do512.com/events/2025/6/14/stay-black-live-austin-s-citywide-juneteenth-festival-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Happy Father\u2019s Day!",
@@ -1235,6 +1235,90 @@
     "additional_details": "Age: All ages. Cost: Varies by event. Registration: Check out the full Father\u2019s Day guide for more ideas: How to Treat Dad to the Best Father\u2019s Day Ever",
     "raw_datetime": "Sunday, June 15",
     "source_url": "https://do512family.com/how-to-treat-dad-to-the-best-fathers-day-ever/",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": true
+  },
+  {
+    "activity_name": "Dinosaur Day",
+    "location": "Texas Science & Natural History Museum, 2400 Trinity St, Austin, TX, United States, 78712",
+    "date": "2025-06-28",
+    "time": "10:00 AM - 3:00 PM",
+    "description": "Celebrate all things dinosaur at Texas Science & Natural History Museum during the second annual Dinosaur Day. Enjoy special interactive activities, explore the museum\u2019s new hands-on Discovery Center, and bring fossils for in-person identification by a paleontologist.",
+    "additional_details": "Touch real fossil specimens, check out a 33-foot cast replica of a full tyrannosaur skeleton. Public event, anyone on or off Facebook can attend.",
+    "raw_datetime": "Saturday at 10 AM \u2013 3 PM",
+    "source_file": "371fc19f2e010b5f6d53ac42a933ace2.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Family Day at the Park",
+    "location": "East Metropolitan Park, 18701 Blake Manor Rd., Manor, TX 78653",
+    "date": "2025-06-28",
+    "time": "12:00 PM - 4:00 PM",
+    "description": "A day of family, fun, and fresh air with activities like arts & crafts, face painting, moonbounce, and more.",
+    "additional_details": "Free event. BYOS (Bring Your Own Snacks). Seating available, bring lawn chairs or picnic blankets if desired.",
+    "raw_datetime": "Saturday, June 28, 2025 12:00 PM \u2013 4:00 PM",
+    "source_file": "30c82efd2baedb2f312aa1698f747c58.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Children's Musical Storytime",
+    "location": "BookPeople, 603 North Lamar Boulevard, Austin, TX 78703",
+    "date": "2025-06-28",
+    "time": "10:30 AM - 11:00 AM",
+    "description": "A FREE fun-filled event where kids can enjoy interactive storytelling with live music.",
+    "additional_details": "Event lasts 30 minutes. Free admission. Refunds up to 1 day before event.",
+    "raw_datetime": "Sat, June 28th, 2025 at 10:30 AM",
+    "source_file": "82074d5a031f59dcb290edec775c4f30 2.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Block Party",
+    "location": "6014 Cameron Rd, Austin, TX 78723-1845, United States",
+    "date": "2025-06-28",
+    "time": "10:00 AM - 12:00 PM",
+    "description": "A summer block party with activities like bounce houses, games, hot dogs, Kona ice, face painting, carnival games, and giveaways. Open for everyone to meet neighbors and make new friends.",
+    "additional_details": "Hosted by Antioch Austin. Public event. 25 going, 158 interested.",
+    "raw_datetime": "Saturday, June 28 | 10AM\u201312PM",
+    "source_file": "ec97c94423a06ca4021b6101ab3ac59f.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Bastrop\u2019s Annual Big Bang Celebration",
+    "location": "Bastrop, TX 78701",
+    "date": "2025-06-28",
+    "time": "8:00 am - 9:30 pm",
+    "description": "Join the Bastrop\u2019s Annual Big Bang Celebration with a Pet & Pal Parade, scavenger hunt, field games, live music, bounce houses, and a fireworks show.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration required",
+    "raw_datetime": "Saturday, June 28 | Events from 8 am \u2013 9:30 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/6/28/bastrops-annual-big-bang-celebration-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false,
+    "location_uncertain": true
+  },
+  {
+    "activity_name": "PRIDE Picnic@ Pease Park",
+    "location": "Pease Park, Kingsbury Commons, Austin, TX, 78703",
+    "date": "2025-06-28",
+    "time": "12:00 PM - 2:00 PM",
+    "description": "Celebrate Pride Month with sunshine and community vibes at Pease Park\u2019s fourth-annual Pride Picnic featuring outdoor workshops, all-ages crafts, DJ sets, and more than 30 pop-up shops showcasing LGBTQ+ artists and makers.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration required",
+    "raw_datetime": "Saturday, June 28 | Noon \u2013 2 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/6/28/pride-picnic-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Hartman Foundation Concerts in the Park",
+    "location": "Long Center for the Performing Arts, 701 W Riverside Dr, Austin, TX 78704",
+    "date": "2025-06-29",
+    "time": "19:30 - 20:30",
+    "description": "Enjoy a laid-back summer evening with live music and skyline views at the Austin Symphony\u2019s Hartman Foundation Concerts in the Park, featuring light classical, jazz, and pops performances.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No ticket necessary",
+    "raw_datetime": "Sunday, June 29 | 7:30 pm \u2013 8:30 pm  | FREE",
+    "source_url": "https://family.do512.com/events/weekly/sun/hartman-foundation-concerts-in-the-park-tickets-kcjclmjd",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
     "is_archived": false
