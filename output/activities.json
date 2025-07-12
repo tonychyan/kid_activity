@@ -1248,7 +1248,7 @@
     "additional_details": "Touch real fossil specimens, check out a 33-foot cast replica of a full tyrannosaur skeleton. Public event, anyone on or off Facebook can attend.",
     "raw_datetime": "Saturday at 10 AM \u2013 3 PM",
     "source_file": "371fc19f2e010b5f6d53ac42a933ace2.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Family Day at the Park",
@@ -1259,7 +1259,7 @@
     "additional_details": "Free event. BYOS (Bring Your Own Snacks). Seating available, bring lawn chairs or picnic blankets if desired.",
     "raw_datetime": "Saturday, June 28, 2025 12:00 PM \u2013 4:00 PM",
     "source_file": "30c82efd2baedb2f312aa1698f747c58.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Children's Musical Storytime",
@@ -1270,7 +1270,7 @@
     "additional_details": "Event lasts 30 minutes. Free admission. Refunds up to 1 day before event.",
     "raw_datetime": "Sat, June 28th, 2025 at 10:30 AM",
     "source_file": "82074d5a031f59dcb290edec775c4f30 2.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Block Party",
@@ -1281,7 +1281,7 @@
     "additional_details": "Hosted by Antioch Austin. Public event. 25 going, 158 interested.",
     "raw_datetime": "Saturday, June 28 | 10AM\u201312PM",
     "source_file": "ec97c94423a06ca4021b6101ab3ac59f.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Bastrop\u2019s Annual Big Bang Celebration",
@@ -1294,7 +1294,7 @@
     "source_url": "https://family.do512.com/events/2025/6/28/bastrops-annual-big-bang-celebration-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false,
+    "is_archived": true,
     "location_uncertain": true
   },
   {
@@ -1308,7 +1308,7 @@
     "source_url": "https://family.do512.com/events/2025/6/28/pride-picnic-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Hartman Foundation Concerts in the Park",
@@ -1319,6 +1319,121 @@
     "additional_details": "Age: All ages. Cost: Free. Registration: No ticket necessary",
     "raw_datetime": "Sunday, June 29 | 7:30 pm \u2013 8:30 pm  | FREE",
     "source_url": "https://family.do512.com/events/weekly/sun/hartman-foundation-concerts-in-the-park-tickets-kcjclmjd",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": true
+  },
+  {
+    "activity_name": "All-Ages Awesomeness 10th Year",
+    "location": "Rogues Gallery Comics and Games, 1601 Interstate 35 Suite 330, Round Rock, TX 78664",
+    "date": "2025-07-12",
+    "time": "12:00 PM - 5:00 PM",
+    "description": "Return of the popular All-Ages Awesomeness event with free sketches for kids and adults.",
+    "additional_details": "Guest of honor: Andy Runton. Local artists include Jessi Jordan, Isaiah Broussard, and Joseph Compton. Artists will be sketching and selling prints, comics.",
+    "raw_datetime": "Saturday at 12 PM \u2013 5 PM, Saturday, July 12th",
+    "source_file": "b80e7167d138561e00102091f56e3b12.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Family Day@ UMLAUF",
+    "location": "UMLAUF Sculpture Garden & Museum, 605 Azie Morton Rd, Austin, TX 78704",
+    "date": "2025-07-12",
+    "time": "11:00 am - 4:00 pm",
+    "description": "Spend a summer Sunday surrounded by art and nature at UMLAUF\u2019s Family Day! Kids can get creative with hands-on watercolor crafts, explore interactive stations hosted by local nature groups, and take part in water-themed conservation activities.",
+    "additional_details": "Age: All ages. Cost: FREE with Registration. Registration: Register for FREE admission here.",
+    "raw_datetime": "Friday, July 11 | 6 pm \u2013 8 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/7/13/family-day-splash-into-summer-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Watermelon Fest: Beer Release Party",
+    "location": "The Brewtorium Brewery & Kitchen, 6015 Dillard Circle, Suite A Austin, TX 78752",
+    "date": "2025-07-12",
+    "time": "12:00 PM - 4:00 PM",
+    "description": "Celebrate the release of our Watermelon Wheat Ale with games, contests, food, and summer fun! Join us for a juicy good time as we celebrate the release of our Watermelon Wheat Ale – Losin' My Rind! We're going all in on watermelon from 12–4PM with ice-cold beer, watermelon specials, games, and fun for all ages.",
+    "additional_details": "Free to attend! Activities include: Beer release of Losin' My Rind Watermelon Wheat Ale, Watermelon eating contest, Watermelon carving contest (drop off your watermelon to be displayed by 1pm!), Games + Prizes, Kids activities, Inside in the Air Conditioning!, Food specials & more! All ages welcome.",
+    "raw_datetime": "Saturday, July 12 · 12 - 4pm CDT",
+    "source_url": "https://www.eventbrite.com/e/watermelon-fest-beer-release-party-tickets-1439287089429",
+    "source_type": "web_scrape",
+    "source_name": "eventbrite.com",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Day of Play at Variety\u2019s Peaceful Kingdom Retreat",
+    "location": "Variety\u2019s Peaceable Kingdom Retreat, 19051 FM 2484, Killen, TX 76542",
+    "date": "2025-07-12",
+    "time": "9 am \u2013 noon",
+    "description": "A 'Day of Play' event designed for children and families supported by Variety, featuring therapeutic horseback rides, gentle farm animals, sensory crafts, and wellness stations.",
+    "additional_details": "Age: Not specified. Cost: $10 per person or $25 per family. Registration: Families outside the served group can show support with donations or volunteering.",
+    "raw_datetime": "Saturday, July 12 | 9 am \u2013 noon | $10 per person or $25 per family",
+    "source_url": "https://family.do512.com/events/2025/7/12/day-of-play-at-variety-s-peaceable-kingdom-retreat-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Second Saturdays Are for Families@ Laguna Gloria",
+    "location": "Laguna Gloria, 3809 W 35th St, Austin, TX 78703",
+    "date": "2025-07-11",
+    "time": "11:00 AM - 3:00 PM",
+    "description": "This weekend\u2019s Mirror, Mirror edition of Laguna Gloria\u2019s Second Saturdays invites kids to explore reflective art through hands-on activities like mirrored collages and shiny sculptures. Most activities take place outdoors.",
+    "additional_details": "Age: Kids. Cost: Free with RSVP. Registration: RSVP required",
+    "raw_datetime": "Saturday, July 11 | 11 am \u2013 3 pm | FREE with RSVPhere",
+    "source_url": "https://family.do512.com/events/2025/7/12/second-saturdays-are-for-families-mirror-mirror-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Anime Arcade Summer Festival@ Pinballz",
+    "location": "Pinballz,13729 Research Blvd, Austin, TX 78750",
+    "date": "2025-07-12",
+    "time": "4 pm \u2013 9 pm",
+    "description": "Step into a vibrant anime universe at this all-ages celebration packed with cosplay contests, Chibi artist booths, themed activities, and arcade fun. Families can explore vendor tables, win raffle prizes, and enjoy kid-approved eats from Mikki\u2019s Tavern.",
+    "additional_details": "Age: All ages (18+ after 9 pm). Cost: Entrance is FREE. Registration: Get all the info and full schedule on the event website.",
+    "raw_datetime": "Sunday, July 12 | 4 pm \u2013 9 pm (changes to 18+ at 9 pm | Entrance is FREE",
+    "source_url": "https://family.do512.com/events/2025/7/12/anime-arcade-summer-festival-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Bob Bullock Birthday Bash@ The Bullock Museum",
+    "location": "Bullock Museum, 1800 Congress Ave, Austin, TX 78701",
+    "date": "2025-07-13",
+    "time": "10:00 AM - 2:00 PM",
+    "description": "Celebrate the legacy of Bob Bullock\u2014Texas\u2019s former Lieutenant Governor and the driving force behind the Bullock Museum\u2014with a birthday bash the whole family can enjoy. It's a fun way to explore Texas history, cool off indoors, and make some sweet memories with the kids.",
+    "additional_details": "Age: All ages. Cost: Free. Registration: No registration details provided.",
+    "raw_datetime": "Sunday, July 13 | Kids\u2019 activities from 10 am \u2013 2 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/7/13/bob-bullock-birthday-bash-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Groundwork Music Orchestra",
+    "location": "Cherrywood Coffee House, 1400 E 38th 1/2 St, Austin, TX 78722",
+    "date": "2025-07-13",
+    "time": null,
+    "description": "Groundwork Music Orchestra is performing at Cherrywood Coffee House.",
+    "additional_details": "",
+    "raw_datetime": "",
+    "source_url": "https://family.do512.com/events/2025/7/13/groundwork-music-orchestra-1745598428",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Rolling Video Game Truck",
+    "location": "Lake Travis Community Library, 1938 Lohmans Crossing Rd, Austin, TX 78734",
+    "date": "2025-07-12",
+    "time": null,
+    "description": "Join the Rolling Video Game Truck at Lake Travis Community Library for a fun gaming experience.",
+    "additional_details": "",
+    "raw_datetime": "",
+    "source_url": "https://family.do512.com/events/2025/7/12/rolling-video-games-truck-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
     "is_archived": false

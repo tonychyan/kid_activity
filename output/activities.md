@@ -1674,54 +1674,6 @@
 
 ---
 
-## Family Fun Swim Night
-
-**Date:** 2025-06-27
-
-**Time:** 6:00 PM - 8:30 PM
-
-**Location:** Buttercup Creek Pool, Cedar Park, TX, 78613
-
-**Description:** Cool off with the whole crew for a splashing good time! Music, games, free hotdog + chips (while supplies last).
-
-**Additional Details:** Ages 2 & under: FREE, Ages 3-17 & Seniors: $2, Ages 18+: $3. Bring your swimsuit and your best cannonball.
-
-**Source:** 19b339dd1812b8d74e259eb33ec87b67.JPG
-
----
-
-## Summerfest
-
-**Date:** 2025-06-27
-
-**Time:** 6:30 PM - 9:00 PM
-
-**Location:** Parkway Bible Church, 303 E Pflugerville Pkwy, Pflugerville, TX, 78660
-
-**Description:** FREE community festival with family-focused carnival games, bounce houses, petting zoo with pony rides, climbing wall, face painting, giveaways, inexpensive food and more.
-
-**Additional Details:** An incredible event for friends and families to have fun, connect. Upon arrival, every family will...
-
-**Source:** 0514f3a72ee2b89a5e1189b5e2d69501.JPG
-
----
-
-## Music Under theStar@ Bullock Museum
-
-**Date:** 2025-06-27
-
-**Time:** 19:00 - 21:00
-
-**Location:** Bullock Museum, Austin, TX 78701 *(ZIP code estimated)*
-
-**Description:** Enjoy a night of southern rock and blues at the Bullock Museum, featuring performances by Brodie Lane and Ian Moore.
-
-**Additional Details:** Age: family-friendly. Cost: Free, $15 parking (free for members). Registration: No registration details provided
-
-**Source:** Unknown
-
----
-
 ## Dinosaur Day
 
 **Date:** 2025-06-28
@@ -1770,22 +1722,6 @@
 
 ---
 
-## Family Day At The Park
-
-**Date:** 2025-06-28
-
-**Time:** 12:00 PM - 4:00 PM
-
-**Location:** East Metropolitan Park, 18701 Blake Manor Rd., Manor, TX 78653, United States
-
-**Description:** A fun-filled day at the park for families. Includes a picnic-meets-cookout vibe, live DJ, arts & crafts, and face painting for kids.
-
-**Additional Details:** BYOS (Bring Your Own Snacks). Seating available, bring lawn chairs or picnic blankets. Enjoy an afternoon full of good energy and good company.
-
-**Source:** a5ef9c315ee38753b68a298f273c1fd7.JPG
-
----
-
 ## Block Party
 
 **Date:** 2025-06-28
@@ -1799,38 +1735,6 @@
 **Additional Details:** Hosted by Antioch Austin. Public event. 25 going, 158 interested.
 
 **Source:** ec97c94423a06ca4021b6101ab3ac59f.JPG
-
----
-
-## Children's Musical Storytime
-
-**Date:** 2025-06-28
-
-**Time:** 10:30 AM - 11:00 AM
-
-**Location:** BookPeople, 603 North Lamar Boulevard, Austin, TX 78703
-
-**Description:** A free fun-filled event where kids can enjoy interactive storytelling with live music.
-
-**Additional Details:** Event lasts 30 minutes. Refunds up to 1 day before event. Free admission. Reserve a spot.
-
-**Source:** 82074d5a031f59dcb290edec775c4f30.JPG
-
----
-
-## Dinosaur Day@ Texas Science & Natural History Museum
-
-**Date:** 2025-06-28
-
-**Time:** 10:00 AM - 3:00 PM
-
-**Location:** Texas Science & Natural History Museum, Austin, TX 78701 *(ZIP code estimated)*
-
-**Description:** A dino-sized family adventure featuring hands-on paleontology activities, a scavenger hunt, story time, and a discount on dinosaur-themed items.
-
-**Additional Details:** Age: All ages (free for kids under 4). Cost: $10 for adults, $6 for students and seniors, free for kids under 4 and UT affiliates. Registration: General admission required. Tickets available for purchase.
-
-**Source:** Unknown
 
 ---
 
@@ -1866,22 +1770,6 @@
 
 ---
 
-## Community Pride Day@ Austin Creative ReuseSaturday, June 28 | Noon- 3 pm | FREE
-
-**Date:** 2025-06-28
-
-**Time:** {'start': '12:00', 'end': '15:00'}
-
-**Location:** Austin, TX, 78757
-
-**Description:** Get crafty and celebrate Pride at Austin Creative Reuse’s fourth-annual Community Pride Day with activities like keychain making, clay crafts, a mini-market featuring local LGBTQIA2S+ artists, and more.
-
-**Additional Details:** Age: all ages. Cost: FREE. Registration: Get more info here.
-
-**Source:** Unknown
-
----
-
 ## Hartman Foundation Concerts in the Park
 
 **Date:** 2025-06-29
@@ -1893,6 +1781,38 @@
 **Description:** Enjoy a laid-back summer evening with live music and skyline views at the Austin Symphony’s Hartman Foundation Concerts in the Park, featuring light classical, jazz, and pops performances.
 
 **Additional Details:** Age: All ages. Cost: Free. Registration: No ticket necessary
+
+**Source:** Unknown
+
+---
+
+## All-Ages Awesomeness 10th Year
+
+**Date:** 2025-07-12
+
+**Time:** 12:00 PM - 5:00 PM
+
+**Location:** Rogues Gallery Comics and Games, 1601 Interstate 35 Suite 330, Round Rock, TX 78664
+
+**Description:** Return of the popular All-Ages Awesomeness event with free sketches for kids and adults.
+
+**Additional Details:** Guest of honor: Andy Runton. Local artists include Jessi Jordan, Isaiah Broussard, and Joseph Compton. Artists will be sketching and selling prints, comics.
+
+**Source:** b80e7167d138561e00102091f56e3b12.JPG
+
+---
+
+## Family Day@ UMLAUF
+
+**Date:** 2025-07-12
+
+**Time:** 11:00 am - 4:00 pm
+
+**Location:** Austin, TX, 78704
+
+**Description:** Spend a summer Sunday surrounded by art and nature at UMLAUF’s Family Day! Kids can get creative with hands-on watercolor crafts, explore interactive stations hosted by local nature groups, and take part in water-themed conservation activities.
+
+**Additional Details:** Age: All ages. Cost: FREE with Registration. Registration: Register for FREE admission here.
 
 **Source:** Unknown
 

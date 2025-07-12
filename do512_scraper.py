@@ -94,201 +94,176 @@ async def scrape_weekend_activities() -> List[Dict]:
             print("Error: Could not find entry-content inside article")
             main_content = article
     
-    # Event Extraction Strategy:
-    # 1. Look for horizontal rules (<hr>) as event separators
-    # 2. Extract event details from paragraphs between rules
-    # 3. Look for patterns like "— Event Name" or links to events
-    
-    # Find all direct children of the main content - paragraphs, images, horizontal rules, etc.
-    children = main_content.find_all(recursive=False)
-    
-    # Identify potential event sections by looking for <hr> tags or event heading patterns
-    event_sections = []
-    current_section = []
-    
-    for child in children:
-        # Skip empty elements
-        if not child.get_text(strip=True):
-            continue
-            
-        # Check if this is a separator (horizontal rule)
-        if child.name == 'hr':
-            if current_section:
-                event_sections.append(current_section)
-                current_section = []
-        else:
-            current_section.append(child)
-    
-    # Add the last section if it exists
-    if current_section:
-        event_sections.append(current_section)
-    
-    print(f"Found {len(event_sections)} potential event sections")
-    
-    # Process each event section
     activities = []
     
-    for section in event_sections:
-        # Skip sections that are too short (less than 3 elements) or don't look like events
-        if len(section) < 3:
-            continue
+    # NEW APPROACH: Handle both featured events and list events
+    
+    # 1. Extract featured events (those with "— Event Name" pattern)
+    print("Extracting featured events...")
+    featured_events = extract_featured_events(main_content, url)
+    activities.extend(featured_events)
+    print(f"Found {len(featured_events)} featured events")
+    
+    # 2. Extract list events (from "More events to explore" section)
+    print("Extracting list events...")
+    list_events = extract_list_events(main_content, url)
+    activities.extend(list_events)
+    print(f"Found {len(list_events)} list events")
+    
+    print(f"Total weekend activities found: {len(activities)}")
+    return activities
+
+
+def extract_featured_events(main_content, url: str) -> List[Dict]:
+    """
+    Extract featured events that have the "— Event Name" pattern and full descriptions.
+    """
+    activities = []
+    
+    # Look for paragraphs with "— Event Name" pattern
+    paragraphs = main_content.find_all('p')
+    
+    for i, p in enumerate(paragraphs):
+        text = p.get_text(strip=True)
         
-        # Skip sections that are just intro paragraphs (typically at the beginning)
-        is_intro = False
-        for elem in section[:2]:  # Check first two elements
-            if elem.name == 'p' and ('welcome' in elem.get_text().lower() or
-                                    'weekend' in elem.get_text().lower() and 'picks' in elem.get_text().lower()):
-                is_intro = True
-                break
-        if is_intro:
-            continue
-        
-        # Extract event information from the section
-        event_name = None
-        event_link = None
-        event_date = None
-        event_description = []
-        event_location = None
-        
-        # First look for the event name pattern: "— Event Name" or a link that might be an event
-        for elem in section:
-            if elem.name == 'p':
-                text = elem.get_text(strip=True)
+        # Check for "— Event Name" pattern
+        event_name_match = re.match(r'^[\u2013\u2014\-—]\s*(.+)$', text)
+        if event_name_match:
+            event_name_text = event_name_match.group(1).strip()
+            
+            # Extract event name and location from the text
+            # Handle patterns like "Family Day @ UMLAUF" or "Event Name @ Location"
+            if ' @ ' in event_name_text:
+                event_name, location_hint = event_name_text.split(' @ ', 1)
+                event_name = event_name.strip()
+                location_hint = location_hint.strip()
+            else:
+                event_name = event_name_text
+                location_hint = None
+            
+            # Try to find a link inside this paragraph
+            event_link = None
+            link = p.find('a')
+            if link and link.get('href'):
+                event_link = link.get('href')
+                # Use the link text as event name if it's more descriptive
+                link_text = link.get_text(strip=True)
+                if link_text and len(link_text) > len(event_name):
+                    event_name = link_text
+            
+            # Look for date and description in the following paragraphs
+            event_date = None
+            event_description = []
+            
+            # Check the next few paragraphs for date and description
+            for j in range(1, 5):  # Check up to 4 paragraphs ahead
+                if i + j >= len(paragraphs):
+                    break
+                    
+                next_p = paragraphs[i + j]
+                next_text = next_p.get_text(strip=True)
                 
-                # Check for "— Event Name" pattern
-                event_name_match = re.match(r'^[\u2013\u2014\-—]\s*(.+)$', text)
-                if event_name_match:
-                    event_name = event_name_match.group(1).strip()
-                    # Try to find a link inside this paragraph
-                    link = elem.find('a')
-                    if link and link.get('href'):
-                        event_link = link.get('href')
+                # Skip empty paragraphs
+                if not next_text:
                     continue
                 
-                # Check for date pattern in italic (common for events)
-                em = elem.find('em')
+                # Check if this is a date paragraph (often in italic)
+                em = next_p.find('em')
                 if em and not event_date:
                     date_text = em.get_text(strip=True)
                     if date_text and is_likely_date(date_text):
                         event_date = date_text
                         continue
                 
-                # Add to description if not already processed as name or date
-                event_description.append(text)
-            
-            # Check if there's a link that might be to an event
-            elif not event_link and (elem.name == 'a' or elem.find('a')):
-                link = elem if elem.name == 'a' else elem.find('a')
-                if link and link.get('href') and ('event' in link.get('href') or 'festival' in link.get('href')):
-                    event_link = link.get('href')
-                    if not event_name:
-                        event_name = link.get_text(strip=True)
-        
-        # If we found event information, create an activity entry
-        if event_name and (event_date or event_description):
-            # Join description paragraphs into a single string
-            description_text = '\n'.join(event_description)
+                # Check if this is another event (starts with "—" or "More events")
+                if (next_text.startswith('—') or 
+                    'more events' in next_text.lower() or
+                    next_text.startswith('•')):
+                    break
+                
+                # Add to description
+                event_description.append(next_text)
             
             # Create the activity entry
-            activity = {
-                'activity_name': event_name,
-                'raw_content': description_text,
-                'raw_datetime': event_date or extract_date_from_text(description_text),
-                'source': 'do512family.com/this-weekend',
-                'source_url': event_link or url,
-                'extraction_date': datetime.now().strftime('%Y-%m-%d')
-            }
-            
-            # Extract location if available
-            location_match = re.search(r'@\s*(.+?)(?:\||\n|$)', description_text)
-            if location_match:
-                activity['location_hint'] = location_match.group(1).strip()
-            
-            activities.append(activity)
-    
-    # If we didn't find any activities with the section-based approach,
-    # try a paragraph-based approach as fallback
-    if not activities:
-        print("No activities found with section-based approach, trying paragraph-based approach")
-        
-        # Look for paragraphs containing event links or event names
-        paragraphs = main_content.find_all('p')
-        i = 0
-        while i < len(paragraphs):
-            p = paragraphs[i]
-            
-            # Skip empty paragraphs
-            if not p.get_text(strip=True):
-                i += 1
-                continue
-            
-            # Check if this might be an event heading (starts with "—" or contains a link)
-            is_event_heading = False
-            event_name = None
-            event_link = None
-            
-            # Check for "— Event Name" pattern
-            text = p.get_text(strip=True)
-            event_name_match = re.match(r'^[\u2013\u2014\-—]\s*(.+)$', text)
-            if event_name_match:
-                event_name = event_name_match.group(1).strip()
-                is_event_heading = True
+            if event_name:
+                description_text = '\n'.join(event_description)
                 
-                # Try to find a link inside this paragraph
-                link = p.find('a')
-                if link and link.get('href'):
-                    event_link = link.get('href')
-            
-            # If this looks like an event heading, try to collect info from following paragraphs
-            if is_event_heading:
-                event_date = None
-                event_description = []
+                activity = {
+                    'activity_name': event_name,
+                    'raw_content': description_text,
+                    'raw_datetime': event_date or extract_date_from_text(description_text),
+                    'source': 'do512family.com/this-weekend',
+                    'source_url': event_link or url,
+                    'extraction_date': datetime.now().strftime('%Y-%m-%d')
+                }
                 
-                # Look ahead for date and description (up to 3 paragraphs)
-                for j in range(1, 4):
-                    if i + j >= len(paragraphs):
-                        break
-                    
-                    next_p = paragraphs[i + j]
-                    next_text = next_p.get_text(strip=True)
-                    
-                    # Check if this is a date paragraph (often in italic)
-                    em = next_p.find('em')
-                    if em and not event_date:
-                        date_text = em.get_text(strip=True)
-                        if date_text and is_likely_date(date_text):
-                            event_date = date_text
-                            continue
-                    
-                    # Otherwise, add to description
-                    event_description.append(next_text)
-                
-                # Create activity if we have enough information
-                if event_name and (event_date or event_description):
-                    description_text = '\n'.join(event_description)
-                    
-                    activity = {
-                        'activity_name': event_name,
-                        'raw_content': description_text,
-                        'raw_datetime': event_date or extract_date_from_text(description_text),
-                        'source': 'do512family.com/this-weekend',
-                        'source_url': event_link or url,
-                        'extraction_date': datetime.now().strftime('%Y-%m-%d')
-                    }
-                    
-                    # Extract location if available
+                # Add location hint if found
+                if location_hint:
+                    activity['location_hint'] = location_hint
+                else:
+                    # Try to extract location from description
                     location_match = re.search(r'@\s*(.+?)(?:\||\n|$)', description_text)
                     if location_match:
                         activity['location_hint'] = location_match.group(1).strip()
-                    
-                    activities.append(activity)
                 
-                # Skip the paragraphs we've processed
-                i += max(j, 1)
-            else:
-                i += 1
+                activities.append(activity)
     
-    print(f"Found {len(activities)} weekend activities")
+    return activities
+
+
+def extract_list_events(main_content, url: str) -> List[Dict]:
+    """
+    Extract events from bulleted lists (like "More events to explore this weekend").
+    """
+    activities = []
+    
+    # Look for unordered lists that might contain events
+    lists = main_content.find_all('ul')
+    
+    for ul in lists:
+        # Check if this list contains events (look for links to family.do512.com)
+        list_items = ul.find_all('li')
+        has_event_links = any(
+            li.find('a') and li.find('a').get('href') and 
+            'family.do512.com/events' in li.find('a').get('href')
+            for li in list_items
+        )
+        
+        if has_event_links:
+            print(f"Found event list with {len(list_items)} items")
+            
+            for li in list_items:
+                link = li.find('a')
+                if link and link.get('href'):
+                    event_link = link.get('href')
+                    event_name = link.get_text(strip=True)
+                    
+                    # Extract location from the text after the link
+                    li_text = li.get_text(strip=True)
+                    location_hint = None
+                    
+                    # Look for "@ Location" pattern
+                    if ' @ ' in li_text:
+                        parts = li_text.split(' @ ', 1)
+                        if len(parts) > 1:
+                            location_hint = parts[1].strip()
+                    
+                    # Create activity entry
+                    if event_name:
+                        activity = {
+                            'activity_name': event_name,
+                            'raw_content': li_text,
+                            'raw_datetime': '',  # List events typically don't have dates in the text
+                            'source': 'do512family.com/this-weekend',
+                            'source_url': event_link,
+                            'extraction_date': datetime.now().strftime('%Y-%m-%d')
+                        }
+                        
+                        if location_hint:
+                            activity['location_hint'] = location_hint
+                        
+                        activities.append(activity)
+    
     return activities
 
 def is_likely_date(text: str) -> bool:
@@ -346,9 +321,178 @@ def extract_date_from_text(text: str) -> str:
     
     return ""
 
-async def process_activities_with_llm(activities: List[Dict]) -> List[Dict]:
+def extract_date_from_url(url: str) -> str:
     """
-    Process activities with LLM to extract structured information.
+    Extract date from do512 URL pattern.
+    
+    Args:
+        url (str): URL to extract date from
+        
+    Returns:
+        str: Date in YYYY-MM-DD format or empty string if not found
+    """
+    # Pattern: https://family.do512.com/events/2025/7/12/event-name
+    match = re.search(r'/events/(\d{4})/(\d{1,2})/(\d{1,2})/', url)
+    if match:
+        year, month, day = match.groups()
+        return f"{year}-{month.zfill(2)}-{day.zfill(2)}"
+    
+    # Handle weekly events - get next occurrence
+    weekly_match = re.search(r'/events/weekly/(\w{3})/', url)
+    if weekly_match:
+        day_abbr = weekly_match.group(1).lower()
+        day_mapping = {
+            'mon': 0, 'tue': 1, 'wed': 2, 'thu': 3, 
+            'fri': 4, 'sat': 5, 'sun': 6
+        }
+        
+        if day_abbr in day_mapping:
+            today = datetime.now().date()
+            target_weekday = day_mapping[day_abbr]
+            days_ahead = target_weekday - today.weekday()
+            
+            if days_ahead <= 0:  # Target day already happened this week
+                days_ahead += 7
+                
+            target_date = today + timedelta(days=days_ahead)
+            return target_date.strftime("%Y-%m-%d")
+    
+    return ""
+
+def extract_location_from_content(content: str) -> str:
+    """
+    Extract location/address from HTML content.
+    
+    Args:
+        content (str): HTML content to parse
+        
+    Returns:
+        str: Extracted location or empty string
+    """
+    from bs4 import BeautifulSoup
+    
+    soup = BeautifulSoup(content, 'html.parser')
+    
+    # Try various selectors for location
+    location_selectors = [
+        '[data-testid="event-venue"]',
+        '.venue-name',
+        '.location',
+        '.address',
+        'address',
+        '[class*="venue"]',
+        '[class*="location"]',
+        '[class*="address"]'
+    ]
+    
+    for selector in location_selectors:
+        elem = soup.select_one(selector)
+        if elem:
+            location = elem.get_text(strip=True)
+            if location and len(location) > 5:  # Basic validation
+                return location
+    
+    # Look for patterns in text
+    text = soup.get_text()
+    
+    # Look for "@ Location" patterns first - more specific patterns
+    at_patterns = [
+        r'@\s*([A-Za-z\s\'&]+(?:Brewing|Brewery))',
+        r'@\s*([A-Za-z\s\'&]+(?:Museum|Gallery))',
+        r'@\s*([A-Za-z\s\'&]+(?:Library|Center))',
+        r'@\s*([A-Za-z\s\'&]+(?:Park|Gardens?))',
+        r'@\s*([A-Za-z\s\'&]+(?:Church|School|Hall))',
+        r'@\s*([A-Za-z\s\'&]+(?:Stadium|Arena|Theatre|Theater))',
+        r'@\s*([A-Za-z\s\'&]+(?:Retreat|House|Kitchen))',
+        r'@\s*([A-Za-z\s\'&]+(?:Restaurant|Cafe|Coffee|Bar|Grill|Tavern))',
+        r'@\s*([A-Za-z\s\'&]+(?:Club|Studio|Shop|Store|Market))',
+        r'@\s*([A-Za-z\s\'&]+(?:Farm|Ranch|Resort|Hotel|Lodge|Inn))',
+        r'@\s*([A-Za-z\s\'&]+(?:Spa|Gym|Fitness|Yoga|Dance|Music|Art))',
+        r'@\s*([A-Za-z\s\'&]+(?:Academy|Institute|University|College))'
+    ]
+    
+    for pattern in at_patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            location = match.group(1).strip()
+            if location and len(location) > 3:
+                # Add generic location info for Austin area
+                if 'Austin' not in location and 'TX' not in location:
+                    location += ', Austin, TX'
+                return location
+    
+    # Look for address patterns (numbers + street names)
+    address_patterns = [
+        r'\d+\s+[A-Za-z\s]+(?:St|Street|Ave|Avenue|Rd|Road|Dr|Drive|Blvd|Boulevard|Pkwy|Parkway|Ln|Lane|Ct|Court|Cir|Circle|Way|Pl|Place)\b[^.]*?(?:Austin|Round Rock|Cedar Park|Pflugerville|Georgetown|Leander|Hutto|Manor|Lakeway|Bee Cave|Dripping Springs|Liberty Hill|TX|Texas)',
+        r'[A-Za-z\s]+(?:Park|Center|Museum|Library|Church|School|Hall|Stadium|Arena|Theatre|Theater|Gallery|Gardens?)\b[^.]*?(?:Austin|Round Rock|Cedar Park|Pflugerville|Georgetown|Leander|Hutto|Manor|Lakeway|Bee Cave|Dripping Springs|Liberty Hill|TX|Texas)'
+    ]
+    
+    for pattern in address_patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            return match.group(0).strip()
+    
+    # Look for venue names without addresses - more specific patterns
+    venue_patterns = [
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Brewing|Brewery))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Museum|Gallery))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Library|Center))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Park|Gardens?))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Church|School|Hall))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Stadium|Arena|Theatre|Theater))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Retreat|House|Kitchen))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Restaurant|Cafe|Coffee|Bar|Grill|Tavern))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Club|Studio|Shop|Store|Market))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Farm|Ranch|Resort|Hotel|Lodge|Inn))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Spa|Gym|Fitness|Yoga|Dance|Music|Art))',
+        r'(?:at|@)\s*([A-Za-z\s\'&]+(?:Academy|Institute|University|College))'
+    ]
+    
+    for pattern in venue_patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            location = match.group(1).strip()
+            if location and len(location) > 3:
+                # Add generic location info for Austin area
+                if 'Austin' not in location and 'TX' not in location:
+                    location += ', Austin, TX'
+                return location
+    
+    return ""
+
+def extract_time_from_content(content: str) -> str:
+    """
+    Extract time from HTML content.
+    
+    Args:
+        content (str): HTML content to parse
+        
+    Returns:
+        str: Extracted time or empty string
+    """
+    from bs4 import BeautifulSoup
+    
+    soup = BeautifulSoup(content, 'html.parser')
+    text = soup.get_text()
+    
+    # Look for time patterns
+    time_patterns = [
+        r'\d{1,2}:\d{2}\s*[ap]m\s*[-–]\s*\d{1,2}:\d{2}\s*[ap]m',
+        r'\d{1,2}\s*[ap]m\s*[-–]\s*\d{1,2}\s*[ap]m',
+        r'\d{1,2}:\d{2}\s*[ap]m',
+        r'\d{1,2}\s*[ap]m'
+    ]
+    
+    for pattern in time_patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            return match.group(0).strip()
+    
+    return ""
+
+async def process_activities_with_direct_parsing(activities: List[Dict]) -> List[Dict]:
+    """
+    Process activities with direct parsing instead of LLM.
     
     Args:
         activities (List[Dict]): List of activities with raw information
@@ -356,80 +500,95 @@ async def process_activities_with_llm(activities: List[Dict]) -> List[Dict]:
     Returns:
         List[Dict]: List of activities with structured information
     """
-    from tools.llm_api import query_llm
-    
     processed_activities = []
     
     for activity in activities:
         print(f"Processing activity: {activity['activity_name']}")
         
-        prompt = f"""
-        Extract structured information from this kids' activity description.
+        # Extract date from URL
+        if 'source_url' in activity:
+            date = extract_date_from_url(activity['source_url'])
+            if date:
+                activity['date'] = date
+                print(f"  Date extracted: {date}")
+            else:
+                print(f"  No date found in URL: {activity['source_url']}")
         
-        Activity name: {activity['activity_name']}
-        Raw content: {activity['raw_content']}
-        Raw date/time: {activity.get('raw_datetime', '')}
+        # Extract location from content
+        if 'raw_content' in activity:
+            location = extract_location_from_content(activity['raw_content'])
+            if location:
+                activity['location'] = location
+                print(f"  Location extracted: {location}")
+            else:
+                print(f"  No location found in content")
         
-        Please extract:
-        1. Location (full address if possible, including venue name, city, state and ZIP)
-        2. Date(s) (in YYYY-MM-DD format - if specific date can't be determined, use the closest upcoming {activity.get('raw_datetime', '')})
-        3. Time (start and end if available)
-        4. Age range for the activity
-        5. Cost information
-        6. Brief description (1-2 sentences)
-        7. Any registration details
-        
-        Return as a JSON object with the following fields:
-        - location
-        - date (or date_start and date_end if it spans multiple days)
-        - time
-        - age_range
-        - cost
-        - description
-        - registration_info
-        
-        For location, include a full address with city, state and ZIP code if possible. If the exact ZIP code isn't mentioned, make your best guess based on the city. 
-        
-        For the date, if only a day of week is mentioned (like "Saturday"), determine the date for the upcoming Saturday.
-        
-        Return only the JSON, no additional text.
-        """
-        
-        try:
-            # Call LLM API
-            response = query_llm(prompt, provider="openai")
-            
-            # Parse JSON response
-            try:
-                # Extract JSON from response (in case there's additional text)
-                json_match = re.search(r'(\{.*\})', response, re.DOTALL)
-                if json_match:
-                    json_str = json_match.group(1)
-                    extracted_data = json.loads(json_str)
+        # If no location found in content, try to extract from activity name
+        if 'location' not in activity or not activity['location']:
+            location = extract_location_from_content(activity['activity_name'])
+            if location:
+                activity['location'] = location
+                print(f"  Location extracted from title: {location}")
+            else:
+                # Simple fallback: extract anything after "@" in the title
+                title_match = re.search(r'@\s*(.+)', activity['activity_name'])
+                if title_match:
+                    location = title_match.group(1).strip()
+                    if 'Austin' not in location and 'TX' not in location:
+                        location += ', Austin, TX'
+                    activity['location'] = location
+                    print(f"  Location extracted from title (simple): {location}")
                 else:
-                    extracted_data = json.loads(response)
-                
-                # Merge with original activity data
-                activity.update(extracted_data)
-                
-            except json.JSONDecodeError as e:
-                print(f"Error parsing LLM response for {activity['activity_name']}: {e}")
-                print(f"Response: {response}")
-                activity['extraction_error'] = "Failed to parse LLM response"
-                
-        except Exception as e:
-            print(f"Error processing activity with LLM: {e}")
-            activity['extraction_error'] = str(e)
+                    print(f"  No location found in title either")
         
-        # Add standardized date if available
-        if 'date' in activity and activity['date']:
-            try:
-                # Verify date format is YYYY-MM-DD
-                datetime.strptime(activity['date'], '%Y-%m-%d')
-            except ValueError:
-                # If not, try to convert it
-                activity['date'] = standardize_date(activity['date'])
-                
+        # Extract time from content
+        if 'raw_content' in activity:
+            time = extract_time_from_content(activity['raw_content'])
+            if time:
+                activity['time'] = time
+                print(f"  Time extracted: {time}")
+            else:
+                print(f"  No time found in content")
+        
+        # Extract basic info from raw content
+        if 'raw_content' in activity:
+            soup = BeautifulSoup(activity['raw_content'], 'html.parser')
+            text = soup.get_text()
+            
+            # Look for cost information
+            cost_patterns = [
+                r'(?:cost|price|fee|admission)[:\s]*\$?\d+',
+                r'free(?:\s+admission)?',
+                r'\$\d+(?:\.\d{2})?'
+            ]
+            
+            for pattern in cost_patterns:
+                match = re.search(pattern, text, re.IGNORECASE)
+                if match:
+                    activity['cost'] = match.group(0).strip()
+                    break
+            
+            # Look for age information
+            age_patterns = [
+                r'age[s]?\s*\d+[-–]\d+',
+                r'age[s]?\s*\d+\s*(?:and\s*)?(?:up|under|over)',
+                r'all\s*ages',
+                r'family[-\s]friendly'
+            ]
+            
+            for pattern in age_patterns:
+                match = re.search(pattern, text, re.IGNORECASE)
+                if match:
+                    activity['age_range'] = match.group(0).strip()
+                    break
+            
+            # Use first few sentences as description
+            sentences = text.split('.')[:2]
+            if sentences:
+                activity['description'] = '. '.join(sentences).strip()
+                if activity['description'] and not activity['description'].endswith('.'):
+                    activity['description'] += '.'
+        
         processed_activities.append(activity)
     
     return processed_activities
@@ -573,8 +732,8 @@ async def fetch_weekend_activities() -> List[Dict]:
     # 1. Scrape raw activity data
     raw_activities = await scrape_weekend_activities()
     
-    # 2. Process with LLM
-    processed_activities = await process_activities_with_llm(raw_activities)
+    # 2. Process with direct parsing (no LLM needed)
+    processed_activities = await process_activities_with_direct_parsing(raw_activities)
     
     # 3. Convert to app format
     app_activities = adapt_to_app_format(processed_activities)
@@ -739,8 +898,8 @@ async def fetch_calendar_activities(days_to_fetch: int = 7) -> List[Dict]:
                     'extraction_error': str(e)
                 })
     
-    # Process with LLM
-    processed_events = await process_activities_with_llm(all_events)
+    # Process with direct parsing
+    processed_events = await process_activities_with_direct_parsing(all_events)
     
     # Format activities to match app structure
     return adapt_to_app_format(processed_events)
