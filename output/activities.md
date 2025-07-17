@@ -1786,6 +1786,22 @@
 
 ---
 
+## Second Saturdays Are for Families@ Laguna Gloria
+
+**Date:** 2025-07-11
+
+**Time:** 11:00 AM - 3:00 PM
+
+**Location:** Laguna Gloria, 3809 W 35th St, Austin, TX 78703
+
+**Description:** This weekend’s Mirror, Mirror edition of Laguna Gloria’s Second Saturdays invites kids to explore reflective art through hands-on activities like mirrored collages and shiny sculptures. Most activities take place outdoors.
+
+**Additional Details:** Age: Kids. Cost: Free with RSVP. Registration: RSVP required
+
+**Source:** Unknown
+
+---
+
 ## All-Ages Awesomeness 10th Year
 
 **Date:** 2025-07-12
@@ -1808,11 +1824,255 @@
 
 **Time:** 11:00 am - 4:00 pm
 
-**Location:** Austin, TX, 78704
+**Location:** UMLAUF Sculpture Garden & Museum, 605 Azie Morton Rd, Austin, TX 78704
 
 **Description:** Spend a summer Sunday surrounded by art and nature at UMLAUF’s Family Day! Kids can get creative with hands-on watercolor crafts, explore interactive stations hosted by local nature groups, and take part in water-themed conservation activities.
 
 **Additional Details:** Age: All ages. Cost: FREE with Registration. Registration: Register for FREE admission here.
+
+**Source:** Unknown
+
+---
+
+## Watermelon Fest: Beer Release Party
+
+**Date:** 2025-07-12
+
+**Time:** 12:00 PM - 4:00 PM
+
+**Location:** The Brewtorium Brewery & Kitchen, 6015 Dillard Circle, Suite A Austin, TX 78752
+
+**Description:** Celebrate the release of our Watermelon Wheat Ale with games, contests, food, and summer fun! Join us for a juicy good time as we celebrate the release of our Watermelon Wheat Ale – Losin' My Rind! We're going all in on watermelon from 12–4PM with ice-cold beer, watermelon specials, games, and fun for all ages.
+
+**Additional Details:** Free to attend! Activities include: Beer release of Losin' My Rind Watermelon Wheat Ale, Watermelon eating contest, Watermelon carving contest (drop off your watermelon to be displayed by 1pm!), Games + Prizes, Kids activities, Inside in the Air Conditioning!, Food specials & more! All ages welcome.
+
+**Source:** Unknown
+
+---
+
+## Day of Play at Variety’s Peaceful Kingdom Retreat
+
+**Date:** 2025-07-12
+
+**Time:** 9 am – noon
+
+**Location:** Variety’s Peaceable Kingdom Retreat, 19051 FM 2484, Killen, TX 76542
+
+**Description:** A 'Day of Play' event designed for children and families supported by Variety, featuring therapeutic horseback rides, gentle farm animals, sensory crafts, and wellness stations.
+
+**Additional Details:** Age: Not specified. Cost: $10 per person or $25 per family. Registration: Families outside the served group can show support with donations or volunteering.
+
+**Source:** Unknown
+
+---
+
+## Anime Arcade Summer Festival@ Pinballz
+
+**Date:** 2025-07-12
+
+**Time:** 4 pm – 9 pm
+
+**Location:** Pinballz,13729 Research Blvd, Austin, TX 78750
+
+**Description:** Step into a vibrant anime universe at this all-ages celebration packed with cosplay contests, Chibi artist booths, themed activities, and arcade fun. Families can explore vendor tables, win raffle prizes, and enjoy kid-approved eats from Mikki’s Tavern.
+
+**Additional Details:** Age: All ages (18+ after 9 pm). Cost: Entrance is FREE. Registration: Get all the info and full schedule on the event website.
+
+**Source:** Unknown
+
+---
+
+## Rolling Video Game Truck
+
+**Date:** 2025-07-12
+
+**Location:** Lake Travis Community Library, 1938 Lohmans Crossing Rd, Austin, TX 78734
+
+**Description:** Join the Rolling Video Game Truck at Lake Travis Community Library for a fun gaming experience.
+
+**Source:** Unknown
+
+---
+
+## Bob Bullock Birthday Bash@ The Bullock Museum
+
+**Date:** 2025-07-13
+
+**Time:** 10:00 AM - 2:00 PM
+
+**Location:** Bullock Museum, 1800 Congress Ave, Austin, TX 78701
+
+**Description:** Celebrate the legacy of Bob Bullock—Texas’s former Lieutenant Governor and the driving force behind the Bullock Museum—with a birthday bash the whole family can enjoy. It's a fun way to explore Texas history, cool off indoors, and make some sweet memories with the kids.
+
+**Additional Details:** Age: All ages. Cost: Free. Registration: No registration details provided.
+
+**Source:** Unknown
+
+---
+
+## Groundwork Music Orchestra
+
+**Date:** 2025-07-13
+
+**Location:** Cherrywood Coffee House, 1400 E 38th 1/2 St, Austin, TX 78722
+
+**Description:** Groundwork Music Orchestra is performing at Cherrywood Coffee House.
+
+**Source:** Unknown
+
+---
+
+## Park & Recreation Month: Roll and Splash Bash
+
+**Date:** 2025-07-18
+
+**Time:** 10:00 AM - 12:00 PM
+
+**Location:** San Gabriel Park, Georgetown, TX, 78626
+
+**Description:** Celebration of Park and Recreation Month with activities at the splash pad and skate park.
+
+**Additional Details:** Includes sweet treats and giveaways.
+
+**Source:** 6ca1269e12ce6b1b77aed006c21e0b09.JPG
+
+---
+
+## Summer Stock Austin Sneak Peek 2025@ McCullough Theater
+
+**Date:** 2025-07-18
+
+**Location:** McCullough Theater, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Don’t miss this one-night-only celebration of young talent! Summer Stock Austin alumni and current performers come together for a lively preview of the 2025 season, with musical highlights fromMary PoppinsandJesus Christ Superstar.  The evening is full of energy, audience interaction, and performances by kids as young as 9.
+
+**Additional Details:** Cost: $23
+
+**Source:** Unknown
+
+---
+
+## “The Pirates of Penzance” Teen Summer Musical
+
+**Date:** 2025-07-18
+
+**Location:** Brentwood Christian School, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** “The Pirates of Penzance” Teen Summer Musical@ Brentwood Christian School.
+
+**Source:** Unknown
+
+---
+
+## The Amazing Tap Experience
+
+**Date:** 2025-07-19
+
+**Time:** 10:00 AM
+
+**Location:** Leander Public Library Annex, 1011 S Bagdad Rd, Leander, TX 78641, United States
+
+**Description:** The Amazing Tap Experience is a fun and educational show that introduces children to tap dancing through concepts like opposites and phonics, featuring audience participation for added entertainment. It's a hilarious way to explore tap's rhythm and movement!
+
+**Additional Details:** Cost: Free. Special Program Rules: 1. Arrive at least 15 minutes early to secure your spot. 2. Late attendance will not be permitted. 3. Parents and caregivers must sit with their children. 4. Please refrain from talking, visiting, and using electronic devices. 5. Individuals displaying disruptive behavior will be asked to leave. 6. Strollers must remain outside the performance area.
+
+**Source:** b8b796bd0d2e9b057ca512f20e76c476.JPG
+
+---
+
+## Pop Up Play Day
+
+**Date:** 2025-07-19
+
+**Time:** 9:00 AM - 11:00 AM
+
+**Location:** Lake Creek Park, 800 Deerfoot Drive, Round Rock, TX 78664
+
+**Description:** A fun-filled morning of free family activities, music, games, and water-themed fun.
+
+**Additional Details:** Hosted by Round Rock Parks and Recreation Department. It's free and open to the public.
+
+**Source:** 00f8c37e50df617f75d7e7d839051a66.JPG
+
+---
+
+## Greater Austin Comic Con@ H-E-B Center at Cedar Park
+
+**Date:** 2025-07-19
+
+**Time:** 10 am
+
+**Location:** H-E-B Center at Cedar Park, 2100 Avenue of the Stars, Cedar Park, TX 78613
+
+**Description:** Greater Austin Comic Con returns for two days of family-friendly pop culture mayhem! Expect comics, anime, retro gaming, Pokémon fun, and an epic Kids Zone with face painting, balloon artists, LEGO stations, and more.  Cosplayers, arcade lovers, and fandom fanatics will all find something to love.
+
+**Additional Details:** Age: family-friendly. Cost: $25
+
+**Source:** Unknown
+
+---
+
+## Public Tour and Sculpture Garden Storytime@ UMLAUF
+
+**Date:** 2025-07-19
+
+**Location:** UMLAUF, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Sure, it’s hot — but this shady garden stroll and storytime is a pretty sweet way to sneak in some culture without breaking (much of) a sweat.  Perfect for families with little ones (especially kids 7 and under), the tour is stroller-friendly and short, followed by a fun read-aloud under the trees.
+
+**Source:** Unknown
+
+---
+
+## Soccer Celebration – A Free Event for Families & Fans of All Ages@ Auditorium Shores
+
+**Date:** 2025-07-19
+
+**Location:** Stadium —home of Austin, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Major League Soccer is taking over Austin, and this free, two-day fan fest is where the party starts.  Expect interactive games, live music, autograph sessions, and tons of soccer-loving energy leading up to the big All-Star Game on July 23 at Q2 Stadium —home of Austin FC.
+
+**Additional Details:** Age: family-friendly. Cost: free
+
+**Source:** Unknown
+
+---
+
+## Under the Sea
+
+**Date:** 2025-07-20
+
+**Time:** 1:00 PM - 3:00 PM
+
+**Location:** Lakeway Swim Center, 3103 Lakeway Blvd, Austin, TX 78738, United States
+
+**Description:** Dive into a magical underwater adventure with ocean-themed décor, snacks, giveaways, live mermaids, and face painting for all ages.
+
+**Additional Details:** Perfect for celebrating summer’s best moments. Come dressed as your favorite underwater character.
+
+**Source:** f52305cf7c9bfba07c819ca4dd014cb0.JPG
+
+---
+
+## STEAM Sundays@ Thinkery
+
+**Date:** 2025-07-20
+
+**Location:** ions for a wind tunnel chall, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Thinkery’s weekly STEAM Sundays series continues with a full day of hands-on building, tinkering, and problem-solving fun.  This week’s focus isEngineering, with activities like designing upcycled creations for a wind tunnel challenge, lighting up a circuit block race track, and exploring real-world engineering with Austin Energy.
+
+**Source:** Unknown
+
+---
+
+## Carnival of the Animals@ Bates Recital Hall
+
+**Date:** 2025-07-20
+
+**Location:** and musicians from the Butler School of Music and the Austin, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Part of the 29th Annual Austin Chamber Music Festival, this playful concert invites families into the colorful world of Camille Saint-Saëns’sCarnival of the Animals.  Narrated in English and Spanish by Monica Salas of Armstrong Community Music School, the program features interactive activities and games that make chamber music feel fun and accessible.
 
 **Source:** Unknown
 
@@ -1829,6 +2089,20 @@
 **Additional Details:** Cost: $25 per duo, $10 per additional son. Tickets available online.
 
 **Source:** d6ecedf42abc7a27cf6d07fada346b0e.JPG
+
+---
+
+## National Tropical Fruit Day with FREE Drum Fitness Class
+
+**Time:** 11:00 AM - 3:00 PM
+
+**Location:** Leander Activity Center, 11880 Hero Way W Suite 600, Leander, TX 78641-7400, United States
+
+**Description:** Celebrating National Tropical Fruit Day with free tropical fruit and a drum fitness class. Led by Suzy from Soulshine Rhythm from 11:00 AM - 12:00 PM.
+
+**Additional Details:** Sign-up is required. Use the provided link to reserve your spot.
+
+**Source:** 252cd2e5c87ea71991c50507547597e6.JPG
 
 ---
 

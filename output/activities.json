@@ -1332,7 +1332,7 @@
     "additional_details": "Guest of honor: Andy Runton. Local artists include Jessi Jordan, Isaiah Broussard, and Joseph Compton. Artists will be sketching and selling prints, comics.",
     "raw_datetime": "Saturday at 12 PM \u2013 5 PM, Saturday, July 12th",
     "source_file": "b80e7167d138561e00102091f56e3b12.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Family Day@ UMLAUF",
@@ -1345,20 +1345,20 @@
     "source_url": "https://family.do512.com/events/2025/7/13/family-day-splash-into-summer-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Watermelon Fest: Beer Release Party",
     "location": "The Brewtorium Brewery & Kitchen, 6015 Dillard Circle, Suite A Austin, TX 78752",
     "date": "2025-07-12",
     "time": "12:00 PM - 4:00 PM",
-    "description": "Celebrate the release of our Watermelon Wheat Ale with games, contests, food, and summer fun! Join us for a juicy good time as we celebrate the release of our Watermelon Wheat Ale – Losin' My Rind! We're going all in on watermelon from 12–4PM with ice-cold beer, watermelon specials, games, and fun for all ages.",
+    "description": "Celebrate the release of our Watermelon Wheat Ale with games, contests, food, and summer fun! Join us for a juicy good time as we celebrate the release of our Watermelon Wheat Ale \u2013 Losin' My Rind! We're going all in on watermelon from 12\u20134PM with ice-cold beer, watermelon specials, games, and fun for all ages.",
     "additional_details": "Free to attend! Activities include: Beer release of Losin' My Rind Watermelon Wheat Ale, Watermelon eating contest, Watermelon carving contest (drop off your watermelon to be displayed by 1pm!), Games + Prizes, Kids activities, Inside in the Air Conditioning!, Food specials & more! All ages welcome.",
-    "raw_datetime": "Saturday, July 12 · 12 - 4pm CDT",
+    "raw_datetime": "Saturday, July 12 \u00b7 12 - 4pm CDT",
     "source_url": "https://www.eventbrite.com/e/watermelon-fest-beer-release-party-tickets-1439287089429",
     "source_type": "web_scrape",
     "source_name": "eventbrite.com",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Day of Play at Variety\u2019s Peaceful Kingdom Retreat",
@@ -1371,7 +1371,7 @@
     "source_url": "https://family.do512.com/events/2025/7/12/day-of-play-at-variety-s-peaceable-kingdom-retreat-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Second Saturdays Are for Families@ Laguna Gloria",
@@ -1384,7 +1384,7 @@
     "source_url": "https://family.do512.com/events/2025/7/12/second-saturdays-are-for-families-mirror-mirror-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Anime Arcade Summer Festival@ Pinballz",
@@ -1397,7 +1397,7 @@
     "source_url": "https://family.do512.com/events/2025/7/12/anime-arcade-summer-festival-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Bob Bullock Birthday Bash@ The Bullock Museum",
@@ -1410,7 +1410,7 @@
     "source_url": "https://family.do512.com/events/2025/7/13/bob-bullock-birthday-bash-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Groundwork Music Orchestra",
@@ -1423,7 +1423,7 @@
     "source_url": "https://family.do512.com/events/2025/7/13/groundwork-music-orchestra-1745598428",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Rolling Video Game Truck",
@@ -1434,6 +1434,113 @@
     "additional_details": "",
     "raw_datetime": "",
     "source_url": "https://family.do512.com/events/2025/7/12/rolling-video-games-truck-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": true
+  },
+  {
+    "activity_name": "The Amazing Tap Experience",
+    "location": "Leander Public Library Annex, 1011 S Bagdad Rd, Leander, TX 78641, United States",
+    "date": "2025-07-19",
+    "time": "10:00 AM",
+    "description": "The Amazing Tap Experience is a fun and educational show that introduces children to tap dancing through concepts like opposites and phonics, featuring audience participation for added entertainment. It's a hilarious way to explore tap's rhythm and movement!",
+    "additional_details": "Cost: Free. Special Program Rules: 1. Arrive at least 15 minutes early to secure your spot. 2. Late attendance will not be permitted. 3. Parents and caregivers must sit with their children. 4. Please refrain from talking, visiting, and using electronic devices. 5. Individuals displaying disruptive behavior will be asked to leave. 6. Strollers must remain outside the performance area.",
+    "raw_datetime": "Saturday at 10 AM",
+    "source_file": "b8b796bd0d2e9b057ca512f20e76c476.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "National Tropical Fruit Day with FREE Drum Fitness Class",
+    "location": "Leander Activity Center, 11880 Hero Way W Suite 600, Leander, TX 78641-7400, United States",
+    "date": "2025-07-18",
+    "time": "11:00 AM - 3:00 PM",
+    "description": "Celebrating National Tropical Fruit Day with free tropical fruit and a drum fitness class. Led by Suzy from Soulshine Rhythm from 11:00 AM - 12:00 PM.",
+    "additional_details": "Sign-up is required. Use the provided link to reserve your spot.",
+    "raw_datetime": "Tomorrow at 11 AM \u2013 3 PM",
+    "source_file": "252cd2e5c87ea71991c50507547597e6.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Pop Up Play Day",
+    "location": "Lake Creek Park, 800 Deerfoot Drive, Round Rock, TX 78664",
+    "date": "2025-07-19",
+    "time": "9:00 AM - 11:00 AM",
+    "description": "A fun-filled morning of free family activities, music, games, and water-themed fun.",
+    "additional_details": "Hosted by Round Rock Parks and Recreation Department. It's free and open to the public.",
+    "raw_datetime": "Saturday, July 19 from 9\u201311 AM",
+    "source_file": "00f8c37e50df617f75d7e7d839051a66.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Under the Sea",
+    "location": "Lakeway Swim Center, 3103 Lakeway Blvd, Austin, TX 78738, United States",
+    "date": "2025-07-20",
+    "time": "1:00 PM - 3:00 PM",
+    "description": "Dive into a magical underwater adventure with ocean-themed d\u00e9cor, snacks, giveaways, live mermaids, and face painting for all ages.",
+    "additional_details": "Perfect for celebrating summer\u2019s best moments. Come dressed as your favorite underwater character.",
+    "raw_datetime": "Sunday at 1 PM \u2013 3 PM",
+    "source_file": "f52305cf7c9bfba07c819ca4dd014cb0.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Park & Recreation Month: Roll and Splash Bash",
+    "location": "San Gabriel Park, Georgetown, TX, 78626",
+    "date": "2025-07-18",
+    "time": "10:00 AM - 12:00 PM",
+    "description": "Celebration of Park and Recreation Month with activities at the splash pad and skate park.",
+    "additional_details": "Includes sweet treats and giveaways.",
+    "raw_datetime": "On Friday, July 18, from 10 am to noon",
+    "source_file": "6ca1269e12ce6b1b77aed006c21e0b09.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Summer Stock Austin Sneak Peek 2025@ McCullough Theater",
+    "location": "McCullough Theater,2375 Robert Dedman Dr, Austin, TX 78712",
+    "date": "2025-07-18",
+    "time": "8 PM",
+    "description": "Don\u2019t miss this one-night-only celebration of young talent! Summer Stock Austin alumni and current performers come together for a lively preview of the 2025 season, with musical highlights fromMary PoppinsandJesus Christ Superstar.  The evening is full of energy, audience interaction, and performances by kids as young as 9.",
+    "additional_details": "Cost: $23",
+    "raw_datetime": "Friday, July 18 | 8 pm | Tickets are $23here",
+    "source_url": "https://family.do512.com/events/2025/7/18/summer-stock-austins-sneak-peek-2025-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Greater Austin Comic Con@ H-E-B Center at Cedar Park",
+    "location": "H-E-B Center at Cedar Park, 2100 Avenue of the Stars, Cedar Park, TX 78613",
+    "date": "2025-07-19",
+    "time": "10\u202fam",
+    "description": "Greater Austin Comic Con returns for two days of family-friendly pop culture mayhem! Expect comics, anime, retro gaming, Pok\u00e9mon fun, and an epic Kids Zone with face painting, balloon artists, LEGO stations, and more.  Cosplayers, arcade lovers, and fandom fanatics will all find something to love.",
+    "additional_details": "Age: family-friendly. Cost: $25",
+    "raw_datetime": "Saturday, July 19 and Sunday, July 20 | Begins at 10 am both days | Tickets start at $25here",
+    "source_url": "https://family.do512.com/events/2025/7/19/greater-austin-comic-con-2025-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Public Tour and Sculpture Garden Storytime@ UMLAUF",
+    "location": "UMLAUF, 605 Azie Morton Rd, Austin, TX 78704",
+    "date": "2025-07-19",
+    "time": "1PM",
+    "description": "Sure, it\u2019s hot \u2014 but this shady garden stroll and storytime is a pretty sweet way to sneak in some culture without breaking (much of) a sweat.  Perfect for families with little ones (especially kids 7 and under), the tour is stroller-friendly and short, followed by a fun read-aloud under the trees.",
+    "additional_details": "",
+    "raw_datetime": "Saturday, July 19 | Noon \u2013 1 pm | Included with admission",
+    "source_url": "https://family.do512.com/events/2025/7/19/public-tour-sculpture-garden-storytime-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Carnival of the Animals@ Bates Recital Hall",
+    "location": "2406 Robert Dedman Dr, Austin, TX 78712",
+    "date": "2025-07-20",
+    "time": "12 pm - 2 pm",
+    "description": "Part of the 29th Annual Austin Chamber Music Festival, this playful concert invites families into the colorful world of Camille Saint-Sa\u00ebns\u2019sCarnival of the Animals.  Narrated in English and Spanish by Monica Salas of Armstrong Community Music School, the program features interactive activities and games that make chamber music feel fun and accessible.",
+    "additional_details": "",
+    "raw_datetime": "Sunday, July 20 | Performances at 12 pm and 2 pm | $25 general admission, $12 for students, free for kids 5 and under",
+    "source_url": "https://family.do512.com/events/2025/7/20/carnival-of-the-animals-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
     "is_archived": false
