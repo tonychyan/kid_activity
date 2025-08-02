@@ -1922,6 +1922,22 @@
 
 ---
 
+## National Tropical Fruit Day with FREE Drum Fitness Class
+
+**Date:** 2025-07-18
+
+**Time:** 11:00 AM - 3:00 PM
+
+**Location:** Leander Activity Center, 11880 Hero Way W Suite 600, Leander, TX 78641-7400, United States
+
+**Description:** Celebrating National Tropical Fruit Day with free tropical fruit and a drum fitness class. Led by Suzy from Soulshine Rhythm from 11:00 AM - 12:00 PM.
+
+**Additional Details:** Sign-up is required. Use the provided link to reserve your spot.
+
+**Source:** 252cd2e5c87ea71991c50507547597e6.JPG
+
+---
+
 ## Park & Recreation Month: Roll and Splash Bash
 
 **Date:** 2025-07-18
@@ -1942,23 +1958,13 @@
 
 **Date:** 2025-07-18
 
-**Location:** McCullough Theater, Austin, TX 78701 *(ZIP code estimated)*
+**Time:** 8 PM
+
+**Location:** McCullough Theater,2375 Robert Dedman Dr, Austin, TX 78712
 
 **Description:** Don’t miss this one-night-only celebration of young talent! Summer Stock Austin alumni and current performers come together for a lively preview of the 2025 season, with musical highlights fromMary PoppinsandJesus Christ Superstar.  The evening is full of energy, audience interaction, and performances by kids as young as 9.
 
 **Additional Details:** Cost: $23
-
-**Source:** Unknown
-
----
-
-## “The Pirates of Penzance” Teen Summer Musical
-
-**Date:** 2025-07-18
-
-**Location:** Brentwood Christian School, Austin, TX 78701 *(ZIP code estimated)*
-
-**Description:** “The Pirates of Penzance” Teen Summer Musical@ Brentwood Christian School.
 
 **Source:** Unknown
 
@@ -2016,23 +2022,11 @@
 
 **Date:** 2025-07-19
 
-**Location:** UMLAUF, Austin, TX 78701 *(ZIP code estimated)*
+**Time:** 1PM
+
+**Location:** UMLAUF, 605 Azie Morton Rd, Austin, TX 78704
 
 **Description:** Sure, it’s hot — but this shady garden stroll and storytime is a pretty sweet way to sneak in some culture without breaking (much of) a sweat.  Perfect for families with little ones (especially kids 7 and under), the tour is stroller-friendly and short, followed by a fun read-aloud under the trees.
-
-**Source:** Unknown
-
----
-
-## Soccer Celebration – A Free Event for Families & Fans of All Ages@ Auditorium Shores
-
-**Date:** 2025-07-19
-
-**Location:** Stadium —home of Austin, Austin, TX 78701 *(ZIP code estimated)*
-
-**Description:** Major League Soccer is taking over Austin, and this free, two-day fan fest is where the party starts.  Expect interactive games, live music, autograph sessions, and tons of soccer-loving energy leading up to the big All-Star Game on July 23 at Q2 Stadium —home of Austin FC.
-
-**Additional Details:** Age: family-friendly. Cost: free
 
 **Source:** Unknown
 
@@ -2054,27 +2048,465 @@
 
 ---
 
-## STEAM Sundays@ Thinkery
+## Carnival of the Animals@ Bates Recital Hall
 
 **Date:** 2025-07-20
 
-**Location:** ions for a wind tunnel chall, Austin, TX 78701 *(ZIP code estimated)*
+**Time:** 12 pm - 2 pm
 
-**Description:** Thinkery’s weekly STEAM Sundays series continues with a full day of hands-on building, tinkering, and problem-solving fun.  This week’s focus isEngineering, with activities like designing upcycled creations for a wind tunnel challenge, lighting up a circuit block race track, and exploring real-world engineering with Austin Energy.
+**Location:** 2406 Robert Dedman Dr, Austin, TX 78712
+
+**Description:** Part of the 29th Annual Austin Chamber Music Festival, this playful concert invites families into the colorful world of Camille Saint-Saëns’sCarnival of the Animals.  Narrated in English and Spanish by Monica Salas of Armstrong Community Music School, the program features interactive activities and games that make chamber music feel fun and accessible.
 
 **Source:** Unknown
 
 ---
 
-## Carnival of the Animals@ Bates Recital Hall
+## SpongeBob The Musical@ Hill Country Galleria
 
-**Date:** 2025-07-20
+**Date:** 2025-07-23
 
-**Location:** and musicians from the Butler School of Music and the Austin, Austin, TX 78701 *(ZIP code estimated)*
+**Time:** 8 pm
 
-**Description:** Part of the 29th Annual Austin Chamber Music Festival, this playful concert invites families into the colorful world of Camille Saint-Saëns’sCarnival of the Animals.  Narrated in English and Spanish by Monica Salas of Armstrong Community Music School, the program features interactive activities and games that make chamber music feel fun and accessible.
+**Location:** Hill Country Galleria, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Catch a live, family-friendly, Broadway-style performance ofSpongeBob Musicalfor free under the stars at Hill Country Galleria, running Wednesdays–Saturdays at 8 pm through August 16.  Bring blankets or lawn chairs and settle in for a fun night with SpongeBob, Patrick, Sandy, and friends.
+
+**Additional Details:** Age: family-friendly. Cost: free
 
 **Source:** Unknown
+
+---
+
+## Bring It On: The Musical@ Zilker Hillside Theater
+
+**Date:** 2025-07-24
+
+**Time:** 8:15 pm
+
+**Location:** Zilker Park, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Catch this free, family-friendly Broadway-style outdoor musical at Zilker Park through August 16.  Performances run Thursday–Sunday at 8:15 pm, and you’re invited to pack blankets, low chairs, snacks, and settle in early.
+
+**Additional Details:** Age: family-friendly. Cost: free
+
+**Source:** Unknown
+
+---
+
+## Back-to-School Event
+
+**Date:** 2025-07-29
+
+**Time:** 5:00 PM - 8:00 PM
+
+**Location:** Cedar Creek High School, 793 Union Chapel Rd, Cedar Creek, TX 78612
+
+**Description:** Backpacks only event for ages 3-18.
+
+**Additional Details:** Free backpacks and school supplies (first come, first serve).
+
+**Source:** 341bcd82e92e65be2b66adc0664f308b.PNG
+
+---
+
+## Backyard BBQ Benefitting Kerr County Flood Relief@ Meanwhile Brewing
+
+**Date:** 2025-08-01
+
+**Location:** Meanwhile Brewing, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** This Friday, treat the fam toAsado Night, part of Meanwhile Brewing’s Backyard BBQ Summer Series.  Expect a flavorful musical lineup from Uptown Sports Club, Cuyo, Discada, and La Volta Pizza Club, with music and vinyl vibes setting the scene.
+
+**Additional Details:** Cost: free
+
+**Source:** Unknown
+
+---
+
+## Summer Stock Austin: Jesus Christ Superstar
+
+**Date:** 2025-08-01
+
+**Location:** McCullough Theater, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Summer Stock Austin: Jesus Christ Superstar@ McCullough Theater.
+
+**Source:** Unknown
+
+---
+
+## Big Zoo Adventure
+
+**Date:** 2025-08-02
+
+**Time:** 11:00 AM - 4:00 PM
+
+**Location:** H-E-B SoCo, 2400 S. Congress Ave, Austin, TX 78704
+
+**Description:** A fun-filled day with a petting zoo, face painting, photo booth, zoo-themed arts & crafts, and snacks for kids.
+
+**Additional Details:** Free & Open to the Public. Petting Zoo from 11:00 AM to 2:00 PM.
+
+**Source:** 32db48ba4b8ecb833a45a40b18532065.JPG
+
+---
+
+## H-E-B Kids Day
+
+**Date:** 2025-08-02
+
+**Time:** 11:00 AM - 4:00 PM
+
+**Location:** Round Rock 2 at 620 & O'Conner, Round Rock, TX, 78681
+
+**Description:** Various kid-friendly activities like face painting, games, foods and prizes. Pirate costumes encouraged, but not required.
+
+**Additional Details:** There will be an inflatable too.
+
+**Source:** 5b6ad22ab3ff8c5f651478d6b1d99f07.JPG
+
+---
+
+## Back to School Giveaway
+
+**Date:** 2025-08-02
+
+**Time:** 10:00 AM - Until Supplies Run Out
+
+**Location:** Northeast Metropolitan Park, 1550 Sun Light Near Way, Pflugerville, TX 78660
+
+**Description:** Food and fun for all kiddos. School supply giveaway. Gift certificates for free hair services.
+
+**Additional Details:** Gift certificates for free hair services with Transformations by Melanie Ford. Gift certificates for free haircuts with Cuts by Manny B.
+
+**Source:** e04601d620da6ffb6525a9b452ede1fc.JPG
+
+---
+
+## Boost Mobile - Back to School Backpack Drop
+
+**Date:** 2025-08-02
+
+**Time:** 12:00 PM - 5:00 PM
+
+**Location:** 7208 Cameron Rd, Austin, TX 78752, United States
+
+**Description:** Boost Mobile is hosting a Back to School Backpack Drop, hooking up students with free backpacks and exclusive in-store deals.
+
+**Additional Details:** Supplies are limited — show up early to claim yours.
+
+**Source:** b88abe42b1d8bca6af49d1aa135a1197.JPG
+
+---
+
+## Hawaiian Luau Open House
+
+**Date:** 2025-08-02
+
+**Time:** 10:00 AM - 12:00 PM
+
+**Location:** The Goddard School of Circle C, 12101 Archeleta Blvd, Austin, TX, 78739
+
+**Description:** Free fun for all with bounce house, Kona Ice truck, games & activities, refreshments. Wear your Hawaiian best.
+
+**Additional Details:** Refer a family and get a $500 credit towards tuition when they enroll after 1 week.
+
+**Source:** dfad758a3719a2ce9f695e37e5fcd43b.JPG
+
+---
+
+## Back to School Bash
+
+**Date:** 2025-08-02
+
+**Time:** 11:00 AM - 2:00 PM
+
+**Location:** SouthStar Bank, 3025 FM 1431, Round Rock, TX 78681
+
+**Description:** School supplies bazaar & giveaway, food vendors & fun games, music & entertainments.
+
+**Additional Details:** Sponsored by Abundantly Anchored Ministries. Registration link available.
+
+**Source:** d3a960cdffe5fb0f6928ba450dc1d028.PNG
+
+---
+
+## Bloom Festival
+
+**Date:** 2025-08-02
+
+**Time:** 10:00 AM - 2:00 PM
+
+**Location:** Round Rock Garden Center, 901 Sam Bass Rd., Round Rock, TX, 78681
+
+**Description:** Celebrate flowers, pollinators, and Texas gardening with live music, local vendors, and kids' crafts.
+
+**Additional Details:** Admission is free. RSVP to stay updated. Features include live music from Mike Dohm, local vendors with lemonade, pastries, pressed flower art, local honey, kids' crafts, and a bloom-filled photo op.
+
+**Source:** 5daf8c8cd08cc13938fdfe91a697b5c9.PNG
+
+---
+
+## Back-to-School Event
+
+**Date:** 2025-08-02
+
+**Time:** 8:00 AM - 1:00 PM
+
+**Location:** Del Valle Health Center, 7050 Elroy Rd, Del Valle, TX 78617
+
+**Description:** Vaccines only event for ages 3-18.
+
+**Additional Details:** Free children’s immunizations (registration required).
+
+**Source:** 341bcd82e92e65be2b66adc0664f308b.PNG
+
+---
+
+## Back-to-School Event
+
+**Date:** 2025-08-02
+
+**Time:** 8:00 AM - 12:00 PM
+
+**Location:** Pflugerville Health Center, 2700 W Pecan St Suite #450, Pflugerville, TX 78660
+
+**Description:** Vaccines only event for ages 3-18.
+
+**Additional Details:** Free children’s immunizations (registration required).
+
+**Source:** 341bcd82e92e65be2b66adc0664f308b.PNG
+
+---
+
+## Crestview Manor Kick-off Block Party
+
+**Date:** 2025-08-03
+
+**Time:** 5:00 PM - 8:00 PM
+
+**Location:** Crestview Manor, 11805 Johnson Road, Manor, TX 78653, United States
+
+**Description:** Community-wide Block Party with food, fun, and fellowship including Neighborhood Cookout, Bouncy Houses, Kids Activities.
+
+**Additional Details:** VBS Registration (Aug. 4th-6th, 6-8 PM).
+
+**Source:** d34a7c3abed59783996dd8619df71c95.JPG
+
+---
+
+## 3rd Annual Back To School Event
+
+**Date:** 2025-08-03
+
+**Time:** 12:00 PM - 6:00 PM
+
+**Location:** Wells Branch MUD, 3000 Shoreline Dr, Austin, TX 78728-4483, United States
+
+**Description:** Victory Lap Ministries’ annual event providing free school supplies, clothes, shoes, and hairdos to students in need.
+
+**Additional Details:** Looking for barbers, braiders, beauticians, and nail techs. Volunteers and donations welcome.
+
+**Source:** 7d4b3e8a8705c296379a44bd3774752d.JPG
+
+---
+
+## Back to School Backpack Event
+
+**Date:** 2025-08-03
+
+**Time:** 4:00 PM - 6:00 PM
+
+**Location:** Killeen Certified, 12200 Walnut Park Xing, Austin, TX 78753, United States
+
+**Description:** Back to school giveaway event for students from Pre-K to High School. 1,000 free backpacks filled with school supplies.
+
+**Additional Details:** First come, first served. While supplies last.
+
+**Source:** 4a404ece7b10cc97028355526d024e4a.JPG
+
+---
+
+## Back to School
+
+**Date:** 2025-08-03
+
+**Time:** 8:00 AM - 12:00 PM
+
+**Location:** Southeast Health & Wellness Center, 2900 Montopolis Dr, Austin, TX, 78741
+
+**Description:** Offering FREE children's immunizations, backpacks plus supplies, paletas, community resources and much more! Ages 3-18.
+
+**Additional Details:** Registration required.
+
+**Source:** 46b6ecefc03a409c54ecde4aebbc4a88.PNG
+
+---
+
+## Back to School
+
+**Date:** 2025-08-03
+
+**Time:** 8:00 AM - 12:00 PM
+
+**Location:** Pflugerville Health Center, 2700 W Pecan St, Pflugerville, TX, 78660
+
+**Description:** Offering FREE children's immunizations, backpacks plus supplies, paletas, community resources and much more! Ages 3-18.
+
+**Additional Details:** Registration required.
+
+**Source:** 46b6ecefc03a409c54ecde4aebbc4a88.PNG
+
+---
+
+## Back to School Bash
+
+**Date:** 2025-08-03
+
+**Time:** 12:00 PM - 5:00 PM
+
+**Location:** Access Dental & Orthodontics, 6216 J M Holloway Ln, Austin, TX 78724
+
+**Description:** A family-friendly event featuring giveaways, games, and community spirit to support local families for the new school year.
+
+**Additional Details:** Free event with 400+ backpacks, refreshments, fun booths, photo ops, live music, dental health info, and more. Children must be present to receive a backpack.
+
+**Source:** 93b721b5c8a664fcd6b0eea3994b554e.PNG
+
+---
+
+## STEAM Sundays@ Thinkery
+
+**Date:** 2025-08-03
+
+**Location:** h muscles before school, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** This Sunday marks the final weekend of Thinkery’s STEAM Sundays summer series, and it’s all about Math.  Kids can dive into playful fractions with pizza-themed activities, build wild 3D shape creations, and explore geometry through interactive pop-ups and themed Story Times.
+
+**Additional Details:** Cost: free
+
+**Source:** Unknown
+
+---
+
+## H-E-B Free First Sunday@ Bullock Museum
+
+**Date:** 2025-08-03
+
+**Location:** Kick off the school year withFree First Sundayat the Bullock Museum! You’re invited to explore theStory of Texas 78701 *(ZIP code estimated)*
+
+**Description:** Kick off the school year withFree First Sundayat the Bullock Museum! You’re invited to explore theStory of Texas through three interactive floors—full of engaging exhibits and artifacts.  Fromback-to-school storytimes and crafts(hosted by Westbank Library at 10:30 and 11:30 a.
+
+**Additional Details:** Age: all ages. Cost: Free
+
+**Source:** Unknown
+
+---
+
+## Sunday Funday: Corn Husk Dolls@ Neill Cochran House Museum
+
+**Date:** 2025-08-03
+
+**Location:** Neill Cochran House Museum, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Drop by the Neill-Cochran House Museum to make your own traditional corn husk doll, a craft with roots in Indigenous and early settler history.  All supplies and instructions are provided, and you can come by anytime between 11 and 2.
+
+**Additional Details:** Cost: free
+
+**Source:** Unknown
+
+---
+
+## Daddy Go!
+
+**Date:** 2025-08-03
+
+**Location:** Bass Concert Hall, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Daddy Go!@ Bass Concert Hall.
+
+**Source:** Unknown
+
+---
+
+## Back To School Bash
+
+**Date:** 2025-08-09
+
+**Time:** 9:30 AM
+
+**Location:** Central Christian Church, 1110 Guadalupe St, Austin, TX, United States, 78701
+
+**Description:** Every school aged child (Kindergarten through 12th grade) must register AND be present at the event to receive a backpack. All are welcome to attend and enjoy a waffle breakfast bar and fun crafts for all ages.
+
+**Additional Details:** We will also have the Travis County Sheriff's Department and the Austin Police Department Mounted Patrol on site. Every child MUST register by visiting Eventbrite to receive a backpack.
+
+**Source:** dca9f6fcd694b58de8a3c6af133012ed.JPG
+
+---
+
+## Back to School Bash - Block Party & Resource Fair
+
+**Date:** 2025-08-09
+
+**Time:** 5:00 PM - 7:00 PM
+
+**Location:** 1190 Chicon St, Austin, TX, United States, 78702
+
+**Description:** Free community event including community organizations, water slide, slip 'n slide, food, music, games, and more.
+
+**Additional Details:** Public event by Mission Possible Austin.
+
+**Source:** 9cb598fa2dc0c751b30f1e020ccd5a35.JPG
+
+---
+
+## Back-to-School Event
+
+**Date:** 2025-08-09
+
+**Time:** 8:00 AM - 12:00 PM
+
+**Location:** North Central Health Center, 1210 W Braker Ln, Austin, TX 78758
+
+**Description:** Vaccines only event for ages 3-18.
+
+**Additional Details:** Free children’s immunizations (registration required).
+
+**Source:** 341bcd82e92e65be2b66adc0664f308b.PNG
+
+---
+
+## Back to School
+
+**Date:** 2025-08-10
+
+**Time:** 8:00 AM - 12:00 PM
+
+**Location:** North Central Health Center, 1210 W. Braker Lane, Austin, TX, 78758
+
+**Description:** Offering FREE children's immunizations, backpacks plus supplies, paletas, community resources and much more! Ages 3-18.
+
+**Additional Details:** Registration required.
+
+**Source:** 46b6ecefc03a409c54ecde4aebbc4a88.PNG
+
+---
+
+## Touch-A-Truck
+
+**Date:** 2025-08-11
+
+**Time:** 8:30 AM - 10:30 AM
+
+**Location:** SouthStar Bank Leander, 10737 E. Crystal Falls Pkwy, Leander, TX 78641
+
+**Description:** Join us for a special kid-friendly morning! Take photos with your favorite trucks from around the community.
+
+**Additional Details:** Ask about our Youth Accounts.
+
+**Source:** 99b4d31630f40445ca1528b1312b35cc.PNG
 
 ---
 
@@ -2089,20 +2521,6 @@
 **Additional Details:** Cost: $25 per duo, $10 per additional son. Tickets available online.
 
 **Source:** d6ecedf42abc7a27cf6d07fada346b0e.JPG
-
----
-
-## National Tropical Fruit Day with FREE Drum Fitness Class
-
-**Time:** 11:00 AM - 3:00 PM
-
-**Location:** Leander Activity Center, 11880 Hero Way W Suite 600, Leander, TX 78641-7400, United States
-
-**Description:** Celebrating National Tropical Fruit Day with free tropical fruit and a drum fitness class. Led by Suzy from Soulshine Rhythm from 11:00 AM - 12:00 PM.
-
-**Additional Details:** Sign-up is required. Use the provided link to reserve your spot.
-
-**Source:** 252cd2e5c87ea71991c50507547597e6.JPG
 
 ---
 

@@ -1447,7 +1447,7 @@
     "additional_details": "Cost: Free. Special Program Rules: 1. Arrive at least 15 minutes early to secure your spot. 2. Late attendance will not be permitted. 3. Parents and caregivers must sit with their children. 4. Please refrain from talking, visiting, and using electronic devices. 5. Individuals displaying disruptive behavior will be asked to leave. 6. Strollers must remain outside the performance area.",
     "raw_datetime": "Saturday at 10 AM",
     "source_file": "b8b796bd0d2e9b057ca512f20e76c476.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "National Tropical Fruit Day with FREE Drum Fitness Class",
@@ -1458,7 +1458,7 @@
     "additional_details": "Sign-up is required. Use the provided link to reserve your spot.",
     "raw_datetime": "Tomorrow at 11 AM \u2013 3 PM",
     "source_file": "252cd2e5c87ea71991c50507547597e6.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Pop Up Play Day",
@@ -1469,7 +1469,7 @@
     "additional_details": "Hosted by Round Rock Parks and Recreation Department. It's free and open to the public.",
     "raw_datetime": "Saturday, July 19 from 9\u201311 AM",
     "source_file": "00f8c37e50df617f75d7e7d839051a66.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Under the Sea",
@@ -1480,7 +1480,7 @@
     "additional_details": "Perfect for celebrating summer\u2019s best moments. Come dressed as your favorite underwater character.",
     "raw_datetime": "Sunday at 1 PM \u2013 3 PM",
     "source_file": "f52305cf7c9bfba07c819ca4dd014cb0.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Park & Recreation Month: Roll and Splash Bash",
@@ -1491,7 +1491,7 @@
     "additional_details": "Includes sweet treats and giveaways.",
     "raw_datetime": "On Friday, July 18, from 10 am to noon",
     "source_file": "6ca1269e12ce6b1b77aed006c21e0b09.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Summer Stock Austin Sneak Peek 2025@ McCullough Theater",
@@ -1504,7 +1504,7 @@
     "source_url": "https://family.do512.com/events/2025/7/18/summer-stock-austins-sneak-peek-2025-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Greater Austin Comic Con@ H-E-B Center at Cedar Park",
@@ -1517,7 +1517,7 @@
     "source_url": "https://family.do512.com/events/2025/7/19/greater-austin-comic-con-2025-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Public Tour and Sculpture Garden Storytime@ UMLAUF",
@@ -1530,7 +1530,7 @@
     "source_url": "https://family.do512.com/events/2025/7/19/public-tour-sculpture-garden-storytime-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Carnival of the Animals@ Bates Recital Hall",
@@ -1543,6 +1543,265 @@
     "source_url": "https://family.do512.com/events/2025/7/20/carnival-of-the-animals-tickets",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
+    "is_archived": true
+  },
+  {
+    "activity_name": "Big Zoo Adventure",
+    "location": "H-E-B SoCo, 2400 S. Congress Ave, Austin, TX 78704",
+    "date": "2025-08-02",
+    "time": "11:00 AM - 4:00 PM",
+    "description": "A fun-filled day with a petting zoo, face painting, photo booth, zoo-themed arts & crafts, and snacks for kids.",
+    "additional_details": "Free & Open to the Public. Petting Zoo from 11:00 AM to 2:00 PM.",
+    "raw_datetime": "August 2 from 11AM to 4PM",
+    "source_file": "32db48ba4b8ecb833a45a40b18532065.JPG",
     "is_archived": false
+  },
+  {
+    "activity_name": "Crestview Manor Kick-off Block Party",
+    "location": "Crestview Manor, 11805 Johnson Road, Manor, TX 78653, United States",
+    "date": "2025-08-03",
+    "time": "5:00 PM - 8:00 PM",
+    "description": "Community-wide Block Party with food, fun, and fellowship including Neighborhood Cookout, Bouncy Houses, Kids Activities.",
+    "additional_details": "VBS Registration (Aug. 4th-6th, 6-8 PM).",
+    "raw_datetime": "Saturday, August 3, Time: 5:00-8:00 PM",
+    "source_file": "d34a7c3abed59783996dd8619df71c95.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back To School Bash",
+    "location": "Central Christian Church, 1110 Guadalupe St, Austin, TX, United States, 78701",
+    "date": "2025-08-09",
+    "time": "9:30 AM",
+    "description": "Every school aged child (Kindergarten through 12th grade) must register AND be present at the event to receive a backpack. All are welcome to attend and enjoy a waffle breakfast bar and fun crafts for all ages.",
+    "additional_details": "We will also have the Travis County Sheriff's Department and the Austin Police Department Mounted Patrol on site. Every child MUST register by visiting Eventbrite to receive a backpack.",
+    "raw_datetime": "Saturday at 9:30 AM",
+    "source_file": "dca9f6fcd694b58de8a3c6af133012ed.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "3rd Annual Back To School Event",
+    "location": "Wells Branch MUD, 3000 Shoreline Dr, Austin, TX 78728-4483, United States",
+    "date": "2025-08-03",
+    "time": "12:00 PM - 6:00 PM",
+    "description": "Victory Lap Ministries\u2019 annual event providing free school supplies, clothes, shoes, and hairdos to students in need.",
+    "additional_details": "Looking for barbers, braiders, beauticians, and nail techs. Volunteers and donations welcome.",
+    "raw_datetime": "August 3, 2025 | 12:00 PM \u2013 6:00 PM",
+    "source_file": "7d4b3e8a8705c296379a44bd3774752d.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "H-E-B Kids Day",
+    "location": "Round Rock 2 at 620 & O'Conner, Round Rock, TX, 78681",
+    "date": "2025-08-02",
+    "time": "11:00 AM - 4:00 PM",
+    "description": "Various kid-friendly activities like face painting, games, foods and prizes. Pirate costumes encouraged, but not required.",
+    "additional_details": "There will be an inflatable too.",
+    "raw_datetime": "Saturday, August 2nd from 11am-4pm",
+    "source_file": "5b6ad22ab3ff8c5f651478d6b1d99f07.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back to School Giveaway",
+    "location": "Northeast Metropolitan Park, 1550 Sun Light Near Way, Pflugerville, TX 78660",
+    "date": "2025-08-02",
+    "time": "10:00 AM - Until Supplies Run Out",
+    "description": "Food and fun for all kiddos. School supply giveaway. Gift certificates for free hair services.",
+    "additional_details": "Gift certificates for free hair services with Transformations by Melanie Ford. Gift certificates for free haircuts with Cuts by Manny B.",
+    "raw_datetime": "August 2nd, 10AM - Until Supplies Run Out",
+    "source_file": "e04601d620da6ffb6525a9b452ede1fc.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back to School Backpack Event",
+    "location": "Killeen Certified, 12200 Walnut Park Xing, Austin, TX 78753, United States",
+    "date": "2025-08-03",
+    "time": "4:00 PM - 6:00 PM",
+    "description": "Back to school giveaway event for students from Pre-K to High School. 1,000 free backpacks filled with school supplies.",
+    "additional_details": "First come, first served. While supplies last.",
+    "raw_datetime": "Sunday, August 3rd from 4 P.M. to 6 P.M.",
+    "source_file": "4a404ece7b10cc97028355526d024e4a.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Boost Mobile - Back to School Backpack Drop",
+    "location": "7208 Cameron Rd, Austin, TX 78752, United States",
+    "date": "2025-08-02",
+    "time": "12:00 PM - 5:00 PM",
+    "description": "Boost Mobile is hosting a Back to School Backpack Drop, hooking up students with free backpacks and exclusive in-store deals.",
+    "additional_details": "Supplies are limited \u2014 show up early to claim yours.",
+    "raw_datetime": "Saturday at 12 PM \u2013 5 PM, 8/2/2025 at 12:00 PM - 5:00 PM",
+    "source_file": "b88abe42b1d8bca6af49d1aa135a1197.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back to School Bash - Block Party & Resource Fair",
+    "location": "1190 Chicon St, Austin, TX, United States, 78702",
+    "date": "2025-08-02",
+    "time": "5:00 PM - 7:00 PM",
+    "description": "Free community event including community organizations, water slide, slip 'n slide, food, music, games, and more.",
+    "additional_details": "Public event by Mission Possible Austin.",
+    "raw_datetime": "Saturday at 5 PM - 7 PM",
+    "source_file": "9cb598fa2dc0c751b30f1e020ccd5a35.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Hawaiian Luau Open House",
+    "location": "The Goddard School of Circle C, 12101 Archeleta Blvd, Austin, TX, 78739",
+    "date": "2025-08-02",
+    "time": "10:00 AM - 12:00 PM",
+    "description": "Free fun for all with bounce house, Kona Ice truck, games & activities, refreshments. Wear your Hawaiian best.",
+    "additional_details": "Refer a family and get a $500 credit towards tuition when they enroll after 1 week.",
+    "raw_datetime": "Saturday August 2nd, 10AM-12PM",
+    "source_file": "dfad758a3719a2ce9f695e37e5fcd43b.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back to School Bash",
+    "location": "SouthStar Bank, 3025 FM 1431, Round Rock, TX 78681",
+    "date": "2025-08-02",
+    "time": "11:00 AM - 2:00 PM",
+    "description": "School supplies bazaar & giveaway, food vendors & fun games, music & entertainments.",
+    "additional_details": "Sponsored by Abundantly Anchored Ministries. Registration link available.",
+    "raw_datetime": "2nd August, 2025, 11AM-2PM",
+    "source_file": "d3a960cdffe5fb0f6928ba450dc1d028.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back to School",
+    "location": "Southeast Health & Wellness Center, 2900 Montopolis Dr, Austin, TX, 78741",
+    "date": "2025-08-03",
+    "time": "8:00 AM - 12:00 PM",
+    "description": "Offering FREE children's immunizations, backpacks plus supplies, paletas, community resources and much more! Ages 3-18.",
+    "additional_details": "Registration required.",
+    "raw_datetime": "August 3rd, 2024, 8:00am - 12:00pm",
+    "source_file": "46b6ecefc03a409c54ecde4aebbc4a88.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back to School",
+    "location": "Pflugerville Health Center, 2700 W Pecan St, Pflugerville, TX, 78660",
+    "date": "2025-08-03",
+    "time": "8:00 AM - 12:00 PM",
+    "description": "Offering FREE children's immunizations, backpacks plus supplies, paletas, community resources and much more! Ages 3-18.",
+    "additional_details": "Registration required.",
+    "raw_datetime": "August 3rd, 2024, 8:00am - 12:00pm",
+    "source_file": "46b6ecefc03a409c54ecde4aebbc4a88.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back to School",
+    "location": "North Central Health Center, 1210 W. Braker Lane, Austin, TX, 78758",
+    "date": "2025-08-10",
+    "time": "8:00 AM - 12:00 PM",
+    "description": "Offering FREE children's immunizations, backpacks plus supplies, paletas, community resources and much more! Ages 3-18.",
+    "additional_details": "Registration required.",
+    "raw_datetime": "August 10th, 2024, 8:00am - 12:00pm",
+    "source_file": "46b6ecefc03a409c54ecde4aebbc4a88.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Bloom Festival",
+    "location": "Round Rock Garden Center, 901 Sam Bass Rd., Round Rock, TX, 78681",
+    "date": "2025-08-02",
+    "time": "10:00 AM - 2:00 PM",
+    "description": "Celebrate flowers, pollinators, and Texas gardening with live music, local vendors, and kids' crafts.",
+    "additional_details": "Admission is free. RSVP to stay updated. Features include live music from Mike Dohm, local vendors with lemonade, pastries, pressed flower art, local honey, kids' crafts, and a bloom-filled photo op.",
+    "raw_datetime": "Saturday, August 2nd, 10:00 AM to 2:00 PM",
+    "source_file": "5daf8c8cd08cc13938fdfe91a697b5c9.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Touch-A-Truck",
+    "location": "SouthStar Bank Leander, 10737 E. Crystal Falls Pkwy, Leander, TX 78641",
+    "date": "2025-08-11",
+    "time": "8:30 AM - 10:30 AM",
+    "description": "Join us for a special kid-friendly morning! Take photos with your favorite trucks from around the community.",
+    "additional_details": "Ask about our Youth Accounts.",
+    "raw_datetime": "Friday, August 11 8:30 - 10:30 AM",
+    "source_file": "99b4d31630f40445ca1528b1312b35cc.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back-to-School Event",
+    "location": "Cedar Creek High School, 793 Union Chapel Rd, Cedar Creek, TX 78612",
+    "date": "2025-07-29",
+    "time": "5:00 PM - 8:00 PM",
+    "description": "Backpacks only event for ages 3-18.",
+    "additional_details": "Free backpacks and school supplies (first come, first serve).",
+    "raw_datetime": "July 29th, 5 PM - 8 PM",
+    "source_file": "341bcd82e92e65be2b66adc0664f308b.PNG",
+    "is_archived": true
+  },
+  {
+    "activity_name": "Back-to-School Event",
+    "location": "Del Valle Health Center, 7050 Elroy Rd, Del Valle, TX 78617",
+    "date": "2025-08-02",
+    "time": "8:00 AM - 1:00 PM",
+    "description": "Vaccines only event for ages 3-18.",
+    "additional_details": "Free children\u2019s immunizations (registration required).",
+    "raw_datetime": "August 2nd, 8 AM - 1 PM",
+    "source_file": "341bcd82e92e65be2b66adc0664f308b.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back-to-School Event",
+    "location": "Pflugerville Health Center, 2700 W Pecan St Suite #450, Pflugerville, TX 78660",
+    "date": "2025-08-02",
+    "time": "8:00 AM - 12:00 PM",
+    "description": "Vaccines only event for ages 3-18.",
+    "additional_details": "Free children\u2019s immunizations (registration required).",
+    "raw_datetime": "August 2nd, 8 AM - 12 PM",
+    "source_file": "341bcd82e92e65be2b66adc0664f308b.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back-to-School Event",
+    "location": "North Central Health Center, 1210 W Braker Ln, Austin, TX 78758",
+    "date": "2025-08-09",
+    "time": "8:00 AM - 12:00 PM",
+    "description": "Vaccines only event for ages 3-18.",
+    "additional_details": "Free children\u2019s immunizations (registration required).",
+    "raw_datetime": "August 9th, 8 AM - 12 PM",
+    "source_file": "341bcd82e92e65be2b66adc0664f308b.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back to School Bash",
+    "location": "Access Dental & Orthodontics, 6216 J M Holloway Ln, Austin, TX 78724",
+    "date": "2025-08-03",
+    "time": "12:00 PM - 5:00 PM",
+    "description": "A family-friendly event featuring giveaways, games, and community spirit to support local families for the new school year.",
+    "additional_details": "Free event with 400+ backpacks, refreshments, fun booths, photo ops, live music, dental health info, and more. Children must be present to receive a backpack.",
+    "raw_datetime": "Sunday, August 3, 2025, 12:00 PM \u2013 5:00 PM",
+    "source_file": "93b721b5c8a664fcd6b0eea3994b554e.PNG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Backyard BBQ Benefitting Kerr County Flood Relief@ Meanwhile Brewing",
+    "location": "Meanwhile Brewing, Austin, TX 78701",
+    "date": "2025-08-01",
+    "time": "",
+    "description": "This Friday, treat the fam toAsado Night, part of Meanwhile Brewing\u2019s Backyard BBQ Summer Series.  Expect a flavorful musical lineup from Uptown Sports Club, Cuyo, Discada, and La Volta Pizza Club, with music and vinyl vibes setting the scene.",
+    "additional_details": "Cost: free",
+    "raw_datetime": "Friday, August 4 | 6 pm \u2013 10 pm | $63.14 for adults; kids 12 and under eat free with RSVP",
+    "source_url": "https://family.do512.com/events/2025/8/1/backyard-bbq-asado-bbq-night-with-cuyo-discada-la-volta-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": true,
+    "location_uncertain": true
+  },
+  {
+    "activity_name": "Sunday Funday: Corn Husk Dolls@ Neill Cochran House Museum",
+    "location": "Neill Cochran House Museum, 2310 San Gabriel St, Austin, TX 78705",
+    "date": "2025-08-03",
+    "time": "11 am - 2 pm",
+    "description": "Drop by the Neill-Cochran House Museum to make your own traditional corn husk doll, a craft with roots in Indigenous and early settler history.  All supplies and instructions are provided, and you can come by anytime between 11 and 2.",
+    "additional_details": "Cost: free",
+    "raw_datetime": "Sunday, August 3 | 11 am \u2013 2 pm | Included with museum admission",
+    "source_url": "https://family.do512.com/events/2025/8/3/sunday-funday-corn-husk-dolls-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false,
+    "location_uncertain": true
   }
 ]

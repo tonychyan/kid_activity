@@ -616,15 +616,22 @@ def generate_html(activities: List[Dict], base_url: str = "", splash_pads: List[
     
     # Add marker data as JSON
     for i, marker in enumerate(all_markers):
+        name = marker['name'].replace('"', '\\"')
+        address = marker['address'].replace('"', '\\"')
+        date = marker['date'] or ''
+        time_period = marker['time_period']
+        color = marker['color']
+        type_ = marker['type']
+        comma = '' if i == len(all_markers) - 1 else ','
         html += f"""
                     {{
-                        name: "{marker['name'].replace('"', '\\"')}",
-                        address: "{marker['address'].replace('"', '\\"')}",
-                        date: "{marker['date'] or ''}",
-                        timePeriod: "{marker['time_period']}",
-                        color: "{marker['color']}",
-                        type: "{marker['type']}"
-                    }}{'' if i == len(all_markers) - 1 else ','}
+                        name: "{name}",
+                        address: "{address}",
+                        date: "{date}",
+                        timePeriod: "{time_period}",
+                        color: "{color}",
+                        type: "{type_}"
+                    }}{comma}
         """
     
     html += """
