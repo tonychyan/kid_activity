@@ -1554,7 +1554,7 @@
     "additional_details": "Free & Open to the Public. Petting Zoo from 11:00 AM to 2:00 PM.",
     "raw_datetime": "August 2 from 11AM to 4PM",
     "source_file": "32db48ba4b8ecb833a45a40b18532065.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Crestview Manor Kick-off Block Party",
@@ -1565,18 +1565,7 @@
     "additional_details": "VBS Registration (Aug. 4th-6th, 6-8 PM).",
     "raw_datetime": "Saturday, August 3, Time: 5:00-8:00 PM",
     "source_file": "d34a7c3abed59783996dd8619df71c95.JPG",
-    "is_archived": false
-  },
-  {
-    "activity_name": "Back To School Bash",
-    "location": "Central Christian Church, 1110 Guadalupe St, Austin, TX, United States, 78701",
-    "date": "2025-08-09",
-    "time": "9:30 AM",
-    "description": "Every school aged child (Kindergarten through 12th grade) must register AND be present at the event to receive a backpack. All are welcome to attend and enjoy a waffle breakfast bar and fun crafts for all ages.",
-    "additional_details": "We will also have the Travis County Sheriff's Department and the Austin Police Department Mounted Patrol on site. Every child MUST register by visiting Eventbrite to receive a backpack.",
-    "raw_datetime": "Saturday at 9:30 AM",
-    "source_file": "dca9f6fcd694b58de8a3c6af133012ed.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "3rd Annual Back To School Event",
@@ -1587,7 +1576,7 @@
     "additional_details": "Looking for barbers, braiders, beauticians, and nail techs. Volunteers and donations welcome.",
     "raw_datetime": "August 3, 2025 | 12:00 PM \u2013 6:00 PM",
     "source_file": "7d4b3e8a8705c296379a44bd3774752d.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "H-E-B Kids Day",
@@ -1598,7 +1587,7 @@
     "additional_details": "There will be an inflatable too.",
     "raw_datetime": "Saturday, August 2nd from 11am-4pm",
     "source_file": "5b6ad22ab3ff8c5f651478d6b1d99f07.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Back to School Giveaway",
@@ -1609,7 +1598,7 @@
     "additional_details": "Gift certificates for free hair services with Transformations by Melanie Ford. Gift certificates for free haircuts with Cuts by Manny B.",
     "raw_datetime": "August 2nd, 10AM - Until Supplies Run Out",
     "source_file": "e04601d620da6ffb6525a9b452ede1fc.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Back to School Backpack Event",
@@ -1620,7 +1609,7 @@
     "additional_details": "First come, first served. While supplies last.",
     "raw_datetime": "Sunday, August 3rd from 4 P.M. to 6 P.M.",
     "source_file": "4a404ece7b10cc97028355526d024e4a.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Boost Mobile - Back to School Backpack Drop",
@@ -1631,7 +1620,7 @@
     "additional_details": "Supplies are limited \u2014 show up early to claim yours.",
     "raw_datetime": "Saturday at 12 PM \u2013 5 PM, 8/2/2025 at 12:00 PM - 5:00 PM",
     "source_file": "b88abe42b1d8bca6af49d1aa135a1197.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Back to School Bash - Block Party & Resource Fair",
@@ -1642,7 +1631,7 @@
     "additional_details": "Public event by Mission Possible Austin.",
     "raw_datetime": "Saturday at 5 PM - 7 PM",
     "source_file": "9cb598fa2dc0c751b30f1e020ccd5a35.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Hawaiian Luau Open House",
@@ -1653,7 +1642,7 @@
     "additional_details": "Refer a family and get a $500 credit towards tuition when they enroll after 1 week.",
     "raw_datetime": "Saturday August 2nd, 10AM-12PM",
     "source_file": "dfad758a3719a2ce9f695e37e5fcd43b.JPG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Back to School Bash",
@@ -1664,7 +1653,7 @@
     "additional_details": "Sponsored by Abundantly Anchored Ministries. Registration link available.",
     "raw_datetime": "2nd August, 2025, 11AM-2PM",
     "source_file": "d3a960cdffe5fb0f6928ba450dc1d028.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Back to School",
@@ -1675,7 +1664,7 @@
     "additional_details": "Registration required.",
     "raw_datetime": "August 3rd, 2024, 8:00am - 12:00pm",
     "source_file": "46b6ecefc03a409c54ecde4aebbc4a88.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Back to School",
@@ -1686,7 +1675,7 @@
     "additional_details": "Registration required.",
     "raw_datetime": "August 3rd, 2024, 8:00am - 12:00pm",
     "source_file": "46b6ecefc03a409c54ecde4aebbc4a88.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Back to School",
@@ -1708,7 +1697,7 @@
     "additional_details": "Admission is free. RSVP to stay updated. Features include live music from Mike Dohm, local vendors with lemonade, pastries, pressed flower art, local honey, kids' crafts, and a bloom-filled photo op.",
     "raw_datetime": "Saturday, August 2nd, 10:00 AM to 2:00 PM",
     "source_file": "5daf8c8cd08cc13938fdfe91a697b5c9.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Touch-A-Truck",
@@ -1741,7 +1730,7 @@
     "additional_details": "Free children\u2019s immunizations (registration required).",
     "raw_datetime": "August 2nd, 8 AM - 1 PM",
     "source_file": "341bcd82e92e65be2b66adc0664f308b.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Back-to-School Event",
@@ -1752,7 +1741,7 @@
     "additional_details": "Free children\u2019s immunizations (registration required).",
     "raw_datetime": "August 2nd, 8 AM - 12 PM",
     "source_file": "341bcd82e92e65be2b66adc0664f308b.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Back-to-School Event",
@@ -1774,7 +1763,7 @@
     "additional_details": "Free event with 400+ backpacks, refreshments, fun booths, photo ops, live music, dental health info, and more. Children must be present to receive a backpack.",
     "raw_datetime": "Sunday, August 3, 2025, 12:00 PM \u2013 5:00 PM",
     "source_file": "93b721b5c8a664fcd6b0eea3994b554e.PNG",
-    "is_archived": false
+    "is_archived": true
   },
   {
     "activity_name": "Backyard BBQ Benefitting Kerr County Flood Relief@ Meanwhile Brewing",
@@ -1799,6 +1788,138 @@
     "additional_details": "Cost: free",
     "raw_datetime": "Sunday, August 3 | 11 am \u2013 2 pm | Included with museum admission",
     "source_url": "https://family.do512.com/events/2025/8/3/sunday-funday-corn-husk-dolls-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": true,
+    "location_uncertain": true
+  },
+  {
+    "activity_name": "Back to School Bash",
+    "location": "Virginia L. Brown Recreation Center, 7500 Blessing Ave, Austin, TX, 78752",
+    "date": "2025-08-09",
+    "time": "11:00 AM - 3:00 PM",
+    "description": "Community event featuring free backpacks, school supplies, haircuts for kids & teens, vaccinations & health screenings, eye screenings, clothing drive, bike raffles, barbecue hotdogs & hamburgers, arts & crafts, fun games & activities, and more.",
+    "additional_details": "First come, first served for vaccinations & health screenings; fasting required: 2 hours for blood glucose / 8 hours for cholesterol. All activities are free.",
+    "raw_datetime": "Saturday, August 9, 11 AM \u2013 3 PM",
+    "source_file": "51ad360aedd90b05ef498258131b5124.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Little Gym Open House",
+    "location": "The Little Gym of Cedar Park, 1335 E Whitestone Blvd suite t 160, Cedar Park, TX 78613",
+    "date": "2025-08-09",
+    "time": "2:30 PM - 4:00 PM",
+    "description": "Bring a friend to see what TLGCP is all about! Meet our instructors and have some SERIOUS FUN in the gym!",
+    "additional_details": null,
+    "raw_datetime": "Saturday, August 9th, 2:30 PM - 4:00 PM",
+    "source_file": "72ecb371dc324f7b7f59607cdcdf1fc9.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Pop Up Play Day",
+    "location": "Meadow Lake Park, 2901 Settlement Dr, Round Rock, TX 78665, United States",
+    "date": "2025-08-09",
+    "time": "9:00 AM - 11:00 AM",
+    "description": "Eco-friendly, family-friendly event with free nature-themed games and activities.",
+    "additional_details": "For more info visit roundrocktexas.gov/pop. Huge thanks to partners and sponsors: Round Rock ISD, PetSuites, Coral Care, Tumble Tx Mobile Gym, Texas State.",
+    "raw_datetime": "Saturday, August 9 from 9 to 11 AM",
+    "source_file": "b66a92f2d992e05d99e6c064a524a672.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Pflugerville Founder's Day",
+    "location": "Heritage House Museum, 901 Old Austin Hutto Road, Pflugerville, TX, 78660",
+    "date": "2025-08-09",
+    "time": "6:00 PM",
+    "description": "Celebrate Pflugerville's history with live music, German food and drink, and more.",
+    "additional_details": "Free and open to the public. Supported by a grant from The Texas Commission on the Arts.",
+    "raw_datetime": "Saturday, August 9 at 6:00 PM",
+    "source_file": "94ca54dfa252fbb0814ba6ff5eeac4da.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Wild Waterloo: Bugs, Birds, and Bats!",
+    "location": "Waterloo Park, 500 E 12th St, Austin, TX 78701",
+    "date": "2025-08-09",
+    "time": "10:00 AM - 12:30 PM",
+    "description": "Interactive discovery of flying, winged, and multi-legged friends at Waterloo Park.",
+    "additional_details": "Free community event hosted by Waterloo Greenway. Includes park tours and scavenger hunts.",
+    "raw_datetime": "Saturday, August 9 \u00b7 10am\u201312:30pm",
+    "source_file": "8979eb87fd975e130af3c5c2fea65848.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Back 2 School Bash",
+    "location": "Typhoon Texas, 18500 TX-130 Service Rd, Pflugerville, TX 78660",
+    "date": "2025-08-08",
+    "time": null,
+    "description": "A full day of foam parties, princess meet & greets, face painting, balloon artists, live DJs, bounce houses, and nonstop energy from open to close.",
+    "additional_details": "All included with admission.",
+    "raw_datetime": "August 8th",
+    "source_file": "8c46c48cb48e559fb2a97e5299d2b16c.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Cuddle with Therapy Dogs",
+    "location": "Cedar Park Public Library, Cedar Park, TX, 78613",
+    "date": "2025-08-09",
+    "time": "12:00 PM - 1:00 PM",
+    "description": "Come cuddle with therapy dogs from Austin Dog Alliance. All ages welcome!",
+    "additional_details": "Space is limited. First come, first served.",
+    "raw_datetime": "Saturday, August 9, 12:00 p.m. \u2013 1:00 p.m.",
+    "source_file": "d6bafab977076175bcd244977fac7fbe.JPG",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Little Chef Saturdays@ H-E-B Lake Austin",
+    "location": "H-E-B Lake Austin, 2652 Lake Austin Blvd, Austin, TX 78703",
+    "date": "2025-08-09",
+    "time": "10 am",
+    "description": "Let your mini foodies cook up some fun at this free, hands-on class just for kids! On Saturday, August 9, Little Chef Saturdays invites kids to makeedible friendship bracelets and cookie pencils\u2014just in time for back-to-school season.  Sessions run from 9\u201310 am and 10\u201311 am at H\u2011E\u2011B Lake Austin.",
+    "additional_details": "Cost: free",
+    "raw_datetime": "Saturday, August 9 | 9\u201310 am and 10\u201311 am | Registration requiredhere",
+    "source_url": "https://family.do512.com/events/2025/8/9/little-chef-saturdays-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false,
+    "location_uncertain": true
+  },
+  {
+    "activity_name": "Second Saturdays Are for Families: Impression Obsession@ Laguna Gloria",
+    "location": "Laguna Gloria, 3809 W 35th St, Austin, TX 78703",
+    "date": "2025-08-09",
+    "time": "11:00AM - 3:00PM",
+    "description": "Get ready to get inky! This month\u2019sSecond Saturdays Are for Familiesat Laguna Gloria invites families to try their hand at printmaking by creating, inking, and printing original designs\u2014and leave your mark on a community stamp mural.  Aprons are provided, but it\u2019s recommended to wear clothes you don\u2019t mind getting a little messy.",
+    "additional_details": "",
+    "raw_datetime": "Saturday, August 9 | 11 am \u2013 3 pm | FREE",
+    "source_url": "https://family.do512.com/events/2025/8/9/second-saturdays-are-for-families-impression-obsession-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false
+  },
+  {
+    "activity_name": "Family Day: Starry Skies & Fireflies",
+    "location": "UMLAUF Sculpture Garden, 605 Azie Morton Rd, Austin, TX 78704",
+    "date": "2025-08-10",
+    "time": "11:00AM - 4:00PM",
+    "description": "Get ready for a little daytime stargazing fun atFamily Day: Starry Skies & Fireflies! This free event at the UMLAUF Sculpture Garden is packed with hands-on fun for kids\u2014including face painting, themed art activities, and a whimsical sculpture scavenger hunt.  Families can also enjoy live performances by Walking Shadow Shakespeare and explore nature through experiences led by the Lady Bird Johnson Wildflower Center.",
+    "additional_details": "Cost: free",
+    "raw_datetime": "Sunday, August 10 | 10 am \u2013 4 pm | FREE with RSVPhere",
+    "source_url": "https://family.do512.com/events/2025/8/10/family-day-starry-skies-fireflies-tickets",
+    "source_type": "web_scrape",
+    "source_name": "do512family.com/this-weekend",
+    "is_archived": false,
+    "location_uncertain": true
+  },
+  {
+    "activity_name": "Groundwork Music Orchestra",
+    "location": "Cherrywood Coffee House, 1400 E 38th 1/2 St, Austin, TX 78722",
+    "date": "2025-08-10",
+    "time": "10:00AM",
+    "description": "Groundwork Music Orchestra@ Cherrywood Coffee House.",
+    "additional_details": "",
+    "raw_datetime": "",
+    "source_url": "https://family.do512.com/events/2025/8/10/groundwork-music-orchestra-1745598479",
     "source_type": "web_scrape",
     "source_name": "do512family.com/this-weekend",
     "is_archived": false,

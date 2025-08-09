@@ -364,6 +364,22 @@
 
 ---
 
+## Cedar Park Rodeo 2025
+
+**Date:** 2025-04-22
+
+**Time:** 7:30 PM
+
+**Location:** H-E-B Center at Cedar Park, 2100 Avenue of the Stars, Cedar Park, TX 78613
+
+**Description:** Cedar Park Rodeo presented by Michelob Ultra, sanctioned by CPRA & UPRA. Benefits Sammy Wallace Memorial Foundation.
+
+**Additional Details:** Children who have had their 2nd birthday require a ticket for admission. Mutton Bustin': Registration day of event only. First come, first served. $35 per contestant. Weight limit 55 lbs. 10 contestants during event.
+
+**Source:** 146573874463d2611f240e2189bd14bc.JPG
+
+---
+
 ## Pioneer Festival
 
 **Date:** 2025-04-26
@@ -2124,18 +2140,6 @@
 
 ---
 
-## Summer Stock Austin: Jesus Christ Superstar
-
-**Date:** 2025-08-01
-
-**Location:** McCullough Theater, Austin, TX 78701 *(ZIP code estimated)*
-
-**Description:** Summer Stock Austin: Jesus Christ Superstar@ McCullough Theater.
-
-**Source:** Unknown
-
----
-
 ## Big Zoo Adventure
 
 **Date:** 2025-08-02
@@ -2197,6 +2201,22 @@
 **Additional Details:** Supplies are limited — show up early to claim yours.
 
 **Source:** b88abe42b1d8bca6af49d1aa135a1197.JPG
+
+---
+
+## Back to School Bash - Block Party & Resource Fair
+
+**Date:** 2025-08-02
+
+**Time:** 5:00 PM - 7:00 PM
+
+**Location:** 1190 Chicon St, Austin, TX, United States, 78702
+
+**Description:** Free community event including community organizations, water slide, slip 'n slide, food, music, games, and more.
+
+**Additional Details:** Public event by Mission Possible Austin.
+
+**Source:** 9cb598fa2dc0c751b30f1e020ccd5a35.JPG
 
 ---
 
@@ -2376,39 +2396,13 @@
 
 ---
 
-## STEAM Sundays@ Thinkery
-
-**Date:** 2025-08-03
-
-**Location:** h muscles before school, Austin, TX 78701 *(ZIP code estimated)*
-
-**Description:** This Sunday marks the final weekend of Thinkery’s STEAM Sundays summer series, and it’s all about Math.  Kids can dive into playful fractions with pizza-themed activities, build wild 3D shape creations, and explore geometry through interactive pop-ups and themed Story Times.
-
-**Additional Details:** Cost: free
-
-**Source:** Unknown
-
----
-
-## H-E-B Free First Sunday@ Bullock Museum
-
-**Date:** 2025-08-03
-
-**Location:** Kick off the school year withFree First Sundayat the Bullock Museum! You’re invited to explore theStory of Texas 78701 *(ZIP code estimated)*
-
-**Description:** Kick off the school year withFree First Sundayat the Bullock Museum! You’re invited to explore theStory of Texas through three interactive floors—full of engaging exhibits and artifacts.  Fromback-to-school storytimes and crafts(hosted by Westbank Library at 10:30 and 11:30 a.
-
-**Additional Details:** Age: all ages. Cost: Free
-
-**Source:** Unknown
-
----
-
 ## Sunday Funday: Corn Husk Dolls@ Neill Cochran House Museum
 
 **Date:** 2025-08-03
 
-**Location:** Neill Cochran House Museum, Austin, TX 78701 *(ZIP code estimated)*
+**Time:** 11 am - 2 pm
+
+**Location:** Neill Cochran House Museum, 2310 San Gabriel St, Austin, TX 78705 *(ZIP code estimated)*
 
 **Description:** Drop by the Neill-Cochran House Museum to make your own traditional corn husk doll, a craft with roots in Indigenous and early settler history.  All supplies and instructions are provided, and you can come by anytime between 11 and 2.
 
@@ -2418,13 +2412,29 @@
 
 ---
 
-## Daddy Go!
+## Back 2 School Bash
 
-**Date:** 2025-08-03
+**Date:** 2025-08-08
 
-**Location:** Bass Concert Hall, Austin, TX 78701 *(ZIP code estimated)*
+**Location:** Typhoon Texas, Austin, TX, 78753
 
-**Description:** Daddy Go!@ Bass Concert Hall.
+**Description:** A full day of foam parties, princess meet & greets, face painting, balloon artists, live DJs, bounce houses, and nonstop energy from open to close.
+
+**Additional Details:** All included with admission.
+
+**Source:** 8c46c48cb48e559fb2a97e5299d2b16c.JPG
+
+---
+
+## Cedar Park Rodeo 2025@ H-E-B Center at Cedar Park
+
+**Date:** 2025-08-08
+
+**Location:** the Cedar Park, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Get ready for two nights of cowboy thrills and family fun at the Cedar Park Rodeo, presented by Michelob Ultra at the H‑E‑B Center.  From barrel racing and steer wrestling to the crowd-favorite Mutton Bustin’—where pint-sized cowpokes under 55 lbs can try their luck hanging on for a wild ride—this event packs in the action.
+
+**Additional Details:** Age: ages 2 and up. Cost: free
 
 **Source:** Unknown
 
@@ -2446,22 +2456,6 @@
 
 ---
 
-## Back to School Bash - Block Party & Resource Fair
-
-**Date:** 2025-08-09
-
-**Time:** 5:00 PM - 7:00 PM
-
-**Location:** 1190 Chicon St, Austin, TX, United States, 78702
-
-**Description:** Free community event including community organizations, water slide, slip 'n slide, food, music, games, and more.
-
-**Additional Details:** Public event by Mission Possible Austin.
-
-**Source:** 9cb598fa2dc0c751b30f1e020ccd5a35.JPG
-
----
-
 ## Back-to-School Event
 
 **Date:** 2025-08-09
@@ -2478,6 +2472,142 @@
 
 ---
 
+## Back to School Bash
+
+**Date:** 2025-08-09
+
+**Time:** 11:00 AM - 3:00 PM
+
+**Location:** Virginia L. Brown Recreation Center, 7500 Blessing Ave, Austin, TX, 78752
+
+**Description:** Community event featuring free backpacks, school supplies, haircuts for kids & teens, vaccinations & health screenings, eye screenings, clothing drive, bike raffles, barbecue hotdogs & hamburgers, arts & crafts, fun games & activities, and more.
+
+**Additional Details:** First come, first served for vaccinations & health screenings; fasting required: 2 hours for blood glucose / 8 hours for cholesterol. All activities are free.
+
+**Source:** 51ad360aedd90b05ef498258131b5124.JPG
+
+---
+
+## Open House
+
+**Date:** 2025-08-09
+
+**Time:** 2:30 PM - 4:00 PM
+
+**Location:** The Little Gym of Cedar Park, 1335 E Whitestone Blvd suite t 160, Cedar Park, TX 78613
+
+**Description:** Bring a friend to see what TLGCP is all about! Meet our instructors and have some SERIOUS FUN in the gym!
+
+**Source:** 72ecb371dc324f7b7f59607cdcdf1fc9.JPG
+
+---
+
+## Pop Up Play Day
+
+**Date:** 2025-08-09
+
+**Time:** 9:00 AM - 11:00 AM
+
+**Location:** Meadow Lake Park, 2901 Settlement Dr, Round Rock, TX 78665, United States
+
+**Description:** Eco-friendly, family-friendly event with free nature-themed games and activities.
+
+**Additional Details:** For more info visit roundrocktexas.gov/pop. Huge thanks to partners and sponsors: Round Rock ISD, PetSuites, Coral Care, Tumble Tx Mobile Gym, Texas State.
+
+**Source:** b66a92f2d992e05d99e6c064a524a672.JPG
+
+---
+
+## Pflugerville Founder's Day
+
+**Date:** 2025-08-09
+
+**Time:** 6:00 PM
+
+**Location:** Heritage House Museum, 901 Old Austin Hutto Road, Pflugerville, TX, 78660
+
+**Description:** Celebrate Pflugerville's history with live music, German food and drink, and more.
+
+**Additional Details:** Free and open to the public. Supported by a grant from The Texas Commission on the Arts.
+
+**Source:** 94ca54dfa252fbb0814ba6ff5eeac4da.JPG
+
+---
+
+## Wild Waterloo: Bugs, Birds, and Bats!
+
+**Date:** 2025-08-09
+
+**Time:** 10:00 AM - 12:30 PM
+
+**Location:** Waterloo Park, Austin, TX, 78701
+
+**Description:** Interactive discovery of flying, winged, and multi-legged friends at Waterloo Park.
+
+**Additional Details:** Free community event hosted by Waterloo Greenway. Includes park tours and scavenger hunts.
+
+**Source:** 8979eb87fd975e130af3c5c2fea65848.JPG
+
+---
+
+## Cuddle with Therapy Dogs
+
+**Date:** 2025-08-09
+
+**Time:** 12:00 PM - 1:00 PM
+
+**Location:** Cedar Park Public Library, Cedar Park, TX, 78613
+
+**Description:** Come cuddle with therapy dogs from Austin Dog Alliance. All ages welcome!
+
+**Additional Details:** Space is limited. First come, first served.
+
+**Source:** d6bafab977076175bcd244977fac7fbe.JPG
+
+---
+
+## Little Chef Saturdays@ H-E-B Lake Austin
+
+**Date:** 2025-08-09
+
+**Time:** 10 am
+
+**Location:** H-E-B Lake Austin, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Let your mini foodies cook up some fun at this free, hands-on class just for kids! On Saturday, August 9, Little Chef Saturdays invites kids to makeedible friendship bracelets and cookie pencils—just in time for back-to-school season.  Sessions run from 9–10 am and 10–11 am at H‑E‑B Lake Austin.
+
+**Additional Details:** Cost: free
+
+**Source:** Unknown
+
+---
+
+## Wild Waterloo: Bugs, Birds, and Bats!@ Waterloo Park
+
+**Date:** 2025-08-09
+
+**Location:** ure lovers will have a blast at this free outdoor adventure in Waterloo Park, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Little nature lovers will have a blast at this free outdoor adventure in Waterloo Park.  Take part in scavenger hunts, guided tours, and hands-on activities all about the bugs, birds, and bats that call Austin home.
+
+**Additional Details:** Cost: free
+
+**Source:** Unknown
+
+---
+
+## Second Saturdays Are for Families: Impression Obsession@ Laguna Gloria
+
+**Date:** 2025-08-09
+
+**Location:** Laguna Gloria, Austin, TX 78703
+
+**Description:** Get ready to get inky! This month’sSecond Saturdays Are for Familiesat Laguna Gloria invites families to try their hand at printmaking by creating, inking, and printing original designs—and leave your mark on a community stamp mural.  Aprons are provided, but it’s recommended to wear clothes you don’t mind getting a little messy.
+
+**Source:** Unknown
+
+---
+
 ## Back to School
 
 **Date:** 2025-08-10
@@ -2491,6 +2621,32 @@
 **Additional Details:** Registration required.
 
 **Source:** 46b6ecefc03a409c54ecde4aebbc4a88.PNG
+
+---
+
+## Family Day: Starry Skies & Fireflies@ UMLAUF
+
+**Date:** 2025-08-10
+
+**Location:** ure through experiences led by the Lady Bird Johnson Wildflower Center, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Get ready for a little daytime stargazing fun atFamily Day: Starry Skies & Fireflies! This free event at the UMLAUF Sculpture Garden is packed with hands-on fun for kids—including face painting, themed art activities, and a whimsical sculpture scavenger hunt.  Families can also enjoy live performances by Walking Shadow Shakespeare and explore nature through experiences led by the Lady Bird Johnson Wildflower Center.
+
+**Additional Details:** Cost: free
+
+**Source:** Unknown
+
+---
+
+## Groundwork Music Orchestra
+
+**Date:** 2025-08-10
+
+**Location:** Cherrywood Coffee House, Austin, TX 78701 *(ZIP code estimated)*
+
+**Description:** Groundwork Music Orchestra@ Cherrywood Coffee House.
+
+**Source:** Unknown
 
 ---
 
